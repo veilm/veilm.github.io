@@ -1,0 +1,14 @@
+.projects {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 70px;
+}
+
+#title {
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+#home {
+	padding: 10px;
+}

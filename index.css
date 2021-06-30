@@ -1,0 +1,50 @@
+#me {
+    display: grid;
+    grid-template-rows: 4fr 3fr;
+    grid-row-gap: 40px;
+}
+
+#main {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-rows: 1fr auto auto;
+}
+
+#spare_time {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+#spare_time ul {
+    margin: 0;
+}
+
+#introduction {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-rows: 1fr auto;
+    align-self: end;
+}
+
+#introduction h1, #introduction p {
+    margin: 0;
+}
+
+#links a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#email {
+    align-self: end;
+    margin-bottom: 10px;
+}
+
+#email p {
+    margin: 0;
+}
+
+#email #contact_header {
+    margin-bottom: 5px;
+}

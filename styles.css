@@ -1,0 +1,52 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    color: #F8F8F8;
+
+    font-family: sans-serif;
+
+    text-align: center;
+}
+
+li, ol {
+	text-align: left;
+}
+
+li {
+    color: #aaaaaa;
+}
+
+h1, a {
+    color: #4AAF38;
+}
+
+code {
+	background-color: #333333;
+}
+
+/* light theme for weird people */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #fff;
+        color: #202020;
+    }
+
+    h1, a {
+        color: #008000;
+    }
+
+    li {
+        color: #707070;
+    }
+
+	code {
+		background-color: #bbbbbb;
+	}
+}
