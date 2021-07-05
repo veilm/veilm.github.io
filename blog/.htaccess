@@ -1,4 +1,1 @@
 Options +Indexes
-AddDescription "block a site using /etc/hosts" "block-a-site-using-etchosts.html" #Tue, 20 Apr 2021 19:15:13 -0400
-AddDescription "/usr/share/dict/words not found" "usrsharedictwords-not-found.html" #Tue, 20 Apr 2021 19:39:56 -0400
-AddDescription "Get a working Wi-Fi connection in an Artix installation" "get-a-working-wifi-connection-in-an-artix-installation.html" #Tue, 20 Apr 2021 19:38:13 -0400
