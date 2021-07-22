@@ -1,0 +1,16 @@
+<p>Hello. This is a quick reference on Python environment variables.</p>
+
+<p>The main idea is that the <code>os</code> module provides a dictionary called <code>environ</code>, which works the way you would expect.</p>
+
+<pre>
+import os
+
+// get a variable
+config = os.environ.get("XDG_CONFIG_HOME")
+// or
+config = os.environ["XDG_CONFIG_HOME"]
+
+// Won't persist after the script is finished
+os.environ["XDG_CONFIG_HOME"] = "/home/foo/.bar"
+print(os.environ["XDG_CONFIG_HOME"])
+</pre>
