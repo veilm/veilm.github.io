@@ -12,6 +12,98 @@
 <!-- LB -->
 
 <item>
+<title></title>
+<guid>https://michaelskyba.xyz/rolling.html#block-a-site-using-etchosts</guid>
+<pubDate>Sat, 24 Jul 2021 18:42:17 -0400</pubDate>
+<description><![CDATA[
+<p>Just add:</p>
+
+<code>
+0.0.0.0 mysite
+</code>
+
+<p>to your /etc/hosts file.</p>
+
+<p>Example:</p>
+
+<code>
+0.0.0.0 facebook.com
+</code>
+<p>Here, facebook.com will basically be an alias for '0.0.0.0' which acts as a dummy address.</p>
+
+<p>This is a really simple thing that doesn't need an entire page of web bloat to explain...</p>
+
+<a href="https://github.com/StevenBlack/hosts">List of sites you may want to block</a>
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://michaelskyba.xyz/rolling.html#get-a-working-wifi-connection-in-an-artix-installation</guid>
+<pubDate>Sat, 24 Jul 2021 18:39:32 -0400</pubDate>
+<description><![CDATA[
+
+<br>
+
+<p>While Arch and Gentoo have had internet working mostly
+out-of-the-box, Artix has not. I thought it could be beneficial
+if I compiled a list of steps:</p>
+
+<ol>
+	<li>
+		Create /etc/wpa_supplicant/wpa_supplicant.conf with the following lines:
+		<br>
+		<code>
+		ctrl_interface=/run/wpa_supplicant
+		<br>
+		update_config=1
+		</code>
+	</li>
+	<li> Make sure rfkill isn't messing things up: <code>sudo rfkill unblock wifi</code>
+	</li>
+	<li>
+		Start wpa_supplicant: <code>sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf</code>
+		<br>
+		My device name was 'wlan0', but you should edit the command if yours is different.
+	</li>
+	<li>
+		Run wpa_cli (for me it didn't work without root):
+		<br>
+		<code>
+		sudo wpa_cli
+		<br>
+		scan
+		<br>
+		scan_results
+		<br>
+		add_network
+		<br>
+		set_network 0 ssid "{the name of your wifi network}"
+		<br>
+		set_network 0 psk "{the password of your wifi network}"
+		<br>
+		enable_network 0
+		<br>
+		save_config
+		<br>
+		quit
+		</code>
+	</li>
+	<li>Start dhcpcd: <code>sudo dhcpcd</code></li>
+</ol>
+
+<p>Now, you should be done. I've done two Artix Installs and both of them have
+succeeded with this procedure. Note that for both I have used the base-runit
+installation, it's possible that using a different init system (openrc and s6
+are available currently) will require different steps.</p>
+
+<br>
+]]></description>
+</item>
+
+
+<item>
 <title>msk_music</title>
 <guid>https://michaelskyba.xyz/rolling.html#mskmusic</guid>
 <pubDate>Fri, 23 Jul 2021 23:22:45 -0400</pubDate>
