@@ -22,7 +22,7 @@ fi
 newpost() { read -erp "Give a title for your post:
 	" title
 	echo "$title" | grep -q "\"" && printf "Double quotation marks (\") are not allowed in entry titles.\\n" && exit
-	url="$(echo "$title" | iconv -cf UTF-8 -t ASCII//TRANSLIT | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | sed "s/-\+/-/g;s/\(^-\|-\$\)//g")"
+	url="$(echo "$title" | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | sed "s/-\+/-/g;s/\(^-\|-\$\)//g")"
 	echo "AddDescription \"$title\" \"$url.html\"" >>  "$archivefile"|| { echo "Error: Is $archivefile writeable?"; exit; }
 	( [ -f "$webdir/blog/.drafts/$url.html" ] || [ -f "$webdir/blog/$url.html" ] ) && echo "There is already an existing draft or post of that same name/URL." && exit
 	$EDITOR "$webdir/blog/.drafts/$url.html" ;}
