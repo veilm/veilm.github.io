@@ -2,7 +2,7 @@
 name="Michael Skyba"
 webdir="$PWD"
 website="https://michaelskyba.xyz/" # Keep a trailing slash.
-css="../styles.css"
+css="../sakura-vader.css"
 blogfile="rolling.html"
 indexfile="blog.html"
 rssfile="rss.xml"
