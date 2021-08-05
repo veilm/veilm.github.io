@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>msk_music</title>
-<link rel='stylesheet' type='text/css' href='../sakura-vader.css'>
-<meta charset='utf-8'/>
-</head>
-<body>
-<h1>msk_music</h1>
-<small>[<a href='../rolling.html#mskmusic'>link</a>&mdash;<a href='mskmusic.html'>standalone</a>]</small>
-<p> I have decided to put this "blog" to use for sharing scripts I write, in
-hopes that one or two of them could be of use to somebody.</p>
+	<head>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' type='text/css' href='../sakura-vader.css'>
 
-<a style="font-size: 18px;" href="https://gist.github.com/michaelskyba/2e04107265d4255671bb597581afd76a">msk_music</a>
+		<title>msk_music</title>
+	</head>
+	<body>
+		<h1>msk_music</h1>
 
-<p>msk_music is a simple and featureless way of listening to music. It uses the
-equivalent of "random" and "consume" modes on mpd (which it aims to replace). For
-my use cases, which I believe are fairly standard, it does so successfully.</p>
+		<p> I have decided to put this "blog" to use for sharing scripts I write, in
+		hopes that one or two of them could be of use to somebody.</p>
+		
+		<h6><a href="https://gist.github.com/michaelskyba/2e04107265d4255671bb597581afd76a">msk_music</a></h2>
+		
+		<p>msk_music is a simple and featureless way of listening to music. It uses the
+		equivalent of "random" and "consume" modes on mpd (which it aims to replace). For
+		my use cases, which I believe are fairly standard, it does so successfully.</p>
+		
+		<p>Instead of having a vast number of configuration options, additional features
+		can be implemented by changing the source code, which, due to being written in
+		shell, is completely transparent. For instance,
+		<a href="https://gist.github.com/michaelskyba/697a06b1f53f3f8a14e94bd9ccf4de3e">this
+		patch</a> will have msk_music only run on .mp4 files.</p>
+		
+		<p>msk_music depends on mpv and a set of coreutils that support sed's "-i" flag.
+		msk_music is around 20 LOC, and was written in about 10 minutes.</p>
 
-<p>Instead of having a vast number of configuration options, additional features
-can be implemented by changing the source code, which, due to being written in
-shell, is completely transparent. For instance,
-<a href="https://gist.github.com/michaelskyba/697a06b1f53f3f8a14e94bd9ccf4de3e">this</a>
-patch will have msk_music only run on .mp4 files.</p>
-
-<p>msk_music depends on mpv and a set of coreutils that support sed's "-i" flag.
-msk_music is around 20 LOC, and was written in about 10 minutes.</p>
-<footer>by <strong><a href='https://michaelskyba.xyz/'>Michael Skyba</a></strong></footer>
-</body>
-
+		<a href="../blog.html">Blog Index</a>
+	</body>
 </html>
