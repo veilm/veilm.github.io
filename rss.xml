@@ -11,6 +11,111 @@
 
 <!-- LB -->
 
+<item>
+<title>		msk_music</title>
+<guid>https://michaelskyba.xyz/blog/2.html</guid>
+<link>https://michaelskyba.xyz/blog/2.html</link>
+<pubDate>Wed, 04 Aug 2021 21:05:39 -0400</pubDate>
+<description><![CDATA[
+		<h1>msk_music</h1>
+		<p> I have decided to put this "blog" to use for sharing scripts I write, in
+		hopes that one or two of them could be of use to somebody.</p>
+		
+		<h6><a href="https://gist.github.com/michaelskyba/2e04107265d4255671bb597581afd76a">msk_music</a></h2>
+		
+		<p>msk_music is a simple and featureless way of listening to music. It uses the
+		equivalent of "random" and "consume" modes on mpd (which it aims to replace). For
+		my use cases, which I believe are fairly standard, it does so successfully.</p>
+		
+		<p>Instead of having a vast number of configuration options, additional features
+		can be implemented by changing the source code, which, due to being written in
+		shell, is completely transparent. For instance,
+		<a href="https://gist.github.com/michaelskyba/697a06b1f53f3f8a14e94bd9ccf4de3e">this
+		patch</a> will have msk_music only run on .mp4 files.</p>
+		
+		<p>msk_music depends on mpv and a set of coreutils that support sed's "-i" flag.
+		msk_music is around 20 LOC, and was written in about 10 minutes.</p>
+		<a href="../blog.html">Blog Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Get a working Wi-Fi connection in an Artix Installation</title>
+<guid>https://michaelskyba.xyz/blog/1.html</guid>
+<link>https://michaelskyba.xyz/blog/1.html</link>
+<pubDate>Wed, 04 Aug 2021 21:05:38 -0400</pubDate>
+<description><![CDATA[
+		<h1>Get a working Wi-Fi connection in an Artix Installation</h1>
+		<p>While Arch and Gentoo have had internet working mostly
+		out-of-the-box, Artix has not. I thought it could be beneficial
+		if I compiled a list of steps:</p>
+		<ol>
+			<li>Become root: <code>su</code></li>
+			<li>
+				Create /etc/wpa_supplicant/wpa_supplicant.conf with the following lines:
+				<br>
+<pre>
+ctrl_interface=/run/wpa_supplicant
+update_config=1
+</pre>
+			</li>
+			<li>Make sure rfkill isn't messing things up: <code>rfkill unblock wifi</code></li>
+			<li>
+				Start wpa_supplicant: <code>wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf</code>
+				<br>
+				My device name was 'wlan0', but you should edit the command if yours is different.
+			</li>
+			<li>
+				Run wpa_cli.
+				<br>
+<pre>
+wpa_cli
+scan
+scan_results
+add_network
+set_network 0 ssid "{the name of your wifi network}"
+set_network 0 psk "{the password of your wifi network}"
+enable_network 0
+save_config
+quit
+</pre>
+			</li>
+			<li>Start dhcpcd: <code>dhcpcd</code></li>
+		</ol>
+		<p>You should be done. I've done two Artix installs and both of them have
+		succeeded with this procedure. Note that for both I have used the base-runit
+		installation; it's possible that using a different init system (openrc and s6
+		are available currently) will require different steps.</p>
+		<a href="../blog.html">Blog Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Block a site using /etc/hosts</title>
+<guid>https://michaelskyba.xyz/blog/0.html</guid>
+<link>https://michaelskyba.xyz/blog/0.html</link>
+<pubDate>Wed, 04 Aug 2021 21:05:29 -0400</pubDate>
+<description><![CDATA[
+		<h1>Block a site using /etc/hosts</h1>
+		<p>Simply add <code>0.0.0.0 mysite</code> to your /etc/hosts file.</p>
+		
+		
+		<p>Example: <code>0.0.0.0 facebook.com</code></p>
+		
+		<p>Here, facebook.com will basically be an alias for '0.0.0.0', which acts as a dummy address.</p>
+		
+		<a href="https://github.com/StevenBlack/hosts">List of sites you may want to block</a>
+		<br>
+		<a href="../blog.html">Blog Index</a>
+	
+]]></description>
+</item>
+
+
 </channel>
 </rss>
 
