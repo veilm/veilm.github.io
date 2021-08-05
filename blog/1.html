@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title></title>
-<link rel='stylesheet' type='text/css' href='../sakura-vader.css'>
-<meta charset='utf-8'/>
-</head>
-<body>
-<h1></h1>
-<small>[<a href='../rolling.html#get-a-working-wifi-connection-in-an-artix-installation'>link</a>&mdash;<a href='get-a-working-wifi-connection-in-an-artix-installation.html'>standalone</a>]</small>
+	<head>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' type='text/css' href='../sakura-vader.css'>
 
-<br>
+		<title>Get a working Wi-Fi connection in an Artix Installation</title>
+	</head>
+	<body>
+		<h1>Get a working Wi-Fi connection in an Artix Installation</h1>
 
-<p>While Arch and Gentoo have had internet working mostly
-out-of-the-box, Artix has not. I thought it could be beneficial
-if I compiled a list of steps:</p>
+		<p>While Arch and Gentoo have had internet working mostly
+		out-of-the-box, Artix has not. I thought it could be beneficial
+		if I compiled a list of steps:</p>
 
-<ol>
-	<li>
-		Create /etc/wpa_supplicant/wpa_supplicant.conf with the following lines:
-		<br>
-		<code>
-		ctrl_interface=/run/wpa_supplicant
-		<br>
-		update_config=1
-		</code>
-	</li>
-	<li> Make sure rfkill isn't messing things up: <code>sudo rfkill unblock wifi</code>
-	</li>
-	<li>
-		Start wpa_supplicant: <code>sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf</code>
-		<br>
-		My device name was 'wlan0', but you should edit the command if yours is different.
-	</li>
-	<li>
-		Run wpa_cli (for me it didn't work without root):
-		<br>
-		<code>
-		sudo wpa_cli
-		<br>
-		scan
-		<br>
-		scan_results
-		<br>
-		add_network
-		<br>
-		set_network 0 ssid "{the name of your wifi network}"
-		<br>
-		set_network 0 psk "{the password of your wifi network}"
-		<br>
-		enable_network 0
-		<br>
-		save_config
-		<br>
-		quit
-		</code>
-	</li>
-	<li>Start dhcpcd: <code>sudo dhcpcd</code></li>
-</ol>
+		<ol>
+			<li>Become root: <code>su</code></li>
 
-<p>Now, you should be done. I've done two Artix Installs and both of them have
-succeeded with this procedure. Note that for both I have used the base-runit
-installation, it's possible that using a different init system (openrc and s6
-are available currently) will require different steps.</p>
+			<li>
+				Create /etc/wpa_supplicant/wpa_supplicant.conf with the following lines:
+				<br>
+<pre>
+ctrl_interface=/run/wpa_supplicant
+update_config=1
+</pre>
+			</li>
 
-<br>
-<footer>by <strong><a href='https://michaelskyba.xyz/'>Michael Skyba</a></strong></footer>
-</body>
+			<li>Make sure rfkill isn't messing things up: <code>rfkill unblock wifi</code></li>
 
+			<li>
+				Start wpa_supplicant: <code>wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf</code>
+				<br>
+				My device name was 'wlan0', but you should edit the command if yours is different.
+			</li>
+
+			<li>
+				Run wpa_cli.
+				<br>
+<pre>
+wpa_cli
+scan
+scan_results
+add_network
+set_network 0 ssid "{the name of your wifi network}"
+set_network 0 psk "{the password of your wifi network}"
+enable_network 0
+save_config
+quit
+</pre>
+			</li>
+
+			<li>Start dhcpcd: <code>dhcpcd</code></li>
+		</ol>
+
+		<p>You should be done. I've done two Artix installs and both of them have
+		succeeded with this procedure. Note that for both I have used the base-runit
+		installation; it's possible that using a different init system (openrc and s6
+		are available currently) will require different steps.</p>
+
+		<a href="../blog.html">Blog Index</a>
+	</body>
 </html>
