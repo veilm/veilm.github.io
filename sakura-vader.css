@@ -14,6 +14,8 @@ body {
   line-height: 1.618;
   max-width: 38em;
   margin: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
   color: #d9d8dc;
   background-color: #120c0e;
   padding: 13px; }
