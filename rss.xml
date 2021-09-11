@@ -12,6 +12,31 @@
 <!-- LB -->
 
 <item>
+<title>		Donate</title>
+<guid>https://michaelskyba.xyz/donate.html</guid>
+<link>https://michaelskyba.xyz/donate.html</link>
+<pubDate>Sat, 11 Sep 2021 02:10:05 -0400</pubDate>
+<description><![CDATA[
+		<h1>Donate</h1>
+		<p>Perhaps the existence of this page is a declaration of arrogance, but I genuinely
+		believe there's a possibility that something I made could be useful.</p>
+		<h2>Bitcoin</h2>
+		<img style="margin-bottom: 0;" src="assets/bitcoin.png" alt="bitcoin qr">
+		<br>
+		<code>bc1qxwvg86dnhkqh9p8z8x6k6rlvvnqx4zfyhxzece</code>
+		<h2>Monero</h2>
+		<img style="margin-bottom: 0;" src="assets/monero.png" alt="monero qr">
+		<br>
+		<code>42dPF9eisY3PCyQmLCiSAUEsjVhz2j1gDUixdQKgcXueMEJUNAKTgYG71ekXvvR12MTAyWnqyhfdXjPt3p5ypr3A2vey7RZ</code>
+		<br>
+		<br>
+		<a style="margin-top: 50px;" href="index.html">Home</a>
+	
+]]></description>
+</item>
+
+
+<item>
 <title>		Trying out berry</title>
 <guid>https://michaelskyba.xyz/blog/3.html</guid>
 <link>https://michaelskyba.xyz/blog/3.html</link>
