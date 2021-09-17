@@ -12,6 +12,40 @@
 <!-- LB -->
 
 <item>
+<title>		Deltarune Chapter 1 on Linux</title>
+<guid>https://michaelskyba.xyz/blog/4.html</guid>
+<link>https://michaelskyba.xyz/blog/4.html</link>
+<pubDate>Fri, 17 Sep 2021 17:28:11 -0400</pubDate>
+<description><![CDATA[
+		<h1>Deltarune Chapter 1 on Linux</h1>
+		<p>With the release of Deltarune Chapter 2 today, I thought I would share how
+		I was able to get Chapter 1 working on Linux. I will assume you're running Arch.</p>
+		<p>1. Download the .exe from <a href="https://deltarune.com/">Deltarune's website</a></p>
+		<p>2. Install Wine and libstrangle</p>
+<pre>
+ssu pacman -S wine
+git clone https://aur.archlinux.org/libstrangle-git.git
+cd libstrangle-git
+makepkg -sirc</pre> 
+		
+		<p class="no-margin">3. Install Deltarune as if you were on Windows using Wine:</p>
+		<code>wine SURVEY_PROGRAM_WINDOWS_ENGLISH.exe</code>
+		<p>For me, it stopped writing new text after a couple of minutes, at which point I killed it with 
+C.
+		I guess it finishes installing but doesn't quit Wine?</p>
+		<p>4. Run Deltarune using strangle:</p>
+<pre>
+cd "$HOME/.wine/drive_c/Program Files (x86)/SURVEY_PROGRAM"
+strangle 30 wine DELTARUNE.exe</pre>
+		<p>That's it, it should work now. Using Wine on its own without libstrangle won't work.
+		Feel free to try it if you don't believe me.</p>
+		<a href="../blog.html">Blog Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
 <title>		Donate</title>
 <guid>https://michaelskyba.xyz/donate.html</guid>
 <link>https://michaelskyba.xyz/donate.html</link>
