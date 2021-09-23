@@ -164,6 +164,40 @@
 		to add a new word to the spelling deck. It's another example of something easy to do when your deck files are in plaintext rather than a complicated
 		format.</p>
 
+		<h2>File Organization</h2>
+
+		<p>I like to keep a separate directory for each deck, which can contain any other files that the deck might use (usually images):</p>
+
+<pre>~/decks $ pwd
+/home/michael/decks
+~/decks $ tree
+.
+|-- flags
+|   |-- australia.png
+|   |-- canada.png
+|   `-- deck
+|-- hook
+|-- japanese-hiragana
+|   `-- deck
+`-- japanese-katakana
+    `-- deck
+
+3 directories, 6 files</pre>
+
+		<ul>
+			<li>I have a "decks" directory</li>
+			<li>Each deck has its own directory inside "decks"</li>
+			<li>I use hyphens as a convention for subcategories</li>
+			<li>Each deck directory uses a file called "deck" as the deck</li>
+			<li>My scripture hook is not in a deck directory, but instead the master "decks" directory</li>
+		</ul>
+
+		<p>(This isn't 100% what I use, because I have more decks and my decks directory isn't in $HOME, but it's close enough for demonstration purposes.)</p>
+
+		<p>Then, I have a script called <a href="https://gist.github.com/michaelskyba/b4de15a3bf8c4be719c7a8191e67c446">msk_scripture</a> which saves
+		me time <code>cd</code>ing into directories and typing "scripture" over and over. It just goes through each deck and runs scripture on it. Once a day,
+		I type "msk_scripture" into the terminal and complete any due reviews.</p>
+
 		<h1>Conclusion</h1>
 
 		<p>That's the end of this article. Hopefully, if you read all of it, you have a good idea of whether or not scripture will satisfy your needs. I don't
