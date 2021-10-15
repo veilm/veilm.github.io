@@ -55,5 +55,9 @@ stop.onclick = function()
 }
 menu.appendChild(stop)
 
+let p = document.createElement("p")
+p.innerHTML = "I did not write the original script, I only added a UI, refactored the code a little bit, and fixed bugs."
+menu.appendChild(p)
+
 // Init interval variable so it's global
 let qp_interval
