@@ -40,7 +40,7 @@ start.onclick = function()
 }
 menu.appendChild(start)
 
-let stop = document.createElement("stop")
+let stop = document.createElement("input")
 stop.type = "button"
 stop.value = "Stop"
 stop.onclick = function()
