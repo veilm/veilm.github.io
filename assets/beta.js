@@ -35,6 +35,7 @@ start.type = "button"
 start.value = "Start"
 start.style.color = "white"
 start.style.backgroundColor = "black"
+start.style.fontSize = "15px"
 start.onclick = function()
 {
 	clearInterval(qp_interval)
@@ -47,6 +48,7 @@ stop.type = "button"
 stop.value = "Stop"
 stop.style.color = "white"
 stop.style.backgroundColor = "black"
+stop.style.fontSize = "15px"
 stop.onclick = function()
 {
 	clearInterval(qp_interval)
