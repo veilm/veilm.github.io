@@ -27,7 +27,7 @@ while (menu.children.length > 0)
 }
 
 let h1 = document.createElement("h1")
-h1.innerHTML = "Bootleg Quickplay v2.2"
+h1.innerHTML = "Bootleg Quick Play v2.2.3"
 menu.appendChild(h1)
 
 let start = document.createElement("input")
@@ -35,7 +35,7 @@ start.type = "button"
 start.value = "Start"
 start.style.color = "white"
 start.style.backgroundColor = "black"
-start.style.fontSize = "15px"
+start.style.fontSize = "20px"
 start.onclick = function()
 {
 	clearInterval(qp_interval)
@@ -48,7 +48,7 @@ stop.type = "button"
 stop.value = "Stop"
 stop.style.color = "white"
 stop.style.backgroundColor = "black"
-stop.style.fontSize = "15px"
+stop.style.fontSize = "20px"
 stop.onclick = function()
 {
 	clearInterval(qp_interval)
