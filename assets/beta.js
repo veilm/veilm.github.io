@@ -9,19 +9,29 @@ function map(e)
     frame.getElementById("newbonklobby_startbutton").click()
 }
 
+function get_index(num_of_maps)
+{
+    // Don't let i be the same value twice in a row
+    let i = Math.floor(Math.random() * num_of_maps)
+    while (i == prev_index)
+    {
+        i = Math.floor(Math.random() * num_of_maps)
+    }
+
+    return i
+}
+
 let prev_index
 function timeout()
 {
         if (frame.getElementById("ingamewinner").style["visibility"] == "inherit")
         {
-	        // Don't let i be the same value twice in a row
-            let i = Math.floor(Math.random()*frame.getElementById("maploadwindowmapscontainer").children.length)
-	        while (i == prev_index) {
-	            i = Math.floor(Math.random()*frame.getElementById("maploadwindowmapscontainer").children.length)
-	        }
+			let num_of_maps = frame.getElementById("maploadwindowmapscontainer").children.length
+
+	        let i = get_index(num_of_maps)
 	        prev_index = i
 
-            map(i % (frame.getElementById("maploadwindowmapscontainer").children.length))
+            map(i % num_of_maps)
             frame.getElementById("ingamewinner").style["visibility"] = "hidden"
         }
 }
