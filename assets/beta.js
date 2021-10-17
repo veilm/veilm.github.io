@@ -72,7 +72,33 @@ stop.onclick = function()
 }
 menu.appendChild(stop)
 
-let p = document.createElement("p")
+let p
+p = document.createElement("p")
+p.innerHTML = "Pick a rotation type:"
+menu.appendChild(p)
+
+let type = document.createElement("select")
+let option
+
+option = document.createElement("option")
+option.value = "no_duplicate"
+option.innerHTML = "Random, but no duplicates"
+option.selected = true
+type.appendChild(option)
+
+option = document.createElement("option")
+option.value = "random"
+option.innerHTML = "Random, with occasional duplicates"
+type.appendChild(option)
+
+option = document.createElement("option")
+option.value = "order"
+option.innerHTML = "In order (not random)"
+type.appendChild(option)
+
+menu.appendChild(type)
+
+p = document.createElement("p")
 p.innerHTML = "I did not write the original script, but I have made improvements (in my opinion)."
 menu.appendChild(p)
 
