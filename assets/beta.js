@@ -61,7 +61,7 @@ while (menu.children.length > 0)
 }
 
 let h1 = document.createElement("h1")
-h1.innerHTML = "Bootleg Quick Play v2.3"
+h1.innerHTML = "Bootleg Quick Play v2.3.6"
 menu.appendChild(h1)
 
 let start = document.createElement("input")
@@ -115,6 +115,8 @@ type.appendChild(option)
 
 menu.appendChild(type)
 
+menu.appendChild(document.createElement("hr"))
+
 p = document.createElement("p")
 p.innerHTML = "I did not write the original script, but I have made improvements (in my opinion)."
 menu.appendChild(p)
@@ -122,12 +124,18 @@ menu.appendChild(p)
 let ul = document.createElement("ul")
 let li
 li = document.createElement("li")
-li.innerHTML = "I added a UI"
+li.innerHTML = "I added a UI for selecting a rotation mode"
+ul.appendChild(li)
+li = document.createElement("li")
+li.innerHTML = "I implemented 'Random, but no duplicates' mode and 'In order (not random)' mode"
+ul.appendChild(li)
+li = document.createElement("li")
+li.innerHTML = "I added a UI for start/stop of the script"
 ul.appendChild(li)
 li = document.createElement("li")
 li.innerHTML = "I cleaned up the codebase"
 ul.appendChild(li)
 li = document.createElement("li")
-li.innerHTML = "I fixed a bug that rendered the script unusable"
+li.innerHTML = "I fixed a bug that rendered the script unusable (which was present in the original script, not caused by me)"
 ul.appendChild(li)
 menu.appendChild(ul)
