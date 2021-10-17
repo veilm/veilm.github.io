@@ -98,7 +98,7 @@ let type = document.createElement("select")
 let option
 
 option = document.createElement("option")
-option.value = "no_duplicate"
+option.value = "no_duplicates"
 option.innerHTML = "Random, but no duplicates"
 option.selected = true
 type.appendChild(option)
