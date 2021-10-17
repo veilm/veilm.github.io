@@ -27,7 +27,7 @@ while (menu.children.length > 0)
 }
 
 let h1 = document.createElement("h1")
-h1.innerHTML = "Bootleg Quick Play v2.2.3"
+h1.innerHTML = "Bootleg Quick Play v2.2.4"
 menu.appendChild(h1)
 
 let start = document.createElement("input")
@@ -56,7 +56,7 @@ stop.onclick = function()
 menu.appendChild(stop)
 
 let p = document.createElement("p")
-p.innerHTML = "I did not write the original script, I only added a UI, refactored the code a little bit, and fixed bugs."
+p.innerHTML = "I did not write the original script, but I have made improvements (in my opinion)."
 menu.appendChild(p)
 
 // Init interval variable so it's global
