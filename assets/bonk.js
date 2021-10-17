@@ -27,7 +27,7 @@ while (menu.children.length > 0)
 }
 
 let h1 = document.createElement("h1")
-h1.innerHTML = "Bootleg Quick Play v2.2.4"
+h1.innerHTML = "Bootleg Quick Play v2.2.5"
 menu.appendChild(h1)
 
 let start = document.createElement("input")
@@ -58,6 +58,19 @@ menu.appendChild(stop)
 let p = document.createElement("p")
 p.innerHTML = "I did not write the original script, but I have made improvements (in my opinion)."
 menu.appendChild(p)
+
+let ul = document.createElement("ul")
+let li
+li = document.createElement("li")
+li.innerHTML = "I added a UI"
+ul.appendChild(li)
+li = document.createElement("li")
+li.innerHTML = "I cleaned up the codebase"
+ul.appendChild(li)
+li = document.createElement("li")
+li.innerHTML = "I fixed a bug that rendered the script unusable"
+ul.appendChild(li)
+menu.appendChild(ul)
 
 // Init interval variable so it's global
 let qp_interval
