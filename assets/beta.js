@@ -3,40 +3,41 @@
 
 let frame = document.getElementById("maingameframe").contentWindow.document
 
-function map(e)
-{
-    frame.getElementById("maploadwindowmapscontainer").children[e].click()
-    frame.getElementById("newbonklobby_startbutton").click()
-}
-
 function get_index(num_of_maps)
 {
-    // Don't let i be the same value twice in a row
-    let i = Math.floor(Math.random() * num_of_maps)
-    while (i == prev_index)
-    {
-        i = Math.floor(Math.random() * num_of_maps)
-    }
+	// Don't let i be the same value twice in a row
+	let i = Math.floor(Math.random() * num_of_maps)
+	while (i == prev_index)
+	{
+		i = Math.floor(Math.random() * num_of_maps)
+	}
 
-    return i
+	return i
 }
 
 let prev_index
 function timeout()
 {
-        if (frame.getElementById("ingamewinner").style["visibility"] == "inherit")
-        {
-			let num_of_maps = frame.getElementById("maploadwindowmapscontainer").children.length
+	if (frame.getElementById("ingamewinner").style["visibility"] == "inherit")
+	{
+		let num_of_maps = frame.getElementById("maploadwindowmapscontainer").children.length
 
-	        let i = get_index(num_of_maps)
-	        prev_index = i
+		let i = get_index(num_of_maps)
+		prev_index = i
 
-            map(i % num_of_maps)
-            frame.getElementById("ingamewinner").style["visibility"] = "hidden"
-        }
+		let corrected_index = i % num_of_maps
+		frame.getElementById("maploadwindowmapscontainer").children[corrected_index].click()
+		frame.getElementById("newbonklobby_startbutton").click()
+
+		frame.getElementById("ingamewinner").style["visibility"] = "hidden"
+	}
 }
 
-// Set up GUI
+// Init interval variable so it's global
+let qp_interval
+
+// HTML UI ==================================================
+
 let menu = document.getElementById("descriptioninner")
 while (menu.children.length > 0)
 {
@@ -114,6 +115,3 @@ li = document.createElement("li")
 li.innerHTML = "I fixed a bug that rendered the script unusable"
 ul.appendChild(li)
 menu.appendChild(ul)
-
-// Init interval variable so it's global
-let qp_interval
