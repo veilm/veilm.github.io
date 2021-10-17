@@ -7,6 +7,13 @@ function get_index(num_of_maps)
 {
 	let i
 
+	// User error
+	if (num_of_maps < 2)
+	{
+		alert("You need to have a map selection loaded. Exit and click MAP.")
+		return i
+	}
+
 	// Different index determination operations depending on what's selected
 	switch(type.value)
 	{
