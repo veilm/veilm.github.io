@@ -5,11 +5,27 @@ let frame = document.getElementById("maingameframe").contentWindow.document
 
 function get_index(num_of_maps)
 {
-	// Don't let i be the same value twice in a row
-	let i = Math.floor(Math.random() * num_of_maps)
-	while (i == prev_index)
+	let i
+
+	// Different index determination operations depending on what's selected
+	switch(type.value)
 	{
-		i = Math.floor(Math.random() * num_of_maps)
+		case "no_duplicates":
+			i = Math.floor(Math.random() * num_of_maps)
+			while (i == prev_index)
+			{
+				i = Math.floor(Math.random() * num_of_maps)
+			}
+
+			break
+
+		case "random":
+			i = Math.floor(Math.random() * num_of_maps)
+			break
+
+		case "order":
+			i = prev_index + 1
+			break
 	}
 
 	return i
