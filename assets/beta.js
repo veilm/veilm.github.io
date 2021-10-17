@@ -121,8 +121,10 @@ p = document.createElement("p")
 p.innerHTML = "I did not write the original script, but I have made improvements (in my opinion)."
 menu.appendChild(p)
 
-let ul = document.createElement("ul")
+let ul
 let li
+
+ul = document.createElement("ul")
 li = document.createElement("li")
 li.innerHTML = "I added a UI for selecting a rotation mode"
 ul.appendChild(li)
@@ -137,5 +139,26 @@ li.innerHTML = "I cleaned up the codebase"
 ul.appendChild(li)
 li = document.createElement("li")
 li.innerHTML = "I fixed a bug that rendered the script unusable (which was present in the original script, not caused by me)"
+ul.appendChild(li)
+menu.appendChild(ul)
+
+menu.appendChild(document.createElement("hr"))
+
+p = document.createElement("p")
+p.innerHTML = "Credit"
+menu.appendChild(p)
+
+ul = document.createElement("ul")
+li = document.createElement("li")
+li.innerHTML = "msk (me) - the changes described above"
+ul.appendChild(li)
+li = document.createElement("li")
+li.innerHTML = "MaeIstrom - giving me the original script"
+ul.appendChild(li)
+li = document.createElement("li")
+li.innerHTML = "GudStrat - implementing 'Random, with occasional duplicates' mode"
+ul.appendChild(li)
+li = document.createElement("li")
+li.innerHTML = "Original creator (I don't know their name) - creating the original script"
 ul.appendChild(li)
 menu.appendChild(ul)
