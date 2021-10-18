@@ -38,7 +38,7 @@ function get_index(num_of_maps)
 	return i
 }
 
-let prev_index
+let prev_index = 0
 function timeout()
 {
 	if (frame.getElementById("ingamewinner").style["visibility"] == "inherit")
@@ -49,6 +49,7 @@ function timeout()
 		prev_index = i
 
 		let corrected_index = i % num_of_maps
+		// console.log(`${prev_index}, ${i}, ${corrected_index}, ${type.value}, ${num_of_maps}`)
 		frame.getElementById("maploadwindowmapscontainer").children[corrected_index].click()
 		frame.getElementById("newbonklobby_startbutton").click()
 
