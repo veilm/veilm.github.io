@@ -1,8 +1,6 @@
 
 // If you're not here from bonk.io, don't worry about this. I'm not running any JS on my website.
 
-let frame = document.getElementById("maingameframe").contentWindow.document
-
 function get_index(num_of_maps)
 {
 	let i
@@ -38,8 +36,6 @@ function get_index(num_of_maps)
 	return i
 }
 
-let prev_index = 0
-
 function new_map()
 {
 	let num_of_maps = frame.getElementById("maploadwindowmapscontainer").children.length
@@ -60,8 +56,11 @@ function timeout()
 	if (frame.getElementById("ingamewinner").style["visibility"] == "inherit") new_map()
 }
 
-// Init interval variable so it's global
+// Quick play variable declaration
+
+let prev_index = 0
 let qp_interval
+let frame = document.getElementById("maingameframe").contentWindow.document
 
 // HTML UI ==================================================
 
