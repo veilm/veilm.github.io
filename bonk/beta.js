@@ -1,24 +1,20 @@
 
 // If you're not here from bonk.io, don't worry about this. I'm not running any JS on my website.
 
-function get_index(num_of_maps)
-{
+function get_index(num_of_maps) {
 	let i
 
 	// User error
-	if (num_of_maps < 2)
-	{
+	if (num_of_maps < 2) {
 		alert("You need to have a map selection loaded. Exit and click MAP.")
 		return i
 	}
 
 	// Different index determination operations depending on what's selected
-	switch(type.value)
-	{
+	switch(type.value) {
 		case "no_duplicates":
 			i = Math.floor(Math.random() * num_of_maps)
-			while (i == prev_index)
-			{
+			while (i == prev_index) {
 				i = Math.floor(Math.random() * num_of_maps)
 			}
 
@@ -36,8 +32,7 @@ function get_index(num_of_maps)
 	return i
 }
 
-function new_map()
-{
+function new_map() {
 	let num_of_maps = frame.getElementById("maploadwindowmapscontainer").children.length
 
 	let i = get_index(num_of_maps)
@@ -51,8 +46,7 @@ function new_map()
 	frame.getElementById("ingamewinner").style["visibility"] = "hidden"
 }
 
-function timeout()
-{
+function timeout() {
 	if (frame.getElementById("ingamewinner").style["visibility"] == "inherit") new_map()
 }
 
@@ -67,21 +61,18 @@ let qp_running = false
 
 // Clear old screen
 let menu = document.getElementById("descriptioninner")
-while (menu.children.length > 0)
-{
+while (menu.children.length > 0) {
 	menu.children[0].remove()
 }
 
 // Function definitions
-function create_p(text)
-{
+function create_p(text) {
 	let p = document.createElement("p")
 	p.innerHTML = text
 	return p
 }
 
-function create_button(value, onclick)
-{
+function create_button(value, onclick) {
 	let button = document.createElement("input")
 	button.type = "button"
 	button.value = value
@@ -92,11 +83,9 @@ function create_button(value, onclick)
 	return button
 }
 
-function create_ul(items)
-{
+function create_ul(items) {
 	let ul = document.createElement("ul")
-	items.forEach(function(value, index)
-	{
+	items.forEach(function(value, index) {
 		let li = document.createElement("li")
 		li.innerHTML = value
 		ul.appendChild(li)
@@ -110,19 +99,16 @@ h1.innerHTML = "Bootleg Quick Play v2.3.8"
 menu.appendChild(h1)
 
 // Start, Stop, and Skip buttons
-menu.appendChild(create_button("Start", function()
-{
+menu.appendChild(create_button("Start", function() {
 	clearInterval(qp_interval)
 	qp_interval = setInterval(timeout, 100)
 	qp_running = true
 }))
-menu.appendChild(create_button("Stop", function()
-{
+menu.appendChild(create_button("Stop", function() {
 	clearInterval(qp_interval)
 	qp_running = false
 }))
-menu.appendChild(create_button("Skip", function()
-{
+menu.appendChild(create_button("Skip", function() {
 	if (qp_running) new_map()
 	else alert("No quick play rotation running.")
 }))
