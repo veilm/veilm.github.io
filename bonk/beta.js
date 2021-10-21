@@ -109,7 +109,7 @@ let h1 = document.createElement("h1")
 h1.innerHTML = "Bootleg Quick Play v2.3.6"
 menu.appendChild(h1)
 
-// Start and Stop buttons
+// Start, Stop, and Skip buttons
 menu.appendChild(create_button("Start", function()
 {
 	clearInterval(qp_interval)
@@ -118,6 +118,10 @@ menu.appendChild(create_button("Start", function()
 menu.appendChild(create_button("Stop", function()
 {
 	clearInterval(qp_interval)
+}))
+menu.appendChild(create_button("Skip", function()
+{
+	new_map()
 }))
 
 menu.appendChild(create_p("Pick a rotation type:"))
