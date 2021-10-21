@@ -39,22 +39,25 @@ function get_index(num_of_maps)
 }
 
 let prev_index = 0
+
+function new_map()
+{
+	let num_of_maps = frame.getElementById("maploadwindowmapscontainer").children.length
+
+	let i = get_index(num_of_maps)
+	prev_index = i
+
+	let corrected_index = i % num_of_maps
+	// console.log(`${prev_index}, ${i}, ${corrected_index}, ${type.value}, ${num_of_maps}`)
+	frame.getElementById("maploadwindowmapscontainer").children[corrected_index].click()
+	frame.getElementById("newbonklobby_startbutton").click()
+
+	frame.getElementById("ingamewinner").style["visibility"] = "hidden"
+}
+
 function timeout()
 {
-	if (frame.getElementById("ingamewinner").style["visibility"] == "inherit")
-	{
-		let num_of_maps = frame.getElementById("maploadwindowmapscontainer").children.length
-
-		let i = get_index(num_of_maps)
-		prev_index = i
-
-		let corrected_index = i % num_of_maps
-		// console.log(`${prev_index}, ${i}, ${corrected_index}, ${type.value}, ${num_of_maps}`)
-		frame.getElementById("maploadwindowmapscontainer").children[corrected_index].click()
-		frame.getElementById("newbonklobby_startbutton").click()
-
-		frame.getElementById("ingamewinner").style["visibility"] = "hidden"
-	}
+	if (frame.getElementById("ingamewinner").style["visibility"] == "inherit") new_map()
 }
 
 // Init interval variable so it's global
@@ -97,7 +100,7 @@ function create_ul(items)
 		let li = document.createElement("li")
 		li.innerHTML = value
 		ul.appendChild(li)
-	}
+	})
 	return ul
 }
 
