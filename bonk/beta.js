@@ -61,6 +61,7 @@ function timeout()
 let prev_index = 0
 let qp_interval
 let frame = document.getElementById("maingameframe").contentWindow.document
+let qp_running = false
 
 // HTML UI ==================================================
 
@@ -113,14 +114,17 @@ menu.appendChild(create_button("Start", function()
 {
 	clearInterval(qp_interval)
 	qp_interval = setInterval(timeout, 100)
+	qp_running = true
 }))
 menu.appendChild(create_button("Stop", function()
 {
 	clearInterval(qp_interval)
+	qp_running = false
 }))
 menu.appendChild(create_button("Skip", function()
 {
-	new_map()
+	if (qp_running) new_map()
+	else alert("No quick play rotation running.")
 }))
 
 menu.appendChild(create_p("Pick a rotation type:"))
