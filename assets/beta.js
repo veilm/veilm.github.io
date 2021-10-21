@@ -62,45 +62,62 @@ let qp_interval
 
 // HTML UI ==================================================
 
+// Clear old screen
 let menu = document.getElementById("descriptioninner")
 while (menu.children.length > 0)
 {
 	menu.children[0].remove()
 }
 
+// Function definitions
+function create_p(text)
+{
+	let p = document.createElement("p")
+	p.innerHTML = text
+	return p
+}
+
+function create_button(value, onclick)
+{
+	let button = document.createElement("input")
+	button.type = "button"
+	button.value = value
+	button.style.color = "white"
+	button.style.backgroundColor = "black"
+	button.style.fontSize = "20px"
+	button.onclick = onclick
+	return button
+}
+
+function create_ul(items)
+{
+	let ul = document.createElement("ul")
+	items.forEach(function(value, index)
+	{
+		let li = document.createElement("li")
+		li.innerHTML = value
+		ul.appendChild(li)
+	}
+	return ul
+}
+
+// Actual insertion
 let h1 = document.createElement("h1")
 h1.innerHTML = "Bootleg Quick Play v2.3.6"
 menu.appendChild(h1)
 
-let start = document.createElement("input")
-start.type = "button"
-start.value = "Start"
-start.style.color = "white"
-start.style.backgroundColor = "black"
-start.style.fontSize = "20px"
-start.onclick = function()
+// Start and Stop buttons
+menu.appendChild(create_button("Start", function()
 {
 	clearInterval(qp_interval)
 	qp_interval = setInterval(timeout, 100)
-}
-menu.appendChild(start)
-
-let stop = document.createElement("input")
-stop.type = "button"
-stop.value = "Stop"
-stop.style.color = "white"
-stop.style.backgroundColor = "black"
-stop.style.fontSize = "20px"
-stop.onclick = function()
+}))
+menu.appendChild(create_button("Stop", function()
 {
 	clearInterval(qp_interval)
-}
-menu.appendChild(stop)
+}))
 
-let p
-p = document.createElement("p")
-p.innerHTML = "Pick a rotation type:"
-menu.appendChild(p)
+menu.appendChild(create_p("Pick a rotation type:"))
 
 let type = document.createElement("select")
 let option
@@ -125,48 +142,23 @@ menu.appendChild(type)
 
 menu.appendChild(document.createElement("hr"))
 
-p = document.createElement("p")
-p.innerHTML = "I did not write the original script, but I have made improvements (in my opinion)."
-menu.appendChild(p)
+menu.appendChild(create_p("I did not write the original script, but I have made improvements (in my opinion)."))
 
-let ul
-let li
-
-ul = document.createElement("ul")
-li = document.createElement("li")
-li.innerHTML = "I added a UI for selecting a rotation mode"
-ul.appendChild(li)
-li = document.createElement("li")
-li.innerHTML = "I implemented 'Random, but no duplicates' mode and 'In order (not random)' mode"
-ul.appendChild(li)
-li = document.createElement("li")
-li.innerHTML = "I added a UI for start/stop of the script"
-ul.appendChild(li)
-li = document.createElement("li")
-li.innerHTML = "I cleaned up the codebase"
-ul.appendChild(li)
-li = document.createElement("li")
-li.innerHTML = "I fixed a bug that rendered the script unusable (which was present in the original script, not caused by me)"
-ul.appendChild(li)
-menu.appendChild(ul)
+menu.appendChild(create_ul([
+	"I added a UI for selecting a rotation mode",
+	"I implemented 'Random, but no duplicates' mode and 'In order (not random)' mode",
+	"I added a UI for start/stop of the script",
+	"I cleaned up the codebase",
+	"I fixed a bug that rendered the script unusable (which was present in the original script, not caused by me)"
+]))
 
 menu.appendChild(document.createElement("hr"))
 
-p = document.createElement("p")
-p.innerHTML = "Credit"
-menu.appendChild(p)
+menu.appendChild(create_p("Credit"))
 
-ul = document.createElement("ul")
-li = document.createElement("li")
-li.innerHTML = "msk (me) - the changes described above"
-ul.appendChild(li)
-li = document.createElement("li")
-li.innerHTML = "MaeIstrom - giving me the original script"
-ul.appendChild(li)
-li = document.createElement("li")
-li.innerHTML = "GudStrat - implementing 'Random, with occasional duplicates' mode"
-ul.appendChild(li)
-li = document.createElement("li")
-li.innerHTML = "Original creator (I don't know their name) - creating the original script"
-ul.appendChild(li)
-menu.appendChild(ul)
+menu.appendChild(create_ul([
+	"msk (me) - the changes described above",
+	"MaeIstrom - giving me the original script",
+	"GudStrat - implementing 'Random, with occasional duplicates' mode",
+	"Original creator (I don't know their name) - creating the original script"
+]))
