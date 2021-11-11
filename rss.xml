@@ -13,8 +13,8 @@
 
 <item>
 <title>		Scripture (Updated)</title>
-<guid>https://michaelskyba.xyz/blog/5.html#210923102826</guid>
-<link>https://michaelskyba.xyz/blog/5.html</link>
+<guid>https://michaelskyba.xyz/articles/5.html#210923102826</guid>
+<link>https://michaelskyba.xyz/articles/5.html</link>
 <pubDate>Thu, 23 Sep 2021 10:28:35 -0400</pubDate>
 <description><![CDATA[File Organization section
 ]]></description>
@@ -23,8 +23,8 @@
 
 <item>
 <title>		Scripture</title>
-<guid>https://michaelskyba.xyz/blog/5.html</guid>
-<link>https://michaelskyba.xyz/blog/5.html</link>
+<guid>https://michaelskyba.xyz/articles/5.html</guid>
+<link>https://michaelskyba.xyz/articles/5.html</link>
 <pubDate>Wed, 22 Sep 2021 16:16:30 -0400</pubDate>
 <description><![CDATA[
 		<p>(Written on 2021-09-22)</p>
@@ -142,7 +142,7 @@
 		<p>That's the end of this article. Hopefully, if you read all of it, you have a good idea of whether or not scripture will satisfy your needs. I don't
 		think this kind of information belongs in the README, but my website is a fine place to put it.</p>
 		<p>I may make another article in a similar style but about <a href="https://github.com/michaelskyba/budgetpass">budgetpass</a>.</p>
-		<a href="../blog.html">Blog Index</a>
+		<a href="../articles.html">Article Index</a>
 	
 ]]></description>
 </item>
@@ -150,8 +150,8 @@
 
 <item>
 <title>		Deltarune Chapter 1 on Linux (Updated)</title>
-<guid>https://michaelskyba.xyz/blog/4.html#210917205731</guid>
-<link>https://michaelskyba.xyz/blog/4.html</link>
+<guid>https://michaelskyba.xyz/articles/4.html#210917205731</guid>
+<link>https://michaelskyba.xyz/articles/4.html</link>
 <pubDate>Fri, 17 Sep 2021 20:57:40 -0400</pubDate>
 <description><![CDATA[Deltarune released on Steam
 ]]></description>
@@ -160,8 +160,8 @@
 
 <item>
 <title>		Deltarune Chapter 1 on Linux</title>
-<guid>https://michaelskyba.xyz/blog/4.html</guid>
-<link>https://michaelskyba.xyz/blog/4.html</link>
+<guid>https://michaelskyba.xyz/articles/4.html</guid>
+<link>https://michaelskyba.xyz/articles/4.html</link>
 <pubDate>Fri, 17 Sep 2021 17:28:11 -0400</pubDate>
 <description><![CDATA[
 		<h1>Deltarune Chapter 1 on Linux</h1>
@@ -186,7 +186,7 @@ cd "$HOME/.wine/drive_c/Program Files (x86)/SURVEY_PROGRAM"
 strangle 30 wine DELTARUNE.exe</pre>
 		<p>That's it, it should work now. Using Wine on its own without libstrangle won't work.
 		Feel free to try it if you don't believe me.</p>
-		<a href="../blog.html">Blog Index</a>
+		<a href="../articles.html">Article Index</a>
 	
 ]]></description>
 </item>
@@ -219,8 +219,8 @@ strangle 30 wine DELTARUNE.exe</pre>
 
 <item>
 <title>		Trying out berry</title>
-<guid>https://michaelskyba.xyz/blog/3.html</guid>
-<link>https://michaelskyba.xyz/blog/3.html</link>
+<guid>https://michaelskyba.xyz/articles/3.html</guid>
+<link>https://michaelskyba.xyz/articles/3.html</link>
 <pubDate>Sun, 15 Aug 2021 00:29:17 -0400</pubDate>
 <description><![CDATA[
 		<h1>Trying out berry</h1>
@@ -306,7 +306,7 @@ tail -f $XDG_DATA_HOME/statusbar | lemonbar -g x25+0+0 -f "Noto Sans JP Medium" 
 		<p>If you don't care about anything else I have said so far, my only advice would be to try
 		berry out for yourself. At <em>worst</em>, you'll lose ~20 minutes of your time and garner newfound respect
 		for your current window manager.</p>
-		<a href="../blog.html">Blog Index</a>
+		<a href="../articles.html">Article Index</a>
 	
 ]]></description>
 </item>
@@ -314,12 +314,12 @@ tail -f $XDG_DATA_HOME/statusbar | lemonbar -g x25+0+0 -f "Noto Sans JP Medium" 
 
 <item>
 <title>		msk_music</title>
-<guid>https://michaelskyba.xyz/blog/2.html</guid>
-<link>https://michaelskyba.xyz/blog/2.html</link>
+<guid>https://michaelskyba.xyz/articles/2.html</guid>
+<link>https://michaelskyba.xyz/articles/2.html</link>
 <pubDate>Fri, 23 Jul 2021 23:22:45 -0400</pubDate>
 <description><![CDATA[
 		<h1>msk_music</h1>
-		<p> I have decided to put this "blog" to use for sharing scripts I write, in
+		<p> I have decided to put this to use for sharing scripts I write, in
 		hopes that one or two of them could be of use to somebody.</p>
 		
 		<h6><a href="https://gist.github.com/michaelskyba/2e04107265d4255671bb597581afd76a">msk_music</a></h2>
@@ -336,7 +336,7 @@ tail -f $XDG_DATA_HOME/statusbar | lemonbar -g x25+0+0 -f "Noto Sans JP Medium" 
 		
 		<p>msk_music depends on mpv and a set of coreutils that support sed's "-i" flag.
 		msk_music is around 20 LOC, and was written in about 10 minutes.</p>
-		<a href="../blog.html">Blog Index</a>
+		<a href="../articles.html">Article Index</a>
 	
 ]]></description>
 </item>
@@ -344,8 +344,8 @@ tail -f $XDG_DATA_HOME/statusbar | lemonbar -g x25+0+0 -f "Noto Sans JP Medium" 
 
 <item>
 <title>		Get a working Wi-Fi connection in an Artix Installation</title>
-<guid>https://michaelskyba.xyz/blog/1.html</guid>
-<link>https://michaelskyba.xyz/blog/1.html</link>
+<guid>https://michaelskyba.xyz/articles/1.html</guid>
+<link>https://michaelskyba.xyz/articles/1.html</link>
 <pubDate>Tue, 20 Apr 2021 19:38:13 -0400</pubDate>
 <description><![CDATA[
 		<h1>Get a working Wi-Fi connection in an Artix Installation</h1>
@@ -389,7 +389,7 @@ quit
 		succeeded with this procedure. Note that for both I have used the base-runit
 		installation; it's possible that using a different init system (openrc and s6
 		are available currently) will require different steps.</p>
-		<a href="../blog.html">Blog Index</a>
+		<a href="../articles.html">Article Index</a>
 	
 ]]></description>
 </item>
@@ -397,8 +397,8 @@ quit
 
 <item>
 <title>		Block a site using /etc/hosts</title>
-<guid>https://michaelskyba.xyz/blog/0.html</guid>
-<link>https://michaelskyba.xyz/blog/0.html</link>
+<guid>https://michaelskyba.xyz/articles/0.html</guid>
+<link>https://michaelskyba.xyz/articles/0.html</link>
 <pubDate>Tue, 20 Apr 2021 19:15:13 -0400</pubDate>
 <description><![CDATA[
 		<h1>Block a site using /etc/hosts</h1>
@@ -411,7 +411,7 @@ quit
 		
 		<a href="https://github.com/StevenBlack/hosts">List of sites you may want to block</a>
 		<br>
-		<a href="../blog.html">Blog Index</a>
+		<a href="../articles.html">Article Index</a>
 	
 ]]></description>
 </item>
