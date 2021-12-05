@@ -140,7 +140,7 @@ function create_ul(items) {
 
 // Actual insertion
 let h1 = document.createElement("h1")
-h1.innerHTML = "Bootleg Quick Play v2.3.8"
+h1.innerHTML = "Bootleg Quick Play v2.4.1"
 menu.appendChild(h1)
 
 // Start, Stop, and Skip buttons
@@ -191,6 +191,7 @@ menu.appendChild(document.createElement("hr"))
 menu.appendChild(create_p("I did not write the original script, but I have made improvements (in my opinion)."))
 
 menu.appendChild(create_ul([
+	"I implemented 'Random but consistent list' mode. Here, the list of maps will be shuffled, but that shuffled list will be used over and over. This makes it feel random while fully spreading out the individual map concentration.",
 	"I added a UI for skipping maps - e.g. you run into a Grapple parkour map which is impossible to complete in Arrows, the mode you're using",
 	"I added a UI for selecting a rotation mode",
 	"I implemented 'Random, but no duplicates' mode and 'In order (not random)' mode",
