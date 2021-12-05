@@ -1,6 +1,27 @@
 
 // If you're not here from bonk.io, don't worry about this. I'm not running any JS on my website.
 
+
+// https://stackoverflow.com/a/2450976
+function shuffle(array) {
+	let current_index = array.length, random_index;
+
+	// While there remain elements to shuffle...
+	while (current_index != 0) {
+
+	// Pick a remaining element...
+	random_index = Math.floor(Math.random() * current_index);
+	current_index--;
+
+	// And swap it with the current element.
+	[array[current_index], array[random_index]] = [
+	 array[random_index], array[current_index]];
+	}
+
+	return array;
+}
+
+
 function get_index(num_of_maps) {
 	let i
 
@@ -27,6 +48,23 @@ function get_index(num_of_maps) {
 		case "order":
 			i = prev_index + 1
 			break
+
+		case "random_list":
+			children = frame.getElementById("maploadwindowmapscontainer").children
+
+			// New maps loaded, so we have to re-order them
+			if (last_loaded_maps != children) {
+				last_loaded_maps = children
+
+				random_list_order = []
+				for (let j = 0; j < num_of_maps; j++) {
+					random_list_order.push(j)
+				}
+				shuffle(random_list_order)
+			}
+
+			i = random_list_order.indexOf(prev_index) + 1
+			i = i % num_of_maps
 	}
 
 	return i
@@ -56,6 +94,9 @@ let prev_index = 0
 let qp_interval
 let frame = document.getElementById("maingameframe").contentWindow.document
 let qp_running = false
+
+let last_loaded_maps
+let random_list_order
 
 // HTML UI ==================================================
 
