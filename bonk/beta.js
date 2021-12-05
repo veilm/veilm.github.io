@@ -63,8 +63,12 @@ function get_index(num_of_maps) {
 				shuffle(random_list_order)
 			}
 
+			// Next map according to random list
 			i = random_list_order.indexOf(prev_index) + 1
 			i = i % num_of_maps
+			i = random_list_order[i]
+
+			break
 	}
 
 	return i
