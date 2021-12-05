@@ -175,6 +175,11 @@ option.innerHTML = "Random, with occasional duplicates"
 type.appendChild(option)
 
 option = document.createElement("option")
+option.value = "random_list"
+option.innerHTML = "Random but consistent list"
+type.appendChild(option)
+
+option = document.createElement("option")
 option.value = "order"
 option.innerHTML = "In order (not random)"
 type.appendChild(option)
