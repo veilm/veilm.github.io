@@ -6,15 +6,15 @@
 <title>Michael Skyba</title>
 <description>Michael Skyba's RSS Feed</description>
 <language>en-us</language>
-<link>https://michaelskyba.xyz/rss.xml</link>
-<atom:link href="https://michaelskyba.xyz/rss.xml" rel="self" type="application/rss+xml" />
+<link>https://michaelskyba.github.io/rss.xml</link>
+<atom:link href="https://michaelskyba.github.io/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
 
 <item>
 <title>		Scripture (Updated)</title>
-<guid>https://michaelskyba.xyz/articles/5.html#210923102826</guid>
-<link>https://michaelskyba.xyz/articles/5.html</link>
+<guid>https://michaelskyba.github.io/articles/5.html#210923102826</guid>
+<link>https://michaelskyba.github.io/articles/5.html</link>
 <pubDate>Thu, 23 Sep 2021 10:28:35 -0400</pubDate>
 <description><![CDATA[File Organization section
 ]]></description>
@@ -23,8 +23,8 @@
 
 <item>
 <title>		Scripture</title>
-<guid>https://michaelskyba.xyz/articles/5.html</guid>
-<link>https://michaelskyba.xyz/articles/5.html</link>
+<guid>https://michaelskyba.github.io/articles/5.html</guid>
+<link>https://michaelskyba.github.io/articles/5.html</link>
 <pubDate>Wed, 22 Sep 2021 16:16:30 -0400</pubDate>
 <description><![CDATA[
 		<p>(Written on 2021-09-22)</p>
@@ -150,8 +150,8 @@
 
 <item>
 <title>		Deltarune Chapter 1 on Linux (Updated)</title>
-<guid>https://michaelskyba.xyz/articles/4.html#210917205731</guid>
-<link>https://michaelskyba.xyz/articles/4.html</link>
+<guid>https://michaelskyba.github.io/articles/4.html#210917205731</guid>
+<link>https://michaelskyba.github.io/articles/4.html</link>
 <pubDate>Fri, 17 Sep 2021 20:57:40 -0400</pubDate>
 <description><![CDATA[Deltarune released on Steam
 ]]></description>
@@ -160,8 +160,8 @@
 
 <item>
 <title>		Deltarune Chapter 1 on Linux</title>
-<guid>https://michaelskyba.xyz/articles/4.html</guid>
-<link>https://michaelskyba.xyz/articles/4.html</link>
+<guid>https://michaelskyba.github.io/articles/4.html</guid>
+<link>https://michaelskyba.github.io/articles/4.html</link>
 <pubDate>Fri, 17 Sep 2021 17:28:11 -0400</pubDate>
 <description><![CDATA[
 		<h1>Deltarune Chapter 1 on Linux</h1>
@@ -194,8 +194,8 @@ strangle 30 wine DELTARUNE.exe</pre>
 
 <item>
 <title>		Donate</title>
-<guid>https://michaelskyba.xyz/donate.html</guid>
-<link>https://michaelskyba.xyz/donate.html</link>
+<guid>https://michaelskyba.github.io/donate.html</guid>
+<link>https://michaelskyba.github.io/donate.html</link>
 <pubDate>Sat, 11 Sep 2021 02:10:05 -0400</pubDate>
 <description><![CDATA[
 		<h1>Donate</h1>
@@ -219,8 +219,8 @@ strangle 30 wine DELTARUNE.exe</pre>
 
 <item>
 <title>		Trying out berry</title>
-<guid>https://michaelskyba.xyz/articles/3.html</guid>
-<link>https://michaelskyba.xyz/articles/3.html</link>
+<guid>https://michaelskyba.github.io/articles/3.html</guid>
+<link>https://michaelskyba.github.io/articles/3.html</link>
 <pubDate>Sun, 15 Aug 2021 00:29:17 -0400</pubDate>
 <description><![CDATA[
 		<h1>Trying out berry</h1>
@@ -314,8 +314,8 @@ tail -f $XDG_DATA_HOME/statusbar | lemonbar -g x25+0+0 -f "Noto Sans JP Medium" 
 
 <item>
 <title>		msk_music</title>
-<guid>https://michaelskyba.xyz/articles/2.html</guid>
-<link>https://michaelskyba.xyz/articles/2.html</link>
+<guid>https://michaelskyba.github.io/articles/2.html</guid>
+<link>https://michaelskyba.github.io/articles/2.html</link>
 <pubDate>Fri, 23 Jul 2021 23:22:45 -0400</pubDate>
 <description><![CDATA[
 		<h1>msk_music</h1>
@@ -344,8 +344,8 @@ tail -f $XDG_DATA_HOME/statusbar | lemonbar -g x25+0+0 -f "Noto Sans JP Medium" 
 
 <item>
 <title>		Get a working Wi-Fi connection in an Artix Installation</title>
-<guid>https://michaelskyba.xyz/articles/1.html</guid>
-<link>https://michaelskyba.xyz/articles/1.html</link>
+<guid>https://michaelskyba.github.io/articles/1.html</guid>
+<link>https://michaelskyba.github.io/articles/1.html</link>
 <pubDate>Tue, 20 Apr 2021 19:38:13 -0400</pubDate>
 <description><![CDATA[
 		<h1>Get a working Wi-Fi connection in an Artix Installation</h1>
@@ -397,8 +397,8 @@ quit
 
 <item>
 <title>		Block a site using /etc/hosts</title>
-<guid>https://michaelskyba.xyz/articles/0.html</guid>
-<link>https://michaelskyba.xyz/articles/0.html</link>
+<guid>https://michaelskyba.github.io/articles/0.html</guid>
+<link>https://michaelskyba.github.io/articles/0.html</link>
 <pubDate>Tue, 20 Apr 2021 19:15:13 -0400</pubDate>
 <description><![CDATA[
 		<h1>Block a site using /etc/hosts</h1>
