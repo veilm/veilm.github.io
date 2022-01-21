@@ -12,6 +12,23 @@
 <!-- LB -->
 
 <item>
+<title>		AsciiMath but with newlines</title>
+<guid>https://michaelskyba.github.io/tools/math.html</guid>
+<link>https://michaelskyba.github.io/tools/math.html</link>
+<pubDate>Fri, 21 Jan 2022 13:21:59 -0500</pubDate>
+<description><![CDATA[
+		<h1>AsciiMath but with newlines</h1>
+
+		<p>AsciiMath is a really convenient alternative to LaTeX for
+		most of my use cases, but its live demo doesn't support line
+		breaks. This is an alternative UI I made which solves my issue.</p>
+
+		<p>Warning: A bit of JavaScript is obviously used.</p>
+]]></description>
+</item>
+
+
+<item>
 <title>		Scripture (Updated)</title>
 <guid>https://michaelskyba.github.io/articles/5.html#210923102826</guid>
 <link>https://michaelskyba.github.io/articles/5.html</link>
