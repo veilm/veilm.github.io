@@ -12,6 +12,20 @@
 <!-- LB -->
 
 <item>
+<title>		Unix / Epoch  time conversion</title>
+<guid>https://michaelskyba.github.io/tools/time.html</guid>
+<link>https://michaelskyba.github.io/tools/time.html</link>
+<pubDate>Fri, 21 Jan 2022 20:57:34 -0500</pubDate>
+<description><![CDATA[
+		<h1>Unix / Epoch time conversion</h1>
+		<p>This lets you convert between Unix time and normal time. It would
+		have been better as a CLI, but I felt like implementing it in JavaScript
+		for some reason.</p>
+]]></description>
+</item>
+
+
+<item>
 <title>		Block a site using /etc/hosts (Updated)</title>
 <guid>https://michaelskyba.github.io/articles/0.html#220121133005</guid>
 <link>https://michaelskyba.github.io/articles/0.html</link>
