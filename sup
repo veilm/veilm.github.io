@@ -6,7 +6,7 @@
 
 # You will want to change these variables to your needs.
 website="https://michaelskyba.github.io"
-rssfile="rss.xml"
+rssfile="assets/rss.xml"
 
 # In order to cleanly use sed on a multi-line file, we have to use `tr` to
 # convert newlines to a set character, then run sed, then reconvert the
