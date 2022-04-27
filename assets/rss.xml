@@ -12,6 +12,137 @@
 <!-- LB -->
 
 <item>
+<title>		Not mine</title>
+<guid>https://michaelskyba.github.io/games/other/other.html</guid>
+<link>https://michaelskyba.github.io/games/other/other.html</link>
+<pubDate>Wed, 27 Apr 2022 13:08:08 -0400</pubDate>
+<description><![CDATA[
+		<h1>Not mine</h1>
+		<p>These are games that I <strong>did not make</strong>.</p>
+		<ul>
+			<li>
+				<a href="evades_clone/index.html">evades.io clone</a>
+				<p>This was made by
+				<a href="evades_clone/credit.html">Ravelfett</a>!</p>
+			</li>
+		</ul>
+		<a href="../games.html">Games Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		2021 and earlier</title>
+<guid>https://michaelskyba.github.io/games/old/old.html</guid>
+<link>https://michaelskyba.github.io/games/old/old.html</link>
+<pubDate>Wed, 27 Apr 2022 13:08:01 -0400</pubDate>
+<description><![CDATA[
+		<h1>2021 and earlier</h1>
+		<p>Warning: To preserve history, I've left the code of these in their
+		cringey, ugly, messy states. I by no means write "clean" software now
+		but it has certainly improved since then.</p>
+		<ul>
+			<li>
+				<a href="./card_guesser/index.html">2019-09: Card Guesser</a>
+				<p>Card Guesser is a simple game where you lose and gain points
+				based on luck. I couldn't make a very efficient system for
+				detecting where the user clicks the mouse on the canvas, so
+				there were lot of if-else statements, which explains the hefty
+				amount of code.</p>
+				<p>This game was made for a school project about probability.
+				From what I remember, it's optimal to win twice (tokens gained =
+				11) and then cash out, but you would still have a loss on
+				average. Don't gamble with real money.</p>
+			</li>
+			<li><a href="./mandelbrot/mandelbrot.html">2019-09: Static Mandelbrot Set Renderer</a></li>
+			<li><a href="./xorbw/xorbw.html">2019-08: XOR on colours</a></li>
+			<li>
+				<a href="./genetic_algorithm/Canadian Vision.html">2018-10: Degenerate Genetic Algorithm</a>
+				<p>I was very interested in Artificial Intelligence for a while
+				(until I realized that you should know calculus to properly
+				grasp backpropagation). Particularly, I derived immense
+				satification from watching something get better and better at a
+				task. I tried doing a little bit of research and then I made
+				this garbage.</p>
+				<p>The gray square tries to get to the yellow square without
+				actually knowing where it is. Natural selection kills off
+				squares that don't get close and random mutations will
+				eventually lead it to the goal.</p>
+				<p>Unlike an actually useful AI, each subject doesn't attempt to
+				emulate a brain. It's been too long for me to remember exactly
+				how I implemented it and the code is too yucky to comb through,
+				but I'm pretty sure each subject was just an (x, y) offset pair.
+				So, each fitness test would have it run its offset from the
+				initial position and then use the Pythagorean theorem to check
+				the distance.</p>
+				<p>Warning: I hated making forms so there quite a few alert()
+				popups at the start.</p>
+			</li>
+			<li><a href="./village/village.html">2018-09: Village</a></li>
+			<li><a href="./flappy_bird/flappy.html">2018-06: Flappy Bird</a></li>
+			<li><a href="./highway/highway.html">2018-03: Highway</a></li>
+			<li><a href="./escape/Title Screen.html">2018-02: Escape</a></li>
+			<li><a href="./test_game/game.html">2017-02: Canvas test</a></li>
+		</ul>
+		<a href="../games.html">Games Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		2022</title>
+<guid>https://michaelskyba.github.io/games/2022/2022.html</guid>
+<link>https://michaelskyba.github.io/games/2022/2022.html</link>
+<pubDate>Wed, 27 Apr 2022 13:07:58 -0400</pubDate>
+<description><![CDATA[
+		<h1>2022</h1>
+		<p>These were mostly made for a school class which is why they are
+		largely nonsensical.</p>
+		<ul>
+			<li><a href="angry_birds/index.html">03-30: Angry Birds</a></li>
+			<li><a href="number_guesser/public/index.html">03-29: Guessing Game</a></li>
+			<li><a href="magic_ball/index.html">03-24: Magic Ball</a></li>
+			<li><a href="dice/public/index.html">03-24: Dice App</a></li>
+			<li><a href="conversions/build/index.html">03-08: Conversions</a></li>
+			<li><a href="binary_trick/build/index.html">03-04: Binary Trick</a></li>
+			<li><a href="circles/build/index.html">03-03: Circles</a></li>
+			<li><a href="pong/index.html">03-03: Pong</a></li>
+			<li><a href="madlib/index.html">03-02: Mad Libs</a></li>
+			<li><a href="bounce/index.html">03-01: Bouncy Ball</a></li>
+			<li><a href="counter_strike/index.html">02-25: Counter Strike</a></li>
+			<li><a href="poke/index.html">02-24: Poke the Pig</a></li>
+			<li><a href="smth/index.html">02-23: Something Something</a></li>
+			<li><a href="https://github.com/michaelskyba/michaelskyba.github.io/tree/master/games/2022/knock">02-20: Knock Knock</a></li>
+			<li><a href="mario/index.html">02-09: Mario</a></li>
+		</ul>
+		<a href="../games.html">Games Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Games</title>
+<guid>https://michaelskyba.github.io/games/games.html</guid>
+<link>https://michaelskyba.github.io/games/games.html</link>
+<pubDate>Wed, 27 Apr 2022 13:07:12 -0400</pubDate>
+<description><![CDATA[
+		<h1>Games</h1>
+		<p>Beware: possibly a lot of JavaScript</p>
+		<ul>
+			<li><a href="old/old.html">2021 and earlier</a></li>
+			<li><a href="2022/2022.html">2022</a></li>
+			<li><a href="other/other.html">Not mine</a></li>
+		</ul>
+		<a href="../index.html">Home</a>
+	
+]]></description>
+</item>
+
+
+<item>
 <title>		Operating Systems</title>
 <guid>https://michaelskyba.github.io/articles/6.html</guid>
 <link>https://michaelskyba.github.io/articles/6.html</link>
