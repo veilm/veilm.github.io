@@ -4,12 +4,64 @@
 
 <channel>
 <title>Michael Skyba</title>
-<description>Michael Skyba's RSS Feed</description>
+<description>Michael Skyba - RSS Feed</description>
 <language>en-us</language>
 <link>https://michaelskyba.github.io/assets/rss.xml</link>
 <atom:link href="https://michaelskyba.github.io/assets/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
+
+<item>
+<title>		Sudoku</title>
+<guid>https://michaelskyba.github.io/games/2022/sudoku/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/sudoku/index.html</link>
+<pubDate>Wed, 04 May 2022 23:27:22 -0400</pubDate>
+<description><![CDATA[
+		<h1>Sudoku</h1>
+		<hr>
+		<table id="grid">
+		</table>
+		<input type="button" value="Submit" id="submit">
+		<p>Status: <span id="status">No solution submitted<span></p>
+		<hr>
+		<p>by Michael Skyba</p>
+		<p>I generated the Sudoku problems using https://norvig.com/easy50.txt.
+		I did this in advance; it doesn't happen live in your browser.</p>
+		<script src="main.js"></script>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>	App</title>
+<guid>https://michaelskyba.github.io/games/2022/21/public/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/21/public/index.html</link>
+<pubDate>Wed, 04 May 2022 23:27:15 -0400</pubDate>
+<description><![CDATA[
+]]></description>
+</item>
+
+
+<item>
+<title>	App</title>
+<guid>https://michaelskyba.github.io/games/2022/pokemon_battle/public/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/pokemon_battle/public/index.html</link>
+<pubDate>Wed, 04 May 2022 23:27:06 -0400</pubDate>
+<description><![CDATA[
+]]></description>
+</item>
+
+
+<item>
+<title>	App</title>
+<guid>https://michaelskyba.github.io/games/2022/math_game/public/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/math_game/public/index.html</link>
+<pubDate>Wed, 04 May 2022 23:26:45 -0400</pubDate>
+<description><![CDATA[
+]]></description>
+</item>
+
 
 <item>
 <title>		Not mine</title>
