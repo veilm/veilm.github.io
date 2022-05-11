@@ -12,6 +12,36 @@
 <!-- LB -->
 
 <item>
+<title>		Pong 2</title>
+<guid>https://michaelskyba.github.io/games/2022/pong2/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/pong2/index.html</link>
+<pubDate>Wed, 11 May 2022 10:07:19 -0400</pubDate>
+<description><![CDATA[
+		<h1>Pong 2</h1>
+		<hr>
+		<canvas id="canvas" width="525" height="350"></canvas>
+		<hr>
+		<ul>
+			<li>Score: <span id="score"></span></li>
+			<li>High Score: <span id="highScore"></span></li>
+			<li>Speed: <span id="speed"></span></li>
+		</ul>
+		<input id="newRound" type="button" value="New round">
+		<hr>
+		<input id="speedInput" type="number" placeholder="Speed">
+		<input id="speedSubmit" type="button" value="Speed practice">
+		<img id="background" src="images/background.jpg">
+		<img id="ball" src="images/ball.png">
+		<img id="paddle" src="images/paddle.png">
+		<hr>
+		<p>by Michael Skyba</p>
+		<script src="main.js"></script>
+	
+]]></description>
+</item>
+
+
+<item>
 <title>	Tic-Tac-Toe</title>
 <guid>https://michaelskyba.github.io/games/2022/tic-tac-toe/public/index.html</guid>
 <link>https://michaelskyba.github.io/games/2022/tic-tac-toe/public/index.html</link>
