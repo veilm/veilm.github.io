@@ -12,6 +12,28 @@
 <!-- LB -->
 
 <item>
+<title>		Falling Stars</title>
+<guid>https://michaelskyba.github.io/games/2022/falling_stars/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/falling_stars/index.html</link>
+<pubDate>Sun, 15 May 2022 19:58:25 -0400</pubDate>
+<description><![CDATA[
+		<h1>Falling Stars</h1>
+		<a href="explanation.html">Explanation</a>
+		<hr>
+		<canvas id="canvas" width="800" height="450"></canvas>
+		<img id="background" src="images/background.jpg">
+		<img id="player"     src="images/player.png">
+		<img id="star"       src="images/star.png">
+		<img id="enemy"      src="images/enemy.png">
+		<hr>
+		<p>by Michael Skyba</p>
+		<script src="main.js"></script>
+	
+]]></description>
+</item>
+
+
+<item>
 <title>		Pong 2</title>
 <guid>https://michaelskyba.github.io/games/2022/pong2/index.html</guid>
 <link>https://michaelskyba.github.io/games/2022/pong2/index.html</link>
