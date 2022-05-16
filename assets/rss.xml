@@ -12,6 +12,40 @@
 <!-- LB -->
 
 <item>
+<title>		Robots</title>
+<guid>https://michaelskyba.github.io/games/2022/robots/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/robots/index.html</link>
+<pubDate>Mon, 16 May 2022 19:58:49 -0400</pubDate>
+<description><![CDATA[
+		<h1>Robots: <span id="score">0</span></h1>
+		<hr>
+		<canvas id="canvas" width="1300" height="600"></canvas>
+		<img id="background" src="images/background.png">
+		<img id="robot_blue_l1" src="images/robot_blue_l1.png">
+		<img id="robot_blue_r1" src="images/robot_blue_r1.png">
+		<img id="robot_blue_l2" src="images/robot_blue_l2.png">
+		<img id="robot_blue_r2" src="images/robot_blue_r2.png">
+		<img id="robot_green_l1" src="images/robot_green_l1.png">
+		<img id="robot_green_r1" src="images/robot_green_r1.png">
+		<img id="robot_green_l2" src="images/robot_green_l2.png">
+		<img id="robot_green_r2" src="images/robot_green_r2.png">
+		<img id="robot_red_l1" src="images/robot_red_l1.png">
+		<img id="robot_red_r1" src="images/robot_red_r1.png">
+		<img id="robot_red_l2" src="images/robot_red_l2.png">
+		<img id="robot_red_r2" src="images/robot_red_r2.png">
+		<img id="robot_yellow_l1" src="images/robot_yellow_l1.png">
+		<img id="robot_yellow_r1" src="images/robot_yellow_r1.png">
+		<img id="robot_yellow_l2" src="images/robot_yellow_l2.png">
+		<img id="robot_yellow_r2" src="images/robot_yellow_r2.png">
+		<hr>
+		<p>by Michael Skyba</p>
+		<script src="main.js"></script>
+	
+]]></description>
+</item>
+
+
+<item>
 <title>		Falling Stars</title>
 <guid>https://michaelskyba.github.io/games/2022/falling_stars/index.html</guid>
 <link>https://michaelskyba.github.io/games/2022/falling_stars/index.html</link>
