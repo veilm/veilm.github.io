@@ -10,9 +10,3 @@ The SVG icons are from
 
 I also use [sup](https://github.com/LukeSmithxyz/lb/blob/master/sup) for
 updating ``assets/rss.xml``.
-
-## License
-GPLv3 can be used even though sakura.css (for example) has a different license
-because MIT is "permissive". See
-https://opensource.guide/legal/#which-open-source-license-is-appropriate-for-my-project
-for more information.
