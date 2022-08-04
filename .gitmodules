@@ -1,0 +1,3 @@
+[submodule "hugo/themes/hugunica"]
+	path = hugo/themes/hugunica
+	url = https://github.com/michaelskyba/hugunica
