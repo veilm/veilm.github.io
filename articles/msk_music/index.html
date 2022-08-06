@@ -1,0 +1,21 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><link href=/sakura.css rel=stylesheet><title>msk_music</title></head><body><h1>msk_music</h1><p>(Initially written on 2021-07-23)</p><hr><p>I have decided to put this to use for sharing scripts I write, in hopes that one
+or two of them could be of use to somebody.</p><p><a href=https://gist.github.com/michaelskyba/2e04107265d4255671bb597581afd76a>msk_music GitHub Gist</a></p><p><code>msk_music</code> is a simple and featureless way of listening to music. It uses the
+equivalent of &ldquo;random&rdquo; and &ldquo;consume&rdquo; modes on mpd (which it aims to replace).
+For my use cases, which I believe are fairly standard, it does so successfully.</p><p>Instead of having a vast number of configuration options, additional features
+can be implemented by changing the source code, which, due to being written in
+shell, is completely transparent. For instance,
+<a href=https://gist.github.com/michaelskyba/697a06b1f53f3f8a14e94bd9ccf4de3e>this patch</a>
+will have <code>msk_music</code> only run on .mp4 files.</p><p><code>msk_music</code> depends on mpv and a set of coreutils that support sed&rsquo;s &ldquo;-i&rdquo;
+flag. <code>msk_music</code> is around 20 LOC, and was written in about 10 minutes.</p><hr><h3 id=2022-08-06-rambling>2022-08-06: Rambling</h3><blockquote><p>So, it uses local files?</p></blockquote><p>Yes. You could modify it to create the track list from a user-generated track
+list that contains web URLs, but that would be weird.</p><p>Playing music locally instead of through a streaming service offers a few
+advantages:</p><ul><li>You can listen to your music even when you&rsquo;re offline.</li><li>You can listen to music without the use of online streaming platforms, which
+often have required payments, advertisements, bloated, slow, resource-hogging
+user interfaces, etc.</li><li>You can listen to the same music in any client that you like, of which there
+are many on Linux.</li><li>Since it&rsquo;s your filesystem, you can perform your own automation for
+organization, renaming, etc.</li></ul><p>I don&rsquo;t care how you listen to your music or if you listen to music at all; I&rsquo;m
+just explaining my motivation for using this system instead of e.g. Spotify.</p><blockquote><p>But how am I supposed to get the local audio?</p></blockquote><p>This is only a problem if you lack basic digital literacy, in which case you
+definitely wouldn&rsquo;t be interested in some random shell script on the internet.
+That said, I usually save any new music I like to a YouTube playlist and then
+download the playlist with <a href=https://github.com/yt-dlp/yt-dlp>yt-dlp</a> once it
+starts filling up. I don&rsquo;t understand why people bother with torrenting when
+this seems so much easier.</p><hr><a href=..>Article Index</a></body></html>

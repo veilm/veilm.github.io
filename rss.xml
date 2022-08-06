@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Michael Skyba</title>
+<description>Michael Skyba - RSS Feed</description>
+<language>en-us</language>
+<link>https://michaelskyba.github.io/assets/rss.xml</link>
+<atom:link href="https://michaelskyba.github.io/assets/rss.xml" rel="self" type="application/rss+xml" />
+
+<!-- LB -->
+
+<item>
+<title>		Robots</title>
+<guid>https://michaelskyba.github.io/games/2022/robots/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/robots/index.html</link>
+<pubDate>Mon, 16 May 2022 19:58:49 -0400</pubDate>
+<description><![CDATA[
+		<h1>Robots: <span id="score">0</span></h1>
+		<hr>
+		<canvas id="canvas" width="1300" height="600"></canvas>
+		<img id="background" src="images/background.png">
+		<img id="robot_blue_l1" src="images/robot_blue_l1.png">
+		<img id="robot_blue_r1" src="images/robot_blue_r1.png">
+		<img id="robot_blue_l2" src="images/robot_blue_l2.png">
+		<img id="robot_blue_r2" src="images/robot_blue_r2.png">
+		<img id="robot_green_l1" src="images/robot_green_l1.png">
+		<img id="robot_green_r1" src="images/robot_green_r1.png">
+		<img id="robot_green_l2" src="images/robot_green_l2.png">
+		<img id="robot_green_r2" src="images/robot_green_r2.png">
+		<img id="robot_red_l1" src="images/robot_red_l1.png">
+		<img id="robot_red_r1" src="images/robot_red_r1.png">
+		<img id="robot_red_l2" src="images/robot_red_l2.png">
+		<img id="robot_red_r2" src="images/robot_red_r2.png">
+		<img id="robot_yellow_l1" src="images/robot_yellow_l1.png">
+		<img id="robot_yellow_r1" src="images/robot_yellow_r1.png">
+		<img id="robot_yellow_l2" src="images/robot_yellow_l2.png">
+		<img id="robot_yellow_r2" src="images/robot_yellow_r2.png">
+		<hr>
+		<p>by Michael Skyba</p>
+		<script src="main.js"></script>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Falling Stars</title>
+<guid>https://michaelskyba.github.io/games/2022/falling_stars/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/falling_stars/index.html</link>
+<pubDate>Sun, 15 May 2022 19:58:25 -0400</pubDate>
+<description><![CDATA[
+		<h1>Falling Stars</h1>
+		<a href="explanation.html">Explanation</a>
+		<hr>
+		<canvas id="canvas" width="800" height="450"></canvas>
+		<img id="background" src="images/background.jpg">
+		<img id="player"     src="images/player.png">
+		<img id="star"       src="images/star.png">
+		<img id="enemy"      src="images/enemy.png">
+		<hr>
+		<p>by Michael Skyba</p>
+		<script src="main.js"></script>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Pong 2</title>
+<guid>https://michaelskyba.github.io/games/2022/pong2/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/pong2/index.html</link>
+<pubDate>Wed, 11 May 2022 10:07:19 -0400</pubDate>
+<description><![CDATA[
+		<h1>Pong 2</h1>
+		<hr>
+		<canvas id="canvas" width="525" height="350"></canvas>
+		<hr>
+		<ul>
+			<li>Score: <span id="score"></span></li>
+			<li>High Score: <span id="highScore"></span></li>
+			<li>Speed: <span id="speed"></span></li>
+		</ul>
+		<input id="newRound" type="button" value="New round">
+		<hr>
+		<input id="speedInput" type="number" placeholder="Speed">
+		<input id="speedSubmit" type="button" value="Speed practice">
+		<img id="background" src="images/background.jpg">
+		<img id="ball" src="images/ball.png">
+		<img id="paddle" src="images/paddle.png">
+		<hr>
+		<p>by Michael Skyba</p>
+		<script src="main.js"></script>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>	Tic-Tac-Toe</title>
+<guid>https://michaelskyba.github.io/games/2022/tic-tac-toe/public/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/tic-tac-toe/public/index.html</link>
+<pubDate>Thu, 05 May 2022 14:01:04 -0400</pubDate>
+<description><![CDATA[
+]]></description>
+</item>
+
+
+<item>
+<title>		Sudoku</title>
+<guid>https://michaelskyba.github.io/games/2022/sudoku/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/sudoku/index.html</link>
+<pubDate>Wed, 04 May 2022 23:27:22 -0400</pubDate>
+<description><![CDATA[
+		<h1>Sudoku</h1>
+		<hr>
+		<table id="grid">
+		</table>
+		<input type="button" value="Submit" id="submit">
+		<p>Status: <span id="status">No solution submitted<span></p>
+		<hr>
+		<p>by Michael Skyba</p>
+		<p>I generated the Sudoku problems using https://norvig.com/easy50.txt.
+		I did this in advance; it doesn't happen live in your browser.</p>
+		<script src="main.js"></script>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>	App</title>
+<guid>https://michaelskyba.github.io/games/2022/21/public/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/21/public/index.html</link>
+<pubDate>Wed, 04 May 2022 23:27:15 -0400</pubDate>
+<description><![CDATA[
+]]></description>
+</item>
+
+
+<item>
+<title>	App</title>
+<guid>https://michaelskyba.github.io/games/2022/pokemon_battle/public/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/pokemon_battle/public/index.html</link>
+<pubDate>Wed, 04 May 2022 23:27:06 -0400</pubDate>
+<description><![CDATA[
+]]></description>
+</item>
+
+
+<item>
+<title>	App</title>
+<guid>https://michaelskyba.github.io/games/2022/math_game/public/index.html</guid>
+<link>https://michaelskyba.github.io/games/2022/math_game/public/index.html</link>
+<pubDate>Wed, 04 May 2022 23:26:45 -0400</pubDate>
+<description><![CDATA[
+]]></description>
+</item>
+
+
+<item>
+<title>		Not mine</title>
+<guid>https://michaelskyba.github.io/games/other/other.html</guid>
+<link>https://michaelskyba.github.io/games/other/other.html</link>
+<pubDate>Wed, 27 Apr 2022 13:08:08 -0400</pubDate>
+<description><![CDATA[
+		<h1>Not mine</h1>
+		<p>These are games that I <strong>did not make</strong>.</p>
+		<ul>
+			<li>
+				<a href="evades_clone/index.html">evades.io clone</a>
+				<p>This was made by
+				<a href="evades_clone/credit.html">Ravelfett</a>!</p>
+			</li>
+		</ul>
+		<a href="../games.html">Games Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		2021 and earlier</title>
+<guid>https://michaelskyba.github.io/games/old/old.html</guid>
+<link>https://michaelskyba.github.io/games/old/old.html</link>
+<pubDate>Wed, 27 Apr 2022 13:08:01 -0400</pubDate>
+<description><![CDATA[
+		<h1>2021 and earlier</h1>
+		<p>Warning: To preserve history, I've left the code of these in their
+		cringey, ugly, messy states. I by no means write "clean" software now
+		but it has certainly improved since then.</p>
+		<ul>
+			<li>
+				<a href="./card_guesser/index.html">2019-09: Card Guesser</a>
+				<p>Card Guesser is a simple game where you lose and gain points
+				based on luck. I couldn't make a very efficient system for
+				detecting where the user clicks the mouse on the canvas, so
+				there were lot of if-else statements, which explains the hefty
+				amount of code.</p>
+				<p>This game was made for a school project about probability.
+				From what I remember, it's optimal to win twice (tokens gained =
+				11) and then cash out, but you would still have a loss on
+				average. Don't gamble with real money.</p>
+			</li>
+			<li><a href="./mandelbrot/mandelbrot.html">2019-09: Static Mandelbrot Set Renderer</a></li>
+			<li><a href="./xorbw/xorbw.html">2019-08: XOR on colours</a></li>
+			<li>
+				<a href="./genetic_algorithm/Canadian Vision.html">2018-10: Degenerate Genetic Algorithm</a>
+				<p>I was very interested in Artificial Intelligence for a while
+				(until I realized that you should know calculus to properly
+				grasp backpropagation). Particularly, I derived immense
+				satification from watching something get better and better at a
+				task. I tried doing a little bit of research and then I made
+				this garbage.</p>
+				<p>The gray square tries to get to the yellow square without
+				actually knowing where it is. Natural selection kills off
+				squares that don't get close and random mutations will
+				eventually lead it to the goal.</p>
+				<p>Unlike an actually useful AI, each subject doesn't attempt to
+				emulate a brain. It's been too long for me to remember exactly
+				how I implemented it and the code is too yucky to comb through,
+				but I'm pretty sure each subject was just an (x, y) offset pair.
+				So, each fitness test would have it run its offset from the
+				initial position and then use the Pythagorean theorem to check
+				the distance.</p>
+				<p>Warning: I hated making forms so there quite a few alert()
+				popups at the start.</p>
+			</li>
+			<li><a href="./village/village.html">2018-09: Village</a></li>
+			<li><a href="./flappy_bird/flappy.html">2018-06: Flappy Bird</a></li>
+			<li><a href="./highway/highway.html">2018-03: Highway</a></li>
+			<li><a href="./escape/Title Screen.html">2018-02: Escape</a></li>
+			<li><a href="./test_game/game.html">2017-02: Canvas test</a></li>
+		</ul>
+		<a href="../games.html">Games Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		2022</title>
+<guid>https://michaelskyba.github.io/games/2022/2022.html</guid>
+<link>https://michaelskyba.github.io/games/2022/2022.html</link>
+<pubDate>Wed, 27 Apr 2022 13:07:58 -0400</pubDate>
+<description><![CDATA[
+		<h1>2022</h1>
+		<p>These were mostly made for a school class which is why they are
+		largely nonsensical.</p>
+		<ul>
+			<li><a href="angry_birds/index.html">03-30: Angry Birds</a></li>
+			<li><a href="number_guesser/public/index.html">03-29: Guessing Game</a></li>
+			<li><a href="magic_ball/index.html">03-24: Magic Ball</a></li>
+			<li><a href="dice/public/index.html">03-24: Dice App</a></li>
+			<li><a href="conversions/build/index.html">03-08: Conversions</a></li>
+			<li><a href="binary_trick/build/index.html">03-04: Binary Trick</a></li>
+			<li><a href="circles/build/index.html">03-03: Circles</a></li>
+			<li><a href="pong/index.html">03-03: Pong</a></li>
+			<li><a href="madlib/index.html">03-02: Mad Libs</a></li>
+			<li><a href="bounce/index.html">03-01: Bouncy Ball</a></li>
+			<li><a href="counter_strike/index.html">02-25: Counter Strike</a></li>
+			<li><a href="poke/index.html">02-24: Poke the Pig</a></li>
+			<li><a href="smth/index.html">02-23: Something Something</a></li>
+			<li><a href="https://github.com/michaelskyba/michaelskyba.github.io/tree/master/games/2022/knock">02-20: Knock Knock</a></li>
+			<li><a href="mario/index.html">02-09: Mario</a></li>
+		</ul>
+		<a href="../games.html">Games Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Games</title>
+<guid>https://michaelskyba.github.io/games/games.html</guid>
+<link>https://michaelskyba.github.io/games/games.html</link>
+<pubDate>Wed, 27 Apr 2022 13:07:12 -0400</pubDate>
+<description><![CDATA[
+		<h1>Games</h1>
+		<p>Beware: possibly a lot of JavaScript</p>
+		<ul>
+			<li><a href="old/old.html">2021 and earlier</a></li>
+			<li><a href="2022/2022.html">2022</a></li>
+			<li><a href="other/other.html">Not mine</a></li>
+		</ul>
+		<a href="../index.html">Home</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Operating Systems</title>
+<guid>https://michaelskyba.github.io/articles/6.html</guid>
+<link>https://michaelskyba.github.io/articles/6.html</link>
+<pubDate>Thu, 14 Apr 2022 11:31:41 -0400</pubDate>
+<description><![CDATA[
+		<p>(Initially written on 2022-04-13)</p>
+		<hr>
+		<h1>Operating Systems</h1>
+		<p>In this "article", I will write about several different operating
+		systems that I have used. I am not an expert on any of them and there is
+		a high chance that none of my rambling will be useful to anybody. I am
+		mostly writing this "for fun" or "for myself", if that makes sense.</p>
+		<h3>Desktop</h3>
+		<h5><a href="https://en.wikipedia.org/wiki/Windows_10">Windows 10</a></h5>
+		<p>When I first got my laptop, which is the computer I've used for most
+		of my life, it came with Windows 10, which I used for a while. For the
+		most part, I thought it worked fine. I didn't have anything to compare
+		it to. Eventually, however, after repeatedly hearing about
+		<a href="https://en.wikipedia.org/wiki/Linux">Linux</a> and how it was
+		supposedly "good for programmers", I decided to try it out.</p>
+		<p>In hindsight, Windows 10 (and later Windows versions, I assume) is
+		not very nice at all in relation to Linux (I'll be referring to the family
+		of operating systems, not the kernel specifically, as "Linux"). Everyone
+		has their own ideas about what makes a "good" operating system, but my
+		personal issues are</p>
+		<ul>
+		<li>Configuration: Windows has very little room for low-level
+		personalization, which is the opposite of Linux. The Linux kernel by
+		itself is so minimal as to not even be an operating system, so all
+		extensions of it are built from the ground up. You can choose any Linux
+		distribution that you want, taking into account how much initial control
+		you require and how much time you are willing to invest.</li>
+		<li>Ecosystem: There is no end to the great software available for Linux
+		that is incompatible with Windows - window managers, text editors,
+		terminals, etc. Worst of all, Windows doesn't have an elegant way of
+		piecing things together to automate tasks like Linux does (shell
+		scripts).</li>
+		<li>Performance: Windows 10 started out slower than any Linux distribution
+		I've tried, and it seemed to get slower over time, unlike Linux. I think
+		the initial problem is due to poor design and the performance tax of all
+		the spyware that's running, and the degeneration is probably due to
+		planned obsolescence in cooperation with hardware vendors.</li>
+		<li>Malware: Because of Windows' popularity, most user-targeted malware
+		is written for Windows, making you much more susceptible than you would
+		be on Linux, on top of the included spyware. This point envelops any
+		privacy concerns.</p>
+		</ul>
+		<p>I haven't spent very much time trying macOS, the other main operating
+		system, but it seems to suffer from most of the same problems as
+		Windows.</p>
+		<h5><a href="https://lubuntu.me/">Lubuntu</a></h5>
+		<p>When I first learned that there are multiple Linux distributions, I
+		did not visit each distribution's website and read about their features.
+		Instead, I read somewhere that
+		<ol>
+			<li>"Ubuntu is good for Linux beginners."</li>
+			<li>There are multiple "flavours" of Ubuntu that I will have to
+			choose from.</li>
+		</ol>
+		<p>Using this information, and looking at some kind of list of Ubuntu
+		flavours, I decided to go with Lubuntu, due to it supposedly using minimal
+		system resources. I guess at this point I had already subconsciously
+		internalized that bloated software was wrong, even if I didn't understand
+		the details. In hindsight, an Ubuntu-like distribution is not going to
+		be what you want to go with if your goal is minimalism.</p>
+		<p>Lubuntu was easy to install when I followed its instructions. It was
+		even enjoyable, considering how novel it was for me, who had never
+		considered the concept of a non-Windows operating system running on my
+		laptop.</p>
+		<p>The only point at which I was annoyed was when it came to booting
+		into Lubuntu after the successful installation. Instead of loading
+		Lubuntu, I saw a message similar to this thumbnail from
+		<a href="https://www.youtube.com/watch?v=Kuah6gYqT2I">this video</a>:</p>
+		<img src="../assets/6-hp-message.jpg" alt="BootDevice Not Found">
+		<p>Lubuntu's boot loader was installed as an EFI file and my computer
+		wasn't loading it automatically. I didn't know this in advance. After
+		spending literally over four hours trying many different things, I found
+		an option in my boot menu that could load an arbitrary EFI file, where
+		I found Lubuntu's entry listed. I had to take several naps in between
+		troubleshooting sessions because I wasn't really used to banging my head
+		against brick walls yet. I would much later go on to figure out how to
+		automatically boot an EFI file while using Kiss Linux, but for now I had
+		to go through the entire boot menu every time. None of this was
+		Lubuntu's fault at all, though.</p>
+		<p>After installation, I had fun looking at its LXQt GUI and fiddling
+		with the many available screensavers. Ultimately, after having my
+		desktop crash from switching a wallpaper and receiving an "idk" from the
+		Linux Support Discord server I went to, I realized the importance of
+		community. If nobody uses your operating system, nobody is going to be
+		able to give you direct advice when something goes wrong. This is fine
+		if you're capable of fixing most things yourself, but that was not the
+		case for me at this point.</p>
+		<h5><a href="https://ubuntu.com/">Ubuntu</a></h5>
+		<p>Instead, I switched to the main, official Ubuntu distribution, which
+		I now understood was significantly more popular than Lubuntu. I never
+		had any more crashes, and I used Ubuntu for a long time.</p>
+		<p>I dislike Ubuntu for the same kinds of reasons a lot of people do.
+		For beginners, I dislike their inclusion of diseases like
+		<a href="https://snapcraft.io/">Snap</a> and
+		<a href="https://flatpak.org/">Flatpak</a>, which confuses the user on what
+		way they should install software. Instead of trying to replicate their
+		workflow on Windows, a distribution targetted at beginners should make
+		it clear how Linux works and make it easy to adjust to it.</p>
+		<p>In the context of me specifically, I dislike the enormous amount of
+		software that it's shipped with, none of which I need or would ever
+		want. I'm sure it's possible to remove all of it, but who would go
+		through the pain of doing so when you can start with a blank slate
+		instead? I'm sure some people would enjoy the supposed "challenge" but
+		somebody like that would probably be annoyed with the fact that it would
+		be difficult to brag about it. As soon as you say "I use Ubuntu", it's
+		hard to paint the picture you want to paint with clarification.</p>
+		<p>I also dislike their release and package model. On an operating
+		system for servers, I understand why it might be important to ensure
+		that everything running has been tested for long periods of time by
+		users, but this is meaningless on a desktop operating system. "Rolling
+		release" makes more sense for most people.</p>
+		<h5><a href="https://archlinux.org/">Arch Linux</a></h5>
+		<p>Arch Linux is the next distribution I tried and the one I now
+		consider the best for my use cases. There are still things I dislike
+		about it, though.</p>
+		<p>Initially, I tried Arch as nothing more than a meme, hearing tales about
+		it on the internet and wondering what was so funny about it. After using
+		it for a while, my mindset shifted to something close to what it is
+		now. The main things I like about Arch are the</p>
+		<ul>
+		<li>Minimalism: There is no window manager, desktop environment, display
+		server, etc. installed, letting users install close to exactly what they
+		want without compromises or headaches.</li>
+		<li>Community: Arch has a huge user base. This means that there are many
+		packages, many package updates, a sizable user repository, many solved
+		problems on the forums, good documentation in the form of the
+		<a href="https://wiki.archlinux.org/">Arch Wiki</a>, etc.</li>
+		<li>Package release model: Packages in repositories are updated as soon
+		as a maintainer has time to update them, so you are using the latest
+		version of the software in most cases.</li>
+		<li>(most importantly) Logo: <code>neofetch</code> looks cooler on Arch
+		than it does on most other distributions.</li>
+		</ul>
+		<img src="../assets/6-arch-neofetch.png" alt="neofetch on Arch">
+		<p>One thing I dislike is that despite how minimal it is, there are
+		still things you are locked into, which is inevitable for any
+		distribution. Mainly, on Kiss Linux, I enjoyed avoiding systemd and
+		D-Bus, but I admit that at that point it's just a meme instead of
+		anything remotely practical.</p>
+		<p>Besides that, I dislike the general "i use arch btw" stereotype
+		surrounding Arch Linux. Many people have the impression that Arch Linux
+		is artificially difficult to install and use, saying that it's only for
+		masochists. I completely disagree with this idea. In fact, I think Arch
+		Linux is the easiest distribution to use. Installing it is easy too; I
+		can do it in around ten minutes, although I can see why it can be
+		confusing for somebody unfamiliar with Linux, which is why I
+		(unfortunately) cannot recommend it to beginners.</p>
+		<p>I dislike the message "i use arch btw" specifically because it
+		implies "Arch is painful and difficult to use, but I'm so smart that I
+		can do it anyway. Hahaha!" which only perpetuates the misinformation.</p>
+		<h5><a href="https://www.gentoo.org/">Gentoo Linux</a></h5>
+		<p>After using Arch for a while, I decided to try Gentoo for the same
+		sort of reason I wanted to try Arch in the first place. Unlike Arch,
+		Gentoo did not grow to become something I considered a particularly
+		successful distribution.</p>
+		<p>The first annoying thing was the installation, much more so than
+		Arch's. This was furthered by the fact that I didn't yet understand what
+		was going on with my BIOS, so I believed that my laptop would support
+		both BIOS and UEFI, which wasn't true. I ended up failing a few
+		installations but in the end, I got everything working, and the joy of
+		seeing all the gcc output overpowered any frustration. It's fortunate
+		that Gentoo provides a detailed, pretty high-quality installation guide
+		in the form of the
+		<a href="https://wiki.gentoo.org/wiki/Handbook:Main_Page">Handbook</a>.
+		<p>From the start, I was annoyed with the compilation. I don't have any
+		high-end computer for cross-compilation so everything was done on my old
+		hardware, which took ages. I didn't see and still don't see an
+		overwhelming advantage of source packages over binary packages. I agree
+		that</p>
+		<ul>
+		<li>Compiling things yourself, in accordance with your USE flags, gives
+		you slightly better performance and slightly less "bloat".</li>
+		<li>Source packages require less work than binary packages do for the
+		package maintainers, so it's easier to have more packages with a smaller
+		team size.</li>
+		<li>Compiling source code yourself guarantees that you're only running
+		what was written in the source code, which you can inspect, unlike a
+		provided binary package from e.g. the Arch Linux repositories.</li>
+		</ul>
+		<p>but even together, these benefits don't come close to overcoming the
+		inconvenience of compilation for me. I dislike that some people (mostly
+		those who have never used Gentoo) overstate the inconvenience, however,
+		spreading lies that you can't use your computer while compiling, or that
+		it's somehow impossible to compile while you're away from the computer
+		while e.g. sleeping.</p>
+		<p>Besides the compilation, the shortage of community compared to Arch
+		was felt strongly. Gentoo's packages were often out of date or
+		dysfunctional, encouraging me to write my own packages, which at that
+		point I had no interest in. The wiki was also much smaller in comparison
+		to Arch's, which I continued to rely on but was only able to apply with
+		some friction (since I wasn't on the distribution it was aimed at).</p>
+		<p>I enjoyed using the
+		<a href="https://wiki.gentoo.org/wiki/Portage">Portage</a> package
+		manager and the
+		<a href="https://wiki.gentoo.org/wiki/OpenRC">OpenRC</a> init system,
+		but in the end, I decided that Gentoo was a meme distribution and
+		switched back to Arch.</p>
+		<h5><a href="https://artixlinux.org/">Artix Linux</a></h5>
+		<p>After getting even more familiar with Arch, I had the longing for
+		falling for memes again and switched to Artix. With Gentoo, although I
+		would still say that compilation is a meme, I think it's sort of
+		arguable. However, it's not the case for the case against systemd. I
+		don't think anyone can seriously say that their life is demonstrably
+		affected by using e.g. runit instead of systemd. Of course, all else
+		equal, I think it's reasonable to avoid systemd, but I don't believe
+		that all else is equal on Artix.</p>
+		<p>First off, internet is more of a hassle to get running on Artix than
+		it is on Arch. There's no <code>wpa_supplicant.conf</code> by default,
+		<code>rfkill</code> can be on by default, etc. which isn't a problem
+		in the Arch ISO, where you can simply read <code>man iwctl</code> and
+		have the pleasure of using
+		<a href="https://wiki.archlinux.org/title/Iwd">iwd</a>.
+		<p>By itself, this isn't much of a problem because it's relatively
+		straightforward to figure out how to get the Wi-Fi working, but it
+		<em>is</em> a big problem in the context of beginners. Unlike Arch,
+		Artix can optionally be installed through a GUI, not unlike Ubuntu's
+		installation. If this worked well, I would consider recommending Artix
+		to beginners, but I cannot when Wi-Fi isn't easily configurable through
+		a GUI. It could be possible that this was simply the fault of
+		<a href="https://www.xfce.org/">XFCE</a>, which is the only graphical
+		installation that I've tested, but I doubt it.</p>
+		<p>On top of that, I remember the experience of being annoyed with the
+		init system packages not running their respective daemons, although my
+		memory isn't strong enough for me to say anything for sure. I'll
+		probably try Artix again sometime in the future.</p>
+		<p>If Artix's init systems and packages worked predictably and if Artix
+		had good documentation for parts of it that conflicted with the Arch
+		Wiki, I would be happy to use it instead of Arch. The logo isn't as
+		cool, but fine.</p>
+		<p>If the developers make it effortless for people who have never used
+		Linux to install, including Wi-Fi configuration, I would be very happy
+		to recommend it to new users. However, only the installation, because I
+		don't believe that the knowledge "gained" from installing Arch or Artix
+		"manually" is particularly applicable to day-to-day usage. Trying to
+		provide a GUI package manager, for example, would be a mistake, in my
+		opinion.</p>
+		<h5><a href="https://kisslinux.org/">Kiss Linux</a></h5>
+		<p>Kiss Linux is the last meme distribution I tried before realizing
+		that I was in denial about my prospects of "minimalism" and accepting
+		Arch as The Answer.</p>
+		<p>The installation was pretty simple, much more so than Gentoo's. The
+		only problem I had was related to the kernel version I chose, but that
+		was my fault: elsewhere on the website, the developers already had an
+		explanation of the issue posted.</p>
+		<p>The interaction with the system felt simple as well. The Kiss package
+		manager makes sense and the package format is well-designed. Unlike Arch
+		and Gentoo, where I would never consider reading the documentation about
+		their package format and fiddling with my own package, I made many of my
+		own Kiss packages. This is because there was almost no friction. You
+		just put in the compilation instructions.</p>
+		<p>Unfortunately, there were problems that came up. First off, like
+		Gentoo, packages are compiled and for the most part, binaries aren't
+		distributed. I think there was one official binary repository that had
+		a few browsers, but those were usually out of date, and I think they
+		were demoted to "community" status around the time I switched back to
+		Arch. This again brought in the inconvenience of waiting for things to
+		compile, which was especially annoying when I needed to debug my build
+		script. I might make a change, wait thirty minutes, see a compilation
+		error, readjust, and so on, which wasn't fun.</p>
+		<p>The community being small was also a concern, but only in the context
+		of packages. Mainly, nobody had made a working qutebrowser package, and
+		making it myself was extremely tiring. In the end, I had C-YAML or
+		something like that missing which caused a ~10-second startup delay.
+		This would never be a problem on something like Arch, even if it had
+		source packages, because other, more experienced qutebrowser users would
+		have already figured everything out ages ago.</p>
+		<p>I say "only in the context of packages" because outside of that, the
+		community was great. Specifically, I remember visiting the community IRC
+		channel, where people were active, helpful, and friendly.</p>
+		<p>Next, I dislike how the official repositories threw away
+		<a href="https://www.x.org">Xorg</a> packages, switching completely to
+		<a href="https://wayland.freedesktop.org">Wayland</a>. Because of the
+		nature of the package system, this isn't a huge deal: which repositories
+		are considered "official" doesn't really matter at all, but the result
+		is that whatever Xorg repository you're using is going to fall into
+		lower-quality maintenance. If something breaks, it would be mostly up to
+		you to figure out, which seemed especially problematic for packages
+		related to the display server.</p>
+		<p>The straw that broke the camel's back was the fact that aiming to be
+		extremely minimal requires sacrifices in usability, which comes with
+		breakage when you don't know what you're doing. Even though I had
+		already been using Linux for around a year at this point, I wasn't very
+		familiar with any of the low-level systems, so every time something went
+		wrong, it would take an enormous amount of time troubleshooting, reading
+		documentation, and trying to implement a solution.</p>
+		<p>In the end, I decided that I wasn't knowledgeable enough to use Kiss.
+		When I had to spend so much time on each problem, it got in the way of
+		actually using the computer. I couldn't imagine trying to use Kiss in a
+		workplace environment, losing half my time fixing each of my mistakes.</p>
+		<p>I haven't tried any other Linux distribution since I switched back to
+		Arch but am open to trying more (or retrying earlier distributions) in
+		the future.</p>
+		<h3>Mobile</h3>
+		<h5><a href="https://www.apple.com/ios/">iOS</a> and
+		<a href="https://www.android.com/">Android</a></h5>
+		<p>iOS, like Windows, was what I used for a while at first, my opinions
+		on it stuck in a chamber. For the most part, using it felt fine, but
+		around the time I switched to Arch for the last time, I started wanting
+		an Android phone. After buying a
+		<a href="https://en.wikipedia.org/wiki/Pixel_4a">Google Pixel 4a</a>
+		(which was lucky; I didn't know that Pixels were especially open to
+		flashing ROMs when I bought it), I've never had any desire to go
+		back.</p>
+		<p>The biggest problem is the lack of an ecosystem. There are many great
+		apps for Android that don't exist on iOS and there are very few decent
+		apps for iOS that don't exist on Android. From my limited understanding
+		of the situation, the main causes are</p>
+		<ul>
+		<li>You need a Mac to develop iOS apps.</li>
+		<li>You need to pay an annual membership of $99 USD to have your app on
+		the Apple App Store. This makes it impossible for most non-profit apps
+		to exist.</li>
+		<li>Apple hardware is overpriced, making it difficult to use as a client
+		for a community of software.</li>
+		<li>Many Android devices make it easy to install custom ROMs.</li>
+		<li>Android, for the most part, is open source, unlike iOS.</li>
+		</ul>
+		<p>Even disregarding the apps, Android feels better to use than iOS
+		does. In my time using them, Android treated me like a real person while
+		iOS regarded me as completely digitally illiterate.</p>
+		<p>The only reason I went with an Apple phone initially was that I had
+		this vague notion that Android was "cheap" or "low-quality". This isn't
+		true at all. The only valid reason I see for using iOS is doing so as a
+		twisted form of social signaling, but you have to consciously
+		acknowledge that.</p>
+		<h5><a href="https://calyxos.org/">CalyxOS</a>
+		and <a href="https://grapheneos.org/">GrapheneOS</a></h5>
+		<p>After learning about the possibility of installing custom ROMs, the
+		first I tried was Calyx. At this point, I had been reading certain
+		misinformation:
+		<ul>
+		<li>The main "privacy" ROMs are Calyx and Graphene.</li>
+		<li>Graphene is more secure than Calyx but is significantly less usable.</li>
+		<li>Calyx is a good balance between security and usability/convenience.</li>
+		</ul>
+		<p>The truth is that Graphene is <em>both more secure and more
+		usable</em> than Calyx. Calyx is nothing but a worse copy of Graphene
+		that fails to implement important features. From my experience and from
+		the experience of others that I've talked to, Graphene's sandboxed
+		Google Play works far better than Calyx's microG. There is no valid
+		reason to use Calyx unless you consider ignorance morally acceptable
+		in this context.</p>
+		<p>The only other ROM I've heard of is
+		<a href="https://lineageos.org/">LineageOS</a>. Lineage doesn't appeal
+		to me because I don't see any definitive advantage of it. Its main trope
+		seems to be that it's rooted, which might be important for some people,
+		but I don't personally hold value to it. The great thing about Lineage,
+		though, is that it supports far more devices than Graphene does, mainly
+		because the Graphene developers don't want any of their models to be
+		insecure.</p>
+		<h3>Conclusion</h3>
+		<p>That's all I have to say about my preferences/experiences with
+		operating systems. How much do you disagree with? Is there anything that
+		you <em>do</em> agree with? If you really hate me because of what I
+		wrote in this article, feel free to bully me over email if that will
+		make you feel better. Or, if you simply think I'm misinformed and have
+		new information (e.g. "Artix uses iwd by default now. It's as easy as it
+		is on Arch to connect to the internet!") then feel free to share that as
+		well.</p>
+		<hr>
+		<a href="articles.html">Article Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Unix / Epoch  time conversion</title>
+<guid>https://michaelskyba.github.io/tools/time.html</guid>
+<link>https://michaelskyba.github.io/tools/time.html</link>
+<pubDate>Fri, 21 Jan 2022 20:57:34 -0500</pubDate>
+<description><![CDATA[
+		<h1>Unix / Epoch time conversion</h1>
+		<p>This lets you convert between Unix time and normal time. It would
+		have been better as a CLI, but I felt like implementing it in JavaScript
+		for some reason.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>		Block a site using /etc/hosts (Updated)</title>
+<guid>https://michaelskyba.github.io/articles/0.html#220121133005</guid>
+<link>https://michaelskyba.github.io/articles/0.html</link>
+<pubDate>Fri, 21 Jan 2022 13:30:27 -0500</pubDate>
+<description><![CDATA[Added usage disclaimer
+]]></description>
+</item>
+
+
+<item>
+<title>		AsciiMath but with newlines</title>
+<guid>https://michaelskyba.github.io/tools/math.html</guid>
+<link>https://michaelskyba.github.io/tools/math.html</link>
+<pubDate>Fri, 21 Jan 2022 13:21:59 -0500</pubDate>
+<description><![CDATA[
+		<h1>AsciiMath but with newlines</h1>
+
+		<p>AsciiMath is a really convenient alternative to LaTeX for
+		most of my use cases, but its live demo doesn't support line
+		breaks. This is an alternative UI I made which solves my issue.</p>
+
+		<p>Warning: A bit of JavaScript is obviously used.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>		Scripture (Updated)</title>
+<guid>https://michaelskyba.github.io/articles/5.html#210923102826</guid>
+<link>https://michaelskyba.github.io/articles/5.html</link>
+<pubDate>Thu, 23 Sep 2021 10:28:35 -0400</pubDate>
+<description><![CDATA[File Organization section
+]]></description>
+</item>
+
+
+<item>
+<title>		Scripture</title>
+<guid>https://michaelskyba.github.io/articles/5.html</guid>
+<link>https://michaelskyba.github.io/articles/5.html</link>
+<pubDate>Wed, 22 Sep 2021 16:16:30 -0400</pubDate>
+<description><![CDATA[
+		<p>(Written on 2021-09-22)</p>
+		<h1>Scripture</h1>
+		<p>This article is about <a href="https://github.com/michaelskyba/scripture">scripture</a>,
+		an SM-2 implementation that I made. This will not be a rewrite of the README but instead notes
+		on why I made it, my workflow with it, etc.</p>
+		<h2>SM-2</h2>
+		<p>SM-2 is an application of <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>.
+		The idea is to be able to retain information in your long-term memory while spending as little total time as
+		possible reviewing it. SM-2 is a popular algorithm due to it proving to be effective.</p>
+		<p>SuperMemo has made many algorithms after SM-2, and I presume that they are even more efficient.
+		I don't think there are any non-SuperMemo uses of them, perhaps because they're significantly more complicated
+		to implement? Take a look at <a href="https://supermemo.guru/wiki/SuperMemo_Guru">SuperMemo's wiki</a> if you're
+		interested in reading about them, or other topics that they seem to have available.</p>
+		<h2>Anki</h2>
+		<p>Anki is easily the most popular SM-2 implementation, although they slightly tweaked the algorithm. Anki is
+		what I have used for a long time before, and all in all, it's a quality piece of software. Anki is infinitely
+		better than not using spaced repetition and I have recommended it to many people (in real life) in the past.</p>
+		<p>However, Anki has problems, ignorable in many other eyes, but not mine. To cut to the chase, Anki ignores
+		the UNIX philosophy. It has a Qt (I think) GUI, a built-in extension manager, built-in synchronization, an
+		SQL database, etc. None of these would exist if Anki followed the UNIX philosophy.</p>
+		<p>Again, for 99% of people, what I just described is great, and I would not want Anki to actually adopt the ideas
+		I have, because it's obviously not their goal.</p>
+		<h2>Other CLI Flashcard Programs</h2>
+		<p>After I decided that I wanted to stop using Anki, I kept my eye out for any other implementations that I thought
+		could be suitable for my use cases. The closest I found was <a href="https://github.com/proycon/vocage">vocage</a>,
+		but I didn't end up using it seriously. Vocage does not use any SuperMemo algorithm, from what I understand, so
+		my retention rate would significantly decrease from what it was on Anki.</p>
+		<p>It wasn't clear to me how to extend it with shell scripts.
+		<a href="https://github.com/proycon/vocage/issues/7">This issue</a> might be relevant, but it doesn't seem like it
+		will be solved any time soon. I am not familiar with and have no interest in Rust, the language vocage was written in,
+		so there's no possibility of me looking through the source code or contributing.</p>
+		<p>Around this time, I had the idea of making my own implementation of SM-2. I found out that Wikipedia had a really
+		nifty pseudocode description of it on their SuperMemo article that I could base it on, which probably sparked the
+		thought.</p>
+		<h2>Scripture's Language</h2>
+		<p>At the time, my "go-to" programming language was Python (yes), but wanting to become more familiar with
+		shell scripting, I decided to write it in sh. In hindsight, this was a great decision. Not only have I gained
+		valuable experience in sh, but Python is also the wrong language for this kind of project. I maybe could have used Go,
+		which I currently have used for two small CLI projects, but from writing those (with my very limited Go knowledge), I
+		think Go would have been more of a hassle.</p>
+		<p>I also decided to avoid bashisms, because I wanted greater portability, and also because I wanted to remove bash
+		from my computer. Shellcheck says that scripture does not use any bashisms, which is great, but it definitely uses non-POSIX
+		flags on certain tools (<code>sed</code> and <code>date</code> are what I can think of off the top of my head). Currently,
+		I'm not particularly interested in trying to remove the usage of those flags, because that would be a lot of work.</p>
+		<h2>Scripture following the UNIX Philosophy</h2>
+		<p>As it stands, I think scripture follows the UNIX philosophy well enough. The SCRIPTURE_HOOK system, I feel, is very
+		extensible. I have been able to implement every "personal" feature that I wanted to through its use without polluting
+		the main scripture codebase.</p>
+		<p>The fact that scripture doesn't have a built-in deck editor is also a huge plus in terms of extensibility. Something
+		like creating a new card when you receive an email is trivial to do with scripture but a huge pain with Anki, if that's
+		even possible there.</p>
+		<p>The main shortcoming is the fact that scripture is interactive. Instead of running commands like
+		<code>scripture mark &lt;card&gt; &lt;score&gt;</code>, you only call scripture once on your deck file and then provide
+		input through scripture's <code>read &lt; /dev/tty</code> calls.</p>
+		<p>From a convenience standpoint, this is totally fine: it works well and is not annoying to type. However, I don't know
+		of an easy way to send input into an interactive program like scripture from a separate shell instance. This means that
+		something like creating a GUI on top of scripture is going to be more difficult than it needs to be.</p>
+		<p>You can say that scripture wouldn't benefit from a GUI, which I would agree with, but that's beside the point.
+		Interactivity reduces opportunities. No matter what those are, it's unideal.</p>
+		<p>One possible solution is to have the base scripture program take on the model of <code>scripture &lt;command&gt;</code>
+		as I mentioned before. Then, the scripture repository would also come with a default interactive wrapper that most people
+		would use. The few that want to create an alternative UI would ignore the provided wrapper (which, again, is a separate
+		script from the main "scripture" script). This is similar to how sfeed works, with its optional ncurses wrapper.</p>
+		<p>If I was smart, I probably would have created this structure from the start. Switching to it now would not be <em>too</em>
+		significant of a pivot, considering that scripture has only around 200 total lines of code, but it would still be annoying
+		nonetheless, especially since it doesn't provide any current benefit to me. If I happen to need a custom UI in the future,
+		or if someone else really needs one, I can implement the more UNIX-y model, but for now, I'm going to leave it the way it is.</p>
+		<p>This is also better than the SCRIPTURE_HOOK system because, despite it having good, clear documentation (in my opinion), it's
+		still something you have to learn/read about before you can use it. Ideally, simply having shell scripting knowledge should be
+		enough.</p>
+		<h2>Personal Extensions</h2>
+		<h5>Reviewing Cards in Random Order</h5>
+		<p>I'm not sure what SM-2's official advice is, but I like reviewing cards in random order. I do not want to impose this opinion
+		on every scripture user, so in my hook script, I simply run <code>shuf -o &lt;deck file&gt;</code> before the review starts.</p>
+		<h5>Images</h5>
+		<p>Image support, of course, is not built into scripture by default. Fortunately, it can be very easily implemented through
+		SCRIPTURE_HOOK. See the README on an example implementation. The example deck uses them for pictures of flags, which is
+		one of the ways I use them personally.</p>
+		<h5>Easy-to-read Text via Imagemagick</h5>
+		<p>One of the things I use scripture for is remembering hiragana. However, having normal cards for it is troublesome in two ways.</p>
+		<p>First off, to be able to properly each character, I need to have a larger-than-normal font size. So, I would have to increase
+		the font size in my terminal every time I have due reviews for my hiragana deck, which is annoying.</p>
+		<p>The second and bigger problem is that st, the terminal emulator I use, is having issues with dual-width characters for me. I'm
+		pretty sure this is some kind of problem on my end, because <a href="https://st.suckless.org">their homepage</a> lists "wide characters"
+		as a supported feature, and I remember them working on a different distribution.</p>
+		<p>Anyway, to kill two birds with one stone, I created a script "msk_display" that uses Imagemagick to write text onto a generate imaged,
+		then launches sxiv on that temporary image. (<a href="https://gist.github.com/michaelskyba/700366b6649f4dc6fa6cba6c264d3da2">Here</a>
+		is the actual script in case you're interested.) In my scripture hook, it will display cards with a "jp:" prefix with msk_display.</p>
+		<h5>Spelling Deck</h5>
+		<p>Although I "consider" English my native language, there are still some spellings that I occasionally get confused about. To remember
+		those, I can use scripture, but what's the right way to do it? I obviously can't have the front of the card "How do you spell 'x'?" because
+		that gives away the spelling right there and then.</p>
+		<p>One way is to record yourself saying each word so that the front of the card will be an audio file of you speaking and the back will
+		be the correct spelling. Here, you would need to use a front_show hook to launch mpv or something on your chosen audio file. I don't like
+		this solution because I think it requires too much maintenance, and also because I will quickly get annoyed with hearing my own voice.</p>
+		<p>Instead, I decided to use Text-to-Speech (TTS)! My scripture hook looks for "speak:" and runs TTS software to pronounce it. To make sure
+		I heard it properly, I have it repeat the word three times, with <code>sleep 1</code> in between repetitions.</p>
+		<p>Now, the question of the hour is, of course, "What TTS implementation did you choose?" I went with
+		<a href="https://github.com/espeak-ng/espeak-ng">espeak-ng</a>, which I am somewhat satisfied with. The good part of espeak-ng is that its usage
+		is simple and convenient. You don't need to have a speech database or machine learning software installed. You don't need to create text or audio
+		files (although I'm sure you can if you wanted to). You can simply run <code>espeak-ng "&lt;word&gt;"</code>, and it will play the sound right away.</p>
+		<p>That sounds good, but what's wrong, if I'm only "somewhat satisfied"? Well, the speech doesn't sound natural. Inherently, that's not a particularly
+		big deal, but the issue is that it can make it hard to determine which word is being spoken. Sometimes, I have to synthesize fake spellings
+		(or an entire sentence) to make it easier for me to guess what word I'm being tested on spelling.</p>
+		<p>From taking a glance at their GitHub repository, which I looked up so I knew where to link to, it seems like there are quite a lot of options,
+		so maybe I can read the documentation later and tweak it to sound more natural to me. Still, if you know of a more easily decipherable engine, let
+		me know.</p>
+		<p>The last thing I want to note in regards to this spelling deck is a script I made called
+		<a href="https://gist.github.com/michaelskyba/a0dacf6f07bcf6b6d4f83015569bae01">"spell_add"</a> (a very creative name). This script makes it more convenient
+		to add a new word to the spelling deck. It's another example of something easy to do when your deck files are in plaintext rather than a complicated
+		format.</p>
+		<h1>Conclusion</h1>
+		<p>That's the end of this article. Hopefully, if you read all of it, you have a good idea of whether or not scripture will satisfy your needs. I don't
+		think this kind of information belongs in the README, but my website is a fine place to put it.</p>
+		<p>I may make another article in a similar style but about <a href="https://github.com/michaelskyba/budgetpass">budgetpass</a>.</p>
+		<a href="../articles.html">Article Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Deltarune Chapter 1 on Linux (Updated)</title>
+<guid>https://michaelskyba.github.io/articles/4.html#210917205731</guid>
+<link>https://michaelskyba.github.io/articles/4.html</link>
+<pubDate>Fri, 17 Sep 2021 20:57:40 -0400</pubDate>
+<description><![CDATA[Deltarune released on Steam
+]]></description>
+</item>
+
+
+<item>
+<title>		Deltarune Chapter 1 on Linux</title>
+<guid>https://michaelskyba.github.io/articles/4.html</guid>
+<link>https://michaelskyba.github.io/articles/4.html</link>
+<pubDate>Fri, 17 Sep 2021 17:28:11 -0400</pubDate>
+<description><![CDATA[
+		<h1>Deltarune Chapter 1 on Linux</h1>
+		<p>With the release of Deltarune Chapter 2 today, I thought I would share how
+		I was able to get Chapter 1 working on Linux. I will assume you're running Arch.</p>
+		<p>1. Download the .exe from <a href="https://deltarune.com/">Deltarune's website</a></p>
+		<p>2. Install Wine and libstrangle</p>
+<pre>
+ssu pacman -S wine
+git clone https://aur.archlinux.org/libstrangle-git.git
+cd libstrangle-git
+makepkg -sirc</pre> 
+		
+		<p class="no-margin">3. Install Deltarune as if you were on Windows using Wine:</p>
+		<code>wine SURVEY_PROGRAM_WINDOWS_ENGLISH.exe</code>
+		<p>For me, it stopped writing new text after a couple of minutes, at which point I killed it with 
+C.
+		I guess it finishes installing but doesn't quit Wine?</p>
+		<p>4. Run Deltarune using strangle:</p>
+<pre>
+cd "$HOME/.wine/drive_c/Program Files (x86)/SURVEY_PROGRAM"
+strangle 30 wine DELTARUNE.exe</pre>
+		<p>That's it, it should work now. Using Wine on its own without libstrangle won't work.
+		Feel free to try it if you don't believe me.</p>
+		<a href="../articles.html">Article Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Donate</title>
+<guid>https://michaelskyba.github.io/donate.html</guid>
+<link>https://michaelskyba.github.io/donate.html</link>
+<pubDate>Sat, 11 Sep 2021 02:10:05 -0400</pubDate>
+<description><![CDATA[
+		<h1>Donate</h1>
+		<p>Perhaps the existence of this page is a declaration of arrogance, but I genuinely
+		believe there's a possibility that something I made could be useful.</p>
+		<h2>Bitcoin</h2>
+		<img style="margin-bottom: 0;" src="assets/bitcoin.png" alt="bitcoin qr">
+		<br>
+		<code>bc1qxwvg86dnhkqh9p8z8x6k6rlvvnqx4zfyhxzece</code>
+		<h2>Monero</h2>
+		<img style="margin-bottom: 0;" src="assets/monero.png" alt="monero qr">
+		<br>
+		<code>42dPF9eisY3PCyQmLCiSAUEsjVhz2j1gDUixdQKgcXueMEJUNAKTgYG71ekXvvR12MTAyWnqyhfdXjPt3p5ypr3A2vey7RZ</code>
+		<br>
+		<br>
+		<a style="margin-top: 50px;" href="index.html">Home</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Trying out berry</title>
+<guid>https://michaelskyba.github.io/articles/3.html</guid>
+<link>https://michaelskyba.github.io/articles/3.html</link>
+<pubDate>Sun, 15 Aug 2021 00:29:17 -0400</pubDate>
+<description><![CDATA[
+		<h1>Trying out berry</h1>
+		<h4>Introduction</h4>
+		<p>Recently, I found out about <a href="https://github.com/JLErvin/berry">berry</a>,
+		which describes itself as "[a] healthy, byte-sized window manager". As of the time I'm writing this,
+		I have used berry for around one day. In this post, I would like to share my first impressions.</p>
+		<h4>Philosophy</h4>
+		<p>The main thing that drew me to berry in the first place is its philosophy.
+		<a href="https://dwm.suckless.org">dwm</a>, which I was using before trying berry, does not follow
+		the UNIX philosophy as well as I would like. In particular, dwm ships with a statusbar and a hotkey
+		daemon (the latter is not a precise description, but I'm not sure what would be a better name;
+		if you use dwm, you know what I'm referring to). Neither of these are parts of berry. Additionally,
+		berry has no built-in tiling. Instead, you can use berryc to create your own layout.</p>
+		<h4>Statusbar</h4>
+		<p>If berry doesn't come with its own statusbar, which one did I choose? On dwm, my usage of its
+		statusbar consisted of a cron job, running <code>xsetroot -name</code> calls. This was enough for me.
+		I didn't need (and still don't need) fancy modules or anything like that.</p>
+		<p>With this in mind, I went with the statusbar that berry's website recomended:
+		<a href="https://github.com/LemonBoy/bar">lemonbar</a>, which I am quite satisfied with. Lemonbar
+		has all of the features I would want in a statusbar without going too far over.</p>
+		<p>The main annoyance is that, from what I understand, it is incompatible with fontconfig and
+		TTF fonts. After realizing this, I installed
+		<a href="https://gitlab.com/protesilaos/lemonbar-xft">lemonbar-xft</a>, a fork with fonts
+		working the way I would expect.</p>
+		<p>Another thing that caught me a bit off guard was the usage. I assumed you would run <code>bard</code>
+		or something similar and then call xsetroot as I was used to. Instead, lemonbar uses standard input.
+		For example, you could run <code>echo test | lemonbar -p</code> to set the bar to the word "test".
+		Here's what I came up with for replicating my xsetroot workflow:</p>
+<pre># Init
+rm -f $XDG_DATA_HOME/statusbar
+touch $XDG_DATA_HOME/statusbar
+tail -f $XDG_DATA_HOME/statusbar | lemonbar -g x25+0+0 -f "Noto Sans JP Medium" -p &</pre>
+		<p>Then, inside cron, my battery script runs <code>echo "%{c}$(date)%{c}" >> $XDG_DATA_HOME/statusbar</code>.</p>
+		<p>This isn't literally how it works, because I don't just want the date in BusyBox's default format, but you
+		get the idea. The <code>%{c}</code>s are used to center the text, which I prefer to dwm's bar, where the placement
+		is the right side of the bar. (Yes, I know that there's probably a way to change that, but it's more annoying
+		than searching "center" in <code>man lemonbar</code>, especially since dwm's bar additionally shows the title
+		of the window and draws workspaces, neither of which I require.)</p>
+		<p>Now that I think about it, it's probably easier to simply use <code>killall lemonbar ; echo "%{c}$(date)%{c}" | lemonbar -p</code>.
+		I might give that a go later; it will likely perform better over what I just described, the use of a "statusbar" file.</p>
+		<h4>berryc</h4>
+		<p>Another significant "change" a dwm user would experience is the new reliance on berryc, which is berry's client.</p>
+		<p>First, berryc has "settings", which I set in berry's autostart file. I copied the default autostart (from the "examples" directory),
+		my main change being that I removed all borders/window decorations.</p>
+		<p>Second, and more importantly, berryc gives you control over the management of windows. Instead of setting
+		WM-related bindings in a config.h file, you need some kind of hotkey daemon that can map keys to berryc commands.
+		I chose to use <a href="https://github.com/baskerville/sxhkd">sxhkd</a>, which I would say is one of my favourite
+		projects of all time. sxhkd is such a pleasure to use that I even ported my bindings to
+		<a href="https://dwm.suckless.org/patches/fsignal/">fsignal</a> when I was on dwm. As an example,
+		<a href="https://gist.github.com/michaelskyba/94d2ba318750cc5e5ab5b76d4ffadc6f">here</a> is my current configuration
+		for berry. I have a separate, WM-agnostic configuration that includes everything else (e.g. launching my terminal,
+		running dmenu scripts).</p>
+		<p>Now, seeing this simple config file, combined with the knowledge that berry has no built-in tiling,
+		you may be wondering whether managing windows is a huge pain (compared to dwm). My personal answer is no. So far,
+		this basic setup of Super+(h|l|Space) for tiling windows is enough, and I've yet to feel a sudden urge to switch back to dwm.</p>
+		<p>You should note that I was not a heavy user of "complicated" tiling on dwm. I mostly had a few windows in master-stack
+		mode, occasionally popping into monocle mode. My workflow with berry feels just as convenient. If, however, you are frequently
+		using something fancy (<a href="https://dwm.suckless.org/patches/fibonacci/">this, for example</a>), you will need
+		to write a few shell scripts to make berry act the way you like. This should be totally possible, though. See their website
+		if you're interested in doing so.</p>
+		<h4>Caveats</h4>
+		<p>In this section, I will describe a few things that I'm unsatisfied with. I'm pretty much nitpicking,
+		though, so none of this should be taken very seriously.</p>
+		<p>First, neither resizing nor moving windows using (Super|Alt)+Mouse is working for me. This should
+		be taken with a mountain of salt, though, because I'm 99% sure that it's my fault. When I first
+		tried berry (with the example configuration), it was working fine. I'll fiddle around with it later.</p>
+		<p>Second, I'm not a fan of <a href="https://berrywm.org">their website</a>. Its design does not look simple,
+		which, from what I can see, sends the opposite message. Some examples of better-designed websites,
+		in my opinion, are (the current states of): my website, KISS Linux's website, and OpenBSD's website.</p>
+		<p>Even besides the design, some of the information on the website is inaccurate. For instance, on their
+		"Usage" page, they wrote <code>window_*_relative</code> instead of <code>window_*_absolute</code>.
+		See the man page if something mentioned on their website isn't working the way you would expect.</p>
+		<p>Finally, judging from the GitHub issues, I can see that berry's philosophy is not 100% aligned with mine.
+		This is to be expected, of course; different people have different opinions, but still. For an example, see
+		<a href="https://github.com/JLErvin/berry/issues/127">this issue</a>. In my eyes, this should be left for the user
+		to script, which would not be difficult at all. JLErvin doesn't explicitly agree that it should be added,
+		but you get what I mean.</p>
+		<h4>Conclusion</h4>
+		<p>In conclusion, berry is a great window manager that, in my opinion, follows the UNIX philosophy better than
+		dwm does. Unless something overwhelmingly negative and completely unexpected comes up, it is unlikely that I
+		will switch back to dwm.</p>
+		<p>If you don't care about anything else I have said so far, my only advice would be to try
+		berry out for yourself. At <em>worst</em>, you'll lose ~20 minutes of your time and garner newfound respect
+		for your current window manager.</p>
+		<a href="../articles.html">Article Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		msk_music</title>
+<guid>https://michaelskyba.github.io/articles/2.html</guid>
+<link>https://michaelskyba.github.io/articles/2.html</link>
+<pubDate>Fri, 23 Jul 2021 23:22:45 -0400</pubDate>
+<description><![CDATA[
+		<h1>msk_music</h1>
+		<p> I have decided to put this to use for sharing scripts I write, in
+		hopes that one or two of them could be of use to somebody.</p>
+		
+		<h6><a href="https://gist.github.com/michaelskyba/2e04107265d4255671bb597581afd76a">msk_music</a></h2>
+		
+		<p>msk_music is a simple and featureless way of listening to music. It uses the
+		equivalent of "random" and "consume" modes on mpd (which it aims to replace). For
+		my use cases, which I believe are fairly standard, it does so successfully.</p>
+		
+		<p>Instead of having a vast number of configuration options, additional features
+		can be implemented by changing the source code, which, due to being written in
+		shell, is completely transparent. For instance,
+		<a href="https://gist.github.com/michaelskyba/697a06b1f53f3f8a14e94bd9ccf4de3e">this
+		patch</a> will have msk_music only run on .mp4 files.</p>
+		
+		<p>msk_music depends on mpv and a set of coreutils that support sed's "-i" flag.
+		msk_music is around 20 LOC, and was written in about 10 minutes.</p>
+		<a href="../articles.html">Article Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Get a working Wi-Fi connection in an Artix Installation</title>
+<guid>https://michaelskyba.github.io/articles/1.html</guid>
+<link>https://michaelskyba.github.io/articles/1.html</link>
+<pubDate>Tue, 20 Apr 2021 19:38:13 -0400</pubDate>
+<description><![CDATA[
+		<h1>Get a working Wi-Fi connection in an Artix Installation</h1>
+		<p>While Arch and Gentoo have had internet working mostly
+		out-of-the-box, Artix has not. I thought it could be beneficial
+		if I compiled a list of steps:</p>
+		<ol>
+			<li>Become root: <code>su</code></li>
+			<li>
+				Create /etc/wpa_supplicant/wpa_supplicant.conf with the following lines:
+				<br>
+<pre>
+ctrl_interface=/run/wpa_supplicant
+update_config=1
+</pre>
+			</li>
+			<li>Make sure rfkill isn't messing things up: <code>rfkill unblock wifi</code></li>
+			<li>
+				Start wpa_supplicant: <code>wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf</code>
+				<br>
+				My device name was 'wlan0', but you should edit the command if yours is different.
+			</li>
+			<li>
+				Run wpa_cli.
+				<br>
+<pre>
+wpa_cli
+scan
+scan_results
+add_network
+set_network 0 ssid "{the name of your wifi network}"
+set_network 0 psk "{the password of your wifi network}"
+enable_network 0
+save_config
+quit
+</pre>
+			</li>
+			<li>Start dhcpcd: <code>dhcpcd</code></li>
+		</ol>
+		<p>You should be done. I've done two Artix installs and both of them have
+		succeeded with this procedure. Note that for both I have used the base-runit
+		installation; it's possible that using a different init system (openrc and s6
+		are available currently) will require different steps.</p>
+		<a href="../articles.html">Article Index</a>
+	
+]]></description>
+</item>
+
+
+<item>
+<title>		Block a site using /etc/hosts</title>
+<guid>https://michaelskyba.github.io/articles/0.html</guid>
+<link>https://michaelskyba.github.io/articles/0.html</link>
+<pubDate>Tue, 20 Apr 2021 19:15:13 -0400</pubDate>
+<description><![CDATA[
+		<h1>Block a site using /etc/hosts</h1>
+		<p>Simply add <code>0.0.0.0 mysite</code> to your /etc/hosts file.</p>
+		
+		
+		<p>Example: <code>0.0.0.0 facebook.com</code></p>
+		
+		<p>Here, facebook.com will basically be an alias for '0.0.0.0', which acts as a dummy address.</p>
+		
+		<a href="https://github.com/StevenBlack/hosts">List of sites you may want to block</a>
+		<br>
+		<a href="../articles.html">Article Index</a>
+	
+]]></description>
+</item>
+
+
+</channel>
+</rss>
+
