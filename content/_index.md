@@ -7,7 +7,9 @@ I'm Michael Skyba. My interests include:
 [Tools](/games/tools/)
 [Games](/games/)
 
+[michaelskyba@net-c.com](mailto:michaelskyba@net-c.com)
+
 [{{< cimg "/github.svg" social "GitHub icon" >}}](https://github.com/michaelskyba)
 [{{< cimg "/youtube.svg" social "YouTube icon" >}}](https://www.youtube.com/channel/UC2hmKi-vbVJaz28vPEZg_rQ)
-[{{< cimg "/email.svg" social "Email icon" >}}](mailto:michaelskyba@net-c.com)
-[{{< cimg "/rss.svg" social "RSS icon" >}}](assets/rss.xml)
+[{{< cimg "/rss.svg" social "RSS icon" >}}](/rss.xml)
+
