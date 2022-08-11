@@ -3,7 +3,8 @@
 # Config
 title="Michael Skyba"
 rss_file=./static/rss.xml
-rss_url=https://michaelskyba.github.io/rss.xml
+base_url=https://michaelskyba.github.io
+rss_url=$base_url/rss.xml
 
 # =================================================
 
@@ -21,10 +22,20 @@ rss_url=https://michaelskyba.github.io/rss.xml
 <atom:link href=\"$rss_url\" rel=\"self\" type=\"application/rss+xml\" />
 
 <!-- crss-insert -->
-" > "$rss_file"
+
+</channel>
+</rss>" > "$rss_file"
 
 # Check for valid hook in existing file
-grep -q "<!-- crss-insert -->" "$rss_file" || err=1
+grep -q "^<!-- crss-insert -->$" "$rss_file" || err=1
 [ "$err" ] &&
 	echo "Invalid rss file: $rss_file." &&
 	exit 1
+
+# Create and open the temporary RSS description file
+tmp=$(mktemp -u)
+echo "Title
+$base_url/url
+$(date)
+(This is a new Type.)" > "$tmp"
+$EDITOR "$tmp"
