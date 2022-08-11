@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# Config
+title="Michael Skyba"
+rss_file=./static/rss.xml
+rss_url=https://michaelskyba.github.io/rss.xml
+
+# =================================================
+
+# Create a default file if it doesn't exist
+[ -f "$rss_file" ] ||
+	echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<?xml-stylesheet type=\"text/css\" href=\"rss.css\" ?>
+<rss version=\"2.0\" xmlns:atom=\"http://www.w3.org/2005/Atom\">
+
+<channel>
+<title>$title</title>
+<description>$title - RSS Feed</description>
+<language>en-us</language>
+<link>$rss_url</link>
+<atom:link href=\"$rss_url\" rel=\"self\" type=\"application/rss+xml\" />
+
+<!-- crss-insert -->
+" > "$rss_file"
+
+# Check for valid hook in existing file
+grep -q "<!-- crss-insert -->" "$rss_file" || err=1
+[ "$err" ] &&
+	echo "Invalid rss file: $rss_file." &&
+	exit 1
