@@ -33,9 +33,21 @@ grep -q "^<!-- crss-insert -->$" "$rss_file" || err=1
 	exit 1
 
 # Create and open the temporary RSS description file
-tmp=$(mktemp -u)
+description=$(mktemp -u)
 echo "Title
 $base_url/url
 $(date)
-(This is a new Type.)" > "$tmp"
-$EDITOR "$tmp"
+(This is a new Type.)" > "$description"
+$EDITOR "$description"
+
+# Format the description file the user made into an RSS item
+tmp=$(mktemp -u)
+desc_to_rss="gkO<lt>item<gt><esc>jI<lt>title<gt><esc>A<lt>/title<gt><esc>jxypI<lt>guid<gt><esc>A<lt>/guid<gt><esc>jI<lt>link<gt><esc>A<lt>/link<gt><esc>jI<lt>pubDate<gt><esc>A<lt>/pubDate<gt><esc>jI<lt>description<gt><esc>A<lt>/description<gt><esc>o<lt>/item<gt><esc>"
+kak -f "$desc_to_rss" < "$description" > "$tmp"
+
+# Move the item under the insert header
+move_to_header="gk/^<lt>!<minus><minus><space>crss<minus>new<space><minus><minus><gt>$<ret>ddGedgk/^<lt>!<minus><minus><space>crss<minus>insert<space><minus><minus><gt>$<ret><a-o>jp"
+echo "<!-- crss-new -->" >> "$rss_file"
+cat "$tmp" >> "$rss_file"
+kak -f "$move_to_header" < "$rss_file" > "$tmp"
+mv "$tmp" "$rss_file"
