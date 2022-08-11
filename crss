@@ -32,18 +32,41 @@ grep -q "^<!-- crss-insert -->$" "$rss_file" || err=1
 	echo "Invalid rss file: $rss_file." &&
 	exit 1
 
-# Create and open the temporary RSS description file
-description=$(mktemp -u)
-echo "Title
-$base_url/url
-$(date)
-(This is a new Type.)" > "$description"
-$EDITOR "$description"
+# Default values for the description file
+desc_file=$(mktemp -u)
+title="Title"
+url=$base_url/url
+date=$(date)
+description="(This is a new Type.)"
+
+# If the user provided a markdown file, use its values
+md_file=$1
+if [ -f "$md_file" ]
+then
+	title=$(grep "^title: \".*\"$" "$md_file")
+	title=${title#title: "}
+	title=${titl%"}
+
+	url=$base_url/${md_file#*content/}
+	url=${url%.md}
+
+	date=$(grep "^date: .*$" "$md_file"}
+	date=${date#date: }
+fi
+
+# Create the temporary RSS description file using the decided values
+echo "$title
+$url
+$date
+$description" > "$desc_file"
+
+# Let the user edit the description file
+$EDITOR "$desc_file"
 
 # Format the description file the user made into an RSS item
 tmp=$(mktemp -u)
 desc_to_rss="gkO<lt>item<gt><esc>jI<lt>title<gt><esc>A<lt>/title<gt><esc>jxypI<lt>guid<gt><esc>A<lt>/guid<gt><esc>jI<lt>link<gt><esc>A<lt>/link<gt><esc>jI<lt>pubDate<gt><esc>A<lt>/pubDate<gt><esc>jI<lt>description<gt><esc>A<lt>/description<gt><esc>o<lt>/item<gt><esc>"
-kak -f "$desc_to_rss" < "$description" > "$tmp"
+kak -f "$desc_to_rss" < "$desc_file" > "$tmp"
 
 # Move the item under the insert header
 move_to_header="gk/^<lt>!<minus><minus><space>crss<minus>new<space><minus><minus><gt>$<ret>ddGedgk/^<lt>!<minus><minus><space>crss<minus>insert<space><minus><minus><gt>$<ret><a-o>jp"
