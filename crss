@@ -44,13 +44,13 @@ md_file=$1
 if [ -f "$md_file" ]
 then
 	title=$(grep "^title: \".*\"$" "$md_file")
-	title=${title#title: "}
-	title=${titl%"}
+	title=${title#title: \"}
+	title=${title%\"}
 
 	url=$base_url/${md_file#*content/}
-	url=${url%.md}
+	url=${url%.md}/
 
-	date=$(grep "^date: .*$" "$md_file"}
+	date=$(grep "^date: .*$" "$md_file")
 	date=${date#date: }
 fi
 
