@@ -36,7 +36,7 @@ grep -q "^<!-- crss-insert -->$" "$rss_file" || err=1
 desc_file=$(mktemp -u)
 title="Title"
 url=$base_url/url
-date=$(date)
+date=$(date -I)
 description="(This is a new Type.)"
 
 # If the user provided a markdown file, use its values
