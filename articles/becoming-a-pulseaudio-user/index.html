@@ -1,0 +1,73 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,height=device-height,initial-scale=1"><meta name=description content="A few days ago, I decided to bite the bullet and install PulseAudio. I did so through PipeWire, though, so by &ldquo;PulseAudio&rdquo;, I&rsquo;m going to be referring to the pipewire-pulse system.
+Background While most Linux users etiher have it shipped with their distribution by default, have it as a dependency of other software they rely on, or install it themselves once they boot into their system for the first time, I was part of the minority who decided to say &ldquo;no&rdquo;."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link href=/sakura.css type=text/css rel=stylesheet><title>Becoming a PulseAudio user | Michael Skyba</title></head><body><h1>Becoming a PulseAudio user</h1><p>(Initially written on 2022-08-24)</p><hr><p>A few days ago, I decided to bite the bullet and install PulseAudio. I did so
+through PipeWire, though, so by &ldquo;PulseAudio&rdquo;, I&rsquo;m going to be referring to the
+<code>pipewire-pulse</code> system.</p><h2 id=background>Background</h2><p>While most Linux users etiher have it shipped with their distribution by
+default, have it as a dependency of other software they rely on, or install it
+themselves once they boot into their system for the first time, I was part of
+the minority who decided to say &ldquo;no&rdquo;.</p><p>Was it because ALSA is more convenient to work with? Because PulseAudio was
+incompatible with the software I was intending to use? Because PulseAudio had
+terrible performance and would slow down my computer?</p><p>No, it was never anything like that. Instead, I was willing to sacrifice
+usability just so I could tell myself that I wasn&rsquo;t using PulseAudio. At that
+time, this made a lot of sense, but as I grew older and started to have more
+important things to spend time on, I gradually came to understand that making
+myself less productive as a joke was not a great idea.</p><p>(Of course, I&rsquo;m talking about general desktop use. In other cases, such as an
+embedded system with only 100 MB of RAM, a server, etc. it usually wouldn&rsquo;t make
+sense to have another layer on top of ALSA.)</p><h2 id=systemd>systemd</h2><p>You might be quick to apply this logic to other topics, such as the systemd
+debate:</p><blockquote><p>N-nooo! systemd is more convenient than other init systems! You&rsquo;re just
+being a hipster for no reason!</p></blockquote><p>However, in the case of systemd specifically,
+from my experience with OpenRC on Gentoo, and from what I have heard about some
+other init systems (e.g.
+<a href=https://dudemanguy.github.io/blog/posts/2019-12-19-s6-love/s6-love.html>s6</a>),
+they&rsquo;re probably more usable rather than less usable. As software grows in
+complexity, it generally becomes harder to extend.</p><p>With that reasoning, I&rsquo;m becoming more and more inclined to try Artix again,
+this time putting more thought into my usage. Even if systemd ends up being more
+convenient, I&rsquo;m sure it&rsquo;d only be a slight difference. My point with ALSA was
+that PulseAudio is significantly more convenient, my reasoning for which I&rsquo;ll
+explain in the next section.</p><h2 id=post-transition>Post-transition</h2><p>These are the two broad &ldquo;benefits&rdquo; that I feel I&rsquo;ve received with PulseAudio.</p><h3 id=1-general-audio-convenience>1. General audio convenience</h3><p>First, there are the conveniences that are pretty easy to get on ALSA, like
+having multiple programs playing audio at once, not starting muted,
+automatically muting the speaker when you plug in headphones, etc.</p><p>But after that come the more sophisticated features. For instance, PulseAudio
+remembers the volume you saved for each output device. So, if I have the volume
+turned up to 100 on my speakers and then plug in my headphones, my ears aren&rsquo;t
+going to melt. With ALSA, this happened several times before the computer&rsquo;s
+Pavlovian conditioning sufficiently ingrained the habit of checking the volume
+before playing sound. Another example is that each program is given its own
+volume configuration, unlike ALSA where you can pretty much only modify the
+master volume.</p><p>I&rsquo;m sure there are obscure ways to reach the same functionality with ALSA, but
+again, I don&rsquo;t see any benefit to taking the time to research that.</p><h3 id=2-no-more-pain-in-recording>2. No more pain in recording</h3><p>Finally, PulseAudio is significantly nicer to work with in ffmpeg. If you&rsquo;ve
+never done any recording and have no intention of it, this point doesn&rsquo;t become
+particularly relevant. However, because I like to occasionally create (low
+effort, like everything I end up doing) YouTube videos, it&rsquo;s quite important to
+me.</p><p>Some things don&rsquo;t change much. For example, considering the recording of
+microphone input along with the desktop video. With ALSA, you could use
+something like</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>ffmpeg -y -f x11grab -r <span style=color:#ae81ff>30</span> -s 1366x768 -i :0.0 -f alsa -i default ~/screen.mp4
+</span></span></code></pre></div><p>and with PulseAudio, you could use something like</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>ffmpeg -y -f x11grab -r <span style=color:#ae81ff>30</span> -s 1366x768 -i :0.0 -f pulse -i default ~/screen.mp4
+</span></span></code></pre></div><p>(The options I&rsquo;m showing are adjusted to my system.) Not much stress, right? But
+then, consider another scenario: capturing the screen like before, but this time
+taking the desktop audio instead of the microphone input.</p><p>On PulseAudio, you spend thirty seconds reading the documenation and settle on</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>ffmpeg -y -s 1366x768 -f x11grab -i :0.0 -f pulse -i &lt;monitor id&gt; ~/screen.mp4
+</span></span></code></pre></div><p>Just in case the monitor&rsquo;s ID changes, I decided to grep for it each time with</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>num<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>pactl list short sources | grep monitor<span style=color:#66d9ef>)</span>
+</span></span><span style=display:flex><span>num<span style=color:#f92672>=</span><span style=color:#e6db74>${</span>num%%	*<span style=color:#e6db74>}</span>
+</span></span></code></pre></div><p>Pretty sensible. What about ALSA? Judging from the <a href=https://trac.ffmpeg.org/wiki/Capture/ALSA>ffmpeg wiki
+article</a>, the standard way to do this
+would be</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>ssu modprobe snd-aloop pcm_substreams<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#39;pcm.!default { type plug slave.pcm &#34;hw:Loopback,0,0&#34; }&#39;</span> &gt; ~/.asoundrc
+</span></span><span style=display:flex><span>ffmpeg -loglevel quiet -s 1366x768 -f x11grab -i :0.0 -f alsa -i hw:Loopback,1,0 ~/screen.mp4
+</span></span><span style=display:flex><span>rm ~/.asoundrc
+</span></span></code></pre></div><p>Why does the user have to do that? Besides the shock, this solution stops all
+playback to your original output device. Getting it to go to both takes an even
+more complex asoundrc configuration. Additionally, you&rsquo;re now stuck with an
+extra file that doesn&rsquo;t follow the XDG base directory specification.</p><h3 id=wayland>Wayland</h3><p>A bonus point is that if I ever switch to Wayland in the future, for which I
+believe PipeWire is required for screen sharing, I will have already gained
+familiarity with the system. However, this is an extremely minor detail
+considering the amazingly low likelihood that I would ever decide to use Wayland
+seriously. From my short but atrocious experience using it, my understanding of
+the architecture, and <a href=https://dudemanguy.github.io/blog/posts/2022-06-10-wayland-xorg/wayland-xorg.html>explanations from people particularly knowledgeable about
+it</a>,
+it doesn&rsquo;t sound like Wayland will ever be remotely suitable to my use cases.</p><h2 id=conclusion>Conclusion</h2><p>A while ago, I would hear about constant lag, bugs, crashes in PulseAudio, but
+that seems to have gone away, especially with the development of PipeWire. I
+haven&rsquo;t had a single problem with it. Overall, this has been a significant
+upgrade in usability for all things sound-related. I don&rsquo;t need to have
+nightmares about ALSA breaking during a critical event and me not being able to
+fix it anymore.</p><p>Hopefully, my mind can start to throw away the digital self-harm mindset and
+start to become more adapted to meaningful productivity. If I really need to
+spend time making things hard for myself, I should just go fight Malenia without
+using summons again.</p><hr><a href=..>Article Index</a></body></html>
