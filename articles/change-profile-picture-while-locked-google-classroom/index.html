@@ -1,0 +1,102 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,height=device-height,initial-scale=1"><meta name=description content="Note to Google If you (a software engineer, tester, etc.) are reading this and thinking &ldquo;Lol thanks, now I&rsquo;ll just patch it&rdquo;, please, please, please send me an email (michaelskyba@net-c.com or michaelskyba1411@gmail.com) notifying me about it. If you do, I (in exchange; as thanks) promise to work hard to find exploits in the future but report them to you immediately instead of abusing them for personal use or posting them as a lazy attempt at publicity."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><title>Changing your Locked Google Classroom Profile Picture | Michael Skyba</title></head><body><h1>Changing your Locked Google Classroom Profile Picture</h1><p>by Michael Skyba<br>(Initially written on 2022-09-23)</p><hr><h3 id=note-to-google>Note to Google</h3><p>If you (a software engineer, tester, etc.) are reading this and thinking &ldquo;Lol
+thanks, now I&rsquo;ll just patch it&rdquo;, please, please, please send me an email
+(<a href=mailto:michaelskyba@net-c.com>michaelskyba@net-c.com</a> or
+<a href=mailto:michaelskyba1411@gmail.com>michaelskyba1411@gmail.com</a>) notifying me
+about it. If you do, I (in exchange; as thanks) promise to work hard to find
+exploits in the future but report them to you immediately instead of abusing
+them for personal use or posting them as a lazy attempt at publicity.</p><h3 id=introduction>Introduction</h3><p>I don&rsquo;t know how things are in the rest of the world, but the school board my
+high school is a part of has decided that choosing a profile picture is a bit
+too much responsibility for students. So, through some kind of admin panel
+provided by Google, I suppose, they disabled changing.</p><p>Of course, I had no interest in being dictated so harshly through a medium as
+basic as web interfaces, so I spent a significant amount of effort trying my
+best to break out, and eventually, I was successful. In this article, which is
+probably the closest one on my website to being useful to somebody, I will
+document my findings.</p><p>The big disclaimer is that for it to work, you have to currently have a profile
+picture set. If you have the default first letter of your name, there&rsquo;s probably
+nothing you can do to change that. This is targeted at people who are bored
+with their old profile picture and want a new one.</p><p>Another disclaimer is that I have an unnecessarily verbose writing style. If
+you&rsquo;re actually interested in changing your profile picture and are capable of
+reading written instructions, this shouldn&rsquo;t be a problem, but if you aren&rsquo;t,
+this article will probably not help you. I&rsquo;m writing with the assumption that
+the reader is capable of mentally connecting dots. (The abundance of images is
+solely for diversity in medium and is generally not intended to act as a support
+in comprehension.)</p><h3 id=demonstration-of-the-lock>Demonstration of the lock</h3><p>By default, you should see something like this when opening up your Google
+Account picture popup:</p><p><img src=/9-1.webp alt="Default picture UI"></p><p>However, when your administrator has locked the changes, you experience this
+disappointment instead:</p><p><img src=/9-2.webp alt="Locked picture UI"></p><p>Clicking on your icon on the main Google Account page says this (which isn&rsquo;t
+true!):</p><p><img src=/9-3.webp alt="Locked Google Accounts page"></p><p>The settings page on Google Classroom says &ldquo;Change&rdquo;, sparking hope:</p><p><img src=/9-4.webp alt="Google Classroom settings"></p><p>But if you press it, you get the same no-change-UI popup I showed in the first
+screenshot. Another dead end&mldr;</p><p>However, as you&rsquo;ve probably noticed, the setbacks I&rsquo;ve mentioned so far are
+enforced on the client-side. What if you create your own UI and make a request
+to the Google servers, saying that you want to change your profile picture? If
+you&rsquo;re not at all familiar with web development, that will sound confusing and
+abstract, so here&rsquo;s a practical example.</p><ol><li>Open a private window so that your profile data is reset to the default of
+being signed out.</li><li>Sign into a non-school Google account.</li><li>Open the profile picture changing screen.</li><li>Upload a profile picture, crop it, etc. but <strong>do not</strong> submit it.</li><li>In a new tab, sign out of your non-school account and sign into your blocked
+school account.</li><li>Go back to the first tab and submit the profile picture switch.</li></ol><p>The idea is that the first tab would tell the server, &ldquo;Set P as the profile
+picture for the user that is currently signed in.&rdquo; The server would assume
+that this request would never take place if the user is on a blocked account
+because the user shouldn&rsquo;t have a submit button on a blocked account. Because of
+this (supposed) lapse in the judgement of the system designers, it would
+complete the change. This will surely work, right?</p><p>Well, don&rsquo;t bother trying it, because this was my first idea, and it doesn&rsquo;t
+work. Instead of setting the picture, it tells you that something went wrong and
+that you should try again. Of course, trying again doesn&rsquo;t change anything, and
+you&rsquo;re left with little hope at the sight of yet another dead end.</p><p>This doesn&rsquo;t mean that it&rsquo;s impossible. You just have to be a bit more clever in
+the way you approach the problem.</p><h3 id=past-profile-pictures>Past profile pictures</h3><p>First of all, there&rsquo;s a bit more than what meets the eye on the blocked profile
+menu. If you press the kebab menu (three vertical dots), you will see the option
+to view your past profile pictures:</p><p><img src=/9-5.webp alt="Past profile pictures option"></p><p>Clicking it takes you to some kind of album selection screen, where the only
+option should be &ldquo;Profile Photos&rdquo;, a collection of the profile photos you&rsquo;ve set
+in the past. If there are zero items in this list, you will not be able to
+change your profile picture, as I mentioned in the introduction.</p><p><img src=/9-6.webp alt="Profile photos album selection"></p><p>If you enter the list, open an image, and press the kebab menu, you will see an
+option to delete the photo:</p><p><img src=/9-7.webp alt="Delete picture option"></p><blockquote><p>Why should I care? I want to change my profile picture, not delete random past
+ones.</p></blockquote><p>Well, the important detail is this: deleting your active profile picture will
+change it to a different item in your Profile photos list. The selection pattern
+was inconsistent in my testing, so if you want a certain picture from your list,
+delete every picture except for that one. Make sure to keep at least one
+remaining at all times unless you want to (permanently) have no profile picture.</p><p>If all you want is to set one of the profile pictures that you truly did use in
+the past, then you&rsquo;re done! Note that it takes some time for Google&rsquo;s servers to
+refresh your picture, so be prepared to wait 2-16 hours or so once you&rsquo;ve
+isolated the picture. If you&rsquo;re unfamiliar with your browser&rsquo;s picture caching
+system, it could take even longer.</p><p>However, there&rsquo;s a solid chance that this isn&rsquo;t enough to satisfy you; you want
+to set a new profile picture, not an old one. What then? Well, if deleting
+unneeded profile pictures is the way you modify your selected one, then all we
+have to do is add a new picture to the list and delete all the old ones. But
+is that possible? It certainly is.</p><h3 id=adding-pictures-to-your-profile-photos-list>Adding pictures to your Profile photos list</h3><p>(This procedure is slightly more complicated and will therefore require some
+more attention/thinking from the reader.)</p><p>As you can tell by looking at the album screen, there&rsquo;s no &ldquo;+&rdquo; button or
+anything for adding new photos:</p><p><img src=/9-8.webp alt="No plus button"></p><p>This means that we will have to get creative again.</p><p>First, visit the main Google Photos site on your blocked school account and
+create an album:</p><p><img src=/9-9.webp alt="Creating an album"></p><p>In here, you <em>will</em> be given the option to upload photos from your computer.
+Upload a random photo to finish the process. Once you&rsquo;re done, you should see
+your new album with your uploaded photo:</p><p><img src=/9-10.webp alt="Created an album"></p><p>In the album UI you find on Google Photos, you can upload photos just fine:</p><p><img src=/9-11.webp alt="You can upload photos"></p><p>So, the problem now is to figure out how to open the Profile photos album inside
+Google Photos. First, consider the UI from before (when I talked about deleting
+profile photos). You were looking at the photos in the album, but it definitely
+wasn&rsquo;t inside Google Photos, so what kind of view was that? Well, compare the
+URLs of both views.</p><p><strong>Note that from this point on, I will be including <code>/u/1/</code>s in my URLs,
+because my school account is of index <code>1</code> in the set of Google accounts that
+are saved in my browser. If your school account is the primary Google account
+on your browser, you won&rsquo;t see /u/n (where n is the index) in Google Classroom,
+Drive, and Photos URLs, so disregard them in my examples.</strong></p><p>In the Google Photos view that you can access on your newly-created album,
+you&rsquo;ll see (probably from your browser&rsquo;s search/URL bar) a URL that looks like</p><pre tabindex=0><code>https://photos.google.com/u/1/album/xxxxxxxxxxxxxxxxxxx
+</code></pre><p>where the <code>x</code>s comprise the album ID (a string of mixed-case letters) of the
+album you created. (If your school account is the primary account, you&rsquo;d see
+<code>...com/album...</code> and not <code>...com/u/n/album...</code>. This is the last time I
+will mention it.)</p><p>And what about the old Profile photos view? The URL should look like</p><pre tabindex=0><code>https://get.google.com/u/1/albumarchive/yyyyyyyyyyyyyyyyyyy/album/zzzzzzzzzzzzzzzzzzz
+</code></pre><p>where the <code>y</code>s comprise a number (an ID of your student account? I&rsquo;m not sure)
+and the <code>z</code>s comprise&mldr; the album ID! If you&rsquo;ve been paying attention, you
+should be excited. If we have the ID, why don&rsquo;t we just modify the Google Photos
+URL? Simply direct your browser to</p><pre tabindex=0><code>https://photos.google.com/u/1/album/zzzzzzzzzzzzzzzzzzz
+</code></pre><p>and you&rsquo;ll see that it works! You can view the Profile photos album from Google
+Photos just fine!</p><p><img src=/9-12.webp alt="Profile photos in Google Photos"></p><p>If we can access the album from Google Photos, we can add new photos to the album!</p><p><img src=/9-13.webp alt="New photos in Profile photos"></p><p>And if we can add new photos to the Profile photos album, we can set the profile
+picture to anything we want. You should now know everything needed to change
+your profile picture. Keep in mind my note from earlier about the update delay.</p><h3 id=conclusion>Conclusion</h3><p>In conclusion, once you&rsquo;ve figured out how the system works, using it in a new
+way isn&rsquo;t all that difficult. However, it&rsquo;s entirely possible that Google
+patches this in the future (which I&rsquo;m 100% fine with <strong>IF</strong> they email me). So,
+if you followed the steps I outlined but are encountering a real (i.e. not due
+to an inability to understand written instructions) issue, send me an email at
+<a href=mailto:michaelskyba@net-c.com>michaelskyba@net-c.com</a> and I&rsquo;ll try to help you
+out. If it&rsquo;s clear that Google patched it and that it&rsquo;s not a user error, I&rsquo;ll
+update this article to say that nothing written here works anymore.</p><h6 id=examples-of-not-real-problems>Examples of &ldquo;not real&rdquo; problems</h6><ul><li>Wait, you just jumped to the conclusion? I don&rsquo;t know what to do after adding
+the picture to the album&mldr;</li><li>I (literally) went to
+<code>https://photos.google.com/u/1/album/zzzzzzzzzzzzzzzzzzz</code> and I&rsquo;m getting a
+weird 404 error. What&rsquo;s going on?</li></ul><h6 id=examples-of-hypothetical-real-problems>Examples of (hypothetical) &ldquo;real&rdquo; problems</h6><ul><li>I&rsquo;ve waited seven days after setting the profile picture and it <em>still</em> hasn&rsquo;t
+been updated in any Google service. What&rsquo;s going on? And yes, I have a different
+picture, not the default placeholder, set currently.</li><li>When I visit the Profile photos album in Google Photos, I don&rsquo;t see the upload
+button that you have in your screenshot&mldr; Was the UI updated?</li></ul><p>I hope this article was helpful. Please give me credit if you&rsquo;re sharing these
+instructions outside of the medium of this article, especially if you go to the
+same school as me.</p><hr><a href=..>Article Index</a></body></html>
