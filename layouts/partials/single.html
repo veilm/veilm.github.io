@@ -1,0 +1,9 @@
+<h1>{{ .Title }}</h1>
+<p>by Michael Skyba<br>
+(Initially written on {{ .Date.Format "2006-01-02" }})</p>
+<hr>
+
+{{ .Content -}}
+
+<hr>
+<a href="..">{{ singularize .CurrentSection.Title }} Index</a>
