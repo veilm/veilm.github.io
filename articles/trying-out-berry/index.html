@@ -7,11 +7,11 @@ to share my first impressions.</p><h4 id=philosophy>Philosophy</h4><p>The main t
 follow the UNIX philosophy as well as I would like. In particular, dwm ships
 with a statusbar and a hotkey daemon (the latter is not a precise description,
 but I&rsquo;m not sure what would be a better name; if you use dwm, you know what I&rsquo;m
-referring to). Neither of these are parts of berry. Additionally, berry has no
+referring to). Neither of these is part of berry. Additionally, berry has no
 built-in tiling. Instead, you can use berryc to create your own layout.</p><h4 id=statusbar>Statusbar</h4><p>If berry doesn&rsquo;t come with its own statusbar, which one did I choose? On dwm, my
 usage of its statusbar consisted of a cron job, running <code>xsetroot -name</code>
 calls. This was enough for me. I didn&rsquo;t need (and still don&rsquo;t need) fancy
-modules or anything like that.</p><p>With this in mind, I went with the statusbar that berry&rsquo;s website recomended:
+modules or anything like that.</p><p>With this in mind, I went with the statusbar that berry&rsquo;s website recommended:
 <a href=https://github.com/LemonBoy/bar>lemonbar</a>, which I am quite satisfied with.
 Lemonbar has all of the features I would want in a statusbar without going too
 far over.</p><p>The main annoyance is that, from what I understand, it is incompatible with
@@ -32,7 +32,7 @@ the bar. (Yes, I know that there&rsquo;s probably a way to change that, but it&r
 annoying than searching &ldquo;center&rdquo; in <code>man lemonbar</code>, especially since dwm&rsquo;s bar
 additionally shows the title of the window and draws workspaces, neither of
 which I require.)</p><p>Now that I think about it, it&rsquo;s probably easier to simply use <code>killall lemonbar ; echo "%{c}$(date)%{c}" | lemonbar -p</code>. I might give that a go later; it will
-likely perform better over what I just described, the use of a &ldquo;statusbar&rdquo; file.</p><h4 id=berryc>berryc</h4><p>Another significant &ldquo;change&rdquo; a dwm user would experience is the new reliance on
+likely perform better than what I just described, the use of a &ldquo;statusbar&rdquo; file.</p><h4 id=berryc>berryc</h4><p>Another significant &ldquo;change&rdquo; a dwm user would experience is the new reliance on
 berryc, which is berry&rsquo;s client.</p><p>First, berryc has &ldquo;settings&rdquo;, which I set in berry&rsquo;s autostart file. I copied
 the default autostart (from the &ldquo;examples&rdquo; directory), my main change being that
 I removed all borders/window decorations.</p><p>Second, and more importantly, berryc gives you control over the management of

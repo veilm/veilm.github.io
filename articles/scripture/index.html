@@ -77,7 +77,7 @@ CLI system. It might warrant its own article later.</p><h2 id=personal-extension
 random order. I do not want to impose this opinion on every scripture user, so
 in my hook script, I simply run <code>shuf -o &lt;deck file></code> before the review
 starts.</p><h5 id=images>Images</h5><p>Image support, of course, is not built into scripture by default. Fortunately,
-it can be very easily implemented through SCRIPTURE_HOOK. See the README on an
+it can be very easily implemented through SCRIPTURE_HOOK. See the README for an
 example implementation. The example deck uses them for pictures of flags, which
 is one of the ways I use them personally.</p><h5 id=easy-to-read-text-via-imagemagick>Easy-to-read Text via Imagemagick</h5><p>One of the things I use scripture for is remembering hiragana (initially; once
 it clicked once, normal reading is enough to keep it in memory, obviously).
@@ -88,8 +88,8 @@ issues with dual-width characters for me. I&rsquo;m pretty sure this is some kin
 problem on my end, because <a href=https://st.suckless.org>its homepage</a> lists &ldquo;wide
 characters&rdquo; as a supported feature, and I remember it working on a different
 distribution.</p><p>Anyway, to kill two birds with one stone, I created a script called
-&ldquo;msk_display&rdquo; that uses Imagemagick to write text onto a generate imaged, then
-launches sxiv on that temporary image.
+&ldquo;msk_display&rdquo; that uses Imagemagick to write text onto a generated image and
+then launches sxiv on that temporary image.
 (<a href=https://gist.github.com/michaelskyba/700366b6649f4dc6fa6cba6c264d3da2>Here</a>
 is the actual script in case you&rsquo;re interested.) In my scripture hook, it will
 display cards with a &ldquo;jp:&rdquo; prefix with msk_display.</p><h5 id=spelling-deck>Spelling Deck</h5><p>Although I &ldquo;consider&rdquo; English my native language, there are still some spellings
@@ -116,8 +116,8 @@ spoken. Sometimes, I have to synthesize fake spellings (or an entire sentence)
 to make it easier for me to guess what word I&rsquo;m being tested on spelling.</p><p>From taking a glance at their GitHub repository, which I looked up so I knew
 where to link to, it seems like there are quite a lot of options, so maybe I can
 read the documentation later and tweak it to sound more natural to me. Still, if
-you know of a more easily decipherable engine, let me know.</p><p>The last thing I want to note in regards to this spelling deck is a script I
-made called
+you know of a more easily decipherable engine, let me know.</p><p>The last thing I want to note in regard to this spelling deck is a script I made
+called
 <a href=https://gist.github.com/michaelskyba/a0dacf6f07bcf6b6d4f83015569bae01>&ldquo;spell_add&rdquo;</a>
 (a very creative name). This script makes it more convenient to add a new word
 to the spelling deck. It&rsquo;s another example of something easy to do when your
