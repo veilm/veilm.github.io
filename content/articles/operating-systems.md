@@ -82,7 +82,7 @@ boot menu that could load an arbitrary EFI file, where I found Lubuntu's entry
 listed. I had to take several naps in between troubleshooting sessions because I
 wasn't really used to banging my head against brick walls yet. I would much
 later go on to figure out how to automatically boot an EFI file while using Kiss
-Linux, but for now I had to go through the entire boot menu every time. None of
+Linux, but for now, I had to go through the entire boot menu every time. None of
 this was Lubuntu's fault at all, though.
 
 After installation, I had fun looking at its LXQt GUI and fiddling with the many
@@ -103,8 +103,8 @@ I dislike Ubuntu for the same kinds of reasons a lot of people do. For
 beginners, I dislike their inclusion of diseases like
 [Snap](https://snapcraft.io/) and [Flatpak](https://flatpak.org/), which
 confuses the user on what way they should install software. Instead of trying to
-replicate their workflow on Windows, a distribution targetted at beginners
-should make it clear how Linux works and make it easy to adjust to it.
+replicate their workflow on Windows, a distribution targeted at beginners should
+make it clear how Linux works and make it easy to adjust to it.
 
 In the context of me specifically, I dislike the enormous amount of software
 that it's shipped with, none of which I need or would ever want. I'm sure it's

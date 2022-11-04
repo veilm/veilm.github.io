@@ -8,7 +8,7 @@ through PipeWire, though, so by "PulseAudio", I'm going to be referring to the
 ``pipewire-pulse`` system.
 
 ## Background
-While most Linux users etiher have it shipped with their distribution by
+While most Linux users either have it shipped with their distribution by
 default, have it as a dependency of other software they rely on, or install it
 themselves once they boot into their system for the first time, I was part of
 the minority who decided to say "no".
@@ -71,14 +71,13 @@ again, I don't see any benefit to taking the time to research that.
 
 ### 2. No more pain in recording
 Finally, PulseAudio is significantly nicer to work with in ffmpeg. If you've
-never done any recording and have no intention of it, this point doesn't become
-particularly relevant. However, because I like to occasionally create (low
-effort, like everything I end up doing) YouTube videos, it's quite important to
-me.
+never done any recording and have no intention of doing it, this point doesn't
+become particularly relevant. However, because I like to occasionally create
+(low effort, like everything I end up doing) YouTube videos, it's quite
+important to me.
 
-Some things don't change much. For example, considering the recording of
-microphone input along with the desktop video. With ALSA, you could use
-something like
+Some things don't change much. For example, consider the recording of microphone
+input along with the desktop video. With ALSA, you could use something like
 ```sh
 ffmpeg -y -f x11grab -r 30 -s 1366x768 -i :0.0 -f alsa -i default ~/screen.mp4
 ```
@@ -91,7 +90,7 @@ ffmpeg -y -f x11grab -r 30 -s 1366x768 -i :0.0 -f pulse -i default ~/screen.mp4
 then, consider another scenario: capturing the screen like before, but this time
 taking the desktop audio instead of the microphone input.
 
-On PulseAudio, you spend thirty seconds reading the documenation and settle on
+On PulseAudio, you spend thirty seconds reading the documentation and settle on
 ```sh
 ffmpeg -y -s 1366x768 -f x11grab -i :0.0 -f pulse -i <monitor id> ~/screen.mp4
 ```
@@ -128,8 +127,8 @@ it](https://dudemanguy.github.io/blog/posts/2022-06-10-wayland-xorg/wayland-xorg
 it doesn't sound like Wayland will ever be remotely suitable to my use cases.
 
 ## Conclusion
-A while ago, I would hear about constant lag, bugs, crashes in PulseAudio, but
-that seems to have gone away, especially with the development of PipeWire. I
+A while ago, I would hear about constant lag, bugs, and crashes in PulseAudio,
+but that seems to have gone away, especially with the development of PipeWire. I
 haven't had a single problem with it. Overall, this has been a significant
 upgrade in usability for all things sound-related. I don't need to have
 nightmares about ALSA breaking during a critical event and me not being able to

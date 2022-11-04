@@ -140,7 +140,7 @@ starts.
 ##### Images
 
 Image support, of course, is not built into scripture by default. Fortunately,
-it can be very easily implemented through SCRIPTURE_HOOK. See the README on an
+it can be very easily implemented through SCRIPTURE_HOOK. See the README for an
 example implementation. The example deck uses them for pictures of flags, which
 is one of the ways I use them personally.
 
@@ -161,8 +161,8 @@ characters" as a supported feature, and I remember it working on a different
 distribution.
 
 Anyway, to kill two birds with one stone, I created a script called
-"msk_display" that uses Imagemagick to write text onto a generate imaged, then
-launches sxiv on that temporary image.
+"msk_display" that uses Imagemagick to write text onto a generated image and
+then launches sxiv on that temporary image.
 ([Here](https://gist.github.com/michaelskyba/700366b6649f4dc6fa6cba6c264d3da2)
 is the actual script in case you're interested.) In my scripture hook, it will
 display cards with a "jp:" prefix with msk_display.
@@ -206,8 +206,8 @@ where to link to, it seems like there are quite a lot of options, so maybe I can
 read the documentation later and tweak it to sound more natural to me. Still, if
 you know of a more easily decipherable engine, let me know.
 
-The last thing I want to note in regards to this spelling deck is a script I
-made called
+The last thing I want to note in regard to this spelling deck is a script I made
+called
 ["spell_add"](https://gist.github.com/michaelskyba/a0dacf6f07bcf6b6d4f83015569bae01)
 (a very creative name). This script makes it more convenient to add a new word
 to the spelling deck. It's another example of something easy to do when your

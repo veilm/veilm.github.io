@@ -17,7 +17,7 @@ The main thing that drew me to berry in the first place was its philosophy.
 follow the UNIX philosophy as well as I would like. In particular, dwm ships
 with a statusbar and a hotkey daemon (the latter is not a precise description,
 but I'm not sure what would be a better name; if you use dwm, you know what I'm
-referring to). Neither of these are parts of berry. Additionally, berry has no
+referring to). Neither of these is part of berry. Additionally, berry has no
 built-in tiling. Instead, you can use berryc to create your own layout.
 
 #### Statusbar
@@ -27,7 +27,7 @@ usage of its statusbar consisted of a cron job, running ``xsetroot -name``
 calls. This was enough for me. I didn't need (and still don't need) fancy
 modules or anything like that.
 
-With this in mind, I went with the statusbar that berry's website recomended:
+With this in mind, I went with the statusbar that berry's website recommended:
 [lemonbar](https://github.com/LemonBoy/bar), which I am quite satisfied with.
 Lemonbar has all of the features I would want in a statusbar without going too
 far over.
@@ -63,7 +63,7 @@ which I require.)
 
 Now that I think about it, it's probably easier to simply use ``killall lemonbar
 ; echo "%{c}$(date)%{c}" | lemonbar -p``. I might give that a go later; it will
-likely perform better over what I just described, the use of a "statusbar" file.
+likely perform better than what I just described, the use of a "statusbar" file.
 
 #### berryc
 
