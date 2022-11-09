@@ -4,7 +4,6 @@ customCSS: index.css
 
 I'm Michael, a high school student from Canada. My interests include
 - working on programming projects
-- tinkering with configuration files on Linux
 - studying Japanese
 - playing the piano
 
