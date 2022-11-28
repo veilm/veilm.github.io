@@ -64,7 +64,7 @@ $EDITOR "$desc_file"
 
 # Format the description file the user made into an RSS item
 tmp=$(mktemp -u)
-desc_to_rss="gkO<lt>item<gt><esc>jI<lt>title<gt><esc>A<lt>/title<gt><esc>jxypI<lt>guid<gt><esc>A<lt>/guid<gt><esc>jI<lt>link<gt><esc>A<lt>/link<gt><esc>jI<lt>pubDate<gt><esc>A<lt>/pubDate<gt><esc>jI<lt>description<gt><esc>A<lt>/description<gt><esc>o<lt>/item<gt><esc>"
+desc_to_rss="gkO<lt>item<gt><esc>jI<lt>title<gt><esc>A<lt>/title<gt><esc>jxypkI<lt>guid<gt><esc>A<lt>/guid<gt><esc>jI<lt>link<gt><esc>A<lt>/link<gt><esc>jI<lt>pubDate<gt><esc>A<lt>/pubDate<gt><esc>jI<lt>description<gt><esc>A<lt>/description<gt><esc>o<lt>/item<gt><esc>"
 kak -f "$desc_to_rss" < "$desc_file" > "$tmp"
 
 # Move the item under the insert header
