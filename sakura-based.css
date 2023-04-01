@@ -15,8 +15,8 @@ body {
 	line-height: 1.618;
 	max-width: 38em;
 	margin: auto;
-	color: #d9d8dc;
-	background-color: #120c0e;
+	color: rgb(207, 200, 196);
+	background-color: rgb(7, 7, 8);
 	padding: 13px;
 }
 
@@ -76,19 +76,19 @@ small, sub, sup {
 }
 
 hr {
-	border-color: #eb99a1;
+	border-color: rgb(140, 121, 114);
 }
 
 a {
 	text-decoration: none;
-	color: #eb99a1;
+	color: #b09990;
 }
 a:visited {
-	color: #e26f7a;
+	color: #b09990;
 }
 a:hover {
-	color: #DA4453;
-	border-bottom: 2px solid #d9d8dc;
+	color: rgb(126, 109, 103);
+	border-bottom: 2px solid rgb(126, 109, 103);
 }
 
 ul {
@@ -108,9 +108,9 @@ blockquote {
 	padding-top: 0.8em;
 	padding-bottom: 0.8em;
 	padding-right: 0.8em;
-	border-left: 5px solid #eb99a1;
+	border-left: 5px solid rgb(124, 108, 102);
 	margin-bottom: 2.5rem;
-	background-color: #40363a;
+	background-color: rgb(25, 27, 28);
 }
 
 blockquote p {
@@ -126,7 +126,7 @@ img, video {
 
 /* Pre and Code */
 pre {
-	background-color: #40363a;
+	background-color: rgb(25, 27, 28);
 	display: block;
 	padding: 1em;
 	overflow-x: auto;
@@ -138,7 +138,7 @@ pre {
 code, kbd, samp {
 	font-size: 0.9em;
 	padding: 0 0.5em;
-	background-color: #40363a;
+	background-color: rgb(25, 27, 28);
 	white-space: pre-wrap;
 }
 
@@ -158,15 +158,15 @@ table {
 
 td, th {
 	padding: 0.5em;
-	border-bottom: 1px solid #40363a;
+	border-bottom: 1px solid rgb(126, 109, 103);
 }
 
 /* Buttons, forms and input */
 input, textarea {
-	border: 1px solid #d9d8dc;
+	border: 1px solid rgb(25, 27, 28);
 }
 input:focus, textarea:focus {
-	border: 1px solid #eb99a1;
+	border: 1px solid rgb(140, 122, 115);
 }
 
 textarea {
@@ -179,10 +179,10 @@ textarea {
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
-	background-color: #eb99a1;
-	color: #120c0e;
+	background-color: rgb(39, 46, 47);
+	color: rgb(216, 210, 207);
 	border-radius: 1px;
-	border: 1px solid #eb99a1;
+	border: 1px solid rgb(39, 46, 47);
 	cursor: pointer;
 	box-sizing: border-box;
 }
@@ -191,51 +191,33 @@ textarea {
 	opacity: 0.5;
 }
 .button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type=submit]:focus:enabled, input[type=submit]:hover:enabled, input[type=reset]:focus:enabled, input[type=reset]:hover:enabled, input[type=button]:focus:enabled, input[type=button]:hover:enabled {
-	background-color: #DA4453;
-	border-color: #DA4453;
-	color: #120c0e;
+	background-color: rgb(34, 41, 42);
+	border-color: rgb(34, 41, 42);
+	color: rgb(216, 210, 207);
 	outline: 0;
 }
 
 textarea, select, input {
-	color: #d9d8dc;
+	color: rgb(205, 198, 194);
 	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
 	margin-bottom: 10px;
-	background-color: #40363a;
-	border: 1px solid #40363a;
+	background-color: rgb(25, 27, 28);
+	border: 1px solid rgb(25, 27, 28);
 	border-radius: 4px;
 	box-shadow: none;
 	box-sizing: border-box;
 }
 textarea:focus, select:focus, input:focus {
-	border: 1px solid #eb99a1;
+	border: 1px solid rgb(140, 122, 115);
 	outline: 0;
 }
 
 input[type=checkbox]:focus {
-	outline: 1px dotted #eb99a1;
+	outline: 1px dotted #ffffff;
 }
 
 label, legend, fieldset {
 	display: block;
 	margin-bottom: 0.5rem;
 	font-weight: 600;
-}
-
-/* Personal modifications */
-body {
-	margin-top: 70px;
-	margin-bottom: 70px;
-}
-
-a img.social {
-	width: 3rem;
-	height: 3rem;
-	display: inline;
-	margin-bottom: 0;
-	padding: 0;
-}
-
-li {
-	margin-bottom: 0.2em;
 }

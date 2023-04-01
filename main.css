@@ -1,0 +1,17 @@
+/* Personal modifications */
+body {
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+a img.social {
+	width: 3rem;
+	height: 3rem;
+	display: inline;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 0.2em;
+}
