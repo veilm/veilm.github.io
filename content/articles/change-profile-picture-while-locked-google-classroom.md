@@ -1,7 +1,37 @@
 ---
-title: "Changing your Locked Google Classroom Profile Picture"
+title: "[PATCHED] Changing your Locked Google Classroom Profile Picture"
 date: 2022-09-23T19:01:41-04:00
 ---
+
+### 2023-05-31 Update
+As of around March 2023, the method I came up with will no longer work for a
+user who does not have access to the album ID of their Profile Photos album
+(which is you, in most cases). Of course, I never received any email, although I
+doubt anybody at Google even read the article. This was probably just a regular
+UX update that patched the method coincidentally.
+
+Now, instead of taking you to a separate page for an "archived" Past Profile
+Photos site, a popup view is shown, with no change in the page URL. The ID isn't
+obvious from any HTTP requests the page makes, either:
+
+![New past photos UI](/9-14.png)
+
+I could try looking through the client code further or seeing if any older
+Google services are missing this update, but I don't have much motivation to do
+that:
+1. I still have access to my ID
+(``AF1QipOVFPcNMloVc65uJVWbF0vNccoO2qn7TqAz2ODQ``), so I haven't lost any
+functionality.
+2. Besides a few students I showed the article to in real life, I highly doubt
+anybody read this or even particularly cared about the topic. Even if they did,
+I don't benefit from random students across YRDSB changing their profile
+pictures.
+
+It also probably wouldn't be as interesting to investigate as something like
+[Natas](https://overthewire.org/wargames/natas/).
+
+Anyway, I will leave the original article visible below, in case some part of it
+could still be educational (unlikely).
 
 ### Note to Google
 If you (a software engineer, tester, etc.) are reading this and thinking "Lol
@@ -85,7 +115,7 @@ complete the change. This will surely work, right?
 Well, don't bother trying it, because this was my first idea, and it doesn't
 work. Instead of setting the picture, it tells you that something went wrong and
 that you should try again. Of course, trying again doesn't change anything, and
-you're left with little hope at the sight of yet another dead end. 
+you're left with little hope at the sight of yet another dead end.
 
 This doesn't mean that it's impossible. You just have to be a bit more clever in
 the way you approach the problem.
