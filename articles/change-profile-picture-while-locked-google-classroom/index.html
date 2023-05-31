@@ -1,4 +1,19 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,height=device-height,initial-scale=1"><meta name=description content="Note to Google If you (a software engineer, tester, etc.) are reading this and thinking &ldquo;Lol thanks, now I&rsquo;ll just patch it&rdquo;, please, please, please send me an email (michaelskyba@net-c.com or michaelskyba1411@gmail.com) notifying me about it. If you do, I (in exchange; as thanks) promise to work hard to find exploits in the future but report them to you immediately instead of abusing them for personal use or posting them as a lazy attempt at publicity."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>Changing your Locked Google Classroom Profile Picture | Michael Skyba</title></head><body><h1>Changing your Locked Google Classroom Profile Picture</h1><p>by Michael Skyba<br>(Initially written on 2022-09-23)</p><hr><h3 id=note-to-google>Note to Google</h3><p>If you (a software engineer, tester, etc.) are reading this and thinking &ldquo;Lol
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,height=device-height,initial-scale=1"><meta name=description content="2023-05-31 Update As of around March 2023, the method I came up with will no longer work for a user who does not have access to the album ID of their Profile Photos album (which is you, in most cases). Of course, I never received any email, although I doubt anybody at Google even read the article. This was probably just a regular UX update that patched the method coincidentally."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>[PATCHED] Changing your Locked Google Classroom Profile Picture | Michael Skyba</title></head><body><h1>[PATCHED] Changing your Locked Google Classroom Profile Picture</h1><p>by Michael Skyba<br>(Initially written on 2022-09-23)</p><hr><h3 id=2023-05-31-update>2023-05-31 Update</h3><p>As of around March 2023, the method I came up with will no longer work for a
+user who does not have access to the album ID of their Profile Photos album
+(which is you, in most cases). Of course, I never received any email, although I
+doubt anybody at Google even read the article. This was probably just a regular
+UX update that patched the method coincidentally.</p><p>Now, instead of taking you to a separate page for an &ldquo;archived&rdquo; Past Profile
+Photos site, a popup view is shown, with no change in the page URL. The ID isn&rsquo;t
+obvious from any HTTP requests the page makes, either:</p><p><img src=/9-14.png alt="New past photos UI"></p><p>I could try looking through the client code further or seeing if any older
+Google services are missing this update, but I don&rsquo;t have much motivation to do
+that:</p><ol><li>I still have access to my ID
+(<code>AF1QipOVFPcNMloVc65uJVWbF0vNccoO2qn7TqAz2ODQ</code>), so I haven&rsquo;t lost any
+functionality.</li><li>Besides a few students I showed the article to in real life, I highly doubt
+anybody read this or even particularly cared about the topic. Even if they did,
+I don&rsquo;t benefit from random students across YRDSB changing their profile
+pictures.</li></ol><p>It also probably wouldn&rsquo;t be as interesting to investigate as something like
+<a href=https://overthewire.org/wargames/natas/>Natas</a>.</p><p>Anyway, I will leave the original article visible below, in case some part of it
+could still be educational (unlikely).</p><h3 id=note-to-google>Note to Google</h3><p>If you (a software engineer, tester, etc.) are reading this and thinking &ldquo;Lol
 thanks, now I&rsquo;ll just patch it&rdquo;, please, please, please send me an email
 (<a href=mailto:michaelskyba@net-c.com>michaelskyba@net-c.com</a> or
 <a href=mailto:michaelskyba1411@gmail.com>michaelskyba1411@gmail.com</a>) notifying me
