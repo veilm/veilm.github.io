@@ -48,11 +48,11 @@ Make a modification to the ``src/auth.nim`` file, commenting out line 205.
 +++ auth2.nim
 @@ -202,7 +202,7 @@
      quit 1
- 
+
    let accountsPrePurge = accountPool.len
 -  accountPool.keepItIf(not it.hasExpired)
 +  # accountPool.keepItIf(not it.hasExpired)
- 
+
    log "Successfully added ", accountPool.len, " valid accounts."
    if accountsPrePurge > accountPool.len:
 ```

@@ -11,6 +11,14 @@
 <!-- crss-insert -->
 
 <item>
+<title>RSS with a private Nitter instance</title>
+<guid>https://michaelskyba.github.io/articles/nitter-private-rss/</guid>
+<link>https://michaelskyba.github.io/articles/nitter-private-rss/</link>
+<pubDate>2024-02-19T20:30:00-04:00</pubDate>
+<description>(This is a new Article.)</description>
+</item>
+
+<item>
 <title>Storytelling: Permutation</title>
 <guid>https://michaelskyba.github.io/games/2022/storytelling/</guid>
 <link>https://michaelskyba.github.io/games/2022/storytelling/</link>
