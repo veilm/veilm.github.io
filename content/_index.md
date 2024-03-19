@@ -3,9 +3,10 @@ customCSS: index.css
 ---
 
 I'm Michael, a high school student from Canada. My interests include
-- working on programming projects
-- studying Japanese
-- playing the piano
+- programming
+- playing CTFs
+- Japanese media and the Japanese language
+- piano
 
 [Articles](/articles/)
 [Tools](/games/tools/)
