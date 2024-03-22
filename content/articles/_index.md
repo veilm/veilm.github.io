@@ -2,5 +2,6 @@
 title: "Articles"
 ---
 
-These are probably too terrible to call "articles" (the word implies some level
-of quality, doesn't it?), but I don't know of a more precise way of phrasing it.
+These posts are most likely of insufficient quality to live up to the
+implications of the word "article", but maybe they can still be better than
+nothing.
