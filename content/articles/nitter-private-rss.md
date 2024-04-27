@@ -81,6 +81,7 @@ variables to match the account you wish to use.
 ```py
 import requests
 import base64
+import json
 
 username = "XXXXXXXXXXXX"
 password = "XXXXXXXXXXXX"
@@ -230,7 +231,7 @@ for t4_subtask in task4.get("subtasks", []):
             if "open_account" in t5_subtask:
                 authentication = t5_subtask["open_account"]
 
-print(authentication)
+print(json.dumps(authentication))
 ```
 
 As far as I can tell, this script will only work for accounts with 2FA disabled
@@ -240,13 +241,10 @@ investigate.
 
 When you run the file, it will print JSON output containing your credentials.
 Save these to a file called ``guest_accounts.jsonl`` in the root of your
-``nitter`` source directory.
+``nitter`` source directory. Don't pretty-format the JSON; it's supposed to be
+on one line.
 
-- Don't pretty-format the JSON; it has to be on one line.
-- Python prints the JSON using single quotes by default, but the file needs to
-be in double quotes. You can convert using someting like ``tr "'" '"'``.
-
-It should end up looking something like
+Your ``guest_accounts.jsonl`` should end up structured like
 ```json
 {"user": {"id": 1111111111111111111, "id_str": "1111111111111111111", "name": "XXXXXXXXXX", "screen_name": "XXXXXXXXXXXXXXX"}, "next_link": {"link_type": "subtask", "link_id": "next_link", "subtask_id": "SuccessExit"}, "oauth_token": "1111111111111111111-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "oauth_token_secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "known_device_token": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "attribution_event": "login"}
 ```
