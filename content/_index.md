@@ -2,7 +2,9 @@
 customCSS: index.css
 ---
 
-I'm Michael, a high school student from Canada. My interests include
+I'm Michael, a ~~common, unproductive Arch user~~ "researcher reporting
+important security issues" from Canada. Welcome to my breathtaking website. Some
+of my interests are
 - programming
 - playing CTFs
 - Japanese media and the Japanese language
