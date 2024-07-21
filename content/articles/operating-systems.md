@@ -254,7 +254,7 @@ knowledge "gained" from installing Arch or Artix "manually" is particularly
 applicable to day-to-day usage. Trying to provide a GUI package manager, for
 example, would be a mistake, in my opinion.
 
-##### [Kiss Linux](https://kisslinux.org/)
+##### [Kiss Linux](https://kisscommunity.org/)
 
 Kiss Linux is the last meme distribution I tried before realizing that I was in
 denial about my prospects of "minimalism" and accepting Arch as The Answer.
