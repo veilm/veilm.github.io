@@ -1,0 +1,51 @@
+body {
+	transform: rotate(-0.5deg);
+	max-width: 60em;
+}
+
+hr {
+	border-width: 0.2em;
+	width: 7em;
+}
+
+h1 {
+	margin-top: 1em;
+	text-align: center;
+}
+
+label {
+	text-align: center;
+	margin-top: 0.5em;
+	font-weight: normal;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 6fr 7fr;
+}
+
+div#content-left {
+	padding: 3em;
+}
+
+div#content-right {
+	/* padding: 4em; */
+	padding: 5em 4em 0 4em;
+}
+
+img#art {
+	margin: 0;
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+span#reality {
+	text-decoration-line: line-through;
+	text-decoration-thickness: 0.125em;
+}
+
+a.link {
+	margin-left: 10px;
+}
