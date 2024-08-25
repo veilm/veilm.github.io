@@ -1,0 +1,24 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,height=device-height,initial-scale=1"><meta name=description content="While Arch and Gentoo have had internet working mostly out-of-the-box, Artix has not. I thought it could be beneficial if I compiled a list of steps:
+1. Become root: su 2. Make an initial wpa_supplicant configuration Create /etc/wpa_supplicant/wpa_supplicant.conf with the following lines:
+ctrl_interface=/run/wpa_supplicant update_config=1 3. Make sure rfkill isn&rsquo;t active rfkill unblock wifi 4. Start wpa_supplicant wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf My device name was &lsquo;wlan0&rsquo;, but you should edit the command if yours is different."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>Get a Working Wi-Fi Connection in an Artix Installation | Michael Skyba</title></head><body><h1>Get a Working Wi-Fi Connection in an Artix Installation</h1><p>by Michael Skyba<br>(Initially written on 2021-04-20)</p><hr><p>While Arch and Gentoo have had internet working mostly out-of-the-box, Artix has
+not. I thought it could be beneficial if I compiled a list of steps:</p><h5 id=1-become-root-su>1. Become root: <code>su</code></h5><h5 id=2-make-an-initial-wpa_supplicant-configuration>2. Make an initial wpa_supplicant configuration</h5><p>Create <code>/etc/wpa_supplicant/wpa_supplicant.conf</code> with the following lines:</p><pre tabindex=0><code>ctrl_interface=/run/wpa_supplicant
+update_config=1
+</code></pre><h5 id=3-make-sure-rfkill-isnt-active>3. Make sure rfkill isn&rsquo;t active</h5><pre tabindex=0><code>rfkill unblock wifi
+</code></pre><h5 id=4-start-wpa_supplicant>4. Start wpa_supplicant</h5><pre tabindex=0><code>wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre><p>My device name was &lsquo;wlan0&rsquo;, but you should edit the command if yours is different.</p><h5 id=5-run-wpa_cli>5. Run wpa_cli</h5><pre tabindex=0><code>wpa_cli
+scan
+scan_results
+add_network
+set_network 0 ssid &#34;&lt;the name of your wifi network&gt;&#34;
+set_network 0 psk &#34;&lt;the password of your wifi network&gt;&#34;
+enable_network 0
+save_config
+quit
+</code></pre><p>Of course, this could be significantly more complicated depending on what kind
+of security your network is using.</p><h5 id=6-start-dhcpcd-dhcpcd>6. Start dhcpcd: <code>dhcpcd</code></h5><p>You should be done. I&rsquo;ve done two Artix installs and both of them have succeeded
+with this procedure. Note that for both I have used the base-runit installation;
+it&rsquo;s possible that using a different init system (openrc and s6 are available
+currently) will require different steps.</p><h3 id=rambling>Rambling</h3><blockquote><p>You thought it could be beneficial? But how could that be if nobody is going to
+read this?</p></blockquote><p>That same logic can be applied to every &ldquo;article&rdquo; I make, though. It makes more
+sense to assume that somebody <em>is</em> reading, even if that assumption is
+unfounded.</p><hr><a href=..>Article Index</a></body></html>

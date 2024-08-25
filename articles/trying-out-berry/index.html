@@ -1,0 +1,79 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,height=device-height,initial-scale=1"><meta name=description content="Introduction Recently, I found out about berry, which describes itself as &ldquo;[a] healthy, byte-sized window manager&rdquo;. As of the time I&rsquo;m writing this, I have used berry for around one day. In this post, I would like to share my first impressions.
+Philosophy The main thing that drew me to berry in the first place was its philosophy. dwm, which I was using before trying berry, does not follow the UNIX philosophy as well as I would like."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>Trying Out berry | Michael Skyba</title></head><body><h1>Trying Out berry</h1><p>by Michael Skyba<br>(Initially written on 2021-08-15)</p><hr><h4 id=introduction>Introduction</h4><p>Recently, I found out about <a href=https://github.com/JLErvin/berry>berry</a>, which
+describes itself as &ldquo;[a] healthy, byte-sized window manager&rdquo;. As of the time I&rsquo;m
+writing this, I have used berry for around one day. In this post, I would like
+to share my first impressions.</p><h4 id=philosophy>Philosophy</h4><p>The main thing that drew me to berry in the first place was its philosophy.
+<a href=https://dwm.suckless.org>dwm</a>, which I was using before trying berry, does not
+follow the UNIX philosophy as well as I would like. In particular, dwm ships
+with a statusbar and a hotkey daemon (the latter is not a precise description,
+but I&rsquo;m not sure what would be a better name; if you use dwm, you know what I&rsquo;m
+referring to). Neither of these is part of berry. Additionally, berry has no
+built-in tiling. Instead, you can use berryc to create your own layout.</p><h4 id=statusbar>Statusbar</h4><p>If berry doesn&rsquo;t come with its own statusbar, which one did I choose? On dwm, my
+usage of its statusbar consisted of a cron job, running <code>xsetroot -name</code>
+calls. This was enough for me. I didn&rsquo;t need (and still don&rsquo;t need) fancy
+modules or anything like that.</p><p>With this in mind, I went with the statusbar that berry&rsquo;s website recommended:
+<a href=https://github.com/LemonBoy/bar>lemonbar</a>, which I am quite satisfied with.
+Lemonbar has all of the features I would want in a statusbar without going too
+far over.</p><p>The main annoyance is that, from what I understand, it is incompatible with
+fontconfig and TTF fonts. After realizing this, I installed
+<a href=https://gitlab.com/protesilaos/lemonbar-xft>lemonbar-xft</a>, a fork with fonts
+working the way I would expect.</p><p>Another thing that caught me a bit off guard was the usage. I assumed you would
+run <code>bard</code> or something similar and then call xsetroot as I was used to.
+Instead, lemonbar uses standard input. For example, you could run <code>echo test | lemonbar -p</code> to set the bar to the word &ldquo;test&rdquo;. Here&rsquo;s what I came up with for
+replicating my xsetroot workflow:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#75715e># Init</span>
+</span></span><span style=display:flex><span>rm -f $XDG_DATA_HOME/statusbar
+</span></span><span style=display:flex><span>touch $XDG_DATA_HOME/statusbar
+</span></span><span style=display:flex><span>tail -f $XDG_DATA_HOME/statusbar | lemonbar -g x25+0+0 -f <span style=color:#e6db74>&#34;Noto Sans JP Medium&#34;</span> -p &amp;
+</span></span></code></pre></div><p>Then, inside cron, my battery script runs
+<code>echo "%{c}$(date)%{c}" >> $XDG_DATA_HOME/statusbar</code>.</p><p>This isn&rsquo;t literally how it works, because I don&rsquo;t just want the date in
+BusyBox&rsquo;s default format, but you get the idea. The <code>%{c}</code>s are used to center
+the text, which I prefer to dwm&rsquo;s bar, where the placement is the right side of
+the bar. (Yes, I know that there&rsquo;s probably a way to change that, but it&rsquo;s more
+annoying than searching &ldquo;center&rdquo; in <code>man lemonbar</code>, especially since dwm&rsquo;s bar
+additionally shows the title of the window and draws workspaces, neither of
+which I require.)</p><p>Now that I think about it, it&rsquo;s probably easier to simply use <code>killall lemonbar ; echo "%{c}$(date)%{c}" | lemonbar -p</code>. I might give that a go later; it will
+likely perform better than what I just described, the use of a &ldquo;statusbar&rdquo; file.</p><h4 id=berryc>berryc</h4><p>Another significant &ldquo;change&rdquo; a dwm user would experience is the new reliance on
+berryc, which is berry&rsquo;s client.</p><p>First, berryc has &ldquo;settings&rdquo;, which I set in berry&rsquo;s autostart file. I copied
+the default autostart (from the &ldquo;examples&rdquo; directory), my main change being that
+I removed all borders/window decorations.</p><p>Second, and more importantly, berryc gives you control over the management of
+windows. Instead of setting WM-related bindings in a config.h file, you need
+some kind of hotkey daemon that can map keys to berryc commands. I chose to use
+<a href=https://github.com/baskerville/sxhkd>sxhkd</a>, which I would say is one of my
+favourite projects of all time. sxhkd is such a pleasure to use that I even
+ported my bindings to <a href=https://dwm.suckless.org/patches/fsignal/>fsignal</a> when
+I was on dwm. As an example,
+<a href=https://gist.github.com/michaelskyba/94d2ba318750cc5e5ab5b76d4ffadc6f>here</a> is
+my current configuration for berry. I have a separate, WM-agnostic configuration
+that includes everything else (e.g. launching my terminal, running dmenu
+scripts).</p><p>Now, seeing this simple config file, combined with the knowledge that berry has
+no built-in tiling, you may be wondering whether managing windows is a huge pain
+(compared to dwm). My personal answer is no. So far, this basic setup of
+Super+(h|l|Space) for tiling windows is enough, and I&rsquo;ve yet to feel a sudden
+urge to switch back to dwm.</p><p>You should note that I was not a heavy user of &ldquo;complicated&rdquo; tiling on dwm. I
+mostly had a few windows in master-stack mode, occasionally popping into monocle
+mode. My workflow with berry feels just as convenient. If, however, you are
+frequently using something fancy
+(<a href=https://dwm.suckless.org/patches/fibonacci/>this</a>, for example), you will
+need to write a few shell scripts to make berry act the way you like. This
+should be totally possible, though. See their website if you&rsquo;re interested in
+doing so.</p><h4 id=caveats>Caveats</h4><p>In this section, I will describe a few things that I&rsquo;m unsatisfied with. I&rsquo;m
+pretty much nitpicking, though, so none of this should be taken very seriously.</p><p>First, neither resizing nor moving windows using (Super|Alt)+Mouse is working
+for me. This should be taken with a mountain of salt, though, because I&rsquo;m 99%
+sure that it&rsquo;s my fault. When I first tried berry (with the example
+configuration), it was working fine. I&rsquo;ll fiddle around with it later.</p><p>Second, I&rsquo;m not a fan of <a href=https://berrywm.org>their website</a>.
+Its design does not look simple, which, from what I can see, sends the opposite
+message. Some examples of better-designed websites, in my opinion, are (the
+current states of): my website, KISS Linux&rsquo;s website, and OpenBSD&rsquo;s website.</p><p>Even besides the design, some of the information on the website is inaccurate.
+For instance, on their &ldquo;Usage&rdquo; page, they wrote <code>window_*_relative</code> instead of
+<code>window_*_absolute</code>. See the man page if something mentioned on their website
+isn&rsquo;t working the way you would expect.</p><p>Finally, judging from the GitHub issues, I can see that berry&rsquo;s philosophy is
+not 100% aligned with mine. This is to be expected, of course; different people
+have different opinions, but still. For an example, see <a href=https://github.com/JLErvin/berry/issues/127>this
+issue</a>. In my eyes, this should be
+left for the user to script, which would not be difficult at all. JLErvin
+doesn&rsquo;t explicitly agree that it should be added, but you get what I mean.</p><h4 id=conclusion>Conclusion</h4><p>In conclusion, berry is a great window manager that, in my opinion, follows the
+UNIX philosophy better than dwm does. Unless something overwhelmingly negative
+and completely unexpected comes up, it is unlikely that I will switch back to
+dwm.</p><p>If you don&rsquo;t care about anything else I have said so far, my only advice would
+be to try berry out for yourself. At <em>worst</em>, you&rsquo;ll lose ~20 minutes of your
+time and garner newfound respect for your current window manager.</p><hr><a href=..>Article Index</a></body></html>
