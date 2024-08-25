@@ -24,11 +24,11 @@ main {
 	grid-template-columns: 6fr 7fr;
 }
 
-div#content-left {
+div#content-art {
 	padding: 3em;
 }
 
-div#content-right {
+div#content-info {
 	/* padding: 4em; */
 	padding: 5em 4em 0 4em;
 }
