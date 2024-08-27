@@ -420,3 +420,204 @@ that will later need to be regurgitated on the test, in which case any mutually
 perpetuated errors aren't a particular issue. The few who have genuine interests
 in deeply grasping the material, however, will essentially have to start from
 scratch and relearn everything on their own.
+
+### Expensive Responsibility
+
+The final notable component of your experience as a student will be the iron
+insistence with which teachers enforce their personal intuitions about optimal
+learning and work systems onto you.
+
+As an example of what this can apply to, being physically within the walls of
+the school has always felt threatening to me, regardless of where I was. Some
+sense of composure and subjective "safety" is important for me to focus, so this
+spatial discomfort was an added layer of resistance I had to endure when
+completing the already draining assignments.
+
+Hence, it was always most efficient for me to leave the particularly painful
+work for when I arrive home and have more control over my environment, in my
+room. During school hours, I preferred to complete tasks that were either
+cognitively light, like reading through entries in my RSS feeds, or
+intrinsically motivating, like
+[solving K&R exercises](https://www.youtube.com/watch?v=6-khrUYyilE).
+
+Teachers, of course, have zero sympathy for such approaches: when you're
+physically present for the specified 75 minutes of class, they demand that you
+also be mentally present for 75 minutes.
+
+A common variation of this I've noticed in other students is that they sometimes
+have an important assessment scheduled for their next period. If we're not
+engaged in anything particularly urgent, a student may wish, quite reasonably,
+to neglect whichever frivolous time sink we were handed, and instead spend the
+current period studying. You can guess what a teacher's reaction to this is if
+they learn of it.
+
+Among myself and many others, the result is not a magical loyalty to the
+teacher's whim. I continued trying my best to optimize my schedule, to
+work on what I most believed in at the moment. Yet within this state, much of my
+mental effort had to be spent maintaining a dynamic mental model of the position
+of my seat relative to other entities in the classroom. I needed to be ready to
+switch the active desktop of my laptop's window manager, depending on the
+teacher's viewing angle.
+
+Such practices were as greatly irritating as they were distracting.
+Occasionally, teachers enjoyed wandering the room so relentlessly that I had no
+choice but to work as they intended. Every time this happened, as expected, my
+pace of progress was a crawl compared to when I'm at home. I was initially
+reluctant to disobey official instructions in Grade 9, but I gradually
+discovered that faithfully pursuing my goals was incompatible with external
+honesty.
+
+A more asynchronous example of this is that in mathematics courses, teachers
+assign pages of mindless homework and genuinely expect you to complete every
+exercise. (These were similar in style to the graphing worksheet I displayed
+earlier, but would be designed to consume around 45 minutes of your spare time
+per day.) In four out of five of my math courses, teachers regularly performed
+"homework checks", sequentially visiting each student to confirm that your
+notebook contained solutions, while marking down notes on a list of names.
+
+Halfway through Grade 9 MPM1D1, I became aware that these checks only influence
+the "Learning Skills" section of my report card and not my actual grades.
+Shocked, I asked the teacher whether there was any other possible motivator for
+students to heed them. After receiving a blurry answer about how I couldn't
+possibly be expected to comprehend the material otherwise, I stopped all
+homework, and haven't completed a single question since.
+
+I understand that for certain students, this sort of micromanagement is entirely
+necessary, but there is literally nobody to whom they are willing to extend
+trust. If a student has a 100.0% in your course, *maybe* they know a thing or
+two about effective work and study habits? Perhaps at least *consider* treating
+them as something close to an autonomous agent?
+
+Grade 12 MCV4U1 was an outlier: the teacher seemed to realize that my time was
+being wasted by the forced in-class practice questions at the white boards, and
+then chose to exclude me from the student pool when randomly compiling work
+groups. From that point onwards, each day, I would simply show up to class, sit
+with my back bent on the awkwardly-shaped bar stools, and type away on my
+laptop.
+
+For that one course, I was completely free to handle my own studying for
+examinations, to not have any pretense of care for whichever mockery was being
+discussed in class. (Most lessons would involve extensively describing an
+algorithm to solve a supposedly new "special case" of a problem type. Anybody
+should have been able to derive the steps independently within a few minutes of
+thinking, but no, something apparently justified spending weeks on them.)
+
+My resultant lack of class participation resulted in an *S* ("Satisfactory"; the
+second-worst evaluation) for "Collaboration" on my report card.
+
+![wide cat expressing indifference](/1721159682-cat-care.png)
+
+### Was it worth it? Heavens, no, but...
+
+These twelves years had nothing close to a positive ROI on their own terms, but
+a nontrivial silver lining exists. Any somewhat valuable knowledge or ability I
+currently possess has developed downstream of the following chain of
+realizations:
+
+1. I have XYZ goals regarding which skills I wish to acquire.
+2. The default "education" thrust on me is entirely irrelevant or even
+counterproductive to XYZ.
+3. Therefore, the only way to escape mental destitution is to make a deliberate
+effort to control my time and figure out XYZ on my own.
+
+If the school's quality was a mere 20% higher, if a few teachers were
+just slightly more willing to engage with my clarification questions... then
+maybe #1 would have stayed diluted, I would never have been conscious of #2, and
+everything would have went wrong. Perhaps I would still be peacefully gliding to
+university right now, rather than bitterly complaining inside a markdown file.
+
+(Being glad that a process accidentally changed your utility function is a
+highly questionable form of praise...)
+
+In hindsight, George Hotz's yearbook quote is remarkably wise:
+> *"If something's worth doing, then it's worth doing well. Most things are just
+not worth doing."* (paraphrased)
+
+If I had to relive school again, I'd make the absolute minimum time investment
+required for a 50.0% average (barely earning every course credit) and then
+muster as much focus as I can into other, actually useful pursuits.
+
+(Besides the parental pressure, a barrier to such an approach is the increased
+difficulty of self-assessment: "Sure, I tell myself that I'm strategically
+underperforming on these narrow tasks, but could I really have done any better
+if I tried? Am I just incapable of anything?" I suppose in this respect,
+projects like
+[AoC 2015-19-2](https://www.youtube.com/watch?v=Ov6lAsVwfDM) have been far more
+directly cognitively demanding than any school assignment, and therefore can
+provide a better reference.)
+
+My only experience with private education was in a Russian-language
+[Montessori program](https://en.wikipedia.org/wiki/Montessori_education) that I
+attended, from ages ~4-6, instead of the junior and senior kindergarten years
+that public elementary schools offer. Judging from my memories of it, the
+competence of the single teacher, paired with the smaller class size of 5-10
+students, resolved almost every issue I've described, although I'm not sure how
+well it would scale to higher years.
+
+There are a few other scraps of use that high school has produced, such as my
+newly diminished fear of "work" in general: I now have little expectation that
+anything will come close in discomfort to experiences like the Grade 11 English
+culminating.
+
+However, it's also evident that I would have been many years ahead of my current
+self by now if my time was being used even somewhat optimally. Simply spending
+all those hours talking to GPT-4 about the topics in the curriculum, for
+example, would already be a massive improvement over dying inside a classroom.
+I'm bullish on similarly self-paced alternatives to the traditional environment,
+such as
+[AoPS](https://artofproblemsolving.com/),
+[Math Academy](https://mathacademy.com), and Andrej's upcoming
+[Eureka Labs](https://eurekalabs.ai/).
+
+As a final summary of my school board, here's a real email I received near the
+end of Grade 12, regarding a supposed cyber attack that crashed the school's
+attendance tracking infrastructure for a few weeks in 2023:
+
+![email from YRDSB describing leaks of OENs and report card PDFs](/1721159680-email.png)
+
+> ![Ryan Beckford](/1721159681-hackers.png) \
+Oh no! The scary hacker entered the default password on a public route that the
+server admins didn't bother to configure! My, how lucky we are to have the brave
+and "diligent" YRDSB to protect us...
+
+### Anything next? Apart from more slop?
+
+In the couple of weeks since graduating, I've gained something roughly adjacent
+to work experience. I can now attest to the fact that adding bells and whistles
+to the web application of a generic media service does not feel intrinsically
+valuable.
+
+One moral is that your work circumstances are a reflection of yourself and that
+I'm in a situation of trading time in exchange for nothing because I'm stupid. I
+happen to have some amazingly convenient excuses related to my family and living
+situation, but still, it's true that I need to be planning more carefully and
+working much harder.
+
+In a reasonable setting, you'd at least divert your direct monkeytyping time
+into dev infrastructure time, setting up more efficient feedback loops with
+LLMs. Unfortunately, this doesn't work particularly well when it takes two weeks
+for the company to approve your installation of Git, and only after wrestling
+with three different security officers whose job it is to protect the stock
+price from you.
+
+In contrast, the small bit of work I've done for
+[OpenAI's bug bounty program](https://bugcrowd.com/openai), while frustrating in
+certain social aspects, felt meaningful enough to greatly spike my standards.
+I've grown annoyed with anything whose only return is sustaining basic needs for
+survival, or even worse, generic "career advancement".
+
+It's hard to predict the short-term impact of AGI, so I'm not sure to what
+extent any life decisions that are presently regarded as serious are going to be
+mattering soon, though.
+
+I don't expect any solving of the alignment problem (sorry, Mira, but my strict
+policy is to copy-paste Eliezer's
+[conclusion](https://x.com/_Mira___Mira_/status/1819069854730858597) without
+reading a word of the theory). Regardless, in a supposedly successful post-ASI
+world, these issues may make even less of a difference. I'm not sure how anyone
+is going to pretend to extract meaning from their original status or trait T=1.5
+being higher than the average T=0.9, once everyone (except Zy) has already
+self-augmented into T=1000.
+
+...
+
