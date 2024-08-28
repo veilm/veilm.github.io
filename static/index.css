@@ -29,7 +29,6 @@ div#content-art {
 }
 
 div#content-info {
-	/* padding: 4em; */
 	padding: 5em 4em 0 4em;
 }
 
@@ -48,4 +47,25 @@ span#reality {
 
 a.link {
 	margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+	main {
+		/* Single column to place content-art and content-info vertically */
+		grid-template-columns: 1fr;
+	}
+
+	div#content-info {
+		order: 1;
+
+		padding: 15%;
+	}
+
+	div#content-art {
+		/* Have the art be below content-info */
+		order: 2;
+
+		max-width: 400px;
+		margin: auto;
+	}
 }
