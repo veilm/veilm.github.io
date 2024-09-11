@@ -1,6 +1,15 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,height=device-height,initial-scale=1"><meta name=description content="While Arch and Gentoo have had internet working mostly out-of-the-box, Artix has not. I thought it could be beneficial if I compiled a list of steps:
-1. Become root: su 2. Make an initial wpa_supplicant configuration Create /etc/wpa_supplicant/wpa_supplicant.conf with the following lines:
-ctrl_interface=/run/wpa_supplicant update_config=1 3. Make sure rfkill isn&rsquo;t active rfkill unblock wifi 4. Start wpa_supplicant wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf My device name was &lsquo;wlan0&rsquo;, but you should edit the command if yours is different."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>Get a Working Wi-Fi Connection in an Artix Installation | Michael Skyba</title></head><body><h1>Get a Working Wi-Fi Connection in an Artix Installation</h1><p>by Michael Skyba<br>(Initially written on 2021-04-20)</p><hr><p>While Arch and Gentoo have had internet working mostly out-of-the-box, Artix has
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,height=device-height,initial-scale=1"><meta name=description content="While Arch and Gentoo have had internet working mostly out-of-the-box, Artix has
+not. I thought it could be beneficial if I compiled a list of steps:
+1. Become root: su
+2. Make an initial wpa_supplicant configuration
+Create /etc/wpa_supplicant/wpa_supplicant.conf with the following lines:
+ctrl_interface=/run/wpa_supplicant
+update_config=1
+3. Make sure rfkill isn&rsquo;t active
+rfkill unblock wifi
+4. Start wpa_supplicant
+wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+My device name was &lsquo;wlan0&rsquo;, but you should edit the command if yours is different."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>Get a Working Wi-Fi Connection in an Artix Installation | Michael Skyba</title></head><body><h1>Get a Working Wi-Fi Connection in an Artix Installation</h1><p>by Michael Skyba<br>(Initially written on 2021-04-20)</p><hr><p>While Arch and Gentoo have had internet working mostly out-of-the-box, Artix has
 not. I thought it could be beneficial if I compiled a list of steps:</p><h5 id=1-become-root-su>1. Become root: <code>su</code></h5><h5 id=2-make-an-initial-wpa_supplicant-configuration>2. Make an initial wpa_supplicant configuration</h5><p>Create <code>/etc/wpa_supplicant/wpa_supplicant.conf</code> with the following lines:</p><pre tabindex=0><code>ctrl_interface=/run/wpa_supplicant
 update_config=1
 </code></pre><h5 id=3-make-sure-rfkill-isnt-active>3. Make sure rfkill isn&rsquo;t active</h5><pre tabindex=0><code>rfkill unblock wifi
