@@ -229,8 +229,7 @@ I wrote [some software](https://github.com/a13xrzteach/a13xrzteach.github.io) to
 run on them, and we ended up deploying them around the TV monitors, as an
 additional display of school information.
 
-{{< tweet user="sucralose__" id="1787887085535342957" >}}
-
+![2024-05-07: "I've placed God's chosen company (their GTC March 2024 presentation) onto the monitors at my high school. We are officially blessed now"](/1728715367-monitors.jpeg)
 (The NVIDIA presentation was a test deployment that I soon after had to remove.
 For other tests, I played a few of my Advent of Code and Touhou 10 recordings.)
 
@@ -303,7 +302,6 @@ Instead, in an actual MPM1D1 course, a breathing adult will look at you with a
 straight face as they toss you leftover vomit:
 
 ![graphing slop worksheet](/1721159679-mpm1d1.png)
-
 (This exact image is only of a worksheet; a marked, summative assignment in
 MPM1D1 would be similar except with 10x more of the same questions, and no
 option to submit work digitally.)
