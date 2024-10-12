@@ -9,6 +9,10 @@ in this article will no longer generate any credentials. I don't have time right
 now to update this with new instructions. Sorry. Hopefully some part can still
 be helpful for reference.
 
+The only working variation I see as of 1728707696 is KTachibanaM's:
+- https://github.com/sekai-soft/nitter
+- https://github.com/sekai-soft/nitter/blob/master/scripts/auth.py
+
 ### Disclaimer
 Depending on future updates to Twitter's authentication system and/or the Nitter
 project, the information in this post may be inaccurate. I am only declaring my
