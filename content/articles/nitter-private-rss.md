@@ -3,6 +3,12 @@ title: "RSS with a private Nitter instance"
 date: 2024-02-19T20:30:00-04:00
 ---
 
+### 2024-10-11 Update
+A while ago now, some endpoints were disabled, and the Python script mentioned
+in this article will no longer generate any credentials. I don't have time right
+now to update this with new instructions. Sorry. Hopefully some part can still
+be helpful for reference.
+
 ### Disclaimer
 Depending on future updates to Twitter's authentication system and/or the Nitter
 project, the information in this post may be inaccurate. I am only declaring my
