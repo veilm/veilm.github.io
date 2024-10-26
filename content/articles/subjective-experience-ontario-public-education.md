@@ -507,8 +507,8 @@ second-worst evaluation) for "Collaboration" on my report card.
 
 ### Was it worth it? Heavens, no, but...
 
-These twelves years had nothing close to a positive ROI on their own terms, but
-a nontrivial silver lining exists. Any somewhat valuable knowledge or ability I
+These twelve years had nothing close to a positive ROI on their own terms, but a
+nontrivial silver lining exists. Any somewhat valuable knowledge or ability I
 currently possess has developed downstream of the following chain of
 realizations:
 
