@@ -6,7 +6,7 @@ date: 2021-07-23T22:12:54-04:00
 I have decided to put this to use for sharing scripts I write, in hopes that one
 or two of them could be of use to somebody.
 
-[msk_music GitHub Gist](https://gist.github.com/michaelskyba/2e04107265d4255671bb597581afd76a)
+[msk_music GitHub Gist](https://gist.github.com/veilm/2e04107265d4255671bb597581afd76a)
 
 ``msk_music`` is a simple and featureless way of listening to music. It uses the
 equivalent of "random" and "consume" modes on mpd (which it aims to replace).
@@ -15,7 +15,7 @@ For my use cases, which I believe are fairly standard, it does so successfully.
 Instead of having a vast number of configuration options, additional features
 can be implemented by changing the source code, which, due to being written in
 shell, is completely transparent. For instance,
-[this patch](https://gist.github.com/michaelskyba/697a06b1f53f3f8a14e94bd9ccf4de3e)
+[this patch](https://gist.github.com/veilm/697a06b1f53f3f8a14e94bd9ccf4de3e)
 will have ``msk_music`` only run on .mp4 files.
 
 ``msk_music`` depends on mpv and a set of coreutils that support sed's "-i"

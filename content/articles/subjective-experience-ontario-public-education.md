@@ -225,7 +225,7 @@ a nonzero level of personal interest in their students learning and succeeding.
 A couple were even willing to invest additional time to support students in
 related pursuits outside of class. The CS teacher, for instance, went out of his
 way to allocate part of the tech department budget to purchasing Raspberry Pis.
-I wrote [some software](https://github.com/michaelskyba/pi-monitor/) to
+I wrote [some software](https://github.com/veilm/pi-monitor/) to
 run on them, and we ended up deploying them around the TV monitors, as an
 additional display of school information.
 

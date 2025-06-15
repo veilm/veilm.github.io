@@ -81,7 +81,7 @@ some kind of hotkey daemon that can map keys to berryc commands. I chose to use
 favourite projects of all time. sxhkd is such a pleasure to use that I even
 ported my bindings to [fsignal](https://dwm.suckless.org/patches/fsignal/) when
 I was on dwm. As an example,
-[here](https://gist.github.com/michaelskyba/94d2ba318750cc5e5ab5b76d4ffadc6f) is
+[here](https://gist.github.com/veilm/94d2ba318750cc5e5ab5b76d4ffadc6f) is
 my current configuration for berry. I have a separate, WM-agnostic configuration
 that includes everything else (e.g. launching my terminal, running dmenu
 scripts).

@@ -4,7 +4,7 @@ date: 2021-09-22T10:59:07-04:00
 ---
 
 This article is about
-[scripture](https://github.com/michaelskyba/scripture), an SM-2 implementation
+[scripture](https://github.com/veilm/scripture), an SM-2 implementation
 that I made. This will not be a rewrite of the README but instead notes on why I
 made it, my workflow with it, etc.
 
@@ -125,7 +125,7 @@ knowledge should be enough.
 
 #### 2022 Update
 I have since made a new SRS program called
-[tunnel](https://github.com/michaelskyba/tunnel) which uses this non-interactive
+[tunnel](https://github.com/veilm/tunnel) which uses this non-interactive
 CLI system. It might warrant its own article later.
 
 ## Personal Extensions
@@ -163,7 +163,7 @@ distribution.
 Anyway, to kill two birds with one stone, I created a script called
 "msk_display" that uses Imagemagick to write text onto a generated image and
 then launches sxiv on that temporary image.
-([Here](https://gist.github.com/michaelskyba/700366b6649f4dc6fa6cba6c264d3da2)
+([Here](https://gist.github.com/veilm/700366b6649f4dc6fa6cba6c264d3da2)
 is the actual script in case you're interested.) In my scripture hook, it will
 display cards with a "jp:" prefix with msk_display.
 
@@ -208,7 +208,7 @@ you know of a more easily decipherable engine, let me know.
 
 The last thing I want to note in regard to this spelling deck is a script I made
 called
-["spell_add"](https://gist.github.com/michaelskyba/a0dacf6f07bcf6b6d4f83015569bae01)
+["spell_add"](https://gist.github.com/veilm/a0dacf6f07bcf6b6d4f83015569bae01)
 (a very creative name). This script makes it more convenient to add a new word
 to the spelling deck. It's another example of something easy to do when your
 deck files are in plaintext rather than a complicated format.
@@ -246,7 +246,7 @@ files that the deck might use (usually images):
 directory isn't in $HOME, but it's close enough for demonstration purposes.)
 
 Then, I have a script called
-[msk_scripture](https://gist.github.com/michaelskyba/b4de15a3bf8c4be719c7a8191e67c446)
+[msk_scripture](https://gist.github.com/veilm/b4de15a3bf8c4be719c7a8191e67c446)
 which saves me time ``cd``ing into directories and typing "scripture" over and
 over. It just goes through each deck and runs scripture on it. Once a day, I
 type "msk_scripture" into the terminal and complete any due reviews.
@@ -259,4 +259,4 @@ this kind of information belongs in the README, but my website is a fine place
 to put it.
 
 I may make another article in a similar style but about
-[budgetpass](https://github.com/michaelskyba/budgetpass).
+[budgetpass](https://github.com/veilm/budgetpass).

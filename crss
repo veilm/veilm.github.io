@@ -3,7 +3,7 @@
 # Config
 title="Michael Skyba"
 rss_file=./static/rss.xml
-base_url=https://michaelskyba.github.io
+base_url=https://veilm.github.io
 rss_url=$base_url/rss.xml
 
 # =================================================
