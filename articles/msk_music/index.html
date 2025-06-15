@@ -3,13 +3,13 @@ or two of them could be of use to somebody.
 msk_music GitHub Gist
 msk_music is a simple and featureless way of listening to music. It uses the
 equivalent of &ldquo;random&rdquo; and &ldquo;consume&rdquo; modes on mpd (which it aims to replace).
-For my use cases, which I believe are fairly standard, it does so successfully."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>msk_music | Michael Skyba</title></head><body><h1>msk_music</h1><p>by Michael Skyba<br>(Initially written on 2021-07-23)</p><hr><p>I have decided to put this to use for sharing scripts I write, in hopes that one
-or two of them could be of use to somebody.</p><p><a href=https://gist.github.com/michaelskyba/2e04107265d4255671bb597581afd76a>msk_music GitHub Gist</a></p><p><code>msk_music</code> is a simple and featureless way of listening to music. It uses the
+For my use cases, which I believe are fairly standard, it does so successfully."><link rel=canonical href=https://veilm.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>msk_music | Michael Skyba</title></head><body><h1>msk_music</h1><p>by Michael Skyba<br>(Initially written on 2021-07-23)</p><hr><p>I have decided to put this to use for sharing scripts I write, in hopes that one
+or two of them could be of use to somebody.</p><p><a href=https://gist.github.com/veilm/2e04107265d4255671bb597581afd76a>msk_music GitHub Gist</a></p><p><code>msk_music</code> is a simple and featureless way of listening to music. It uses the
 equivalent of &ldquo;random&rdquo; and &ldquo;consume&rdquo; modes on mpd (which it aims to replace).
 For my use cases, which I believe are fairly standard, it does so successfully.</p><p>Instead of having a vast number of configuration options, additional features
 can be implemented by changing the source code, which, due to being written in
 shell, is completely transparent. For instance,
-<a href=https://gist.github.com/michaelskyba/697a06b1f53f3f8a14e94bd9ccf4de3e>this patch</a>
+<a href=https://gist.github.com/veilm/697a06b1f53f3f8a14e94bd9ccf4de3e>this patch</a>
 will have <code>msk_music</code> only run on .mp4 files.</p><p><code>msk_music</code> depends on mpv and a set of coreutils that support sed&rsquo;s &ldquo;-i&rdquo;
 flag. <code>msk_music</code> is around 20 LOC, and was written in about 10 minutes.</p><hr><h3 id=2022-08-06-rambling>2022-08-06: Rambling</h3><blockquote><p>So, it uses local files?</p></blockquote><p>Yes. You could modify it to create the track list from a user-generated track
 list that contains web URLs, but that would be weird.</p><p>Playing music locally instead of through a streaming service offers a few

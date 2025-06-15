@@ -7,8 +7,8 @@ SM-2 is an application of
 spaced repetition. The idea
 is to be able to retain information in your long-term memory while spending as
 little total time as possible reviewing it. SM-2 is a popular algorithm due to
-it proving to be effective."><link rel=canonical href=https://michaelskyba.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>Scripture | Michael Skyba</title></head><body><h1>Scripture</h1><p>by Michael Skyba<br>(Initially written on 2021-09-22)</p><hr><p>This article is about
-<a href=https://github.com/michaelskyba/scripture>scripture</a>, an SM-2 implementation
+it proving to be effective."><link rel=canonical href=https://veilm.github.io/><link rel=icon href=/favicon.png><link rel=stylesheet href=/sakura.css type=text/css><link rel=stylesheet href=/main.css type=text/css><title>Scripture | Michael Skyba</title></head><body><h1>Scripture</h1><p>by Michael Skyba<br>(Initially written on 2021-09-22)</p><hr><p>This article is about
+<a href=https://github.com/veilm/scripture>scripture</a>, an SM-2 implementation
 that I made. This will not be a rewrite of the README but instead notes on why I
 made it, my workflow with it, etc.</p><h2 id=sm-2>SM-2</h2><p>SM-2 is an application of
 <a href=https://en.wikipedia.org/wiki/Spaced_repetition>spaced repetition</a>. The idea
@@ -80,7 +80,7 @@ leave it the way it is.</p><p>This is also better than the SCRIPTURE_HOOK system
 good, clear documentation (in my opinion), it&rsquo;s still something you have to
 learn/read about before you can use it. Ideally, simply having shell scripting
 knowledge should be enough.</p><h4 id=2022-update>2022 Update</h4><p>I have since made a new SRS program called
-<a href=https://github.com/michaelskyba/tunnel>tunnel</a> which uses this non-interactive
+<a href=https://github.com/veilm/tunnel>tunnel</a> which uses this non-interactive
 CLI system. It might warrant its own article later.</p><h2 id=personal-extensions>Personal Extensions</h2><h5 id=reviewing-cards-in-random-order>Reviewing Cards in Random Order</h5><p>I&rsquo;m not sure what SM-2&rsquo;s official advice is, but I like reviewing cards in
 random order. I do not want to impose this opinion on every scripture user, so
 in my hook script, I simply run <code>shuf -o &lt;deck file></code> before the review
@@ -98,7 +98,7 @@ characters&rdquo; as a supported feature, and I remember it working on a differe
 distribution.</p><p>Anyway, to kill two birds with one stone, I created a script called
 &ldquo;msk_display&rdquo; that uses Imagemagick to write text onto a generated image and
 then launches sxiv on that temporary image.
-(<a href=https://gist.github.com/michaelskyba/700366b6649f4dc6fa6cba6c264d3da2>Here</a>
+(<a href=https://gist.github.com/veilm/700366b6649f4dc6fa6cba6c264d3da2>Here</a>
 is the actual script in case you&rsquo;re interested.) In my scripture hook, it will
 display cards with a &ldquo;jp:&rdquo; prefix with msk_display.</p><h5 id=spelling-deck>Spelling Deck</h5><p>Although I &ldquo;consider&rdquo; English my native language, there are still some spellings
 that I occasionally get confused about. To remember those, I can use scripture,
@@ -126,7 +126,7 @@ where to link to, it seems like there are quite a lot of options, so maybe I can
 read the documentation later and tweak it to sound more natural to me. Still, if
 you know of a more easily decipherable engine, let me know.</p><p>The last thing I want to note in regard to this spelling deck is a script I made
 called
-<a href=https://gist.github.com/michaelskyba/a0dacf6f07bcf6b6d4f83015569bae01>&ldquo;spell_add&rdquo;</a>
+<a href=https://gist.github.com/veilm/a0dacf6f07bcf6b6d4f83015569bae01>&ldquo;spell_add&rdquo;</a>
 (a very creative name). This script makes it more convenient to add a new word
 to the spelling deck. It&rsquo;s another example of something easy to do when your
 deck files are in plaintext rather than a complicated format.</p><h2 id=file-organization>File Organization</h2><p>I like to keep a separate directory for each deck, which can contain any other
@@ -147,11 +147,11 @@ files that the deck might use (usually images):</p><div class=highlight><pre tab
 </span></span><span style=display:flex><span><span style=color:#ae81ff>3</span> directories, <span style=color:#ae81ff>6</span> files
 </span></span></code></pre></div><ul><li>I have a &ldquo;decks&rdquo; directory</li><li>Each deck has its own directory inside &ldquo;decks&rdquo;</li><li>I use hyphens as a convention for subcategories</li><li>Each deck directory uses a file called &ldquo;deck&rdquo; as the deck</li><li>My scripture hook is not in a deck directory, but instead the master &ldquo;decks&rdquo; directory</li></ul><p>(This isn&rsquo;t 100% what I use, because I have more decks and my decks
 directory isn&rsquo;t in $HOME, but it&rsquo;s close enough for demonstration purposes.)</p><p>Then, I have a script called
-<a href=https://gist.github.com/michaelskyba/b4de15a3bf8c4be719c7a8191e67c446>msk_scripture</a>
+<a href=https://gist.github.com/veilm/b4de15a3bf8c4be719c7a8191e67c446>msk_scripture</a>
 which saves me time <code>cd</code>ing into directories and typing &ldquo;scripture&rdquo; over and
 over. It just goes through each deck and runs scripture on it. Once a day, I
 type &ldquo;msk_scripture&rdquo; into the terminal and complete any due reviews.</p><h2 id=conclusion>Conclusion</h2><p>That&rsquo;s the end of this article. Hopefully, if you read all of it, you have a
 good idea of whether or not scripture will satisfy your needs. I don&rsquo;t think
 this kind of information belongs in the README, but my website is a fine place
 to put it.</p><p>I may make another article in a similar style but about
-<a href=https://github.com/michaelskyba/budgetpass>budgetpass</a>.</p><hr><a href=..>Article Index</a></body></html>
+<a href=https://github.com/veilm/budgetpass>budgetpass</a>.</p><hr><a href=..>Article Index</a></body></html>

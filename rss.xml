@@ -5,215 +5,215 @@
 <title>Michael Skyba</title>
 <description>Michael Skyba - RSS Feed</description>
 <language>en-us</language>
-<link>https://michaelskyba.github.io/rss.xml</link>
-<atom:link href="https://michaelskyba.github.io/rss.xml" rel="self" type="application/rss+xml" />
+<link>https://veilm.github.io/rss.xml</link>
+<atom:link href="https://veilm.github.io/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- crss-insert -->
 
 <item>
 <title>Subjective Experience of Ontario Public Education</title>
-<guid>https://michaelskyba.github.io/articles/subjective-experience-ontario-public-education/</guid>
-<link>https://michaelskyba.github.io/articles/subjective-experience-ontario-public-education/</link>
+<guid>https://veilm.github.io/articles/subjective-experience-ontario-public-education/</guid>
+<link>https://veilm.github.io/articles/subjective-experience-ontario-public-education/</link>
 <pubDate>2024-07-18T19:12:37-04:00</pubDate>
 <description>(This is a new Article.)</description>
 </item>
 
 <item>
 <title>Basic Evolutionary Simulation</title>
-<guid>https://michaelskyba.github.io/games/tools/simulation/</guid>
-<link>https://michaelskyba.github.io/games/tools/simulation/</link>
+<guid>https://veilm.github.io/games/tools/simulation/</guid>
+<link>https://veilm.github.io/games/tools/simulation/</link>
 <pubDate>2024-04-09</pubDate>
 <description>(This is a new Tool.)</description>
 </item>
 
 <item>
 <title>RSS with a private Nitter instance</title>
-<guid>https://michaelskyba.github.io/articles/nitter-private-rss/</guid>
-<link>https://michaelskyba.github.io/articles/nitter-private-rss/</link>
+<guid>https://veilm.github.io/articles/nitter-private-rss/</guid>
+<link>https://veilm.github.io/articles/nitter-private-rss/</link>
 <pubDate>2024-02-19T20:30:00-04:00</pubDate>
 <description>(This is a new Article.)</description>
 </item>
 
 <item>
 <title>Storytelling: Permutation</title>
-<guid>https://michaelskyba.github.io/games/2022/storytelling/</guid>
-<link>https://michaelskyba.github.io/games/2022/storytelling/</link>
+<guid>https://veilm.github.io/games/2022/storytelling/</guid>
+<link>https://veilm.github.io/games/2022/storytelling/</link>
 <pubDate>2022-11-04</pubDate>
 <description>(This is a new Game.)</description>
 </item>
 
 <item>
 <title>Rock, Paper, Scissors!</title>
-<guid>https://michaelskyba.github.io/games/2022/rps/</guid>
-<link>https://michaelskyba.github.io/games/2022/rps/</link>
+<guid>https://veilm.github.io/games/2022/rps/</guid>
+<link>https://veilm.github.io/games/2022/rps/</link>
 <pubDate>2022-10-21</pubDate>
 <description>(This is a new Game.)</description>
 </item>
 
 <item>
 <title>Changing your Locked Google Classroom Profile Picture</title>
-<guid>https://michaelskyba.github.io/articles/change-profile-picture-while-locked-google-classroom/</guid>
-<link>https://michaelskyba.github.io/articles/change-profile-picture-while-locked-google-classroom/</link>
+<guid>https://veilm.github.io/articles/change-profile-picture-while-locked-google-classroom/</guid>
+<link>https://veilm.github.io/articles/change-profile-picture-while-locked-google-classroom/</link>
 <pubDate>2022-09-23T19:01:41-04:00</pubDate>
 <description>(This is a new Article.)</description>
 </item>
 
 <item>
 <title>Becoming a PulseAudio user</title>
-<guid>https://michaelskyba.github.io/articles/becoming-a-pulseaudio-user/</guid>
-<link>https://michaelskyba.github.io/articles/becoming-a-pulseaudio-user/</link>
+<guid>https://veilm.github.io/articles/becoming-a-pulseaudio-user/</guid>
+<link>https://veilm.github.io/articles/becoming-a-pulseaudio-user/</link>
 <pubDate>2022-08-24T10:44:45-04:00</pubDate>
 <description>(This is a new Article.)</description>
 </item>
 
 <item>
 <title>Malfacile Gajnita Savo</title>
-<guid>https://michaelskyba.github.io/savo/public/</guid>
-<link>https://michaelskyba.github.io/savo/public/</link>
+<guid>https://veilm.github.io/savo/public/</guid>
+<link>https://veilm.github.io/savo/public/</link>
 <pubDate>2022-08-11</pubDate>
 <description>(This is a new, large, but work-in-progress JS game.)</description>
 </item>
 
 <item>
 <title>Robots</title>
-<guid>https://michaelskyba.github.io/games/2022/robots/</guid>
-<link>https://michaelskyba.github.io/games/2022/robots/</link>
+<guid>https://veilm.github.io/games/2022/robots/</guid>
+<link>https://veilm.github.io/games/2022/robots/</link>
 <pubDate>Mon, 16 May 2022 19:58:49 -0400</pubDate>
 <description>(This is a new JS game.)</description>
 </item>
 
 <item>
 <title>Falling Stars</title>
-<guid>https://michaelskyba.github.io/games/2022/falling_stars/</guid>
-<link>https://michaelskyba.github.io/games/2022/falling_stars/</link>
+<guid>https://veilm.github.io/games/2022/falling_stars/</guid>
+<link>https://veilm.github.io/games/2022/falling_stars/</link>
 <pubDate>Sun, 15 May 2022 19:58:25 -0400</pubDate>
 <description>(This is a new JS game.)</description>
 </item>
 
 <item>
 <title>Pong 2</title>
-<guid>https://michaelskyba.github.io/games/2022/pong2/</guid>
-<link>https://michaelskyba.github.io/games/2022/pong2/</link>
+<guid>https://veilm.github.io/games/2022/pong2/</guid>
+<link>https://veilm.github.io/games/2022/pong2/</link>
 <pubDate>Wed, 11 May 2022 10:07:19 -0400</pubDate>
 <description>(This is a new JS game.)</description>
 </item>
 
 <item>
 <title>Tic-Tac-Toe</title>
-<guid>https://michaelskyba.github.io/games/2022/tic-tac-toe/public/</guid>
-<link>https://michaelskyba.github.io/games/2022/tic-tac-toe/public/</link>
+<guid>https://veilm.github.io/games/2022/tic-tac-toe/public/</guid>
+<link>https://veilm.github.io/games/2022/tic-tac-toe/public/</link>
 <pubDate>Thu, 05 May 2022 14:01:04 -0400</pubDate>
 <description>(This is a new JS game.)</description>
 </item>
 
 <item>
 <title>Sudoku</title>
-<guid>https://michaelskyba.github.io/games/2022/sudoku/</guid>
-<link>https://michaelskyba.github.io/games/2022/sudoku/</link>
+<guid>https://veilm.github.io/games/2022/sudoku/</guid>
+<link>https://veilm.github.io/games/2022/sudoku/</link>
 <pubDate>Wed, 04 May 2022 23:27:22 -0400</pubDate>
 <description>(This is a new JS game.)</description>
 </item>
 
 <item>
 <title>21</title>
-<guid>https://michaelskyba.github.io/games/2022/21/public/</guid>
-<link>https://michaelskyba.github.io/games/2022/21/public/</link>
+<guid>https://veilm.github.io/games/2022/21/public/</guid>
+<link>https://veilm.github.io/games/2022/21/public/</link>
 <pubDate>Wed, 04 May 2022 23:27:15 -0400</pubDate>
 <description>(This is a new JS game.)</description>
 </item>
 
 <item>
 <title>Pokémon-inspired Battle Game</title>
-<guid>https://michaelskyba.github.io/games/2022/pokemon_battle/public/</guid>
-<link>https://michaelskyba.github.io/games/2022/pokemon_battle/public/</link>
+<guid>https://veilm.github.io/games/2022/pokemon_battle/public/</guid>
+<link>https://veilm.github.io/games/2022/pokemon_battle/public/</link>
 <pubDate>Wed, 04 May 2022 23:27:06 -0400</pubDate>
 <description>(This is a new JS game.)</description>
 </item>
 
 <item>
 <title>Arithmetic Game</title>
-<guid>https://michaelskyba.github.io/games/2022/math_game/public/</guid>
-<link>https://michaelskyba.github.io/games/2022/math_game/public/</link>
+<guid>https://veilm.github.io/games/2022/math_game/public/</guid>
+<link>https://veilm.github.io/games/2022/math_game/public/</link>
 <pubDate>Wed, 04 May 2022 23:26:45 -0400</pubDate>
 <description>(This is a new JS game.)</description>
 </item>
 
 <item>
 <title>Operating Systems</title>
-<guid>https://michaelskyba.github.io/articles/operating-systems/</guid>
-<link>https://michaelskyba.github.io/articles/operating-systems/</link>
+<guid>https://veilm.github.io/articles/operating-systems/</guid>
+<link>https://veilm.github.io/articles/operating-systems/</link>
 <pubDate>2022-04-13T11:13:58-04:00</pubDate>
 <description>(This is a new article.)</description>
 </item>
 
 <item>
 <title>Word Counter</title>
-<guid>https://michaelskyba.github.io/games/tools/wc.html</guid>
-<link>https://michaelskyba.github.io/games/tools/wc.html</link>
+<guid>https://veilm.github.io/games/tools/wc.html</guid>
+<link>https://veilm.github.io/games/tools/wc.html</link>
 <pubDate>Thu, 27 Jan 2022 20:57:34 -0500</pubDate>
 <description>(This is a new JS tool.)</description>
 </item>
 
 <item>
 <title>Unix/Epoch time conversion</title>
-<guid>https://michaelskyba.github.io/games/tools/time.html</guid>
-<link>https://michaelskyba.github.io/games/tools/time.html</link>
+<guid>https://veilm.github.io/games/tools/time.html</guid>
+<link>https://veilm.github.io/games/tools/time.html</link>
 <pubDate>Fri, 21 Jan 2022 20:57:34 -0500</pubDate>
 <description>(This is a new JS tool.)</description>
 </item>
 
 <item>
 <title>AsciiMath but with newlines</title>
-<guid>https://michaelskyba.github.io/games/tools/math.html</guid>
-<link>https://michaelskyba.github.io/games/tools/math.html</link>
+<guid>https://veilm.github.io/games/tools/math.html</guid>
+<link>https://veilm.github.io/games/tools/math.html</link>
 <pubDate>Fri, 21 Jan 2022 13:21:59 -0500</pubDate>
 <description>(This is a new JS tool.)</description>
 </item>
 
 <item>
 <title>Scripture</title>
-<guid>https://michaelskyba.github.io/articles/scripture/</guid>
-<link>https://michaelskyba.github.io/articles/scripture/</link>
+<guid>https://veilm.github.io/articles/scripture/</guid>
+<link>https://veilm.github.io/articles/scripture/</link>
 <pubDate>2021-09-22T10:59:07-04:00</pubDate>
 <description>(This is a new article.)</description>
 </item>
 
 <item>
 <title>Deltarune Chapter 1 on Linux</title>
-<guid>https://michaelskyba.github.io/articles/deltarune-chapter-1-on-linux/</guid>
-<link>https://michaelskyba.github.io/articles/deltarune-chapter-1-on-linux/</link>
+<guid>https://veilm.github.io/articles/deltarune-chapter-1-on-linux/</guid>
+<link>https://veilm.github.io/articles/deltarune-chapter-1-on-linux/</link>
 <pubDate>2021-09-17T10:53:42-04:00</pubDate>
 <description>(This is a new article.)</description>
 </item>
 
 <item>
 <title>Trying Out berry</title>
-<guid>https://michaelskyba.github.io/articles/trying-out-berry/</guid>
-<link>https://michaelskyba.github.io/articles/trying-out-berry/</link>
+<guid>https://veilm.github.io/articles/trying-out-berry/</guid>
+<link>https://veilm.github.io/articles/trying-out-berry/</link>
 <pubDate>2021-08-15T10:38:12-04:00</pubDate>
 <description>(This is a new article.)</description>
 </item>
 
 <item>
 <title>msk_music</title>
-<guid>https://michaelskyba.github.io/articles/msk_music/</guid>
-<link>https://michaelskyba.github.io/articles/msk_music/</link>
+<guid>https://veilm.github.io/articles/msk_music/</guid>
+<link>https://veilm.github.io/articles/msk_music/</link>
 <pubDate>2021-07-23T22:12:54-04:00</pubDate>
 <description>(This is a new article.)</description>
 </item>
 
 <item>
 <title>Get a Working Wi-Fi Connection in an Artix Installation</title>
-<guid>https://michaelskyba.github.io/articles/artix-wifi-connection/</guid>
-<link>https://michaelskyba.github.io/articles/artix-wifi-connection/</link>
+<guid>https://veilm.github.io/articles/artix-wifi-connection/</guid>
+<link>https://veilm.github.io/articles/artix-wifi-connection/</link>
 <pubDate>2021-04-20T21:43:53-04:00</pubDate>
 <description>(This is a new article.)</description>
 </item>
 
 <item>
 <title>Block a Site Using /etc/hosts</title>
-<guid>https://michaelskyba.github.io/articles/block-a-site-using-etc-hosts/</guid>
-<link>https://michaelskyba.github.io/articles/block-a-site-using-etc-hosts/</link>
+<guid>https://veilm.github.io/articles/block-a-site-using-etc-hosts/</guid>
+<link>https://veilm.github.io/articles/block-a-site-using-etc-hosts/</link>
 <pubDate>2021-04-20T18:47:20-04:00</pubDate>
 <description>(This is a new article.)</description>
 </item>

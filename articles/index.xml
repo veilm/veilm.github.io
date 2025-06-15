@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Articles on Michael Skyba</title><link>https://michaelskyba.github.io/articles/</link><description>Recent content in Articles on Michael Skyba</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 18 Jul 2024 19:12:37 -0400</lastBuildDate><atom:link href="https://michaelskyba.github.io/articles/index.xml" rel="self" type="application/rss+xml"/><item><title>Subjective Experience of Ontario Public Education</title><link>https://michaelskyba.github.io/articles/subjective-experience-ontario-public-education/</link><pubDate>Thu, 18 Jul 2024 19:12:37 -0400</pubDate><guid>https://michaelskyba.github.io/articles/subjective-experience-ontario-public-education/</guid><description>&lt;h3 id="preface">Preface&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Articles on Michael Skyba</title><link>https://veilm.github.io/articles/</link><description>Recent content in Articles on Michael Skyba</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 18 Jul 2024 19:12:37 -0400</lastBuildDate><atom:link href="https://veilm.github.io/articles/index.xml" rel="self" type="application/rss+xml"/><item><title>Subjective Experience of Ontario Public Education</title><link>https://veilm.github.io/articles/subjective-experience-ontario-public-education/</link><pubDate>Thu, 18 Jul 2024 19:12:37 -0400</pubDate><guid>https://veilm.github.io/articles/subjective-experience-ontario-public-education/</guid><description>&lt;h3 id="preface">Preface&lt;/h3>
 &lt;p>A few weeks ago now, I finished my twelfth year of public education, and
 graduated from my high school. At last?&lt;/p>
 &lt;p>I can still picture myself inside the graduation ceremony. The ceiling fans
@@ -6,7 +6,7 @@ did little to quell the heat. The graduation gown the board decided on, sold by
 a company whose X account I now see has 8 followers, stuck to my increasingly
 sweaty wrists. I tried rotating the position of the sleeve every fifteen
 minutes, while wondering how much better at negotiating I&amp;rsquo;d have needed to be to
-escape my parent/guardian&amp;rsquo;s command to attend.&lt;/p></description></item><item><title>RSS with a private Nitter instance</title><link>https://michaelskyba.github.io/articles/nitter-private-rss/</link><pubDate>Mon, 19 Feb 2024 20:30:00 -0400</pubDate><guid>https://michaelskyba.github.io/articles/nitter-private-rss/</guid><description>&lt;h3 id="2024-10-11-update">2024-10-11 Update&lt;/h3>
+escape my parent/guardian&amp;rsquo;s command to attend.&lt;/p></description></item><item><title>RSS with a private Nitter instance</title><link>https://veilm.github.io/articles/nitter-private-rss/</link><pubDate>Mon, 19 Feb 2024 20:30:00 -0400</pubDate><guid>https://veilm.github.io/articles/nitter-private-rss/</guid><description>&lt;h3 id="2024-10-11-update">2024-10-11 Update&lt;/h3>
 &lt;p>A while ago now, some endpoints were disabled, and the Python script mentioned
 in this article will no longer generate any credentials. I don&amp;rsquo;t have time right
 now to update this with new instructions. Sorry. Hopefully some part can still
@@ -19,19 +19,19 @@ be helpful for reference.&lt;/p>
 &lt;h3 id="disclaimer">Disclaimer&lt;/h3>
 &lt;p>Depending on future updates to Twitter&amp;rsquo;s authentication system and/or the Nitter
 project, the information in this post may be inaccurate. I am only declaring my
-faith in the context of the time I am writing this.&lt;/p></description></item><item><title>[PATCHED] Changing your Locked Google Classroom Profile Picture</title><link>https://michaelskyba.github.io/articles/change-profile-picture-while-locked-google-classroom/</link><pubDate>Fri, 23 Sep 2022 19:01:41 -0400</pubDate><guid>https://michaelskyba.github.io/articles/change-profile-picture-while-locked-google-classroom/</guid><description>&lt;h3 id="2023-05-31-update">2023-05-31 Update&lt;/h3>
+faith in the context of the time I am writing this.&lt;/p></description></item><item><title>[PATCHED] Changing your Locked Google Classroom Profile Picture</title><link>https://veilm.github.io/articles/change-profile-picture-while-locked-google-classroom/</link><pubDate>Fri, 23 Sep 2022 19:01:41 -0400</pubDate><guid>https://veilm.github.io/articles/change-profile-picture-while-locked-google-classroom/</guid><description>&lt;h3 id="2023-05-31-update">2023-05-31 Update&lt;/h3>
 &lt;p>As of around March 2023, the method I came up with will no longer work for a
 user who does not have access to the album ID of their Profile Photos album
 (which is you, in most cases). Of course, I never received any email, although I
 doubt anybody at Google even read the article. This was probably just a regular
-UX update that patched the method coincidentally.&lt;/p></description></item><item><title>Becoming a PulseAudio user</title><link>https://michaelskyba.github.io/articles/becoming-a-pulseaudio-user/</link><pubDate>Wed, 24 Aug 2022 10:44:45 -0400</pubDate><guid>https://michaelskyba.github.io/articles/becoming-a-pulseaudio-user/</guid><description>&lt;p>A few days ago, I decided to bite the bullet and install PulseAudio. I did so
+UX update that patched the method coincidentally.&lt;/p></description></item><item><title>Becoming a PulseAudio user</title><link>https://veilm.github.io/articles/becoming-a-pulseaudio-user/</link><pubDate>Wed, 24 Aug 2022 10:44:45 -0400</pubDate><guid>https://veilm.github.io/articles/becoming-a-pulseaudio-user/</guid><description>&lt;p>A few days ago, I decided to bite the bullet and install PulseAudio. I did so
 through PipeWire, though, so by &amp;ldquo;PulseAudio&amp;rdquo;, I&amp;rsquo;m going to be referring to the
 &lt;code>pipewire-pulse&lt;/code> system.&lt;/p>
 &lt;h2 id="background">Background&lt;/h2>
 &lt;p>While most Linux users either have it shipped with their distribution by
 default, have it as a dependency of other software they rely on, or install it
 themselves once they boot into their system for the first time, I was part of
-the minority who decided to say &amp;ldquo;no&amp;rdquo;.&lt;/p></description></item><item><title>Operating Systems</title><link>https://michaelskyba.github.io/articles/operating-systems/</link><pubDate>Wed, 13 Apr 2022 11:13:58 -0400</pubDate><guid>https://michaelskyba.github.io/articles/operating-systems/</guid><description>&lt;p>In this &amp;ldquo;article&amp;rdquo;, I will write about several different operating
+the minority who decided to say &amp;ldquo;no&amp;rdquo;.&lt;/p></description></item><item><title>Operating Systems</title><link>https://veilm.github.io/articles/operating-systems/</link><pubDate>Wed, 13 Apr 2022 11:13:58 -0400</pubDate><guid>https://veilm.github.io/articles/operating-systems/</guid><description>&lt;p>In this &amp;ldquo;article&amp;rdquo;, I will write about several different operating
 systems that I have used. I am not an expert on any of them and there is
 a high chance that none of my rambling will be useful to anybody. I am
 mostly writing this &amp;ldquo;for fun&amp;rdquo; or &amp;ldquo;for myself&amp;rdquo;, if that makes sense.&lt;/p>
@@ -41,8 +41,8 @@ mostly writing this &amp;ldquo;for fun&amp;rdquo; or &amp;ldquo;for myself&amp;r
 it came with Windows 10, which I used for a while. For the most part, I thought
 it worked fine. I didn&amp;rsquo;t have anything to compare it to. Eventually, however,
 after repeatedly hearing about &lt;a href="https://en.wikipedia.org/wiki/Linux">Linux&lt;/a> and
-how it was supposedly &amp;ldquo;good for programmers&amp;rdquo;, I decided to try it out.&lt;/p></description></item><item><title>Scripture</title><link>https://michaelskyba.github.io/articles/scripture/</link><pubDate>Wed, 22 Sep 2021 10:59:07 -0400</pubDate><guid>https://michaelskyba.github.io/articles/scripture/</guid><description>&lt;p>This article is about
-&lt;a href="https://github.com/michaelskyba/scripture">scripture&lt;/a>, an SM-2 implementation
+how it was supposedly &amp;ldquo;good for programmers&amp;rdquo;, I decided to try it out.&lt;/p></description></item><item><title>Scripture</title><link>https://veilm.github.io/articles/scripture/</link><pubDate>Wed, 22 Sep 2021 10:59:07 -0400</pubDate><guid>https://veilm.github.io/articles/scripture/</guid><description>&lt;p>This article is about
+&lt;a href="https://github.com/veilm/scripture">scripture&lt;/a>, an SM-2 implementation
 that I made. This will not be a rewrite of the README but instead notes on why I
 made it, my workflow with it, etc.&lt;/p>
 &lt;h2 id="sm-2">SM-2&lt;/h2>
@@ -50,7 +50,7 @@ made it, my workflow with it, etc.&lt;/p>
 &lt;a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition&lt;/a>. The idea
 is to be able to retain information in your long-term memory while spending as
 little total time as possible reviewing it. SM-2 is a popular algorithm due to
-it proving to be effective.&lt;/p></description></item><item><title>Deltarune Chapter 1 on Linux</title><link>https://michaelskyba.github.io/articles/deltarune-chapter-1-on-linux/</link><pubDate>Fri, 17 Sep 2021 10:53:42 -0400</pubDate><guid>https://michaelskyba.github.io/articles/deltarune-chapter-1-on-linux/</guid><description>&lt;p>With the release of Deltarune Chapter 2 today, I thought I would share how I was
+it proving to be effective.&lt;/p></description></item><item><title>Deltarune Chapter 1 on Linux</title><link>https://veilm.github.io/articles/deltarune-chapter-1-on-linux/</link><pubDate>Fri, 17 Sep 2021 10:53:42 -0400</pubDate><guid>https://veilm.github.io/articles/deltarune-chapter-1-on-linux/</guid><description>&lt;p>With the release of Deltarune Chapter 2 today, I thought I would share how I was
 able to get Chapter 1 working on Linux. I will assume you&amp;rsquo;re running Arch.&lt;/p>
 &lt;h4 id="1-download-the-exe">1. Download the .exe&lt;/h4>
 &lt;p>This would be from &lt;a href="https://deltarune.com/">Deltarune&amp;rsquo;s website&lt;/a>.&lt;/p>
@@ -62,7 +62,7 @@ able to get Chapter 1 working on Linux. I will assume you&amp;rsquo;re running A
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="3-install-deltarune-as-if-you-were-on-windows-using-wine">3. Install Deltarune as if you were on Windows using Wine&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>wine SURVEY_PROGRAM_WINDOWS_ENGLISH.exe
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>For me, it stopped writing new text after a couple of minutes, at which point I
-killed it with ^C. I guess it finishes installing but doesn&amp;rsquo;t quit Wine?&lt;/p></description></item><item><title>Trying Out berry</title><link>https://michaelskyba.github.io/articles/trying-out-berry/</link><pubDate>Sun, 15 Aug 2021 10:38:12 -0400</pubDate><guid>https://michaelskyba.github.io/articles/trying-out-berry/</guid><description>&lt;h4 id="introduction">Introduction&lt;/h4>
+killed it with ^C. I guess it finishes installing but doesn&amp;rsquo;t quit Wine?&lt;/p></description></item><item><title>Trying Out berry</title><link>https://veilm.github.io/articles/trying-out-berry/</link><pubDate>Sun, 15 Aug 2021 10:38:12 -0400</pubDate><guid>https://veilm.github.io/articles/trying-out-berry/</guid><description>&lt;h4 id="introduction">Introduction&lt;/h4>
 &lt;p>Recently, I found out about &lt;a href="https://github.com/JLErvin/berry">berry&lt;/a>, which
 describes itself as &amp;ldquo;[a] healthy, byte-sized window manager&amp;rdquo;. As of the time I&amp;rsquo;m
 writing this, I have used berry for around one day. In this post, I would like
@@ -74,12 +74,12 @@ follow the UNIX philosophy as well as I would like. In particular, dwm ships
 with a statusbar and a hotkey daemon (the latter is not a precise description,
 but I&amp;rsquo;m not sure what would be a better name; if you use dwm, you know what I&amp;rsquo;m
 referring to). Neither of these is part of berry. Additionally, berry has no
-built-in tiling. Instead, you can use berryc to create your own layout.&lt;/p></description></item><item><title>msk_music</title><link>https://michaelskyba.github.io/articles/msk_music/</link><pubDate>Fri, 23 Jul 2021 22:12:54 -0400</pubDate><guid>https://michaelskyba.github.io/articles/msk_music/</guid><description>&lt;p>I have decided to put this to use for sharing scripts I write, in hopes that one
+built-in tiling. Instead, you can use berryc to create your own layout.&lt;/p></description></item><item><title>msk_music</title><link>https://veilm.github.io/articles/msk_music/</link><pubDate>Fri, 23 Jul 2021 22:12:54 -0400</pubDate><guid>https://veilm.github.io/articles/msk_music/</guid><description>&lt;p>I have decided to put this to use for sharing scripts I write, in hopes that one
 or two of them could be of use to somebody.&lt;/p>
-&lt;p>&lt;a href="https://gist.github.com/michaelskyba/2e04107265d4255671bb597581afd76a">msk_music GitHub Gist&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://gist.github.com/veilm/2e04107265d4255671bb597581afd76a">msk_music GitHub Gist&lt;/a>&lt;/p>
 &lt;p>&lt;code>msk_music&lt;/code> is a simple and featureless way of listening to music. It uses the
 equivalent of &amp;ldquo;random&amp;rdquo; and &amp;ldquo;consume&amp;rdquo; modes on mpd (which it aims to replace).
-For my use cases, which I believe are fairly standard, it does so successfully.&lt;/p></description></item><item><title>Get a Working Wi-Fi Connection in an Artix Installation</title><link>https://michaelskyba.github.io/articles/artix-wifi-connection/</link><pubDate>Tue, 20 Apr 2021 21:43:53 -0400</pubDate><guid>https://michaelskyba.github.io/articles/artix-wifi-connection/</guid><description>&lt;p>While Arch and Gentoo have had internet working mostly out-of-the-box, Artix has
+For my use cases, which I believe are fairly standard, it does so successfully.&lt;/p></description></item><item><title>Get a Working Wi-Fi Connection in an Artix Installation</title><link>https://veilm.github.io/articles/artix-wifi-connection/</link><pubDate>Tue, 20 Apr 2021 21:43:53 -0400</pubDate><guid>https://veilm.github.io/articles/artix-wifi-connection/</guid><description>&lt;p>While Arch and Gentoo have had internet working mostly out-of-the-box, Artix has
 not. I thought it could be beneficial if I compiled a list of steps:&lt;/p>
 &lt;h5 id="1-become-root-su">1. Become root: &lt;code>su&lt;/code>&lt;/h5>
 &lt;h5 id="2-make-an-initial-wpa_supplicant-configuration">2. Make an initial wpa_supplicant configuration&lt;/h5>
@@ -90,7 +90,7 @@ update_config=1
 &lt;pre tabindex="0">&lt;code>rfkill unblock wifi
 &lt;/code>&lt;/pre>&lt;h5 id="4-start-wpa_supplicant">4. Start wpa_supplicant&lt;/h5>
 &lt;pre tabindex="0">&lt;code>wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
-&lt;/code>&lt;/pre>&lt;p>My device name was &amp;lsquo;wlan0&amp;rsquo;, but you should edit the command if yours is different.&lt;/p></description></item><item><title>Block a Site Using /etc/hosts</title><link>https://michaelskyba.github.io/articles/block-a-site-using-etc-hosts/</link><pubDate>Tue, 20 Apr 2021 18:47:20 -0400</pubDate><guid>https://michaelskyba.github.io/articles/block-a-site-using-etc-hosts/</guid><description>&lt;p>Simply add &lt;code>0.0.0.0 mysite&lt;/code> to your /etc/hosts file.&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>My device name was &amp;lsquo;wlan0&amp;rsquo;, but you should edit the command if yours is different.&lt;/p></description></item><item><title>Block a Site Using /etc/hosts</title><link>https://veilm.github.io/articles/block-a-site-using-etc-hosts/</link><pubDate>Tue, 20 Apr 2021 18:47:20 -0400</pubDate><guid>https://veilm.github.io/articles/block-a-site-using-etc-hosts/</guid><description>&lt;p>Simply add &lt;code>0.0.0.0 mysite&lt;/code> to your /etc/hosts file.&lt;/p>
 &lt;p>For example, &lt;code>0.0.0.0 example.com&lt;/code>. Here, example.com will basically be an
 alias for &amp;ldquo;0.0.0.0&amp;rdquo;, which acts as a dummy address.&lt;/p>
 &lt;p>Note that this isn&amp;rsquo;t completely reliable. If it&amp;rsquo;s not working, try adding a
