@@ -39,12 +39,16 @@ def build_article(md_path, template):
     html = html.replace("{{ content }}", html_content)
     html = html.replace("{{ date }}", meta.get("date", ""))
 
-    # Write HTML file next to the markdown file
-    output_path = md_path.with_suffix(".html")
+    # Create directory for the article
+    article_dir = md_path.parent / md_path.stem
+    article_dir.mkdir(exist_ok=True)
+    
+    # Write index.html inside the article directory
+    output_path = article_dir / "index.html"
     with open(output_path, "w") as f:
         f.write(html)
 
-    print(f"Built: {md_path.name} → {output_path.name}")
+    print(f"Built: {md_path.name} → {article_dir.name}/index.html")
     return md_path.stem, meta
 
 
@@ -57,8 +61,8 @@ def build_index(articles, template, articles_dir):
 
     for slug, meta in sorted_articles:
         title = meta.get("title", slug)
-        # Link to the .html file directly
-        articles_html += f'  <li><a href="{slug}.html">{title}</a></li>\n'
+        # Link to the directory (clean URL)
+        articles_html += f'  <li><a href="{slug}/">{title}</a></li>\n'
 
     articles_html += "</ul>"
 
