@@ -10,6 +10,7 @@ now to update this with new instructions. Sorry. Hopefully some part can still
 be helpful for reference.
 
 The only working variation I see as of 1728707696 is KTachibanaM's:
+
 - https://github.com/sekai-soft/nitter
 - https://github.com/sekai-soft/nitter/blob/master/scripts/auth.py
 
@@ -270,6 +271,7 @@ $ ./nitter
 ```
 
 By default,
+
 - Redis runs on ``localhost:6379``, which is also what nitter.conf is set to use.
 - Redis has no password, and nitter.conf doesn't provide a password.
 - nitter.conf configures Nitter to run on ``0.0.0.0:8080``.

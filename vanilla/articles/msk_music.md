@@ -32,6 +32,7 @@ list that contains web URLs, but that would be weird.
 
 Playing music locally instead of through a streaming service offers a few
 advantages:
+
 - You can listen to your music even when you're offline.
 - You can listen to music without the use of online streaming platforms, which
 often have required payments, advertisements, bloated, slow, resource-hogging

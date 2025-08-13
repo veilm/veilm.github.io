@@ -27,9 +27,11 @@
 in this article will no longer generate any credentials. I don&rsquo;t have time right
 now to update this with new instructions. Sorry. Hopefully some part can still
 be helpful for reference.</p>
-<p>The only working variation I see as of 1728707696 is KTachibanaM&rsquo;s:
-- https://github.com/sekai-soft/nitter
-- https://github.com/sekai-soft/nitter/blob/master/scripts/auth.py</p>
+<p>The only working variation I see as of 1728707696 is KTachibanaM&rsquo;s:</p>
+<ul>
+<li>https://github.com/sekai-soft/nitter</li>
+<li>https://github.com/sekai-soft/nitter/blob/master/scripts/auth.py</li>
+</ul>
 <h3>Disclaimer</h3>
 <p>Depending on future updates to Twitter&rsquo;s authentication system and/or the Nitter
 project, the information in this post may be inaccurate. I am only declaring my
@@ -267,10 +269,12 @@ them. I&rsquo;d guess that it&rsquo;s around a few months at least, though.</p>
 $<span class="w"> </span>./nitter
 </code></pre></div>
 
-<p>By default,
-- Redis runs on <code>localhost:6379</code>, which is also what nitter.conf is set to use.
-- Redis has no password, and nitter.conf doesn&rsquo;t provide a password.
-- nitter.conf configures Nitter to run on <code>0.0.0.0:8080</code>.</p>
+<p>By default,</p>
+<ul>
+<li>Redis runs on <code>localhost:6379</code>, which is also what nitter.conf is set to use.</li>
+<li>Redis has no password, and nitter.conf doesn&rsquo;t provide a password.</li>
+<li>nitter.conf configures Nitter to run on <code>0.0.0.0:8080</code>.</li>
+</ul>
 <p>So, you should now be able to access your RSS feeds at that location. For
 example, the following should work as expected.</p>
 <div class="codehilite"><pre><span></span><code>$<span class="w"> </span>curl<span class="w"> </span><span class="m">0</span>.0.0.0:8080/nearcyan/rss
