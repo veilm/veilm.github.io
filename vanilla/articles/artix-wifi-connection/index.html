@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Get a Working Wi-Fi Connection in an Artix Installation | Michael Skyba</title>
+		<link rel="icon" href="/static/favicon.png">
+		<link rel="stylesheet" href="/static/sakura.css">
+		<link rel="stylesheet" href="/static/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		>
+	</head>
+	<body>
+		<header>
+			<h1>Get a Working Wi-Fi Connection in an Artix Installation</h1>
+			<nav>
+				<a href="/">Home</a>| <a href="/articles/">Articles</a>
+			</nav>
+			<hr>
+		</header>
+		<main><p>While Arch and Gentoo have had internet working mostly out-of-the-box, Artix has
+not. I thought it could be beneficial if I compiled a list of steps:</p>
+<h5>1. Become root: <code>su</code></h5>
+<h5>2. Make an initial wpa_supplicant configuration</h5>
+<p>Create <code>/etc/wpa_supplicant/wpa_supplicant.conf</code> with the following lines:</p>
+<div class="codehilite"><pre><span></span><code>ctrl_interface=/run/wpa_supplicant
+update_config=1
+</code></pre></div>
+
+<h5>3. Make sure rfkill isn't active</h5>
+<div class="codehilite"><pre><span></span><code>rfkill unblock wifi
+</code></pre></div>
+
+<h5>4. Start wpa_supplicant</h5>
+<div class="codehilite"><pre><span></span><code>wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre></div>
+
+<p>My device name was 'wlan0', but you should edit the command if yours is different.</p>
+<h5>5. Run wpa_cli</h5>
+<div class="codehilite"><pre><span></span><code>wpa_cli
+scan
+scan_results
+add_network
+set_network 0 ssid &quot;&lt;the name of your wifi network&gt;&quot;
+set_network 0 psk &quot;&lt;the password of your wifi network&gt;&quot;
+enable_network 0
+save_config
+quit
+</code></pre></div>
+
+<p>Of course, this could be significantly more complicated depending on what kind
+of security your network is using.</p>
+<h5>6. Start dhcpcd: <code>dhcpcd</code></h5>
+<p>You should be done. I've done two Artix installs and both of them have succeeded
+with this procedure. Note that for both I have used the base-runit installation;
+it's possible that using a different init system (openrc and s6 are available
+currently) will require different steps.</p>
+<h3>Rambling</h3>
+<blockquote>
+<p>You thought it could be beneficial? But how could that be if nobody is going to
+read this?</p>
+</blockquote>
+<p>That same logic can be applied to every "article" I make, though. It makes more
+sense to assume that somebody <em>is</em> reading, even if that assumption is
+unfounded.</p></main>
+	</body>
+</html>

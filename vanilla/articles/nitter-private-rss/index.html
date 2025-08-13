@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>RSS with a private Nitter instance | Michael Skyba</title>
+		<link rel="icon" href="/static/favicon.png">
+		<link rel="stylesheet" href="/static/sakura.css">
+		<link rel="stylesheet" href="/static/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		>
+	</head>
+	<body>
+		<header>
+			<h1>RSS with a private Nitter instance</h1>
+			<nav>
+				<a href="/">Home</a>| <a href="/articles/">Articles</a>
+			</nav>
+			<hr>
+		</header>
+		<main><h3>2024-10-11 Update</h3>
+<p>A while ago now, some endpoints were disabled, and the Python script mentioned
+in this article will no longer generate any credentials. I don't have time right
+now to update this with new instructions. Sorry. Hopefully some part can still
+be helpful for reference.</p>
+<p>The only working variation I see as of 1728707696 is KTachibanaM's:
+- https://github.com/sekai-soft/nitter
+- https://github.com/sekai-soft/nitter/blob/master/scripts/auth.py</p>
+<h3>Disclaimer</h3>
+<p>Depending on future updates to Twitter's authentication system and/or the Nitter
+project, the information in this post may be inaccurate. I am only declaring my
+faith in the context of the time I am writing this.</p>
+<h3>Introduction</h3>
+<p>As you likely already know if you're reading this, the great and holy Mr. Musk
+has finally killed off guest accounts, thus extinguishing the already-fading
+light of public Nitter instances. Ah, the joys of the modern web...</p>
+<p>Fortunately, it's still possible to use Nitter's RSS feature by hosting your own
+private instance on your own computer, using a personal Twitter account. The
+process is not complex, but sorting through the comments on the <a href="https://github.com/zedeus/nitter/">Nitter GitHub
+repository</a> is pretty annoying, so I have
+compiled the basic steps here.</p>
+<h3>Requirements</h3>
+<ul>
+<li>You need an operating system compatible with Nitter. I'm using Arch Linux, but
+would expect other distributions and probably macOS/BSD to also work. If you're
+using Windoze, how did you find my website?</li>
+<li>You need a Twitter account, the authorization tokens of which will be used. I
+would not recommend using your primary account, in case it gets locked.</li>
+<li><code>nim</code></li>
+<li><code>libsass</code>, if you want working CSS</li>
+<li><code>libpcre</code> (<code>pcre</code> on Arch)</li>
+<li><code>redis</code></li>
+</ul>
+<p>There are other implied requirements such as basic reading comprehension and
+digital literacy.</p>
+<h3>Tutorial</h3>
+<p>Clone the Nitter repository and switch into the <code>guest_accounts</code> branch.</p>
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/zedeus/nitter
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>nitter
+$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>guest_accounts
+</code></pre></div>
+
+<p>Make a modification to the <code>src/auth.nim</code> file, commenting out line 205.</p>
+<div class="codehilite"><pre><span></span><code><span class="gd">--- auth.nim</span>
+<span class="gi">+++ auth2.nim</span>
+<span class="gu">@@ -202,7 +202,7 @@</span>
+<span class="w"> </span>    quit 1
+
+<span class="w"> </span>  let accountsPrePurge = accountPool.len
+<span class="gd">-  accountPool.keepItIf(not it.hasExpired)</span>
+<span class="gi">+  # accountPool.keepItIf(not it.hasExpired)</span>
+
+<span class="w"> </span>  log &quot;Successfully added &quot;, accountPool.len, &quot; valid accounts.&quot;
+<span class="w"> </span>  if accountsPrePurge &gt; accountPool.len:
+</code></pre></div>
+
+<p>Compile Nitter.</p>
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span>nimble<span class="w"> </span>build<span class="w"> </span>-d:release
+$<span class="w"> </span>nimble<span class="w"> </span>scss
+$<span class="w"> </span>nimble<span class="w"> </span>md
+</code></pre></div>
+
+<p>Copy the example configuration.</p>
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span>cp<span class="w"> </span>nitter.example.conf<span class="w"> </span>nitter.conf
+</code></pre></div>
+
+<p>Look through the file and make any desired changes. You may want to increase
+<code>rssMinutes</code> to decrease the likelihood of being rate limited, for example.</p>
+<p>Then, generate the JSON for your authorization tokens using the following Python
+script, written by 0o120 and csisoap. Modify the <code>username</code> and <code>password</code>
+variables to match the account you wish to use.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">base64</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+
+<span class="n">username</span> <span class="o">=</span> <span class="s2">&quot;XXXXXXXXXXXX&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;XXXXXXXXXXXX&quot;</span>
+
+<span class="n">TW_CONSUMER_KEY</span> <span class="o">=</span> <span class="s2">&quot;3nVuSoBZnx6U4vzUxf5w&quot;</span>
+<span class="n">TW_CONSUMER_SECRET</span> <span class="o">=</span> <span class="s2">&quot;Bcs59EFbbsdF6Sl9Ng71smgStWEGwXXKSjYvPVt7qys&quot;</span>
+<span class="n">TW_ANDROID_BASIC_TOKEN</span> <span class="o">=</span> <span class="s2">&quot;Basic </span><span class="si">{token}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+    <span class="n">token</span><span class="o">=</span><span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span>
+        <span class="p">(</span><span class="n">TW_CONSUMER_KEY</span> <span class="o">+</span> <span class="s2">&quot;:&quot;</span> <span class="o">+</span> <span class="n">TW_CONSUMER_SECRET</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="n">authentication</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">bearer_token_req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;https://api.twitter.com/oauth2/token&quot;</span><span class="p">,</span>
+    <span class="n">headers</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="n">TW_ANDROID_BASIC_TOKEN</span><span class="p">,</span>
+        <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/x-www-form-urlencoded&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="n">data</span><span class="o">=</span><span class="s2">&quot;grant_type=client_credentials&quot;</span><span class="p">,</span>
+<span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="n">bearer_token</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bearer_token_req</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+<span class="n">guest_token</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;https://api.twitter.com/1.1/guest/activate.json&quot;</span><span class="p">,</span>
+    <span class="n">headers</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="n">bearer_token</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;guest_token&quot;</span><span class="p">]</span>
+
+<span class="n">twitter_header</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="n">bearer_token</span><span class="p">,</span>
+    <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;User-Agent&quot;</span><span class="p">:</span> <span class="s2">&quot;TwitterAndroid/9.95.0-release.0 (29950000-r-0) ONEPLUS+A3010/9 (OnePlus;ONEPLUS+A3010;OnePlus;OnePlus3;0;;1;2016)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;X-Twitter-API-Version&quot;</span><span class="p">:</span> <span class="s2">&quot;5&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;X-Twitter-Client&quot;</span><span class="p">:</span> <span class="s2">&quot;TwitterAndroid&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;X-Twitter-Client-Version&quot;</span><span class="p">:</span> <span class="s2">&quot;9.95.0-release.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;OS-Version&quot;</span><span class="p">:</span> <span class="s2">&quot;28&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;System-User-Agent&quot;</span><span class="p">:</span> <span class="s2">&quot;Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A3010 Build/PKQ1.181203.001)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;X-Twitter-Active-User&quot;</span><span class="p">:</span> <span class="s2">&quot;yes&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;X-Guest-Token&quot;</span><span class="p">:</span> <span class="n">guest_token</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+
+<span class="n">task1</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;https://api.twitter.com/1.1/onboarding/task.json&quot;</span><span class="p">,</span>
+    <span class="n">params</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;flow_name&quot;</span><span class="p">:</span> <span class="s2">&quot;login&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;api_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;known_device_token&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sim_country_code&quot;</span><span class="p">:</span> <span class="s2">&quot;us&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;flow_token&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;input_flow_data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;country_code&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="s2">&quot;flow_context&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;referrer_context&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;referral_details&quot;</span><span class="p">:</span> <span class="s2">&quot;utm_source=google-play&amp;utm_medium=organic&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;referrer_url&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="p">},</span>
+                <span class="s2">&quot;start_location&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;deeplink&quot;</span><span class="p">},</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;requested_variant&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="s2">&quot;target_user_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="n">headers</span><span class="o">=</span><span class="n">twitter_header</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">session</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s2">&quot;att&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">task1</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;att&quot;</span><span class="p">)</span>
+<span class="n">task2</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;https://api.twitter.com/1.1/onboarding/task.json&quot;</span><span class="p">,</span>
+    <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;flow_token&quot;</span><span class="p">:</span> <span class="n">task1</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;flow_token&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;subtask_inputs&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;enter_text&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;suggestion_id&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="n">username</span><span class="p">,</span>
+                    <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;next_link&quot;</span><span class="p">,</span>
+                <span class="p">},</span>
+                <span class="s2">&quot;subtask_id&quot;</span><span class="p">:</span> <span class="s2">&quot;LoginEnterUserIdentifier&quot;</span><span class="p">,</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="n">headers</span><span class="o">=</span><span class="n">twitter_header</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">task3</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;https://api.twitter.com/1.1/onboarding/task.json&quot;</span><span class="p">,</span>
+    <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;flow_token&quot;</span><span class="p">:</span> <span class="n">task2</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;flow_token&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;subtask_inputs&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;enter_password&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="n">password</span><span class="p">,</span> <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;next_link&quot;</span><span class="p">},</span>
+                <span class="s2">&quot;subtask_id&quot;</span><span class="p">:</span> <span class="s2">&quot;LoginEnterPassword&quot;</span><span class="p">,</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="n">headers</span><span class="o">=</span><span class="n">twitter_header</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">task4</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;https://api.twitter.com/1.1/onboarding/task.json&quot;</span><span class="p">,</span>
+    <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;flow_token&quot;</span><span class="p">:</span> <span class="n">task3</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;flow_token&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;subtask_inputs&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;check_logged_in_account&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;AccountDuplicationCheck_false&quot;</span><span class="p">},</span>
+                <span class="s2">&quot;subtask_id&quot;</span><span class="p">:</span> <span class="s2">&quot;AccountDuplicationCheck&quot;</span><span class="p">,</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="n">headers</span><span class="o">=</span><span class="n">twitter_header</span><span class="p">,</span>
+<span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">t4_subtask</span> <span class="ow">in</span> <span class="n">task4</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;subtasks&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+    <span class="k">if</span> <span class="s2">&quot;open_account&quot;</span> <span class="ow">in</span> <span class="n">t4_subtask</span><span class="p">:</span>
+        <span class="n">authentication</span> <span class="o">=</span> <span class="n">t4_subtask</span><span class="p">[</span><span class="s2">&quot;open_account&quot;</span><span class="p">]</span>
+        <span class="k">break</span>
+
+    <span class="k">elif</span> <span class="s2">&quot;enter_text&quot;</span> <span class="ow">in</span> <span class="n">t4_subtask</span><span class="p">:</span>
+        <span class="n">response_text</span> <span class="o">=</span> <span class="n">t4_subtask</span><span class="p">[</span><span class="s2">&quot;enter_text&quot;</span><span class="p">][</span><span class="s2">&quot;hint_text&quot;</span><span class="p">]</span>
+        <span class="n">code</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Requesting </span><span class="si">{</span><span class="n">response_text</span><span class="si">}</span><span class="s2">: &quot;</span><span class="p">)</span>
+
+        <span class="n">task5</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+            <span class="s2">&quot;https://api.twitter.com/1.1/onboarding/task.json&quot;</span><span class="p">,</span>
+            <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+                <span class="s2">&quot;flow_token&quot;</span><span class="p">:</span> <span class="n">task4</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;flow_token&quot;</span><span class="p">),</span>
+                <span class="s2">&quot;subtask_inputs&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                        <span class="s2">&quot;enter_text&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s2">&quot;suggestion_id&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                            <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="n">code</span><span class="p">,</span>
+                            <span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;next_link&quot;</span><span class="p">,</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;subtask_id&quot;</span><span class="p">:</span> <span class="s2">&quot;LoginAcid&quot;</span><span class="p">,</span>
+                    <span class="p">}</span>
+                <span class="p">],</span>
+            <span class="p">},</span>
+            <span class="n">headers</span><span class="o">=</span><span class="n">twitter_header</span><span class="p">,</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">t5_subtask</span> <span class="ow">in</span> <span class="n">task5</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;subtasks&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+            <span class="k">if</span> <span class="s2">&quot;open_account&quot;</span> <span class="ow">in</span> <span class="n">t5_subtask</span><span class="p">:</span>
+                <span class="n">authentication</span> <span class="o">=</span> <span class="n">t5_subtask</span><span class="p">[</span><span class="s2">&quot;open_account&quot;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">authentication</span><span class="p">))</span>
+</code></pre></div>
+
+<p>As far as I can tell, this script will only work for accounts with 2FA disabled
+(which is the default). It's still possible to use Nitter with a 2FA-enabled
+account, but it will require further intervention which I didn't bother to
+investigate.</p>
+<p>When you run the file, it will print JSON output containing your credentials.
+Save these to a file called <code>guest_accounts.jsonl</code> in the root of your
+<code>nitter</code> source directory. Don't pretty-format the JSON; it's supposed to be
+on one line.</p>
+<p>Your <code>guest_accounts.jsonl</code> should end up structured like</p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1111111111111111111</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;id_str&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1111111111111111111&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XXXXXXXXXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;screen_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XXXXXXXXXXXXXXX&quot;</span><span class="p">},</span><span class="w"> </span><span class="nt">&quot;next_link&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;link_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subtask&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;link_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next_link&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;subtask_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SuccessExit&quot;</span><span class="p">},</span><span class="w"> </span><span class="nt">&quot;oauth_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1111111111111111111-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;oauth_token_secret&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;known_device_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;attribution_event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;login&quot;</span><span class="p">}</span>
+</code></pre></div>
+
+<p>I'm not sure how long your tokens can be active before you'll need to regenerate
+them. I'd guess that it's around a few months at least, though.</p>
+<p>Now, start Redis and run the Nitter binary.</p>
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>redis
+$<span class="w"> </span>./nitter
+</code></pre></div>
+
+<p>By default,
+- Redis runs on <code>localhost:6379</code>, which is also what nitter.conf is set to use.
+- Redis has no password, and nitter.conf doesn't provide a password.
+- nitter.conf configures Nitter to run on <code>0.0.0.0:8080</code>.</p>
+<p>So, you should now be able to access your RSS feeds at that location. For
+example, the following should work as expected.</p>
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span>curl<span class="w"> </span><span class="m">0</span>.0.0.0:8080/nearcyan/rss
+</code></pre></div>
+
+<p>Of course, Nitter will be inaccessible if its service stops running, so you will
+need to launch it on startup.</p>
+<h3>Rate limits and banning</h3>
+<p>I only sat down and figured out how to do this today, so I haven't had much of a
+chance to experience any possible reprecussions.</p>
+<p>I didn't see much relevant information on GitHub either. Here is one anecdote:</p>
+<blockquote>
+<p>it's working for me but the account gets locked if you try to paginate more than
+a couple of pages in search</p>
+</blockquote>
+<p>I've also heard that Twitter blocks connections from known VPS IP addresses;
+it's probably better to use your local machine.</p>
+<p>In my nitter.conf, I set <code>rssMinutes = 60</code>, and I have configured my RSS
+client to only query my Nitter instance once per two minutes or so. I expect
+this to stay under the rate limits, although I may experiment with more liberal
+usage in the future. Ideally, I'd be able to fetch every feed once per minute or
+so.</p>
+<h3>Sources</h3>
+<ul>
+<li>https://github.com/zedeus/nitter/tree/master?tab=readme-ov-file#installation</li>
+<li>https://github.com/zedeus/nitter/issues/983#issuecomment-1914616663</li>
+<li>https://github.com/zedeus/nitter/issues/1155#issuecomment-1917167072</li>
+<li>https://github.com/zedeus/nitter/issues/1155#issuecomment-1953290183</li>
+<li>https://github.com/zedeus/nitter/issues/1156#issuecomment-1922999620</li>
+</ul>
+<h3>Conclusion</h3>
+<p>:(</p>
+<p>O our great Elon, why must you punish us so? Is the will of the scrapers truly
+so incompatible with yours? Would it harm you so much to simply provide Sam with
+the training data he seeks, and leave the poor users in peace? I propose
+focusing our engineering efforts on Neuralink instead...</p></main>
+	</body>
+</html>

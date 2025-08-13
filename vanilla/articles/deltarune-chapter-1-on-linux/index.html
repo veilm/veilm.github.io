@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Deltarune Chapter 1 on Linux | Michael Skyba</title>
+		<link rel="icon" href="/static/favicon.png">
+		<link rel="stylesheet" href="/static/sakura.css">
+		<link rel="stylesheet" href="/static/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		>
+	</head>
+	<body>
+		<header>
+			<h1>Deltarune Chapter 1 on Linux</h1>
+			<nav>
+				<a href="/">Home</a>| <a href="/articles/">Articles</a>
+			</nav>
+			<hr>
+		</header>
+		<main><p>With the release of Deltarune Chapter 2 today, I thought I would share how I was
+able to get Chapter 1 working on Linux. I will assume you're running Arch.</p>
+<h4>1. Download the .exe</h4>
+<p>This would be from <a href="https://deltarune.com/">Deltarune's website</a>.</p>
+<h4>2. Install Wine and libstrangle</h4>
+<div class="codehilite"><pre><span></span><code>su<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;pacman -S wine&quot;</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://aur.archlinux.org/libstrangle-git.git
+<span class="nb">cd</span><span class="w"> </span>libstrangle-git
+makepkg<span class="w"> </span>-sirc
+</code></pre></div>
+
+<h4>3. Install Deltarune as if you were on Windows using Wine</h4>
+<div class="codehilite"><pre><span></span><code>wine<span class="w"> </span>SURVEY_PROGRAM_WINDOWS_ENGLISH.exe
+</code></pre></div>
+
+<p>For me, it stopped writing new text after a couple of minutes, at which point I
+killed it with ^C. I guess it finishes installing but doesn't quit Wine?</p>
+<h4>4. Run Deltarune using strangle:</h4>
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.wine/drive_c/Program Files (x86)/SURVEY_PROGRAM&quot;</span>
+strangle<span class="w"> </span><span class="m">30</span><span class="w"> </span>wine<span class="w"> </span>DELTARUNE.exe
+</code></pre></div>
+
+<p>That's it, it should work now. Using Wine on its own without libstrangle won't
+work (extreme framerate issues). Feel free to try it if you don't believe me.</p>
+<h3>Update: 2021-09-17-20-50</h3>
+<p>A few hours after I posted the article, and with the reveal of Chapter 2,
+Deltarune (the "demo", at least) was released on Steam. So, you can now simply
+play it through Proton instead of installing Wine and everything.</p>
+<p>I'll leave this article up in case someone wants to avoid Steam. From my limited
+testing, the itch.io download for Chapters 1&amp;2 also worked fine under Wine.</p></main>
+	</body>
+</html>

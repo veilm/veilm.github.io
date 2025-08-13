@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Block a Site Using /etc/hosts | Michael Skyba</title>
+		<link rel="icon" href="/static/favicon.png">
+		<link rel="stylesheet" href="/static/sakura.css">
+		<link rel="stylesheet" href="/static/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		>
+	</head>
+	<body>
+		<header>
+			<h1>Block a Site Using /etc/hosts</h1>
+			<nav>
+				<a href="/">Home</a>| <a href="/articles/">Articles</a>
+			</nav>
+			<hr>
+		</header>
+		<main><p>Simply add <code>0.0.0.0 mysite</code> to your /etc/hosts file.</p>
+<p>For example, <code>0.0.0.0 example.com</code>. Here, example.com will basically be an
+alias for "0.0.0.0", which acts as a dummy address.</p>
+<p>Note that this isn't completely reliable. If it's not working, try adding a
+second entry with "www." and also try restarting your browser (in case, for
+example, you're seeing a cached page).</p>
+<p><a href="https://github.com/StevenBlack/hosts">Here</a> is a list of sites that you may
+want to block.</p></main>
+	</body>
+</html>
