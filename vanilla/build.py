@@ -54,21 +54,53 @@ def build_article(md_path, template):
 
 def build_index(articles, template, articles_dir):
     """Build the articles index page"""
-    articles_html = "<ul>\n"
+    # Add description text
+    description = """<p>These posts are most likely of insufficient quality to live up to the
+implications of the word "article", but maybe they can still be better than
+nothing.</p>
+<a href="..">Home</a>
+<hr>
+"""
+    
+    articles_html = description + "<ul>\n"
 
     # Sort by date (newest first)
     sorted_articles = sorted(articles, key=lambda x: x[1].get("date", ""), reverse=True)
 
     for slug, meta in sorted_articles:
         title = meta.get("title", slug)
-        # Link to the directory (clean URL)
-        articles_html += f'  <li><a href="{slug}/">{title}</a></li>\n'
+        date = meta.get("date", "")
+        # Extract just the date part (YYYY-MM-DD) from the full date string
+        if date and "T" in date:
+            date = date.split("T")[0]
+        
+        # Format with date if available
+        if date:
+            articles_html += f'  <li>{date}: <a href="{slug}/">{title}</a></li>\n'
+        else:
+            articles_html += f'  <li><a href="{slug}/">{title}</a></li>\n'
 
     articles_html += "</ul>"
 
-    html = template.replace("{{ title }}", "Articles")
-    html = html.replace("{{ content }}", articles_html)
-    html = html.replace("{{ date }}", "")
+    # For the index page, use a simpler structure without header/nav
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Articles | Michael Skyba</title>
+    <link rel="icon" href="/static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/sakura.css">
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+<h1>Articles</h1>
+{articles_html}
+</body>
+</html>"""
 
     with open(articles_dir / "index.html", "w") as f:
         f.write(html)
