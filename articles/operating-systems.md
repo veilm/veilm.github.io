@@ -73,7 +73,7 @@ into Lubuntu after the successful installation. Instead of loading
 Lubuntu, I saw a message similar to this thumbnail from
 [this video](https://www.youtube.com/watch?v=Kuah6gYqT2I):
 
-![BootDevice Not Found](/6-hp-message.jpg)
+![BootDevice Not Found](/static/6-hp-message.jpg)
 
 Lubuntu's boot loader was installed as an EFI file and my computer wasn't
 loading it automatically. I didn't know this in advance. After spending
@@ -146,7 +146,7 @@ software in most cases.
 - (most importantly) Logo: ``neofetch`` looks cooler on Arch than it does on
 most other distributions.
 
-![Neofetch on Arch](/6-arch-neofetch.png)
+![Neofetch on Arch](/static/6-arch-neofetch.png)
 
 One thing I dislike is that despite how minimal it is, there are still things
 you are locked into, which is inevitable for any distribution. Mainly, on Kiss

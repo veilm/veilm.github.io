@@ -14,7 +14,7 @@ Now, instead of taking you to a separate page for an "archived" Past Profile
 Photos site, a popup view is shown, with no change in the page URL. The ID isn't
 obvious from any HTTP requests the page makes, either:
 
-![New past photos UI](/9-14.png)
+![New past photos UI](/static/9-14.png)
 
 I could try looking through the client code further or seeing if any older
 Google services are missing this update, but I don't have much motivation to do
@@ -71,21 +71,21 @@ in comprehension.)
 By default, you should see something like this when opening up your Google
 Account picture popup:
 
-![Default picture UI](/9-1.webp)
+![Default picture UI](/static/9-1.webp)
 
 However, when your administrator has locked the changes, you experience this
 disappointment instead:
 
-![Locked picture UI](/9-2.webp)
+![Locked picture UI](/static/9-2.webp)
 
 Clicking on your icon on the main Google Account page says this (which isn't
 true!):
 
-![Locked Google Accounts page](/9-3.webp)
+![Locked Google Accounts page](/static/9-3.webp)
 
 The settings page on Google Classroom says "Change", sparking hope:
 
-![Google Classroom settings](/9-4.webp)
+![Google Classroom settings](/static/9-4.webp)
 
 But if you press it, you get the same no-change-UI popup I showed in the first
 screenshot. Another dead end...
@@ -125,19 +125,19 @@ First of all, there's a bit more than what meets the eye on the blocked profile
 menu. If you press the kebab menu (three vertical dots), you will see the option
 to view your past profile pictures:
 
-![Past profile pictures option](/9-5.webp)
+![Past profile pictures option](/static/9-5.webp)
 
 Clicking it takes you to some kind of album selection screen, where the only
 option should be "Profile Photos", a collection of the profile photos you've set
 in the past. If there are zero items in this list, you will not be able to
 change your profile picture, as I mentioned in the introduction.
 
-![Profile photos album selection](/9-6.webp)
+![Profile photos album selection](/static/9-6.webp)
 
 If you enter the list, open an image, and press the kebab menu, you will see an
 option to delete the photo:
 
-![Delete picture option](/9-7.webp)
+![Delete picture option](/static/9-7.webp)
 
 >Why should I care? I want to change my profile picture, not delete random past
 ones.
@@ -167,24 +167,24 @@ more attention/thinking from the reader.)
 As you can tell by looking at the album screen, there's no "+" button or
 anything for adding new photos:
 
-![No plus button](/9-8.webp)
+![No plus button](/static/9-8.webp)
 
 This means that we will have to get creative again.
 
 First, visit the main Google Photos site on your blocked school account and
 create an album:
 
-![Creating an album](/9-9.webp)
+![Creating an album](/static/9-9.webp)
 
 In here, you _will_ be given the option to upload photos from your computer.
 Upload a random photo to finish the process. Once you're done, you should see
 your new album with your uploaded photo:
 
-![Created an album](/9-10.webp)
+![Created an album](/static/9-10.webp)
 
 In the album UI you find on Google Photos, you can upload photos just fine:
 
-![You can upload photos](/9-11.webp)
+![You can upload photos](/static/9-11.webp)
 
 So, the problem now is to figure out how to open the Profile photos album inside
 Google Photos. First, consider the UI from before (when I talked about deleting
@@ -222,11 +222,11 @@ https://photos.google.com/u/1/album/zzzzzzzzzzzzzzzzzzz
 and you'll see that it works! You can view the Profile photos album from Google
 Photos just fine!
 
-![Profile photos in Google Photos](/9-12.webp)
+![Profile photos in Google Photos](/static/9-12.webp)
 
 If we can access the album from Google Photos, we can add new photos to the album!
 
-![New photos in Profile photos](/9-13.webp)
+![New photos in Profile photos](/static/9-13.webp)
 
 And if we can add new photos to the Profile photos album, we can set the profile
 picture to anything we want. You should now know everything needed to change

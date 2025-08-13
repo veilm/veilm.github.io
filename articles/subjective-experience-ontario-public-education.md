@@ -204,7 +204,7 @@ that I frequent, and although much of my time there has certainly been
 counterproductive, it is consistently motivating to behold so many people miles
 outside of my figurative reach.
 
-![both intellectually and socially, I guess](/1721159677-x.png)
+![both intellectually and socially, I guess](/static/1721159677-x.png)
 For a long time, I was dead-set on this necessarily being the case in all
 possible settings: whenever I would witness any student achieving anything
 remotely nontrivial, I would immediately create a long backstory in my head of
@@ -229,7 +229,7 @@ I wrote [some software](https://github.com/veilm/pi-monitor/) to
 run on them, and we ended up deploying them around the TV monitors, as an
 additional display of school information.
 
-![2024-05-07: "I've placed God's chosen company (their GTC March 2024 presentation) onto the monitors at my high school. We are officially blessed now"](/1728715367-monitors.jpeg)
+![2024-05-07: "I've placed God's chosen company (their GTC March 2024 presentation) onto the monitors at my high school. We are officially blessed now"](/static/1728715367-monitors.jpeg)
 (The NVIDIA presentation was a test deployment that I soon after had to remove.
 For other tests, I played a few of my Advent of Code and Touhou 10 recordings.)
 
@@ -244,7 +244,7 @@ education itself?
 For some context, here is a final screenshot of my user account, on the web
 platform the board employs for archiving course marks:
 
-![myBlueprint grading data screenshot - the average grade is around 98](/1721159678-myblueprint.png)
+![myBlueprint grading data screenshot - the average grade is around 98](/static/1721159678-myblueprint.png)
 (You can tell that the 100 in ENG4U1 was given by mistake, at least, judging
 from the slop of this post so far. I suppose the expectation is for students to
 fail even to string simple sentences together.)
@@ -301,7 +301,7 @@ Where on the line connecting *P* and *Q* is the resulting *T*?
 Instead, in an actual MPM1D1 course, a breathing adult will look at you with a
 straight face as they toss you leftover vomit:
 
-![graphing slop worksheet](/1721159679-mpm1d1.png)
+![graphing slop worksheet](/static/1721159679-mpm1d1.png)
 (This exact image is only of a worksheet; a marked, summative assignment in
 MPM1D1 would be similar except with 10x more of the same questions, and no
 option to submit work digitally.)
@@ -503,7 +503,7 @@ thinking, but no, something apparently justified spending weeks on them.)
 My resultant lack of class participation resulted in an *S* ("Satisfactory"; the
 second-worst evaluation) for "Collaboration" on my report card.
 
-![wide cat expressing indifference](/1721159682-cat-care.png)
+![wide cat expressing indifference](/static/1721159682-cat-care.png)
 
 ### Was it worth it? Heavens, no, but...
 
@@ -571,9 +571,9 @@ As a final summary of my school board, here's a real email I received near the
 end of Grade 12, regarding a supposed cyber attack that crashed the school's
 attendance tracking infrastructure for a few weeks in 2023:
 
-![email from YRDSB describing leaks of OENs and report card PDFs](/1721159680-email.png)
+![email from YRDSB describing leaks of OENs and report card PDFs](/static/1721159680-email.png)
 
-> ![Ryan Beckford](/1721159681-hackers.png) \
+> ![Ryan Beckford](/static/1721159681-hackers.png) \
 Oh no! The scary hacker entered the default password on a public route that the
 server admins didn't bother to configure! My, how lucky we are to have the brave
 and "diligent" YRDSB to protect us...

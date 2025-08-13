@@ -27,7 +27,7 @@ UX update that patched the method coincidentally.</p>
 <p>Now, instead of taking you to a separate page for an &ldquo;archived&rdquo; Past Profile
 Photos site, a popup view is shown, with no change in the page URL. The ID isn&rsquo;t
 obvious from any HTTP requests the page makes, either:</p>
-<p><img alt="New past photos UI" src="/9-14.png" /></p>
+<p><img alt="New past photos UI" src="/static/9-14.png" /></p>
 <p>I could try looking through the client code further or seeing if any older
 Google services are missing this update, but I don&rsquo;t have much motivation to do
 that:
@@ -74,15 +74,15 @@ in comprehension.)</p>
 <h3>Demonstration of the lock</h3>
 <p>By default, you should see something like this when opening up your Google
 Account picture popup:</p>
-<p><img alt="Default picture UI" src="/9-1.webp" /></p>
+<p><img alt="Default picture UI" src="/static/9-1.webp" /></p>
 <p>However, when your administrator has locked the changes, you experience this
 disappointment instead:</p>
-<p><img alt="Locked picture UI" src="/9-2.webp" /></p>
+<p><img alt="Locked picture UI" src="/static/9-2.webp" /></p>
 <p>Clicking on your icon on the main Google Account page says this (which isn&rsquo;t
 true!):</p>
-<p><img alt="Locked Google Accounts page" src="/9-3.webp" /></p>
+<p><img alt="Locked Google Accounts page" src="/static/9-3.webp" /></p>
 <p>The settings page on Google Classroom says &ldquo;Change&rdquo;, sparking hope:</p>
-<p><img alt="Google Classroom settings" src="/9-4.webp" /></p>
+<p><img alt="Google Classroom settings" src="/static/9-4.webp" /></p>
 <p>But if you press it, you get the same no-change-UI popup I showed in the first
 screenshot. Another dead end&hellip;</p>
 <p>However, as you&rsquo;ve probably noticed, the setbacks I&rsquo;ve mentioned so far are
@@ -116,15 +116,15 @@ the way you approach the problem.</p>
 <p>First of all, there&rsquo;s a bit more than what meets the eye on the blocked profile
 menu. If you press the kebab menu (three vertical dots), you will see the option
 to view your past profile pictures:</p>
-<p><img alt="Past profile pictures option" src="/9-5.webp" /></p>
+<p><img alt="Past profile pictures option" src="/static/9-5.webp" /></p>
 <p>Clicking it takes you to some kind of album selection screen, where the only
 option should be &ldquo;Profile Photos&rdquo;, a collection of the profile photos you&rsquo;ve set
 in the past. If there are zero items in this list, you will not be able to
 change your profile picture, as I mentioned in the introduction.</p>
-<p><img alt="Profile photos album selection" src="/9-6.webp" /></p>
+<p><img alt="Profile photos album selection" src="/static/9-6.webp" /></p>
 <p>If you enter the list, open an image, and press the kebab menu, you will see an
 option to delete the photo:</p>
-<p><img alt="Delete picture option" src="/9-7.webp" /></p>
+<p><img alt="Delete picture option" src="/static/9-7.webp" /></p>
 <blockquote>
 <p>Why should I care? I want to change my profile picture, not delete random past
 ones.</p>
@@ -149,17 +149,17 @@ is that possible? It certainly is.</p>
 more attention/thinking from the reader.)</p>
 <p>As you can tell by looking at the album screen, there&rsquo;s no &ldquo;+&rdquo; button or
 anything for adding new photos:</p>
-<p><img alt="No plus button" src="/9-8.webp" /></p>
+<p><img alt="No plus button" src="/static/9-8.webp" /></p>
 <p>This means that we will have to get creative again.</p>
 <p>First, visit the main Google Photos site on your blocked school account and
 create an album:</p>
-<p><img alt="Creating an album" src="/9-9.webp" /></p>
+<p><img alt="Creating an album" src="/static/9-9.webp" /></p>
 <p>In here, you <em>will</em> be given the option to upload photos from your computer.
 Upload a random photo to finish the process. Once you&rsquo;re done, you should see
 your new album with your uploaded photo:</p>
-<p><img alt="Created an album" src="/9-10.webp" /></p>
+<p><img alt="Created an album" src="/static/9-10.webp" /></p>
 <p>In the album UI you find on Google Photos, you can upload photos just fine:</p>
-<p><img alt="You can upload photos" src="/9-11.webp" /></p>
+<p><img alt="You can upload photos" src="/static/9-11.webp" /></p>
 <p>So, the problem now is to figure out how to open the Profile photos album inside
 Google Photos. First, consider the UI from before (when I talked about deleting
 profile photos). You were looking at the photos in the album, but it definitely
@@ -192,9 +192,9 @@ URL? Simply direct your browser to</p>
 
 <p>and you&rsquo;ll see that it works! You can view the Profile photos album from Google
 Photos just fine!</p>
-<p><img alt="Profile photos in Google Photos" src="/9-12.webp" /></p>
+<p><img alt="Profile photos in Google Photos" src="/static/9-12.webp" /></p>
 <p>If we can access the album from Google Photos, we can add new photos to the album!</p>
-<p><img alt="New photos in Profile photos" src="/9-13.webp" /></p>
+<p><img alt="New photos in Profile photos" src="/static/9-13.webp" /></p>
 <p>And if we can add new photos to the Profile photos album, we can set the profile
 picture to anything we want. You should now know everything needed to change
 your profile picture. Keep in mind my note from earlier about the update delay.</p>
