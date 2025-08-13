@@ -12,7 +12,7 @@
 			alt="GPT-4's abstract art"
 		>
 		<label for="art">
-			(<a href="/">Dynamic</a>) Abstract line art, beautifully designed by GPT-4
+			(<a href="#" onclick="refreshArt(event)">Dynamic</a>) Abstract line art, beautifully designed by GPT-4
 		</label>
 	</div>
 
@@ -62,3 +62,12 @@
 </main>
 
 <link rel="stylesheet" href="/index.css" >
+
+<script>
+function refreshArt(event) {
+	event.preventDefault();
+	const img = document.getElementById('art');
+	const currentSrc = img.src;
+	img.src = currentSrc.split('?')[0] + '?t=' + Date.now();
+}
+</script>
