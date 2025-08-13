@@ -35,9 +35,9 @@ def build_article(md_path, template, output_dir):
     html_content = markdown.markdown(md_content, extensions=["extra", "codehilite"])
 
     # Build the HTML page
-    html = template.replace("{{title}}", meta.get("title", "Untitled"))
-    html = html.replace("{{content}}", html_content)
-    html = html.replace("{{date}}", meta.get("date", ""))
+    html = template.replace("{{ title }}", meta.get("title", "Untitled"))
+    html = html.replace("{{ content }}", html_content)
+    html = html.replace("{{ date }}", meta.get("date", ""))
 
     # Create output path
     article_name = md_path.stem
@@ -66,9 +66,9 @@ def build_index(articles, template, output_dir):
 
     articles_html += "</ul>"
 
-    html = template.replace("{{title}}", "Articles")
-    html = html.replace("{{content}}", articles_html)
-    html = html.replace("{{date}}", "")
+    html = template.replace("{{ title }}", "Articles")
+    html = html.replace("{{ content }}", articles_html)
+    html = html.replace("{{ date }}", "")
 
     with open(output_dir / "index.html", "w") as f:
         f.write(html)
