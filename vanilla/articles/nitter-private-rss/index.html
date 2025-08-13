@@ -24,29 +24,29 @@
 		</header>
 		<main><h3>2024-10-11 Update</h3>
 <p>A while ago now, some endpoints were disabled, and the Python script mentioned
-in this article will no longer generate any credentials. I don't have time right
+in this article will no longer generate any credentials. I don&rsquo;t have time right
 now to update this with new instructions. Sorry. Hopefully some part can still
 be helpful for reference.</p>
-<p>The only working variation I see as of 1728707696 is KTachibanaM's:
+<p>The only working variation I see as of 1728707696 is KTachibanaM&rsquo;s:
 - https://github.com/sekai-soft/nitter
 - https://github.com/sekai-soft/nitter/blob/master/scripts/auth.py</p>
 <h3>Disclaimer</h3>
-<p>Depending on future updates to Twitter's authentication system and/or the Nitter
+<p>Depending on future updates to Twitter&rsquo;s authentication system and/or the Nitter
 project, the information in this post may be inaccurate. I am only declaring my
 faith in the context of the time I am writing this.</p>
 <h3>Introduction</h3>
-<p>As you likely already know if you're reading this, the great and holy Mr. Musk
+<p>As you likely already know if you&rsquo;re reading this, the great and holy Mr. Musk
 has finally killed off guest accounts, thus extinguishing the already-fading
-light of public Nitter instances. Ah, the joys of the modern web...</p>
-<p>Fortunately, it's still possible to use Nitter's RSS feature by hosting your own
+light of public Nitter instances. Ah, the joys of the modern web&hellip;</p>
+<p>Fortunately, it&rsquo;s still possible to use Nitter&rsquo;s RSS feature by hosting your own
 private instance on your own computer, using a personal Twitter account. The
 process is not complex, but sorting through the comments on the <a href="https://github.com/zedeus/nitter/">Nitter GitHub
 repository</a> is pretty annoying, so I have
 compiled the basic steps here.</p>
 <h3>Requirements</h3>
 <ul>
-<li>You need an operating system compatible with Nitter. I'm using Arch Linux, but
-would expect other distributions and probably macOS/BSD to also work. If you're
+<li>You need an operating system compatible with Nitter. I&rsquo;m using Arch Linux, but
+would expect other distributions and probably macOS/BSD to also work. If you&rsquo;re
 using Windoze, how did you find my website?</li>
 <li>You need a Twitter account, the authorization tokens of which will be used. I
 would not recommend using your primary account, in case it gets locked.</li>
@@ -249,19 +249,19 @@ variables to match the account you wish to use.</p>
 </code></pre></div>
 
 <p>As far as I can tell, this script will only work for accounts with 2FA disabled
-(which is the default). It's still possible to use Nitter with a 2FA-enabled
-account, but it will require further intervention which I didn't bother to
+(which is the default). It&rsquo;s still possible to use Nitter with a 2FA-enabled
+account, but it will require further intervention which I didn&rsquo;t bother to
 investigate.</p>
 <p>When you run the file, it will print JSON output containing your credentials.
 Save these to a file called <code>guest_accounts.jsonl</code> in the root of your
-<code>nitter</code> source directory. Don't pretty-format the JSON; it's supposed to be
+<code>nitter</code> source directory. Don&rsquo;t pretty-format the JSON; it&rsquo;s supposed to be
 on one line.</p>
 <p>Your <code>guest_accounts.jsonl</code> should end up structured like</p>
 <div class="codehilite"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1111111111111111111</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;id_str&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1111111111111111111&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XXXXXXXXXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;screen_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XXXXXXXXXXXXXXX&quot;</span><span class="p">},</span><span class="w"> </span><span class="nt">&quot;next_link&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;link_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subtask&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;link_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next_link&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;subtask_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SuccessExit&quot;</span><span class="p">},</span><span class="w"> </span><span class="nt">&quot;oauth_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1111111111111111111-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;oauth_token_secret&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;known_device_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;attribution_event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;login&quot;</span><span class="p">}</span>
 </code></pre></div>
 
-<p>I'm not sure how long your tokens can be active before you'll need to regenerate
-them. I'd guess that it's around a few months at least, though.</p>
+<p>I&rsquo;m not sure how long your tokens can be active before you&rsquo;ll need to regenerate
+them. I&rsquo;d guess that it&rsquo;s around a few months at least, though.</p>
 <p>Now, start Redis and run the Nitter binary.</p>
 <div class="codehilite"><pre><span></span><code>$<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>redis
 $<span class="w"> </span>./nitter
@@ -269,7 +269,7 @@ $<span class="w"> </span>./nitter
 
 <p>By default,
 - Redis runs on <code>localhost:6379</code>, which is also what nitter.conf is set to use.
-- Redis has no password, and nitter.conf doesn't provide a password.
+- Redis has no password, and nitter.conf doesn&rsquo;t provide a password.
 - nitter.conf configures Nitter to run on <code>0.0.0.0:8080</code>.</p>
 <p>So, you should now be able to access your RSS feeds at that location. For
 example, the following should work as expected.</p>
@@ -279,19 +279,19 @@ example, the following should work as expected.</p>
 <p>Of course, Nitter will be inaccessible if its service stops running, so you will
 need to launch it on startup.</p>
 <h3>Rate limits and banning</h3>
-<p>I only sat down and figured out how to do this today, so I haven't had much of a
+<p>I only sat down and figured out how to do this today, so I haven&rsquo;t had much of a
 chance to experience any possible reprecussions.</p>
-<p>I didn't see much relevant information on GitHub either. Here is one anecdote:</p>
+<p>I didn&rsquo;t see much relevant information on GitHub either. Here is one anecdote:</p>
 <blockquote>
-<p>it's working for me but the account gets locked if you try to paginate more than
+<p>it&rsquo;s working for me but the account gets locked if you try to paginate more than
 a couple of pages in search</p>
 </blockquote>
-<p>I've also heard that Twitter blocks connections from known VPS IP addresses;
-it's probably better to use your local machine.</p>
+<p>I&rsquo;ve also heard that Twitter blocks connections from known VPS IP addresses;
+it&rsquo;s probably better to use your local machine.</p>
 <p>In my nitter.conf, I set <code>rssMinutes = 60</code>, and I have configured my RSS
 client to only query my Nitter instance once per two minutes or so. I expect
 this to stay under the rate limits, although I may experiment with more liberal
-usage in the future. Ideally, I'd be able to fetch every feed once per minute or
+usage in the future. Ideally, I&rsquo;d be able to fetch every feed once per minute or
 so.</p>
 <h3>Sources</h3>
 <ul>
@@ -306,6 +306,6 @@ so.</p>
 <p>O our great Elon, why must you punish us so? Is the will of the scrapers truly
 so incompatible with yours? Would it harm you so much to simply provide Sam with
 the training data he seeks, and leave the poor users in peace? I propose
-focusing our engineering efforts on Neuralink instead...</p></main>
+focusing our engineering efforts on Neuralink instead&hellip;</p></main>
 	</body>
 </html>

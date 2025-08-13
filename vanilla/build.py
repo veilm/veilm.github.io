@@ -31,8 +31,8 @@ def build_article(md_path, template):
 
     meta, md_content = parse_frontmatter(content)
 
-    # Convert markdown to HTML
-    html_content = markdown.markdown(md_content, extensions=["extra", "codehilite"])
+    # Convert markdown to HTML with smart quotes
+    html_content = markdown.markdown(md_content, extensions=["extra", "codehilite", "smarty"])
 
     # Build the HTML page
     html = template.replace("{{ title }}", meta.get("title", "Untitled"))
@@ -54,9 +54,9 @@ def build_article(md_path, template):
 
 def build_index(articles, template, articles_dir):
     """Build the articles index page"""
-    # Add description text
+    # Add description text - use HTML entities for smart quotes
     description = """<p>These posts are most likely of insufficient quality to live up to the
-implications of the word "article", but maybe they can still be better than
+implications of the word &ldquo;article&rdquo;, but maybe they can still be better than
 nothing.</p>
 <a href="..">Home</a>
 <hr>
