@@ -15,13 +15,11 @@
 		<link rel="stylesheet" href="/static/main.css">
 	</head>
 	<body>
-		<header>
-			<h1>{{ title }}</h1>
-			<nav>
-				<a href="/">Home</a>| <a href="/articles/">Articles</a>
-			</nav>
-			<hr>
-		</header>
-		<main>{{ content }}</main>
+		<h1>{{ title }}</h1>
+		{{ author_date }}
+		<hr>
+		{{ content }}
+		<hr>
+		<a href="..">Article Index</a>
 	</body>
 </html>
