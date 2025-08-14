@@ -64,7 +64,7 @@ def build_article(md_path, template):
 
 def build_index(articles, index_template, articles_dir):
     """Build the articles index page"""
-    articles_html = "<ul>\n"
+    articles_html = '<ul style="list-style: none; ">\n'
 
     # Sort by date (newest first)
     sorted_articles = sorted(articles, key=lambda x: x[1].get("date", ""), reverse=True)
@@ -83,7 +83,7 @@ def build_index(articles, index_template, articles_dir):
             try:
                 dt = datetime.strptime(date, "%Y-%m-%d")
                 formatted_date = dt.strftime("%b %Y")
-                articles_html += f'  <li><span style="display: inline-block; width: 4.5em; text-align: right;">{formatted_date}</span>: <a href="{slug}/">{title}</a></li>\n'
+                articles_html += f'  <li><span style="display: inline-block; width: 4.5em; text-align: right;">{formatted_date}</span> ⬥ <a href="{slug}/">{title}</a></li>\n'
             except ValueError:
                 # Fallback if date parsing fails
                 articles_html += f'  <li><a href="{slug}/">{title}</a></li>\n'
