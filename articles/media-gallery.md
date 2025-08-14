@@ -187,11 +187,13 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [ああああ: carnation](https://www.youtube.com/watch?v=VD13tT9abKI)
 	- [Memento: nonoc](https://www.youtube.com/watch?v=jfvB3DPJ4FU)
 	- [Jean-Michel Jarre: Oxygene, Pt. 1](https://www.youtube.com/watch?v=7sVJJ5WCf3M)
-	- [fhána: Rhapsody of Blue Sky](https://www.youtube.com/watch?v=maKok2RItxM)
-	- [Hallelujah☆Essaim](https://www.youtube.com/watch?v=LAUF7t4xY98)
 	- [Hanasakuya: Mujun no Tsuki](https://www.youtube.com/watch?v=umDMFmRIaoU)
 	- [米津玄師: Amefuri Fujin](https://www.youtube.com/watch?v=OlVpfcVTgQ4)
 	- [THE DU: CRAZY NOISY BIZARRE TOWN](https://www.youtube.com/watch?v=qlaRFRA4qFU)
+	- [Orchestre Maurice Larcange: Où est passée ma bohème](https://www.youtube.com/watch?v=cWZrbQHG4BM)
+	- [aLBW: Lorule Overworld](https://www.youtube.com/watch?v=cQBHqypX-lQ)
+	- [Nioh: Freed From This Mortal Coil](https://www.youtube.com/watch?v=mDPbKjxDVHI)
+	- [Cyber Sleuth: Welcome to This Wonderful Space](https://www.youtube.com/watch?v=jM8fUkyYAzQ)
 
 See also: [Near-sama's list](https://near.blog/music/) (~0.4? correlation with mine)
 
@@ -213,6 +215,9 @@ In order of when I experienced them, ascending:
 		- *...Well, I bet if that really was my reason, at least some of you would feel sorry for me.*
 	- *I see... Well, there's no way I'd expect you to remember it. A worthless talent for a worthless human...*
 	- *That's right... I'm so incompetent that I couldn't even grab the knife...*
-	- *It's lonely watching someone I admire reach the limits of their hope. It kind of feels like a broken dream...*
 	- *I've offered to help so many times... but the killer this time didn't discuss their plan with me at all...*
 	- *... ... ... Oh. Am I allowed to speak? Heh, I'm so happy I'm getting goosebumps! Everyone actually needs help from scum like me!*
+	- *It's lonely watching someone I admire reach the limits of their hope. It kind of feels like a broken dream...*
+
+## Anime
+
