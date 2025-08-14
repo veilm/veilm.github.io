@@ -40,14 +40,14 @@ def build_article(md_path, template):
     html = template.replace("{{ title }}", meta.get("title", "Untitled"))
     html = html.replace("{{ content }}", html_content)
 
-    # Add author/date line if date exists
+    # Add date line if date exists
     date = meta.get("date", "")
     if date and "T" in date:
         date_only = date.split("T")[0]
-        author_date = f"<p>by Michael Skyba<br>(Initially written on {date_only})</p>"
+        date_line = f'<p style="text-align: right; color: #666; font-style: italic;">Initially written: {date_only}</p>'
     else:
-        author_date = ""
-    html = html.replace("{{ author_date }}", author_date)
+        date_line = ""
+    html = html.replace("{{ date_line }}", date_line)
 
     # Create directory for the article
     article_dir = md_path.parent / md_path.stem

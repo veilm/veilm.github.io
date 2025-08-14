@@ -218,6 +218,3 @@ In order of when I experienced them, ascending:
 	- *I've offered to help so many times... but the killer this time didn't discuss their plan with me at all...*
 	- *... ... ... Oh. Am I allowed to speak? Heh, I'm so happy I'm getting goosebumps! Everyone actually needs help from scum like me!*
 	- *It's lonely watching someone I admire reach the limits of their hope. It kind of feels like a broken dream...*
-
-## Anime
-
