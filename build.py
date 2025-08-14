@@ -32,17 +32,19 @@ def build_article(md_path, template):
     meta, md_content = parse_frontmatter(content)
 
     # Convert markdown to HTML with smart quotes
-    html_content = markdown.markdown(md_content, extensions=["extra", "codehilite", "smarty"])
+    html_content = markdown.markdown(
+        md_content, extensions=["extra", "codehilite", "smarty"]
+    )
 
     # Build the HTML page
     html = template.replace("{{ title }}", meta.get("title", "Untitled"))
     html = html.replace("{{ content }}", html_content)
-    
+
     # Add author/date line if date exists
     date = meta.get("date", "")
     if date and "T" in date:
         date_only = date.split("T")[0]
-        author_date = f'<p>by Michael Skyba<br>(Initially written on {date_only})</p>'
+        author_date = f"<p>by Michael Skyba<br>(Initially written on {date_only})</p>"
     else:
         author_date = ""
     html = html.replace("{{ author_date }}", author_date)
@@ -50,7 +52,7 @@ def build_article(md_path, template):
     # Create directory for the article
     article_dir = md_path.parent / md_path.stem
     article_dir.mkdir(exist_ok=True)
-    
+
     # Write index.html inside the article directory
     output_path = article_dir / "index.html"
     with open(output_path, "w") as f:
@@ -69,7 +71,7 @@ nothing.</p>
 <a href="..">Home</a>
 <hr>
 """
-    
+
     articles_html = description + "<ul>\n"
 
     # Sort by date (newest first)
@@ -81,7 +83,7 @@ nothing.</p>
         # Extract just the date part (YYYY-MM-DD) from the full date string
         if date and "T" in date:
             date = date.split("T")[0]
-        
+
         # Format with date if available
         if date:
             articles_html += f'  <li>{date}: <a href="{slug}/">{title}</a></li>\n'

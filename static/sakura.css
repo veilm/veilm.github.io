@@ -32,7 +32,12 @@ body {
 		font-size: 1.35rem;
 	}
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	line-height: 1.1;
 	font-weight: 700;
 	margin-top: 3rem;
@@ -72,7 +77,9 @@ p {
 	margin-bottom: 2.5rem;
 }
 
-small, sub, sup {
+small,
+sub,
+sup {
 	font-size: 75%;
 }
 
@@ -118,7 +125,8 @@ blockquote p {
 	margin-bottom: 0;
 }
 
-img, video {
+img,
+video {
 	height: auto;
 	max-width: 100%;
 	margin-top: 0px;
@@ -136,7 +144,9 @@ pre {
 	font-size: 0.9em;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
 	font-size: 0.9em;
 	padding: 0 0.5em;
 	background-color: rgb(25, 27, 28);
@@ -157,16 +167,19 @@ table {
 	border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
 	padding: 0.5em;
 	border-bottom: 1px solid rgb(126, 109, 103);
 }
 
 /* Buttons, forms and input */
-input, textarea {
+input,
+textarea {
 	border: 1px solid rgb(25, 27, 28);
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
 	border: 1px solid rgb(140, 122, 115);
 }
 
@@ -174,7 +187,11 @@ textarea {
 	width: 100%;
 }
 
-.button, button, input[type=submit], input[type=reset], input[type=button] {
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
 	display: inline-block;
 	padding: 5px 10px;
 	text-align: center;
@@ -187,18 +204,33 @@ textarea {
 	cursor: pointer;
 	box-sizing: border-box;
 }
-.button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled] {
+.button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
 	cursor: default;
 	opacity: 0.5;
 }
-.button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type=submit]:focus:enabled, input[type=submit]:hover:enabled, input[type=reset]:focus:enabled, input[type=reset]:hover:enabled, input[type=button]:focus:enabled, input[type=button]:hover:enabled {
+.button:focus:enabled,
+.button:hover:enabled,
+button:focus:enabled,
+button:hover:enabled,
+input[type="submit"]:focus:enabled,
+input[type="submit"]:hover:enabled,
+input[type="reset"]:focus:enabled,
+input[type="reset"]:hover:enabled,
+input[type="button"]:focus:enabled,
+input[type="button"]:hover:enabled {
 	background-color: rgb(34, 41, 42);
 	border-color: rgb(34, 41, 42);
 	color: rgb(216, 210, 207);
 	outline: 0;
 }
 
-textarea, select, input {
+textarea,
+select,
+input {
 	color: rgb(205, 198, 194);
 	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
 	margin-bottom: 10px;
@@ -208,16 +240,20 @@ textarea, select, input {
 	box-shadow: none;
 	box-sizing: border-box;
 }
-textarea:focus, select:focus, input:focus {
+textarea:focus,
+select:focus,
+input:focus {
 	border: 1px solid rgb(140, 122, 115);
 	outline: 0;
 }
 
-input[type=checkbox]:focus {
+input[type="checkbox"]:focus {
 	outline: 1px dotted #ffffff;
 }
 
-label, legend, fieldset {
+label,
+legend,
+fieldset {
 	display: block;
 	margin-bottom: 0.5rem;
 	font-weight: 600;

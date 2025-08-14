@@ -10,7 +10,7 @@ you have suggestions you think may align with my space of preferences.)
 ## Music
 I'll give a few subjective exemplars of each series/composer, but it's obviously a non-exhaustive list in both dimensions.
 
-- ALI PROJECT
+- **ALI PROJECT**
 	- [わが﨟たし悪の華](https://www.youtube.com/watch?v=52MyfphGa5M)
 		- I love the [associated
 		ED](https://www.youtube.com/watch?v=xm4VWvRcU9w) too, especially the
@@ -28,21 +28,21 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Bascor-四戒- (Vo.藍月なくる)](https://www.youtube.com/watch?v=Ro40Oxah15M)
 	- [Quon Extend](https://www.youtube.com/watch?v=ruhWr1Mna_8)
 	- [新天蓋](https://www.youtube.com/watch?v=NAIULE5LYEk)
-- AcuticNotes
+- **AcuticNotes**
 - **[Yuki Saito](https://en.wikipedia.org/wiki/Yuki_Saito_(actress))**
 	- [白い炎 (21st century ver. Instrumental)](https://www.youtube.com/watch?v=MOWZYrEqdqc)
 	- [朱い夢](https://www.youtube.com/watch?v=iMAuwHIoqQg)
 	- [SORAMIMI](https://www.youtube.com/watch?v=Yjtk7h7GcXQ)
 	- [Yours](https://www.youtube.com/watch?v=6FmbgmikG2c)
 	- [Ave Maria](https://www.youtube.com/watch?v=5mMcqffyqhM)
-- ZUN
+- **ZUN**
 	- [東方鈴奈庵 判読眼のビブロフィリア](https://www.youtube.com/watch?v=S2FDoTlHzrM)
 	- [Occult à la Carte](https://www.youtube.com/watch?v=N8KqjutY8UI)
 	- [Shanghai Alice of Meiji 17](https://www.youtube.com/watch?v=84vpBAnAqcY)
 	- Paradise of Boundaries
 		- [Romantic Story ~ Mystic Square](https://www.youtube.com/watch?v=mLuLGuFz14k)
 		- [令和時代好奇心 〜 Otherworldly Paradox: Unlocated Hell](https://www.youtube.com/watch?v=gAhYGVnIEFs)
-- Kaioshi K, OrangeBlugt, asumerday99
+- **Kaioshi K, OrangeBlugt, asumerday99**
 	- I don't know who this friend group is or what they're doing now but all I
 	can hear is that at least to my noisy ear, their music is comparable to
 	ZUN's in quality. Highest by far in {preference ranking}:popularity ratio!
@@ -74,7 +74,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Cycle](https://www.youtube.com/watch?v=qo08UtemiiQ)
 	- [Suspicious eyes](https://www.youtube.com/watch?v=yZHpt3VQU6k)
 	- [Explanation](https://www.youtube.com/watch?v=tBOmmqLRTz0)
-- Noriyuki Makihara
+- **Noriyuki Makihara**
 	- [Fish (2012 Remaster)](https://www.youtube.com/watch?v=QP5Hb9YI3UA)
 	- [Happy Dance (Cicada)](https://www.youtube.com/watch?v=xEJtLUsko2k)
 	- [Hungry Spider (Cicada)](https://www.youtube.com/watch?v=TZEc2fnJY9I)
@@ -86,7 +86,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Darling (2012 Remaster)](https://www.youtube.com/watch?v=Gxh-PjLIwqw)
 	- [Dance with me.](https://www.youtube.com/watch?v=qznQnoKvOEo)
 	- [Honno Sukoshi Dake](https://www.youtube.com/watch?v=eqqD5_tZaM8)
-- Umineko
+- **Umineko**
 	- [薔薇](https://www.youtube.com/watch?v=tPIxN7byEEw)
 	- [7 weights](https://www.youtube.com/watch?v=QSJVvftCR64)
 		- Likely my favourite piece of music of all time, yet I've only
@@ -97,7 +97,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 		experience beauty in the time I have left...? Or is my fate sufficiently
 		variable that scrambling for resources will be of higher net utility? If
 		only I had the wisdom to DM in absence of neuroticism...
-- Jujutsu Kaisen
+- **Jujutsu Kaisen**
 	- [Arrogance](https://www.youtube.com/watch?v=MjW5jgYnApc)
 	- [逆夢](https://www.youtube.com/watch?v=M6gcoDN9jBc)
 	- [一途](https://www.youtube.com/watch?v=hm1na9R2uYA)
@@ -108,7 +108,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Diamond, Pearl & Platinum - Trainer Battle](https://www.youtube.com/watch?v=qtzPna9yFjg)
 	- [Diamond, Pearl & Platinum - Champion Cynthia Encounter](https://www.youtube.com/watch?v=cho2NsCKZZc)
 	- [Black & White - Driftveil City](https://www.youtube.com/watch?v=2YZ1ouxhzaM)
-- Persona
+- **Persona**
 	- Revelations: Persona
 		- [Ice Castle](https://www.youtube.com/watch?v=ACMXMj9FYJk)
 		- [Police Station](https://www.youtube.com/watch?v=HS-JxU3jgHQ)
@@ -130,7 +130,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 		- [King, Queen and Slave](https://www.youtube.com/watch?v=HygTf4oqI9w)
 		- [Life Goes On](https://www.youtube.com/watch?v=CgxbVc4SiI4)
 		- [DiS: Last Surprise (☆Taku Takahashi Remix)](https://www.youtube.com/watch?v=IwYkCn_cl-8)
-- Danganronpa
+- **Danganronpa**
 	- Masafumi Takada
 		- [BOX 15](https://www.youtube.com/watch?v=QlP9vcvhSs0)
 		- [開廷アンダーグラウンド](https://www.youtube.com/watch?v=uJDBCDiUmDg)
@@ -146,7 +146,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Recall the END](https://www.youtube.com/watch?v=2bAPoOT0kNI)
 	- [カミイロアワセ](https://www.youtube.com/watch?v=3uFTKd-G7Uc)
 	- [絶対希望バースデー](https://www.youtube.com/watch?v=_L6oQnTbLaM)
-- Monogatari
+- **Monogatari**
 	- [Mousou Express](https://www.youtube.com/watch?v=y2XArpEcygc)
 	- [ClariS: SHIORI](https://www.youtube.com/watch?v=ebPseRPPf0U)
 	- [Yuudachihouteishiki](https://www.youtube.com/watch?v=aoV0PKHdWXw)
