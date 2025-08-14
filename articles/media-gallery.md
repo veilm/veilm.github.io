@@ -146,6 +146,14 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Recall the END](https://www.youtube.com/watch?v=2bAPoOT0kNI)
 	- [カミイロアワセ](https://www.youtube.com/watch?v=3uFTKd-G7Uc)
 	- [絶対希望バースデー](https://www.youtube.com/watch?v=_L6oQnTbLaM)
+- **FromSoftware**
+	- [Dark Souls 1: Firelink Shrine](https://www.youtube.com/watch?v=Gjht7acg9d4)
+	- [Dark Souls 2: A Moment's Peace](https://www.youtube.com/watch?v=tCZFx6cx7w8)
+	- [Dark Souls 2: Fire Keepers](https://www.youtube.com/watch?v=1j70nIH8qS8)
+	- [DARK SOULS Ⅲ](https://www.youtube.com/watch?v=eXLRwFoB6tU)
+	- [Dark Souls 3: For the dark soul](https://www.youtube.com/watch?v=qXxRB8lVrPM)
+	- [Bloodborne: Hunter's Dream](https://www.youtube.com/watch?v=B4zcJwpc_9c)
+	- [Bloodborne: Hail the Nightmare](https://www.youtube.com/watch?v=kzIpIYKaztk)
 - **Monogatari**
 	- [Mousou Express](https://www.youtube.com/watch?v=y2XArpEcygc)
 	- [ClariS: SHIORI](https://www.youtube.com/watch?v=ebPseRPPf0U)
@@ -157,8 +165,10 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 
 See also: [Near-sama's list](https://near.blog/music/) (~0.4? correlation with mine)
 
-## Games that have had a notable influence on me
-In order of when I experienced them:
+## Video games
+Here's a small collcetion of those that have had a notable influence on me, which is a brief subset of my total hours spent (mostly but not exclusively *lost*) on video games.
+
+In order of when I experienced them, ascending:
 
 - [The Unfinished Swan](https://en.wikipedia.org/wiki/The_Unfinished_Swan)
 - Undertale
@@ -168,5 +178,11 @@ In order of when I experienced them:
 	- Sekiro: Shadows Die Twice
 - Danganronpa
 	- Especially 2: Goodbye Despair, and the 絶望編 anime
+	- *Me, lie? That's outrageous! There's no way someone like me could ever lie to you guys!*
 	- *I think... somewhere deep in my heart... I was probably hoping to find someone who would stop my evil deeds.*
-	- *...Well, I bet if that really was my reason, at least some of you would feel sorry for me.*
+		- *...Well, I bet if that really was my reason, at least some of you would feel sorry for me.*
+	- *I see... Well, there's no way I'd expect you to remember it. A worthless talent for a worthless human...*
+	- *That's right... I'm so incompetent that I couldn't even grab the knife...*
+	- *It's lonely watching someone I admire reach the limits of their hope. It kind of feels like a broken dream...*
+	- *I've offered to help so many times... but the killer this time didn't discuss their plan with me at all...*
+	- *... ... ... Oh. Am I allowed to speak? Heh, I'm so happy I'm getting goosebumps! Everyone actually needs help from scum like me!*
