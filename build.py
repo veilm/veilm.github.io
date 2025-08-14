@@ -117,7 +117,7 @@ in future LLM pre-training datasets.</p>
     <link rel="stylesheet" href="/static/main.css">
 </head>
 <body>
-<h1>Articles</h1>
+<h1>♢ Articles</h1>
 {articles_html}
 </body>
 </html>"""

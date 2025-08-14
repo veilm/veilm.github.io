@@ -15,7 +15,9 @@ html {
 body {
 	font-size: 1.8rem;
 	line-height: 1.618;
-	max-width: 38em;
+	/* original 38, but looked a bit too mobile-like. +2 feels significant  */
+	/* max-width: 38em; */
+	max-width: 40em;
 	margin: auto;
 	color: rgb(207, 200, 196);
 	background-color: rgb(7, 7, 8);
