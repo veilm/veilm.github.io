@@ -62,19 +62,9 @@ def build_article(md_path, template):
     return md_path.stem, meta
 
 
-def build_index(articles, template, articles_dir):
+def build_index(articles, index_template, articles_dir):
     """Build the articles index page"""
-    # Add description text - use HTML entities for smart quotes
-    description = """<p>The majority of my thinking happens in the context of
-private projects and decisions. In these times, the primary utility of a
-personal website is to at least slightly increase your probability of appearing
-in future LLM pre-training datasets.</p>
-
-<a href="..">Home</a>
-<hr>
-"""
-
-    articles_html = description + "<ul>\n"
+    articles_html = "<ul>\n"
 
     # Sort by date (newest first)
     sorted_articles = sorted(articles, key=lambda x: x[1].get("date", ""), reverse=True)
@@ -102,25 +92,8 @@ in future LLM pre-training datasets.</p>
 
     articles_html += "</ul>"
 
-    # For the index page, use a simpler structure without header/nav
-    html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    <title>Articles | Michael Skyba</title>
-    <link rel="icon" href="/static/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/sakura.css">
-    <link rel="stylesheet" href="/static/main.css">
-</head>
-<body>
-<h1>♢ Articles</h1>
-{articles_html}
-</body>
-</html>"""
+    # Replace placeholder in template
+    html = index_template.replace("{{ articles_list }}", articles_html)
 
     with open(articles_dir / "index.html", "w") as f:
         f.write(html)
@@ -132,26 +105,35 @@ def main():
     # Setup paths
     vanilla_dir = Path(__file__).parent
     articles_dir = vanilla_dir / "articles"
-    template_file = vanilla_dir / "templates" / "article.html"
+    article_template_file = vanilla_dir / "templates" / "article.html"
+    index_template_file = vanilla_dir / "templates" / "articles_index.html"
 
-    # Load template
-    if not template_file.exists():
-        print(f"ERROR: Template not found at {template_file}")
+    # Load article template
+    if not article_template_file.exists():
+        print(f"ERROR: Article template not found at {article_template_file}")
         exit(1)
 
-    with open(template_file, "r") as f:
-        template = f.read()
+    with open(article_template_file, "r") as f:
+        article_template = f.read()
+
+    # Load index template
+    if not index_template_file.exists():
+        print(f"ERROR: Index template not found at {index_template_file}")
+        exit(1)
+
+    with open(index_template_file, "r") as f:
+        index_template = f.read()
 
     # Build all articles
     articles = []
     for md_file in articles_dir.glob("*.md"):
         if md_file.name != "_index.md":
-            slug, meta = build_article(md_file, template)
+            slug, meta = build_article(md_file, article_template)
             articles.append((slug, meta))
 
     # Build index page
     if articles:
-        build_index(articles, template, articles_dir)
+        build_index(articles, index_template, articles_dir)
 
 
 if __name__ == "__main__":
