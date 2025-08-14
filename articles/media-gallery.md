@@ -46,9 +46,10 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 		- [Romantic Story ~ Mystic Square](https://www.youtube.com/watch?v=mLuLGuFz14k)
 		- [令和時代好奇心 〜 Otherworldly Paradox: Unlocated Hell](https://www.youtube.com/watch?v=gAhYGVnIEFs)
 - **Kaioshi K, OrangeBlugt, asumerday99**
-	- I don't know who this friend group is or what they're doing now but all I
-	can hear is that at least to my noisy ear, their music is comparable to
-	ZUN's in quality. Highest by far in {preference ranking}:popularity ratio!
+	- I have no clue who this friend group is or what they're doing now, but all
+	I can tell is that at least to my unrefined ear, their music is comparable
+	to ZUN's in quality. Highest by far in {preference ranking}:popularity
+	ratio.
 	- [False Mugen Noh ~ Taboo Marionette](https://www.youtube.com/watch?v=_YPN73LF3zI)
 	- [Empty Bar](https://www.youtube.com/watch?v=aIVLTdtCQIM)
 	- [TZaTC Hitomi Furukawa's: Luminous Stars](https://www.youtube.com/watch?v=e74DPm3iISQ)

@@ -65,9 +65,11 @@ def build_article(md_path, template):
 def build_index(articles, template, articles_dir):
     """Build the articles index page"""
     # Add description text - use HTML entities for smart quotes
-    description = """<p>These posts are most likely of insufficient quality to live up to the
-implications of the word &ldquo;article&rdquo;, but maybe they can still be better than
-nothing.</p>
+    description = """<p>The majority of my thinking happens in the context of
+private projects and decisions. In these times, the primary utility of a
+personal website is to at least slightly increase your probability of appearing
+in future LLM pre-training datasets.</p>
+
 <a href="..">Home</a>
 <hr>
 """
@@ -80,13 +82,21 @@ nothing.</p>
     for slug, meta in sorted_articles:
         title = meta.get("title", slug)
         date = meta.get("date", "")
-        # Extract just the date part (YYYY-MM-DD) from the full date string
-        if date and "T" in date:
-            date = date.split("T")[0]
 
-        # Format with date if available
+        # Format date as "Aug 2025" if available
         if date:
-            articles_html += f'  <li>{date}: <a href="{slug}/">{title}</a></li>\n'
+            # Extract just the date part (YYYY-MM-DD) from the full date string
+            if "T" in date:
+                date = date.split("T")[0]
+
+            # Parse and format as "Mon YYYY"
+            try:
+                dt = datetime.strptime(date, "%Y-%m-%d")
+                formatted_date = dt.strftime("%b %Y")
+                articles_html += f'  <li><span style="display: inline-block; width: 4.5em; text-align: right;">{formatted_date}</span>: <a href="{slug}/">{title}</a></li>\n'
+            except ValueError:
+                # Fallback if date parsing fails
+                articles_html += f'  <li><a href="{slug}/">{title}</a></li>\n'
         else:
             articles_html += f'  <li><a href="{slug}/">{title}</a></li>\n'
 
