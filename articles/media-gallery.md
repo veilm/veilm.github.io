@@ -1,11 +1,13 @@
 ---
-title: "[Draft] Media Preferences Gallery"
+title: "Media Preferences Gallery"
 date: 2025-08-13T19:12:37-04:00
 ---
 
 Here is an informal, unstructured list of some various forms of media I've found
 interesting or meaningful. (Feel free to [@ me](https://x.com/sucralose__) if
 you have suggestions you think may align with my space of preferences.)
+
+Last updated: August 14, 2025
 
 ## Music
 I'll give a few subjective exemplars of each series/composer, but it's obviously a non-exhaustive list in both dimensions.
@@ -28,6 +30,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Bascor-四戒- (Vo.藍月なくる)](https://www.youtube.com/watch?v=Ro40Oxah15M)
 	- [Quon Extend](https://www.youtube.com/watch?v=ruhWr1Mna_8)
 	- [新天蓋](https://www.youtube.com/watch?v=NAIULE5LYEk)
+	- [ft. Sennzai: 緋の青](https://www.youtube.com/watch?v=bdUzA32up7U)
 - **AcuticNotes**
 - **[Yuki Saito](https://en.wikipedia.org/wiki/Yuki_Saito_(actress))**
 	- [白い炎 (21st century ver. Instrumental)](https://www.youtube.com/watch?v=MOWZYrEqdqc)
@@ -154,14 +157,40 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Dark Souls 3: For the dark soul](https://www.youtube.com/watch?v=qXxRB8lVrPM)
 	- [Bloodborne: Hunter's Dream](https://www.youtube.com/watch?v=B4zcJwpc_9c)
 	- [Bloodborne: Hail the Nightmare](https://www.youtube.com/watch?v=kzIpIYKaztk)
+- **Death Note**
+	- [Kyrie](https://www.youtube.com/watch?v=tAMhUyLwD4k)
+	- [Low of Solipism](https://www.youtube.com/watch?v=0Wj7NxZJCGc)
+	- [Light Lights up Light](https://www.youtube.com/watch?v=hdupK9Jvvm8)
+	- [Light's Performance](https://www.youtube.com/watch?v=MS0RkcX38Hc)
+	- [L's Ideology](https://www.youtube.com/watch?v=Nirwyxtd6-E)
+	- [Toward the Climax](https://www.youtube.com/watch?v=CSh9k4yYGGY)
+	- [Alumina](https://www.youtube.com/watch?v=fhgwSyRmAb8)
 - **Monogatari**
 	- [Mousou Express](https://www.youtube.com/watch?v=y2XArpEcygc)
-	- [ClariS: SHIORI](https://www.youtube.com/watch?v=ebPseRPPf0U)
+	- [SHIORI](https://www.youtube.com/watch?v=ebPseRPPf0U)
 	- [Yuudachihouteishiki](https://www.youtube.com/watch?v=aoV0PKHdWXw)
 	- [Kogarashi Sentiment (dual)](https://www.youtube.com/watch?v=FhTXpx_fOHM)
 	- [Marshmallow Justice](https://www.youtube.com/watch?v=DOF_GkqMYTw)
 	- [Sawarineko](https://www.youtube.com/watch?v=0v_rb2v2MNc)
 	- [Otona](https://www.youtube.com/watch?v=Kjj9IzuxkE0)
+- **Vocaloid Aggregate**
+	- [謝謝P: 永遠花火](https://www.youtube.com/watch?v=Snaq5iEZrn4)
+	- [PENGUINS PROJECT: 眠り姫](https://www.nicovideo.jp/watch/sm7958552)
+	- [Travolta: ココロ](https://www.youtube.com/watch?v=syLJDfS0j54)
+	- [Ayase: ハッピーエンダー](https://www.youtube.com/watch?v=kXS1AlhlK_4)
+	- [PinocchioP: Reincarnation Apple](https://www.youtube.com/watch?v=LYWP8HtgeLQ)
+	- [minato 流星P: magnet](https://www.youtube.com/watch?v=vSnKX7kAgIc)
+- **Misc**
+	- [Jean Rondeau, Bach: Harpsichord Concerto No.1 in D Minor BWV 1052](https://www.youtube.com/watch?v=XcsfDxojdV8)
+		- mfw I'm still a normie after all
+	- [ああああ: carnation](https://www.youtube.com/watch?v=VD13tT9abKI)
+	- [Memento: nonoc](https://www.youtube.com/watch?v=jfvB3DPJ4FU)
+	- [Jean-Michel Jarre: Oxygene, Pt. 1](https://www.youtube.com/watch?v=7sVJJ5WCf3M)
+	- [fhána: Rhapsody of Blue Sky](https://www.youtube.com/watch?v=maKok2RItxM)
+	- [Hallelujah☆Essaim](https://www.youtube.com/watch?v=LAUF7t4xY98)
+	- [Hanasakuya: Mujun no Tsuki](https://www.youtube.com/watch?v=umDMFmRIaoU)
+	- [米津玄師: Amefuri Fujin](https://www.youtube.com/watch?v=OlVpfcVTgQ4)
+	- [THE DU: CRAZY NOISY BIZARRE TOWN](https://www.youtube.com/watch?v=qlaRFRA4qFU)
 
 See also: [Near-sama's list](https://near.blog/music/) (~0.4? correlation with mine)
 
