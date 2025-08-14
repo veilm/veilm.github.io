@@ -4,8 +4,8 @@ date: 2025-08-13T19:12:37-04:00
 ---
 
 Here is an informal, unstructured list of some various forms of media I've found
-interesting or meaningful. (Feel free to message me if you have suggestions you
-think may align with my space of preferences.)
+interesting or meaningful. (Feel free to [@ me](https://x.com/sucralose__) if
+you have suggestions you think may align with my space of preferences.)
 
 ## Music
 I'll give a few subjective exemplars of each series/composer, but it's obviously a non-exhaustive list in both dimensions.
@@ -20,7 +20,15 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [勇侠青春謳 (TV Version)](https://www.youtube.com/watch?v=CW8NJcfPbMA)
 		- I prefer this balance of instruments over the full original version
 - **[Feryquitous](https://feryquitous.bandcamp.com/)**
-- **AcuticNotes**
+	- [Percel of MAGENTA](https://www.youtube.com/watch?v=FIcQNmAGIC4)
+	- [Iweleth](https://www.youtube.com/watch?v=Idg9j9pcv50)
+	- [窓](https://www.youtube.com/watch?v=p79ZOKNnUZo)
+	- [閃耀 / Feryquitous × 可不](https://www.youtube.com/watch?v=uQPXMTK6cG4)
+	- [Kshalla](https://www.youtube.com/watch?v=O2s4bN5qv3o)
+	- [Bascor-四戒- (Vo.藍月なくる)](https://www.youtube.com/watch?v=Ro40Oxah15M)
+	- [Quon Extend](https://www.youtube.com/watch?v=ruhWr1Mna_8)
+	- [新天蓋](https://www.youtube.com/watch?v=NAIULE5LYEk)
+- AcuticNotes
 - **[Yuki Saito](https://en.wikipedia.org/wiki/Yuki_Saito_(actress))**
 	- [白い炎 (21st century ver. Instrumental)](https://www.youtube.com/watch?v=MOWZYrEqdqc)
 	- [朱い夢](https://www.youtube.com/watch?v=iMAuwHIoqQg)
@@ -28,7 +36,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Yours](https://www.youtube.com/watch?v=6FmbgmikG2c)
 	- [Ave Maria](https://www.youtube.com/watch?v=5mMcqffyqhM)
 - ZUN
-	- [東方鈴奈庵　判読眼のビブロフィリア](https://www.youtube.com/watch?v=S2FDoTlHzrM)
+	- [東方鈴奈庵 判読眼のビブロフィリア](https://www.youtube.com/watch?v=S2FDoTlHzrM)
 	- [Occult à la Carte](https://www.youtube.com/watch?v=N8KqjutY8UI)
 	- [Shanghai Alice of Meiji 17](https://www.youtube.com/watch?v=84vpBAnAqcY)
 	- Paradise of Boundaries
@@ -37,7 +45,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 - Kaioshi K, OrangeBlugt, asumerday99
 	- I don't know who this friend group is or what they're doing now but all I
 	can hear is that at least to my noisy ear, their music is comparable to
-	ZUN's in quality. Highest by far in {preference ranking:popularity ratio
+	ZUN's in quality. Highest by far in {preference ranking}:popularity ratio!
 	- [False Mugen Noh ~ Taboo Marionette](https://www.youtube.com/watch?v=_YPN73LF3zI)
 	- [Empty Bar](https://www.youtube.com/watch?v=aIVLTdtCQIM)
 	- [TZaTC Hitomi Furukawa's: Luminous Stars](https://www.youtube.com/watch?v=e74DPm3iISQ)
@@ -49,10 +57,11 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 - **Azur Lane**
 	- [盲目ラビリンス](https://www.youtube.com/watch?v=CmF-yYILNY0)
 	- [battle-crosstheline-elegant](https://www.youtube.com/watch?v=3wlrhws5jzE)
+	- [battle-dos-onstage](https://www.youtube.com/watch?v=j9wX34rd-ek)
 	- [battle-undermoon](https://www.youtube.com/watch?v=4ysImDzReSk)
 	- I haven't played the mobile game as it doesn't seem particularly
 	interesting to me, but I've downloaded a rip of the .ogg bgm assets and have
-	found them quite high ROI.
+	found them to be of quite high ROI.
 - **Toby Fox**
 	- [My Castle Town](https://www.youtube.com/watch?v=RKQUblO-iCs)
 	- [Megalo Strike Back](https://www.youtube.com/watch?v=ZpJudi7_iiw)
@@ -82,7 +91,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [7 weights](https://www.youtube.com/watch?v=QSJVvftCR64)
 		- Likely my favourite piece of music of all time, yet I've only
 		experienced it out of context. When I play Umineko in the future, I
-		dearly hope it lives up to my expectations.
+		dearly hope it lives up to my impossible expectations.
 		- "When I play" - that is, hopefully before dying in the Nearian
 		bioterrorism riots. Is it better to purchase it today, to aim to
 		experience beauty in the time I have left...? Or is my fate sufficiently
@@ -100,17 +109,59 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Diamond, Pearl & Platinum - Champion Cynthia Encounter](https://www.youtube.com/watch?v=cho2NsCKZZc)
 	- [Black & White - Driftveil City](https://www.youtube.com/watch?v=2YZ1ouxhzaM)
 - Persona
-	- Persona 1
+	- Revelations: Persona
 		- [Ice Castle](https://www.youtube.com/watch?v=ACMXMj9FYJk)
+		- [Police Station](https://www.youtube.com/watch?v=HS-JxU3jgHQ)
+	- Persona 2 IS/EP
+		- [Gatten Sushi](https://www.youtube.com/watch?v=IAGDEe7MV8A)
+		- [Ginko Theme](https://www.youtube.com/watch?v=U5CmJCLARHU)
+		- [Knights of the Holy Spear](https://www.youtube.com/watch?v=A3omYY5ZwP0)
+		- [Control Room](https://www.youtube.com/watch?v=JVS21W0A3Ao)
+	- Persona 3
+		 - ahahaha
+	- Persona 4
+		- [Signs of Love](https://www.youtube.com/watch?v=tTu-Uhlu4RU)
+		- [Long Way](https://www.youtube.com/watch?v=UhHXtXq2Aug)
+		- [Corridor](https://www.youtube.com/watch?v=5nTv5cSv_kE)
+		- [SNOWFLAKES](https://www.youtube.com/watch?v=BhaNZ-4HOJ0)
+	- Persona 5
+		- [Bar Yuu Comer](https://www.youtube.com/watch?v=VCg87Y1BxvE)
+		- [The Whims of Fate](https://www.youtube.com/watch?v=VCg87Y1BxvE)
+		- [King, Queen and Slave](https://www.youtube.com/watch?v=HygTf4oqI9w)
+		- [Life Goes On](https://www.youtube.com/watch?v=CgxbVc4SiI4)
+		- [DiS: Last Surprise (☆Taku Takahashi Remix)](https://www.youtube.com/watch?v=IwYkCn_cl-8)
+- Danganronpa
+	- Masafumi Takada
+		- [BOX 15](https://www.youtube.com/watch?v=QlP9vcvhSs0)
+		- [開廷アンダーグラウンド](https://www.youtube.com/watch?v=uJDBCDiUmDg)
+		- [クライマックス推理](https://www.youtube.com/watch?v=t0F6jFUXgD4)
+		- [だんだんだんがんろんぱ！](https://www.youtube.com/watch?v=ohwbwGpP1YI)
+		- [Beautiful Ruin](https://www.youtube.com/watch?v=UbgV18aTkqo)
+		- [Darkness Time](https://www.youtube.com/watch?v=qo2s7WCdH8g)
+		- [Monomono Slots](https://www.youtube.com/watch?v=UF7tRt2Ae0g)
+		- [Climax Reasoning V3](https://www.youtube.com/watch?v=mXI2gWR_fo8)
+		- [Class Trial: Space Edition](https://www.youtube.com/watch?v=3AbB_XYuU4U)
+		- [Bonus non-DR: Tokio AM](https://www.youtube.com/watch?v=CIWLYlRqaxo)
+		- [Bonus non-DR: Uehara Kamui](https://www.youtube.com/watch?v=_cfF5JwnnTM)
+	- [Recall the END](https://www.youtube.com/watch?v=2bAPoOT0kNI)
+	- [カミイロアワセ](https://www.youtube.com/watch?v=3uFTKd-G7Uc)
+	- [絶対希望バースデー](https://www.youtube.com/watch?v=_L6oQnTbLaM)
 - Monogatari
+	- [Mousou Express](https://www.youtube.com/watch?v=y2XArpEcygc)
+	- [ClariS: SHIORI](https://www.youtube.com/watch?v=ebPseRPPf0U)
+	- [Yuudachihouteishiki](https://www.youtube.com/watch?v=aoV0PKHdWXw)
+	- [Kogarashi Sentiment (dual)](https://www.youtube.com/watch?v=FhTXpx_fOHM)
+	- [Marshmallow Justice](https://www.youtube.com/watch?v=DOF_GkqMYTw)
 	- [Sawarineko](https://www.youtube.com/watch?v=0v_rb2v2MNc)
 	- [Otona](https://www.youtube.com/watch?v=Kjj9IzuxkE0)
 
-See also: [Near-sama's list](https://near.blog/music/) (~0.5? correlation with mine)
+See also: [Near-sama's list](https://near.blog/music/) (~0.4? correlation with mine)
 
 ## Games that have had a notable influence on me
 In order of when I experienced them:
 
+- [The Unfinished Swan](https://en.wikipedia.org/wiki/The_Unfinished_Swan)
+- Undertale
 - FromSoftware games
 	- Dark Souls 1-3
 	- Bloodborne, especially
@@ -119,5 +170,3 @@ In order of when I experienced them:
 	- Especially 2: Goodbye Despair, and the 絶望編 anime
 	- *I think... somewhere deep in my heart... I was probably hoping to find someone who would stop my evil deeds.*
 	- *...Well, I bet if that really was my reason, at least some of you would feel sorry for me.*
-- Undertale
-- [The Unfinished Swan](https://en.wikipedia.org/wiki/The_Unfinished_Swan)
