@@ -21,6 +21,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 		might have of the aesthetics
 	- [勇侠青春謳 (TV Version)](https://www.youtube.com/watch?v=CW8NJcfPbMA)
 		- I prefer this balance of instruments over the full original version
+	- [共月亭で逢いましょう](https://www.youtube.com/watch?v=eSG7GMkkJWI)
 - **[Feryquitous](https://feryquitous.bandcamp.com/)**
 	- [Percel of MAGENTA](https://www.youtube.com/watch?v=FIcQNmAGIC4)
 	- [Iweleth](https://www.youtube.com/watch?v=Idg9j9pcv50)
