@@ -22,6 +22,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [勇侠青春謳 (TV Version)](https://www.youtube.com/watch?v=CW8NJcfPbMA)
 		- I prefer this balance of instruments over the full original version
 	- [共月亭で逢いましょう](https://www.youtube.com/watch?v=eSG7GMkkJWI)
+	- [恋せよ乙女 -Love story of ZIPANG-](https://www.youtube.com/watch?v=Q1ozCzLse40)
 - **[Feryquitous](https://feryquitous.bandcamp.com/)**
 	- [Percel of MAGENTA](https://www.youtube.com/watch?v=FIcQNmAGIC4)
 	- [Iweleth](https://www.youtube.com/watch?v=Idg9j9pcv50)
@@ -47,10 +48,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 		- [Romantic Story ~ Mystic Square](https://www.youtube.com/watch?v=mLuLGuFz14k)
 		- [令和時代好奇心 〜 Otherworldly Paradox: Unlocated Hell](https://www.youtube.com/watch?v=gAhYGVnIEFs)
 - **Kaioshi K, OrangeBlugt, asumerday99**
-	- I have no clue who this friend group is or what they're doing now, but all
-	I can tell is that at least to my unrefined ear, their music is comparable
-	to ZUN's in quality. Highest by far in {preference ranking}:popularity
-	ratio.
+	- Highest by far in {preference ranking}:popularity ratio
 	- [False Mugen Noh ~ Taboo Marionette](https://www.youtube.com/watch?v=_YPN73LF3zI)
 	- [Empty Bar](https://www.youtube.com/watch?v=aIVLTdtCQIM)
 	- [TZaTC Hitomi Furukawa's: Luminous Stars](https://www.youtube.com/watch?v=e74DPm3iISQ)
@@ -111,7 +109,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Delirious](https://www.youtube.com/watch?v=irFmGpa76gI)
 - **Pokémon**
 	- [Diamond, Pearl & Platinum - Trainer Battle](https://www.youtube.com/watch?v=qtzPna9yFjg)
-	- [Diamond, Pearl & Platinum - Champion Cynthia Encounter](https://www.youtube.com/watch?v=cho2NsCKZZc)
+	- [Diamond, Pearl & Platinum - Champion Cynthia Encounter (Piano)](https://www.youtube.com/watch?v=j6okxJ1CYJM)
 	- [Black & White - Driftveil City](https://www.youtube.com/watch?v=2YZ1ouxhzaM)
 - **Persona**
 	- Revelations: Persona
@@ -131,7 +129,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 		- [SNOWFLAKES](https://www.youtube.com/watch?v=BhaNZ-4HOJ0)
 	- Persona 5
 		- [Bar Yuu Comer](https://www.youtube.com/watch?v=VCg87Y1BxvE)
-		- [The Whims of Fate](https://www.youtube.com/watch?v=VCg87Y1BxvE)
+		- [The Whims of Fate](https://www.youtube.com/watch?v=69Km895ntNc)
 		- [King, Queen and Slave](https://www.youtube.com/watch?v=HygTf4oqI9w)
 		- [Life Goes On](https://www.youtube.com/watch?v=CgxbVc4SiI4)
 		- [DiS: Last Surprise (☆Taku Takahashi Remix)](https://www.youtube.com/watch?v=IwYkCn_cl-8)
@@ -189,6 +187,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [Memento: nonoc](https://www.youtube.com/watch?v=jfvB3DPJ4FU)
 	- [Jean-Michel Jarre: Oxygene, Pt. 1](https://www.youtube.com/watch?v=7sVJJ5WCf3M)
 	- [Hanasakuya: Mujun no Tsuki](https://www.youtube.com/watch?v=umDMFmRIaoU)
+		- I found this from AnikiRip's post. I can't understand most of the lyrics but something about the tone feels significant
 	- [米津玄師: Amefuri Fujin](https://www.youtube.com/watch?v=OlVpfcVTgQ4)
 	- [THE DU: CRAZY NOISY BIZARRE TOWN](https://www.youtube.com/watch?v=qlaRFRA4qFU)
 	- [Orchestre Maurice Larcange: Où est passée ma bohème](https://www.youtube.com/watch?v=cWZrbQHG4BM)
