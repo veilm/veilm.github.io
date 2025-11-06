@@ -198,7 +198,7 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 See also: [Near-sama's list](https://near.blog/music/) (~0.4? correlation with mine)
 
 ## Video games
-Here's a small collcetion of those that have had a notable influence on me, which is a brief subset of my total hours spent (mostly but not exclusively *lost*) on video games.
+Here's a small collection of those that have had a notable influence on me, which is a brief subset of my total hours spent (mostly but not exclusively *lost*) on video games.
 
 In order of when I experienced them, ascending:
 
