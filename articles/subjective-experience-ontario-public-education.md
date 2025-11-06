@@ -573,8 +573,9 @@ attendance tracking infrastructure for a few weeks in 2023:
 
 ![email from YRDSB describing leaks of OENs and report card PDFs](/static/1721159680-email.png)
 
-> ![Ryan Beckford](/static/1721159681-hackers.png) \
-Oh no! The scary hacker entered the default password on a public route that the
+> ![Ryan Beckford](/static/1721159681-hackers.png)
+
+> Oh no! The scary hacker entered the default password on a public route that the
 server admins didn't bother to configure! My, how lucky we are to have the brave
 and "diligent" YRDSB to protect us...
 
