@@ -34,6 +34,13 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [新天蓋](https://www.youtube.com/watch?v=NAIULE5LYEk)
 	- [ft. Sennzai: 緋の青](https://www.youtube.com/watch?v=bdUzA32up7U)
 - **AcuticNotes**
+- **AZALI**
+	- [because one day ill forget it all](https://www.youtube.com/watch?v=TPM4Cz85d_8)
+	- [BOSS BATTLE IN THE DESERT HIGHLANDS](https://www.youtube.com/watch?v=uT_BrNxQaLE)
+	- [battle in the city of shattered glass](https://www.youtube.com/watch?v=5eSZdulBXbo)
+	- [MECHANICAL GOD](https://www.youtube.com/watch?v=v35imYtQqCo)
+	- [boss battle in a french cat cafe](https://www.youtube.com/watch?v=Sxnqn4qUkGM)
+	- [bass guitar waltz ??? i have no idea](https://www.youtube.com/watch?v=9NlqHkYLly0)
 - **[Yuki Saito](https://en.wikipedia.org/wiki/Yuki_Saito_(actress))**
 	- [白い炎 (21st century ver. Instrumental)](https://www.youtube.com/watch?v=MOWZYrEqdqc)
 	- [朱い夢](https://www.youtube.com/watch?v=iMAuwHIoqQg)
@@ -65,14 +72,6 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- I haven't played the mobile game as it doesn't seem particularly
 	interesting to me, but I've downloaded a rip of the .ogg bgm assets and have
 	found them to be of quite high ROI.
-- **Toby Fox**
-	- [My Castle Town](https://www.youtube.com/watch?v=RKQUblO-iCs)
-	- [Megalo Strike Back](https://www.youtube.com/watch?v=ZpJudi7_iiw)
-	- [Ruins](https://www.youtube.com/watch?v=LIUecLaI_m8)
-	- [An Ending](https://www.youtube.com/watch?v=9g6V67JzAHY)
-	- [Pandora Palace](https://www.youtube.com/watch?v=q-5cXVcCOUs)
-	- [Queen Battle (Original)](https://www.youtube.com/watch?v=k7riI8XEP6Q)
-	- [Rouxls Battle (Old)](https://www.youtube.com/watch?v=dQdHxJU_ciE)
 - **Steins;Gate**
 	- [Cycle](https://www.youtube.com/watch?v=qo08UtemiiQ)
 	- [Suspicious eyes](https://www.youtube.com/watch?v=yZHpt3VQU6k)
@@ -183,16 +182,14 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 - **Misc**
 	- [Jean Rondeau, Bach: Harpsichord Concerto No.1 in D Minor BWV 1052](https://www.youtube.com/watch?v=XcsfDxojdV8)
 		- mfw I'm still a normie after all
+	- [InstrumentManiac: Balatro Theme](https://www.youtube.com/watch?v=Kx0jTGd7urs)
 	- [ああああ: carnation](https://www.youtube.com/watch?v=VD13tT9abKI)
 	- [Memento: nonoc](https://www.youtube.com/watch?v=jfvB3DPJ4FU)
 	- [Jean-Michel Jarre: Oxygene, Pt. 1](https://www.youtube.com/watch?v=7sVJJ5WCf3M)
 	- [Hanasakuya: Mujun no Tsuki](https://www.youtube.com/watch?v=umDMFmRIaoU)
 		- I found this from AnikiRip's post. I can't understand most of the lyrics but something about the tone feels significant
 	- [米津玄師: Amefuri Fujin](https://www.youtube.com/watch?v=OlVpfcVTgQ4)
-	- [THE DU: CRAZY NOISY BIZARRE TOWN](https://www.youtube.com/watch?v=qlaRFRA4qFU)
 	- [Orchestre Maurice Larcange: Où est passée ma bohème](https://www.youtube.com/watch?v=cWZrbQHG4BM)
-	- [aLBW: Lorule Overworld](https://www.youtube.com/watch?v=cQBHqypX-lQ)
-	- [Nioh: Freed From This Mortal Coil](https://www.youtube.com/watch?v=mDPbKjxDVHI)
 	- [Cyber Sleuth: Welcome to This Wonderful Space](https://www.youtube.com/watch?v=jM8fUkyYAzQ)
 
 See also: [Near-sama's list](https://near.blog/music/) (~0.4? correlation with mine)
@@ -203,7 +200,6 @@ Here's a small collection of those that have had a notable influence on me, whic
 In order of when I experienced them, ascending:
 
 - [The Unfinished Swan](https://en.wikipedia.org/wiki/The_Unfinished_Swan)
-- Undertale
 - FromSoftware games
 	- Dark Souls 1-3
 	- Bloodborne, especially
@@ -218,3 +214,4 @@ In order of when I experienced them, ascending:
 	- *I've offered to help so many times... but the killer this time didn't discuss their plan with me at all...*
 	- *... ... ... Oh. Am I allowed to speak? Heh, I'm so happy I'm getting goosebumps! Everyone actually needs help from scum like me!*
 	- *It's lonely watching someone I admire reach the limits of their hope. It kind of feels like a broken dream...*
+- Hollow Knight
