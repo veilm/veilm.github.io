@@ -4,7 +4,6 @@ import html
 import re
 from pathlib import Path
 
-
 def parse_entries(path, with_dates=False):
     src = path.read_text(encoding='utf-8', errors='ignore')
     entry_re = re.compile(
@@ -109,7 +108,66 @@ def sort_entries(entries):
     return sorted(entries, key=sort_key)
 
 
-def build_html(sections):
+def parse_favorites(path):
+    src = path.read_text(encoding='utf-8', errors='ignore')
+
+    def extract_block(block_id):
+        start = src.find(f'id="{block_id}"')
+        if start == -1:
+            return ''
+        end = src.find('<h5>', start)
+        if end == -1:
+            end = src.find('<div class="user-comments', start)
+        if end == -1:
+            end = len(src)
+        return src[start:end]
+
+    def extract_items(block):
+        return re.findall(r'<li class="btn-fav".*?</li>', block, re.S)
+
+    def absolute_link(href):
+        if href.startswith('/'):
+            return 'https://myanimelist.net' + href
+        return href
+
+    favorites = {'Anime': [], 'Characters': [], 'People': []}
+
+    anime_block = extract_block('anime_favorites')
+    for item in extract_items(anime_block):
+        title_match = re.search(r'<span class="title[^"]*">\s*(.*?)\s*</span>', item, re.S)
+        link_match = re.search(r'<a href="([^"]+)"', item)
+        if not title_match or not link_match:
+            continue
+        title = html.unescape(title_match.group(1).strip())
+        link = absolute_link(link_match.group(1).strip())
+        favorites['Anime'].append((title, link))
+
+    char_block = extract_block('character_favorites')
+    for item in extract_items(char_block):
+        name_match = re.search(r'<span class="title[^"]*">\s*(.*?)\s*</span>', item, re.S)
+        work_match = re.search(r'<span class="users">\s*(.*?)\s*</span>', item, re.S)
+        link_match = re.search(r'<a href="([^"]+)"', item)
+        if not name_match or not work_match or not link_match:
+            continue
+        name = html.unescape(name_match.group(1).strip())
+        work = html.unescape(work_match.group(1).strip())
+        char_link = absolute_link(link_match.group(1).strip())
+        favorites['Characters'].append((name, char_link, work))
+
+    people_block = extract_block('person_favorites')
+    for item in extract_items(people_block):
+        name_match = re.search(r'<span class="title[^"]*">\s*(.*?)\s*</span>', item, re.S)
+        link_match = re.search(r'<a href="([^"]+)"', item)
+        if not name_match or not link_match:
+            continue
+        name = html.unescape(name_match.group(1).strip())
+        link = absolute_link(link_match.group(1).strip())
+        favorites['People'].append((name, link))
+
+    return favorites
+
+
+def build_html(sections, favorites):
     html_out = [
         '<!doctype html>',
         '<html lang="en">',
@@ -137,6 +195,39 @@ def build_html(sections):
         '<body>',
         '  <h1>Anime List</h1>',
     ]
+
+    if favorites:
+        html_out.append('  <details>')
+        total_count = sum(len(items) for items in favorites.values())
+        html_out.append(
+            f'    <summary>Favorites<span class="count">({total_count})</span></summary>'
+        )
+        for label in ('Anime', 'Characters', 'People'):
+            items = favorites.get(label, [])
+            html_out.append(f'    <h3>{html.escape(label)}<span class="count">({len(items)})</span></h3>')
+            html_out.append('    <ul>')
+            if label == 'Characters':
+                for name, link, work in items:
+                    safe_name = html.escape(name)
+                    safe_work = html.escape(work)
+                    html_out.append('      <li>')
+                    html_out.append(
+                        f'        <a href="{link}" target="_blank" rel="noopener noreferrer">{safe_name}</a>'
+                    )
+                    html_out.append(
+                        f'        <div class="note">From: {safe_work}</div>'
+                    )
+                    html_out.append('      </li>')
+            else:
+                for name, link in items:
+                    safe_name = html.escape(name)
+                    html_out.append('      <li>')
+                    html_out.append(
+                        f'        <a href="{link}" target="_blank" rel="noopener noreferrer">{safe_name}</a>'
+                    )
+                    html_out.append('      </li>')
+            html_out.append('    </ul>')
+        html_out.append('  </details>')
 
     for title, entries, with_dates in sections:
         entries = sort_entries(entries)
@@ -179,12 +270,14 @@ def main():
     parser.add_argument('--watching', default='out-watching', help='Watching HTML export path')
     parser.add_argument('--ptw', default='out-ptw', help='Plan to Watch HTML export path')
     parser.add_argument('--completed', default='out-complete', help='Completed HTML export path')
+    parser.add_argument('--profile', default='profile', help='Profile HTML export path')
     parser.add_argument('--output', default='index.html', help='Output HTML path')
     args = parser.parse_args()
 
     watching_path = Path(args.watching)
     ptw_path = Path(args.ptw)
     completed_path = Path(args.completed)
+    profile_path = Path(args.profile)
 
     sections = [
         ('Currently Watching', parse_entries(watching_path, with_dates=True), True),
@@ -192,7 +285,8 @@ def main():
         ('Plan to Watch', parse_entries(ptw_path, with_dates=False), False),
     ]
 
-    output_html = build_html(sections)
+    favorites = parse_favorites(profile_path)
+    output_html = build_html(sections, favorites)
     Path(args.output).write_text(output_html, encoding='utf-8')
 
 
