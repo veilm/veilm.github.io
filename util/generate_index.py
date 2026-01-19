@@ -18,46 +18,54 @@ def parse_entries(path, with_dates=False):
         if not match:
             continue
         anime_id = match.group(1)
+        row_re = re.compile(
+            rf'(<tr>.*?<a[^>]+/anime/{anime_id}[^>]*>.*?</tr>)', re.S
+        )
+        row_match = row_re.search(src)
+        row = row_match.group(1) if row_match else ''
         note_re = re.compile(rf'id="noteRowEdit{anime_id}"\s+data-note="(.*?)"', re.S)
         note_match = note_re.search(src)
         note = ''
         if note_match:
             note = html.unescape(note_match.group(1).strip())
+        score = ''
+        score_re = re.compile(
+            rf'id="scoreval{anime_id}".*?<span class="score-label[^"]*">\s*([^<]*)\s*</span>',
+            re.S,
+        )
+        score_match = score_re.search(src)
+        if score_match:
+            score = html.unescape(score_match.group(1).strip())
         if href.startswith('/'):
             href = 'https://myanimelist.net' + href
         start_date = ''
         end_date = ''
         if with_dates:
-            row_re = re.compile(
-                rf'(<tr>.*?<a[^>]+/anime/{anime_id}[^>]*>.*?</tr>)', re.S
+            dates = re.findall(
+                r'<td class="td[12]"[^>]*width="90"[^>]*>\s*(.*?)\s*</td>',
+                row,
+                re.S,
             )
-            row_match = row_re.search(src)
-            if row_match:
-                row = row_match.group(1)
-                dates = re.findall(
-                    r'<td class="td[12]"[^>]*width="90"[^>]*>\s*(.*?)\s*</td>',
-                    row,
-                    re.S,
-                )
-                if len(dates) >= 2:
-                    start_date = html.unescape(dates[-2].strip())
-                    end_date = html.unescape(dates[-1].strip())
-        entries.append((title, href, note, start_date, end_date))
+            if len(dates) >= 2:
+                start_date = html.unescape(dates[-2].strip())
+                end_date = html.unescape(dates[-1].strip())
+        entries.append((title, href, note, start_date, end_date, score))
 
     seen = set()
     unique_entries = []
-    for title, href, note, start_date, end_date in entries:
+    for title, href, note, start_date, end_date, score in entries:
         key = (title, href)
         if key in seen:
             continue
         seen.add(key)
-        unique_entries.append((title, href, note, start_date, end_date))
+        unique_entries.append((title, href, note, start_date, end_date, score))
     return unique_entries
 
 
 def render_note(note):
     safe = html.escape(note)
     return safe.replace('\r\n', '\n').replace('\r', '\n').replace('\n', '<br>')
+
 
 def format_date(value):
     value = value.strip()
@@ -68,6 +76,37 @@ def format_date(value):
         return value
     month, day, year = match.groups()
     return f'20{year}-{month}-{day}'
+
+
+def parse_date_for_sort(value):
+    value = value.strip()
+    if not value or value == '-':
+        return (1, 0)
+    match_mmddyy = re.match(r'^(\d{2})-(\d{2})-(\d{2})$', value)
+    if match_mmddyy:
+        month, day, year = match_mmddyy.groups()
+        return (0, int(f'20{year}{month}{day}'))
+    match_yyyymmdd = re.match(r'^(\d{4})-(\d{2})-(\d{2})$', value)
+    if match_yyyymmdd:
+        year, month, day = match_yyyymmdd.groups()
+        return (0, int(f'{year}{month}{day}'))
+    return (1, 0)
+
+
+def sort_entries(entries):
+    def sort_key(entry):
+        title, _href, _note, start_date, end_date, _score = entry
+        start_missing, start_value = parse_date_for_sort(start_date or '-')
+        end_missing, end_value = parse_date_for_sort(end_date or '-')
+        return (
+            start_missing,
+            -start_value,
+            end_missing,
+            -end_value,
+            title.lower(),
+        )
+
+    return sorted(entries, key=sort_key)
 
 
 def build_html(sections):
@@ -100,13 +139,15 @@ def build_html(sections):
     ]
 
     for title, entries, with_dates in sections:
+        entries = sort_entries(entries)
         html_out.append('  <details>')
         html_out.append(
             f'    <summary>{html.escape(title)}<span class="count">({len(entries)})</span></summary>'
         )
         html_out.append('    <ul>')
-        for entry_title, href, note, start_date, end_date in entries:
+        for entry_title, href, note, start_date, end_date, score in entries:
             safe_title = html.escape(entry_title)
+            score_label = html.escape(score or '-')
             html_out.append('      <li>')
             html_out.append(
                 f'        <a href="{href}" target="_blank" rel="noopener noreferrer">{safe_title}</a>'
@@ -117,8 +158,10 @@ def build_html(sections):
                 start_label = html.escape(format_date(start_date or '-'))
                 end_label = html.escape(format_date(end_date or '-'))
                 html_out.append(
-                    f'        <div class="dates">Started: {start_label} | Finished: {end_label}</div>'
+                    f'        <div class="dates">Score: {score_label} | Started: {start_label} | Finished: {end_label}</div>'
                 )
+            else:
+                html_out.append(f'        <div class="dates">Score: {score_label}</div>')
             html_out.append('      </li>')
         html_out.append('    </ul>')
         html_out.append('  </details>')
