@@ -3,263 +3,285 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Plan to Watch</title>
+  <title>Anime List</title>
   <style>
     :root { color-scheme: light; }
     body { font-family: Georgia, "Times New Roman", serif; margin: 24px; background: #f6f1e9; color: #2b1d18; }
     h1 { margin: 0 0 16px; }
-    ul { list-style: none; padding: 0; margin: 0; }
+    details { margin-bottom: 16px; border: 1px solid #d9c6b6; background: #fbf6ef; padding: 10px 12px; border-radius: 6px; }
+    summary { cursor: pointer; font-weight: bold; }
+    summary::-webkit-details-marker { color: #7a1f1f; }
+    ul { list-style: none; padding: 0; margin: 12px 0 0; }
     li { padding: 10px 0; border-bottom: 1px solid #d9c6b6; }
+    li:last-child { border-bottom: none; }
     a { color: #7a1f1f; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .note { margin-top: 6px; color: #5b463c; font-size: 0.95em; }
-    .count { color: #6b5b53; font-size: 0.95em; margin-bottom: 18px; }
+    .dates { margin-top: 6px; color: #5b463c; font-size: 0.9em; }
+    .count { color: #6b5b53; font-size: 0.95em; margin-left: 8px; }
   </style>
 </head>
 <body>
-  <h1>Plan to Watch</h1>
-  <div class="count">Entries: 68</div>
-  <ul>
-    <li>
-      <a href="https://myanimelist.net/anime/54757/3-nen_Z-gumi_Ginpachi-sensei" target="_blank" rel="noopener noreferrer">3-nen Z-gumi Ginpachi-sensei</a>
-      <div class="note">Cont</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/41457/86" target="_blank" rel="noopener noreferrer">86</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/25013/Akatsuki_no_Yona" target="_blank" rel="noopener noreferrer">Akatsuki no Yona</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/11111/Another" target="_blank" rel="noopener noreferrer">Another</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/477/Aria_the_Animation" target="_blank" rel="noopener noreferrer">Aria the Animation</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/28249/Arslan_Senki_TV" target="_blank" rel="noopener noreferrer">Arslan Senki (TV)</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/2251/Baccano" target="_blank" rel="noopener noreferrer">Baccano!</a>
-      <div class="note">Mira recommendation</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/61006/Bocchi_the_Rock_2nd_Season" target="_blank" rel="noopener noreferrer">Bocchi the Rock! 2nd Season</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/34944/Bungou_Stray_Dogs__Dead_Apple" target="_blank" rel="noopener noreferrer">Bungou Stray Dogs: Dead Apple</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/1/Cowboy_Bebop" target="_blank" rel="noopener noreferrer">Cowboy Bebop</a>
-      <div class="note">General</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/8086/Densetsu_no_Yuusha_no_Densetsu" target="_blank" rel="noopener noreferrer">Densetsu no Yuusha no Densetsu</a>
-      <div class="note">Idk</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/22297/Fate_stay_night__Unlimited_Blade_Works" target="_blank" rel="noopener noreferrer">Fate/stay night: Unlimited Blade Works</a>
-      <div class="note">General</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/59062/Gachiakuta" target="_blank" rel="noopener noreferrer">Gachiakuta</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/239/Gankutsuou" target="_blank" rel="noopener noreferrer">Gankutsuou</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/820/Ginga_Eiyuu_Densetsu" target="_blank" rel="noopener noreferrer">Ginga Eiyuu Densetsu</a>
-      <div class="note">General</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/58091/Gintama_on_Theater_2D__Ikkoku_Keisei-hen" target="_blank" rel="noopener noreferrer">Gintama on Theater 2D: Ikkoku Keisei-hen</a>
-      <div class="note">wp</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/31859/Hai_to_Gensou_no_Grimgar" target="_blank" rel="noopener noreferrer">Hai to Gensou no Grimgar</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/934/Higurashi_no_Naku_Koro_ni" target="_blank" rel="noopener noreferrer">Higurashi no Naku Koro ni</a>
-      <div class="note">Probably read VNs first</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/160/Ima_Soko_ni_Iru_Boku" target="_blank" rel="noopener noreferrer">Ima, Soko ni Iru Boku</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/570/Jin-Rou" target="_blank" rel="noopener noreferrer">Jin-Rou</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/16664/Kaguya-hime_no_Monogatari" target="_blank" rel="noopener noreferrer">Kaguya-hime no Monogatari</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/57820/Kamitsubaki-shi_Kensetsuchuu" target="_blank" rel="noopener noreferrer">Kamitsubaki-shi Kensetsuchuu.</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/60157/Kanpekisugite_Kawaige_ga_Nai_to_Konyaku_Haki_sareta_Seijo_wa_Ringoku_ni_Urareru" target="_blank" rel="noopener noreferrer">Kanpekisugite Kawaige ga Nai to Konyaku Haki sareta Seijo wa Ringoku ni Urareru</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/33/Kenpuu_Denki_Berserk" target="_blank" rel="noopener noreferrer">Kenpuu Denki Berserk</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/32281/Kimi_no_Na_wa" target="_blank" rel="noopener noreferrer">Kimi no Na wa.</a>
-      <div class="note">Looks so cringe but it's popular enough that I need to know</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/43/Koukaku_Kidoutai" target="_blank" rel="noopener noreferrer">Koukaku Kidoutai</a>
-      <div class="note">https://www.reddit.com/r/anime/wiki/watch_order#wiki_ghost_in_the_shell</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/467/Koukaku_Kidoutai__Stand_Alone_Complex" target="_blank" rel="noopener noreferrer">Koukaku Kidoutai: Stand Alone Complex</a>
-      <div class="note">Cont</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/801/Koukaku_Kidoutai__Stand_Alone_Complex_2nd_GIG" target="_blank" rel="noopener noreferrer">Koukaku Kidoutai: Stand Alone Complex 2nd GIG</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/4898/Kuroshitsuji" target="_blank" rel="noopener noreferrer">Kuroshitsuji</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/54492/Kusuriya_no_Hitorigoto" target="_blank" rel="noopener noreferrer">Kusuriya no Hitorigoto</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/35062/Mahoutsukai_no_Yome" target="_blank" rel="noopener noreferrer">Mahoutsukai no Yome</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/57864/Monogatari_Series__Off___Monster_Season" target="_blank" rel="noopener noreferrer">Monogatari Series: Off & Monster Season</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/323/Mousou_Dairinin" target="_blank" rel="noopener noreferrer">Mousou Dairinin</a>
-      <div class="note">Idk</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/457/Mushishi" target="_blank" rel="noopener noreferrer">Mushishi</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/39535/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu" target="_blank" rel="noopener noreferrer">Mushoku Tensei: Isekai Ittara Honki Dasu</a>
-      <div class="note">Very sketchy but seems popular despite it</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/1210/NHK_ni_Youkoso" target="_blank" rel="noopener noreferrer">NHK ni Youkoso!</a>
-      <div class="note">roon recommend</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/46102/Odd_Taxi" target="_blank" rel="noopener noreferrer">Odd Taxi</a>
-      <div class="note">Idk</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/52807/One_Punch_Man_3" target="_blank" rel="noopener noreferrer">One Punch Man 3</a>
-      <div class="note">Cont</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/1034/Ouritsu_Uchuugun__Honneamise_no_Tsubasa" target="_blank" rel="noopener noreferrer">Ouritsu Uchuugun: Honneamise no Tsubasa</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/40834/Ousama_Ranking" target="_blank" rel="noopener noreferrer">Ousama Ranking</a>
-      <div class="note">Idk</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/29803/Overlord" target="_blank" rel="noopener noreferrer">Overlord</a>
-      <div class="note">General?</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/770/Pale_Cocoon" target="_blank" rel="noopener noreferrer">Pale Cocoon</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/437/Perfect_Blue" target="_blank" rel="noopener noreferrer">Perfect Blue</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/22135/Ping_Pong_the_Animation" target="_blank" rel="noopener noreferrer">Ping Pong the Animation</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/13601/Psycho-Pass" target="_blank" rel="noopener noreferrer">Psycho-Pass</a>
-      <div class="note">General</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/60012/Re_Zero_kara_Hajimeru_Break_Time_3rd_Season" target="_blank" rel="noopener noreferrer">Re:Zero kara Hajimeru Break Time 3rd Season</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/54857/Re_Zero_kara_Hajimeru_Isekai_Seikatsu_3rd_Season" target="_blank" rel="noopener noreferrer">Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/61316/Re_Zero_kara_Hajimeru_Isekai_Seikatsu_4th_Season" target="_blank" rel="noopener noreferrer">Re:Zero kara Hajimeru Isekai Seikatsu 4th Season</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/6675/Redline" target="_blank" rel="noopener noreferrer">Redline</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/51381/RWBY__Hyousetsu_Teikoku" target="_blank" rel="noopener noreferrer">RWBY: Hyousetsu Teikoku</a>
-      <div class="note">look scool</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/355/Shakugan_no_Shana" target="_blank" rel="noopener noreferrer">Shakugan no Shana</a>
-      <div class="note">Skye 9/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso" target="_blank" rel="noopener noreferrer">Shigatsu wa Kimi no Uso</a>
-      <div class="note">Kei recommended</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/440/Shoujo_Kakumei_Utena" target="_blank" rel="noopener noreferrer">Shoujo Kakumei Utena</a>
-      <div class="note">Gwern 10/10</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/50265/Spy_x_Family" target="_blank" rel="noopener noreferrer">Spy x Family</a>
-      <div class="note">General</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_Bouken" target="_blank" rel="noopener noreferrer">Steel Ball Run: JoJo no Kimyou na Bouken</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/849/Suzumiya_Haruhi_no_Yuuutsu" target="_blank" rel="noopener noreferrer">Suzumiya Haruhi no Yuuutsu</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/12445/Tasogare_Otome_x_Amnesia" target="_blank" rel="noopener noreferrer">Tasogare Otome x Amnesia</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/2001/Tengen_Toppa_Gurren_Lagann" target="_blank" rel="noopener noreferrer">Tengen Toppa Gurren Lagann</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/37430/Tensei_shitara_Slime_Datta_Ken" target="_blank" rel="noopener noreferrer">Tensei shitara Slime Datta Ken</a>
-      <div class="note">General, Re:Zero recommend</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/885/Tenshi_no_Tamago" target="_blank" rel="noopener noreferrer">Tenshi no Tamago</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/22319/Tokyo_Ghoul" target="_blank" rel="noopener noreferrer">Tokyo Ghoul</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/732/Vampire_Hunter_D" target="_blank" rel="noopener noreferrer">Vampire Hunter D</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/543/Vampire_Hunter_D_2000" target="_blank" rel="noopener noreferrer">Vampire Hunter D (2000)</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/33352/Violet_Evergarden" target="_blank" rel="noopener noreferrer">Violet Evergarden</a>
-      <div class="note">General</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/861/xxxHOLiC" target="_blank" rel="noopener noreferrer">xxxHOLiC</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/35507/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e" target="_blank" rel="noopener noreferrer">Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e</a>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/9331/Yumekui_Merry" target="_blank" rel="noopener noreferrer">Yumekui Merry</a>
-      <div class="note">saw 1301096466955.png vector art, character design looks cool</div>
-    </li>
-    <li>
-      <a href="https://myanimelist.net/anime/60058/Oshi_no_Ko_3rd_Season" target="_blank" rel="noopener noreferrer">[Oshi no Ko] 3rd Season</a>
-    </li>
-  </ul>
+  <h1>Anime List</h1>
+  <details>
+    <summary>Currently Watching<span class="count">(1)</span></summary>
+    <ul>
+      <li>
+        <a href="https://myanimelist.net/anime/21/One_Piece" target="_blank" rel="noopener noreferrer">One Piece</a>
+        <div class="note">impression as of EP 140: pretty sure 99% of One Piece fans are grifters who don&#x27;t engage with the material and just like the fight scenes. they spawn as Kobi and still are Kobi, or worse because Kobi at least had the potential in him to evolve<br>&quot;You&#x27;re stupid *and* a coward? Man, I hate you! AHAHAHA&quot;<br><br>if you take it seriously philosophically I think it should be considered far more culturally significant in SF than JJK is</div>
+        <div class="dates">Started: 2025-04-14 | Finished: -</div>
+      </li>
+    </ul>
+  </details>
+  <details>
+    <summary>Plan to Watch<span class="count">(68)</span></summary>
+    <ul>
+      <li>
+        <a href="https://myanimelist.net/anime/54757/3-nen_Z-gumi_Ginpachi-sensei" target="_blank" rel="noopener noreferrer">3-nen Z-gumi Ginpachi-sensei</a>
+        <div class="note">Cont</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/41457/86" target="_blank" rel="noopener noreferrer">86</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/25013/Akatsuki_no_Yona" target="_blank" rel="noopener noreferrer">Akatsuki no Yona</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/11111/Another" target="_blank" rel="noopener noreferrer">Another</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/477/Aria_the_Animation" target="_blank" rel="noopener noreferrer">Aria the Animation</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/28249/Arslan_Senki_TV" target="_blank" rel="noopener noreferrer">Arslan Senki (TV)</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/2251/Baccano" target="_blank" rel="noopener noreferrer">Baccano!</a>
+        <div class="note">Mira recommendation</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/61006/Bocchi_the_Rock_2nd_Season" target="_blank" rel="noopener noreferrer">Bocchi the Rock! 2nd Season</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/34944/Bungou_Stray_Dogs__Dead_Apple" target="_blank" rel="noopener noreferrer">Bungou Stray Dogs: Dead Apple</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/1/Cowboy_Bebop" target="_blank" rel="noopener noreferrer">Cowboy Bebop</a>
+        <div class="note">General</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/8086/Densetsu_no_Yuusha_no_Densetsu" target="_blank" rel="noopener noreferrer">Densetsu no Yuusha no Densetsu</a>
+        <div class="note">Idk</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/22297/Fate_stay_night__Unlimited_Blade_Works" target="_blank" rel="noopener noreferrer">Fate/stay night: Unlimited Blade Works</a>
+        <div class="note">General</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/59062/Gachiakuta" target="_blank" rel="noopener noreferrer">Gachiakuta</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/239/Gankutsuou" target="_blank" rel="noopener noreferrer">Gankutsuou</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/820/Ginga_Eiyuu_Densetsu" target="_blank" rel="noopener noreferrer">Ginga Eiyuu Densetsu</a>
+        <div class="note">General</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/58091/Gintama_on_Theater_2D__Ikkoku_Keisei-hen" target="_blank" rel="noopener noreferrer">Gintama on Theater 2D: Ikkoku Keisei-hen</a>
+        <div class="note">wp</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/31859/Hai_to_Gensou_no_Grimgar" target="_blank" rel="noopener noreferrer">Hai to Gensou no Grimgar</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/934/Higurashi_no_Naku_Koro_ni" target="_blank" rel="noopener noreferrer">Higurashi no Naku Koro ni</a>
+        <div class="note">Probably read VNs first</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/160/Ima_Soko_ni_Iru_Boku" target="_blank" rel="noopener noreferrer">Ima, Soko ni Iru Boku</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/570/Jin-Rou" target="_blank" rel="noopener noreferrer">Jin-Rou</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/16664/Kaguya-hime_no_Monogatari" target="_blank" rel="noopener noreferrer">Kaguya-hime no Monogatari</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/57820/Kamitsubaki-shi_Kensetsuchuu" target="_blank" rel="noopener noreferrer">Kamitsubaki-shi Kensetsuchuu.</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/60157/Kanpekisugite_Kawaige_ga_Nai_to_Konyaku_Haki_sareta_Seijo_wa_Ringoku_ni_Urareru" target="_blank" rel="noopener noreferrer">Kanpekisugite Kawaige ga Nai to Konyaku Haki sareta Seijo wa Ringoku ni Urareru</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/33/Kenpuu_Denki_Berserk" target="_blank" rel="noopener noreferrer">Kenpuu Denki Berserk</a>
+        <div class="note">General<br>1746852338 consensus on r*ddit is that the anime is generally terrible, especially for later parts? so I say read entirety of the manga, then watch this S1 and then be done</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/32281/Kimi_no_Na_wa" target="_blank" rel="noopener noreferrer">Kimi no Na wa.</a>
+        <div class="note">Looks so cringe but it&#x27;s popular enough that I need to know</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/43/Koukaku_Kidoutai" target="_blank" rel="noopener noreferrer">Koukaku Kidoutai</a>
+        <div class="note">https://www.reddit.com/r/anime/wiki/watch_order#wiki_ghost_in_the_shell</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/467/Koukaku_Kidoutai__Stand_Alone_Complex" target="_blank" rel="noopener noreferrer">Koukaku Kidoutai: Stand Alone Complex</a>
+        <div class="note">Cont</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/801/Koukaku_Kidoutai__Stand_Alone_Complex_2nd_GIG" target="_blank" rel="noopener noreferrer">Koukaku Kidoutai: Stand Alone Complex 2nd GIG</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/4898/Kuroshitsuji" target="_blank" rel="noopener noreferrer">Kuroshitsuji</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/54492/Kusuriya_no_Hitorigoto" target="_blank" rel="noopener noreferrer">Kusuriya no Hitorigoto</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/35062/Mahoutsukai_no_Yome" target="_blank" rel="noopener noreferrer">Mahoutsukai no Yome</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/57864/Monogatari_Series__Off___Monster_Season" target="_blank" rel="noopener noreferrer">Monogatari Series: Off &amp; Monster Season</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/323/Mousou_Dairinin" target="_blank" rel="noopener noreferrer">Mousou Dairinin</a>
+        <div class="note">Idk</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/457/Mushishi" target="_blank" rel="noopener noreferrer">Mushishi</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/39535/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu" target="_blank" rel="noopener noreferrer">Mushoku Tensei: Isekai Ittara Honki Dasu</a>
+        <div class="note">Very sketchy but seems popular despite it</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/1210/NHK_ni_Youkoso" target="_blank" rel="noopener noreferrer">NHK ni Youkoso!</a>
+        <div class="note">roon recommend</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/46102/Odd_Taxi" target="_blank" rel="noopener noreferrer">Odd Taxi</a>
+        <div class="note">Idk</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/52807/One_Punch_Man_3" target="_blank" rel="noopener noreferrer">One Punch Man 3</a>
+        <div class="note">Cont</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/1034/Ouritsu_Uchuugun__Honneamise_no_Tsubasa" target="_blank" rel="noopener noreferrer">Ouritsu Uchuugun: Honneamise no Tsubasa</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/40834/Ousama_Ranking" target="_blank" rel="noopener noreferrer">Ousama Ranking</a>
+        <div class="note">Idk</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/29803/Overlord" target="_blank" rel="noopener noreferrer">Overlord</a>
+        <div class="note">General?</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/770/Pale_Cocoon" target="_blank" rel="noopener noreferrer">Pale Cocoon</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/437/Perfect_Blue" target="_blank" rel="noopener noreferrer">Perfect Blue</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/22135/Ping_Pong_the_Animation" target="_blank" rel="noopener noreferrer">Ping Pong the Animation</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/13601/Psycho-Pass" target="_blank" rel="noopener noreferrer">Psycho-Pass</a>
+        <div class="note">General</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/60012/Re_Zero_kara_Hajimeru_Break_Time_3rd_Season" target="_blank" rel="noopener noreferrer">Re:Zero kara Hajimeru Break Time 3rd Season</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/54857/Re_Zero_kara_Hajimeru_Isekai_Seikatsu_3rd_Season" target="_blank" rel="noopener noreferrer">Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season</a>
+        <div class="note">Apparently there&#x27;s a nontrivial chance it can surpass S1? I hope so, since S1 is my favourite anime and one of my favourite pieces of media of all time. The only other contestants I am particularly hopeful for are Shingeki no Kyojin and Monster. Angel Beats! was also one of these &quot;contestants&quot;, so I think my high expectations contributed to its disappointment<br><br>(Cont)</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/61316/Re_Zero_kara_Hajimeru_Isekai_Seikatsu_4th_Season" target="_blank" rel="noopener noreferrer">Re:Zero kara Hajimeru Isekai Seikatsu 4th Season</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/6675/Redline" target="_blank" rel="noopener noreferrer">Redline</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/51381/RWBY__Hyousetsu_Teikoku" target="_blank" rel="noopener noreferrer">RWBY: Hyousetsu Teikoku</a>
+        <div class="note">look scool</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/355/Shakugan_no_Shana" target="_blank" rel="noopener noreferrer">Shakugan no Shana</a>
+        <div class="note">Skye 9/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso" target="_blank" rel="noopener noreferrer">Shigatsu wa Kimi no Uso</a>
+        <div class="note">Kei recommended</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/440/Shoujo_Kakumei_Utena" target="_blank" rel="noopener noreferrer">Shoujo Kakumei Utena</a>
+        <div class="note">Gwern 10/10</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/50265/Spy_x_Family" target="_blank" rel="noopener noreferrer">Spy x Family</a>
+        <div class="note">General</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_Bouken" target="_blank" rel="noopener noreferrer">Steel Ball Run: JoJo no Kimyou na Bouken</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/849/Suzumiya_Haruhi_no_Yuuutsu" target="_blank" rel="noopener noreferrer">Suzumiya Haruhi no Yuuutsu</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/12445/Tasogare_Otome_x_Amnesia" target="_blank" rel="noopener noreferrer">Tasogare Otome x Amnesia</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/2001/Tengen_Toppa_Gurren_Lagann" target="_blank" rel="noopener noreferrer">Tengen Toppa Gurren Lagann</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/37430/Tensei_shitara_Slime_Datta_Ken" target="_blank" rel="noopener noreferrer">Tensei shitara Slime Datta Ken</a>
+        <div class="note">General, Re:Zero recommend</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/885/Tenshi_no_Tamago" target="_blank" rel="noopener noreferrer">Tenshi no Tamago</a>
+        <div class="note">/w/<br>1709038898: Bro it&#x27;s going to be like 32x18</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/22319/Tokyo_Ghoul" target="_blank" rel="noopener noreferrer">Tokyo Ghoul</a>
+        <div class="note">General<br><br>1735694264 see today&#x27;s txt</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/732/Vampire_Hunter_D" target="_blank" rel="noopener noreferrer">Vampire Hunter D</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/543/Vampire_Hunter_D_2000" target="_blank" rel="noopener noreferrer">Vampire Hunter D (2000)</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/33352/Violet_Evergarden" target="_blank" rel="noopener noreferrer">Violet Evergarden</a>
+        <div class="note">General</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/861/xxxHOLiC" target="_blank" rel="noopener noreferrer">xxxHOLiC</a>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/35507/Youkoso_Jitsuryoku_Shijou_Shugi_no_Kyoushitsu_e" target="_blank" rel="noopener noreferrer">Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e</a>
+        <div class="note">Ronson recommended<br>I thought it might be similar to Danganronpa in the sense that some students excel in certain abilities, but he said that it only had a mild connection to Danganronpa</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/9331/Yumekui_Merry" target="_blank" rel="noopener noreferrer">Yumekui Merry</a>
+        <div class="note">saw 1301096466955.png vector art, character design looks cool</div>
+      </li>
+      <li>
+        <a href="https://myanimelist.net/anime/60058/Oshi_no_Ko_3rd_Season" target="_blank" rel="noopener noreferrer">[Oshi no Ko] 3rd Season</a>
+      </li>
+    </ul>
+  </details>
 </body>
 </html>
