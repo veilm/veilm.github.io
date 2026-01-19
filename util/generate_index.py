@@ -135,14 +135,17 @@ def main():
     parser = argparse.ArgumentParser(description='Generate a simplified MAL list HTML.')
     parser.add_argument('--watching', default='out-watching', help='Watching HTML export path')
     parser.add_argument('--ptw', default='out-ptw', help='Plan to Watch HTML export path')
+    parser.add_argument('--completed', default='out-complete', help='Completed HTML export path')
     parser.add_argument('--output', default='index.html', help='Output HTML path')
     args = parser.parse_args()
 
     watching_path = Path(args.watching)
     ptw_path = Path(args.ptw)
+    completed_path = Path(args.completed)
 
     sections = [
         ('Currently Watching', parse_entries(watching_path, with_dates=True), True),
+        ('Completed', parse_entries(completed_path, with_dates=True), True),
         ('Plan to Watch', parse_entries(ptw_path, with_dates=False), False),
     ]
 
