@@ -13,12 +13,12 @@ def parse_entries(path, with_dates=False):
     entries = []
     for href, title in entry_re.findall(src):
         title = html.unescape(title.strip())
-        match = re.search(r'/anime/(\d+)', href)
+        match = re.search(r'/(?:anime|manga)/(\d+)', href)
         if not match:
             continue
         anime_id = match.group(1)
         row_re = re.compile(
-            rf'(<tr>.*?<a[^>]+/anime/{anime_id}[^>]*>.*?</tr>)', re.S
+            rf'(<tr>.*?<a[^>]+/(?:anime|manga)/{anime_id}[^>]*>.*?</tr>)', re.S
         )
         row_match = row_re.search(src)
         row = row_match.group(1) if row_match else ''
@@ -28,13 +28,12 @@ def parse_entries(path, with_dates=False):
         if note_match:
             note = html.unescape(note_match.group(1).strip())
         score = ''
-        score_re = re.compile(
-            rf'id="scoreval{anime_id}".*?<span class="score-label[^"]*">\s*([^<]*)\s*</span>',
-            re.S,
-        )
-        score_match = score_re.search(src)
-        if score_match:
-            score = html.unescape(score_match.group(1).strip())
+        if row:
+            score_match = re.search(
+                r'<span class="score-label[^"]*">\s*([^<]*)\s*</span>', row
+            )
+            if score_match:
+                score = html.unescape(score_match.group(1).strip())
         if href.startswith('/'):
             href = 'https://myanimelist.net' + href
         start_date = ''
@@ -167,7 +166,12 @@ def parse_favorites(path):
     return favorites
 
 
-def build_html(sections, favorites):
+def add_section(sections, title, path, with_dates):
+    if path.exists():
+        sections.append((title, parse_entries(path, with_dates=with_dates), with_dates))
+
+
+def build_html(sections, favorites_sections):
     html_out = [
         '<!doctype html>',
         '<html lang="en">',
@@ -196,15 +200,17 @@ def build_html(sections, favorites):
         '  <h1>Anime List</h1>',
     ]
 
-    if favorites:
+    for title, favorites in favorites_sections:
         html_out.append('  <details>')
         total_count = sum(len(items) for items in favorites.values())
         html_out.append(
-            f'    <summary>Favorites<span class="count">({total_count})</span></summary>'
+            f'    <summary>{html.escape(title)}<span class="count">({total_count})</span></summary>'
         )
         for label in ('Anime', 'Characters', 'People'):
             items = favorites.get(label, [])
-            html_out.append(f'    <h3>{html.escape(label)}<span class="count">({len(items)})</span></h3>')
+            html_out.append(
+                f'    <h3>{html.escape(label)}<span class="count">({len(items)})</span></h3>'
+            )
             html_out.append('    <ul>')
             if label == 'Characters':
                 for name, link, work in items:
@@ -214,9 +220,7 @@ def build_html(sections, favorites):
                     html_out.append(
                         f'        <a href="{link}" target="_blank" rel="noopener noreferrer">{safe_name}</a>'
                     )
-                    html_out.append(
-                        f'        <div class="note">From: {safe_work}</div>'
-                    )
+                    html_out.append(f'        <div class="note">From: {safe_work}</div>')
                     html_out.append('      </li>')
             else:
                 for name, link in items:
@@ -271,6 +275,11 @@ def main():
     parser.add_argument('--ptw', default='out-ptw', help='Plan to Watch HTML export path')
     parser.add_argument('--completed', default='out-complete', help='Completed HTML export path')
     parser.add_argument('--profile', default='profile', help='Profile HTML export path')
+    parser.add_argument('--imm-watching', default='imm-watching', help='Immersion watching HTML export path')
+    parser.add_argument('--imm-ptw', default='imm-ptw', help='Immersion plan to watch HTML export path')
+    parser.add_argument('--imm-watched', default='imm-watched', help='Immersion completed HTML export path')
+    parser.add_argument('--manga-ptw', default='manga-plantoread', help='Manga plan to read HTML export path')
+    parser.add_argument('--profile-imm', default='profile-imm', help='Immersion profile HTML export path')
     parser.add_argument('--output', default='index.html', help='Output HTML path')
     args = parser.parse_args()
 
@@ -278,15 +287,28 @@ def main():
     ptw_path = Path(args.ptw)
     completed_path = Path(args.completed)
     profile_path = Path(args.profile)
+    imm_watching_path = Path(args.imm_watching)
+    imm_ptw_path = Path(args.imm_ptw)
+    imm_watched_path = Path(args.imm_watched)
+    manga_ptw_path = Path(args.manga_ptw)
+    profile_imm_path = Path(args.profile_imm)
 
     sections = [
         ('Currently Watching', parse_entries(watching_path, with_dates=True), True),
         ('Completed', parse_entries(completed_path, with_dates=True), True),
         ('Plan to Watch', parse_entries(ptw_path, with_dates=False), False),
     ]
+    add_section(sections, 'Immersion Watching', imm_watching_path, True)
+    add_section(sections, 'Immersion Completed', imm_watched_path, True)
+    add_section(sections, 'Immersion Plan to Watch', imm_ptw_path, False)
+    add_section(sections, 'Manga Plan to Read', manga_ptw_path, False)
 
-    favorites = parse_favorites(profile_path)
-    output_html = build_html(sections, favorites)
+    favorites_sections = []
+    if profile_path.exists():
+        favorites_sections.append(('Favorites', parse_favorites(profile_path)))
+    if profile_imm_path.exists():
+        favorites_sections.append(('Favorites (Immersion)', parse_favorites(profile_imm_path)))
+    output_html = build_html(sections, favorites_sections)
     Path(args.output).write_text(output_html, encoding='utf-8')
 
 
