@@ -11,17 +11,19 @@ def parse_entries(path, with_dates=False):
         re.S,
     )
     entries = []
-    for href, title in entry_re.findall(src):
+    for match in entry_re.finditer(src):
+        href, title = match.group(1), match.group(2)
         title = html.unescape(title.strip())
-        match = re.search(r'/(?:anime|manga)/(\d+)', href)
-        if not match:
+        id_match = re.search(r'/(?:anime|manga)/(\d+)', href)
+        if not id_match:
             continue
-        anime_id = match.group(1)
-        row_re = re.compile(
-            rf'(<tr>.*?<a[^>]+/(?:anime|manga)/{anime_id}[^>]*>.*?</tr>)', re.S
-        )
-        row_match = row_re.search(src)
-        row = row_match.group(1) if row_match else ''
+        anime_id = id_match.group(1)
+        link_pos = match.start()
+        row_start = src.rfind('<tr', 0, link_pos)
+        row_end = src.find('</tr>', link_pos)
+        row = ''
+        if row_start != -1 and row_end != -1:
+            row = src[row_start:row_end + len('</tr>')]
         note_re = re.compile(rf'id="noteRowEdit{anime_id}"\s+data-note="(.*?)"', re.S)
         note_match = note_re.search(src)
         note = ''
@@ -39,14 +41,20 @@ def parse_entries(path, with_dates=False):
         start_date = ''
         end_date = ''
         if with_dates:
-            dates = re.findall(
+            date_cells = re.findall(
                 r'<td class="td[12]"[^>]*width="90"[^>]*>\s*(.*?)\s*</td>',
                 row,
                 re.S,
             )
-            if len(dates) >= 2:
-                start_date = html.unescape(dates[-2].strip())
-                end_date = html.unescape(dates[-1].strip())
+            cleaned_dates = []
+            for cell in date_cells:
+                text = re.sub(r'<[^>]+>', '', cell)
+                text = html.unescape(text).strip()
+                if re.match(r'^\d{2}-\d{2}-\d{2}$', text) or text == '':
+                    cleaned_dates.append(text)
+            if len(cleaned_dates) >= 2:
+                start_date = cleaned_dates[0]
+                end_date = cleaned_dates[1]
         entries.append((title, href, note, start_date, end_date, score))
 
     seen = set()
