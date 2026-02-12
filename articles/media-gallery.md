@@ -23,6 +23,10 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 		- I prefer this balance of instruments over the full original version
 	- [共月亭で逢いましょう](https://www.youtube.com/watch?v=eSG7GMkkJWI)
 	- [恋せよ乙女 -Love story of ZIPANG-](https://www.youtube.com/watch?v=Q1ozCzLse40)
+	- [幻想庭園](https://www.youtube.com/watch?v=mJb6huQMWRw)
+	- [un tableau blanc ～絵画旅行～](https://www.youtube.com/watch?v=Xj3rdVJdXF8)
+	- [Aru Natsu No Gogo](https://www.youtube.com/watch?v=WGnldAPaJtM)
+	- [Magritte et Georgette](https://www.youtube.com/watch?v=N-QigNAjwiA)
 - **[Feryquitous](https://feryquitous.bandcamp.com/)**
 	- [Percel of MAGENTA](https://www.youtube.com/watch?v=FIcQNmAGIC4)
 	- [Iweleth](https://www.youtube.com/watch?v=Idg9j9pcv50)
