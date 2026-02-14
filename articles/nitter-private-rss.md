@@ -1,6 +1,7 @@
 ---
 title: "RSS with a private Nitter instance"
 date: 2024-02-19T20:30:00-04:00
+private: true
 ---
 
 ### 2024-10-11 Update

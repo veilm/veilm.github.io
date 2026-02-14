@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import os
-import re
 from pathlib import Path
 import markdown
 from datetime import datetime
@@ -22,6 +20,30 @@ def parse_frontmatter(content):
             frontmatter[key.strip()] = value.strip().strip('"')
 
     return frontmatter, parts[2]
+
+
+def is_private(meta):
+    """Return True when frontmatter marks an article as private."""
+    value = str(meta.get("private", "")).strip().lower()
+    return value in {"true", "1", "yes", "on"}
+
+
+def remove_generated_article(md_path):
+    """Remove generated HTML for an article if it exists."""
+    article_dir = md_path.parent / md_path.stem
+    output_path = article_dir / "index.html"
+
+    if output_path.exists():
+        output_path.unlink()
+        print(f"Removed: {md_path.stem}/index.html")
+
+    # Keep directory cleanup conservative: only remove if empty.
+    if article_dir.exists() and article_dir.is_dir():
+        try:
+            article_dir.rmdir()
+            print(f"Removed empty directory: {md_path.stem}/")
+        except OSError:
+            pass
 
 
 def build_article(md_path, template):
@@ -128,6 +150,15 @@ def main():
     articles = []
     for md_file in articles_dir.glob("*.md"):
         if md_file.name != "_index.md":
+            with open(md_file, "r") as f:
+                content = f.read()
+
+            meta, _ = parse_frontmatter(content)
+
+            if is_private(meta):
+                remove_generated_article(md_file)
+                continue
+
             slug, meta = build_article(md_file, article_template)
             articles.append((slug, meta))
 
