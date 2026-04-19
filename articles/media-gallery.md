@@ -4,7 +4,7 @@ date: 2025-08-13T19:12:37-04:00
 ---
 
 Here is an informal, unstructured list of some various forms of media I've found
-interesting or meaningful. (Feel free to [@ me](https://x.com/sucralose__) if
+interesting or meaningful. (Feel free to [@ me](https://x.com/mislocating) if
 you have suggestions you think may align with my space of preferences.)
 
 Last updated: August 14, 2025
