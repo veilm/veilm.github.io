@@ -12,26 +12,30 @@ let lastTime = 0;
 let width, height;
 
 function resize() {
-	width = canvas.width = window.innerWidth;
-	height = canvas.height = window.innerHeight;
+	width = canvas.clientWidth;
+	height = canvas.clientHeight;
+
+	const scale = window.devicePixelRatio || 1;
+	canvas.width = Math.round(width * scale);
+	canvas.height = Math.round(height * scale);
+	ctx.setTransform(scale, 0, 0, scale, 0, 0);
 }
-window.addEventListener("resize", resize);
 resize();
 
 // Particle setup
 const flakes = [];
-const maxParticles = Math.floor((width * height) / 8000); // adaptive density
 
 function initFlakes() {
 	flakes.length = 0;
+	const maxParticles = Math.floor((width * height) / 1600); // adaptive density
 	for (let i = 0; i < maxParticles; i++) {
 		const maxOpacity = Math.random() * 0.5 + 0.5; // 0.5–1 opacity for depth effect
 		flakes.push({
 			x: Math.random() * width,
 			y: Math.random() * height,
-			r: Math.random() * 3 + 1, // radius 1–4 px
-			speedY: Math.random() * 1 + 0.5, // fall speed
-			drift: Math.random() * 0.5 - 0.25, // horizontal drift
+			r: Math.random() * 1.3 + 0.45, // radius 0.45–1.75 CSS px
+			speedY: Math.random() * 0.48 + 0.24, // fall speed
+			drift: Math.random() * 0.2 - 0.1, // horizontal drift
 			opacity: maxOpacity,
 			maxOpacity: maxOpacity,
 			isResting: false,
@@ -43,6 +47,10 @@ function initFlakes() {
 		});
 	}
 }
+window.addEventListener("resize", () => {
+	resize();
+	initFlakes();
+});
 initFlakes();
 
 function update() {
