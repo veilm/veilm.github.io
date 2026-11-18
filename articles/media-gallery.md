@@ -39,12 +39,15 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 	- [ft. Sennzai: 緋の青](https://www.youtube.com/watch?v=bdUzA32up7U)
 - **AcuticNotes**
 - **AZALI**
+	- [tiny sand rat (battle)](https://www.youtube.com/watch?v=yt-5cn6CH4c)
 	- [because one day ill forget it all](https://www.youtube.com/watch?v=TPM4Cz85d_8)
+	- [accordion to all known laws of music](https://www.youtube.com/watch?v=sIlsVXsHPgw)
 	- [BOSS BATTLE IN THE DESERT HIGHLANDS](https://www.youtube.com/watch?v=uT_BrNxQaLE)
 	- [battle in the city of shattered glass](https://www.youtube.com/watch?v=5eSZdulBXbo)
 	- [MECHANICAL GOD](https://www.youtube.com/watch?v=v35imYtQqCo)
 	- [boss battle in a french cat cafe](https://www.youtube.com/watch?v=Sxnqn4qUkGM)
-	- [bass guitar waltz ??? i have no idea](https://www.youtube.com/watch?v=9NlqHkYLly0)
+	- [meowsynth unlocked a new violin power for me](https://www.youtube.com/watch?v=QToLD3cc8U0) (and [x post](https://x.com/mislocating/status/2021733850422956118))
+	- [pov you cant find the exit to the cat cafe](https://www.youtube.com/watch?v=AUL0vAXVQ9c)
 - **[Yuki Saito](https://en.wikipedia.org/wiki/Yuki_Saito_(actress))**
 	- [白い炎 (21st century ver. Instrumental)](https://www.youtube.com/watch?v=MOWZYrEqdqc)
 	- [朱い夢](https://www.youtube.com/watch?v=iMAuwHIoqQg)
@@ -68,14 +71,6 @@ I'll give a few subjective exemplars of each series/composer, but it's obviously
 - **[love solfege](http://lovesolfege.net/)**
 	- [Confessionale](https://www.youtube.com/watch?v=aBjWbJC9NHg)
 	- [怪盗ルチェルトラーナによる燦然たる遊戯](https://www.youtube.com/watch?v=Ni-DagrsVEA)
-- **Azur Lane**
-	- [盲目ラビリンス](https://www.youtube.com/watch?v=CmF-yYILNY0)
-	- [battle-crosstheline-elegant](https://www.youtube.com/watch?v=3wlrhws5jzE)
-	- [battle-dos-onstage](https://www.youtube.com/watch?v=j9wX34rd-ek)
-	- [battle-undermoon](https://www.youtube.com/watch?v=4ysImDzReSk)
-	- I haven't played the mobile game as it doesn't seem particularly
-	interesting to me, but I've downloaded a rip of the .ogg bgm assets and have
-	found them to be of quite high ROI.
 - **Steins;Gate**
 	- [Cycle](https://www.youtube.com/watch?v=qo08UtemiiQ)
 	- [Suspicious eyes](https://www.youtube.com/watch?v=yZHpt3VQU6k)
